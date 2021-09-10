@@ -31,7 +31,7 @@ class Semaf():
         return self.context
 
     def dumps(self):
-        return json.dumps(self.graph_to_jsonld())
+        return json.dumps(self.graph_to_jsonld(),indent=2)
 
     def filter(self, thisfilter=None, where=None, limit=False, DEBUG=False):
         self.statement = {}
@@ -43,7 +43,10 @@ class Semaf():
         return
 
     def statements(self, limit=False, DEBUG=False):
+        allstatements = []
         for subj, pred, obj in self.g:
+            localstatements = [ subj, pred, obj ] 
+            allstatements.append(localstatements)
             if DEBUG:
                 print("%s %s %s" % (subj, pred, obj))
             if re.search('keyword#Term', pred):
@@ -55,7 +58,7 @@ class Semaf():
                 self.locators['subject'] = subj
                 self.locators['predicate'] = pred
                 self.locators['citation/Keyword'] = locs
-        return
+        return allstatements
 
     def locator(self, rootpredicate, DEBUG=False):
         locs = {}
