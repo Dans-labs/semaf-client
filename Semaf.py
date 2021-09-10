@@ -25,22 +25,52 @@ class Semaf():
 
     def loadurl(self, doi=None, thisformat=None, url=None, export=None):
         URL = "%s/%s%s" % (url, export, doi)
-        print(URL)
         self.context = json.loads(requests.get(URL).text)
         self.g = Graph().parse(data=json.dumps(self.context), format=thisformat)
         return self.context
 
+    def suggested_keywords(self, keyword, DEBUG=False):
+        URL = "http://0.0.0.0:8091/wikidata/search/%s/" % keyword
+        self.suggested = json.loads(requests.get(URL).text)['result']
+        entities = []
+        self.selected = False
+        for entity in self.suggested:
+            if DEBUG:
+                print("%s %s" % (entity['label'], entity['concepturi']))
+        if self.suggested:
+            self.selected = self.suggested[0]
+        return self.selected
+
     def dumps(self):
         return json.dumps(self.graph_to_jsonld(),indent=2)
 
-    def filter(self, thisfilter=None, where=None, limit=False, DEBUG=False):
+    def filter(self, thisfilter=None, DEBUG=False):
         self.statement = {}
+        self.filtered = {}
         for subj, pred, obj in self.g:
             if re.search(thisfilter, pred):
-                self.statement = [subj, pred, obj]
+                self.statement = [subj.toPython(), pred.toPython(), obj.toPython()]
+                #filtered.append(self.statement)
+                self.filtered[subj.toPython()] = { pred.toPython(): obj.toPython() }
                 if DEBUG:
                     print("%s %s %s" % (subj, pred, obj))
-        return
+        return self.filtered
+
+    def enrich(self, keyword=False, DEBUG=False):
+        self.enrichment = []
+        for statement in self.filtered:
+            for k, v in self.filtered[statement].items():
+                keywords = v.split(', ')
+                for keyword in keywords:
+                    candidate = self.suggested_keywords(keyword) 
+                    try:
+                        newstatement = { 'rootnode': 'citation/Keyword', 'keyword#Term': candidate['label'], 'keyword#Vocabulary': 'Wikidata', 'keyword#Vocabulary URL': candidate['concepturi']}               
+                        self.enrichment.append(newstatement)
+                    except:
+                        skip = 1
+                if DEBUG:
+                    print(keywords)
+        return self.enrichment
 
     def statements(self, limit=False, DEBUG=False):
         allstatements = []
@@ -59,6 +89,14 @@ class Semaf():
                 self.locators['predicate'] = pred
                 self.locators['citation/Keyword'] = locs
         return allstatements
+
+
+    def mappings(self, DEBUG=False):
+        self.mappings = {}
+        #for subj, pred, obj in self.g:
+            #self.mappings[pred] = subj
+        print(self.g.subjects())
+        #return self.mappings
 
     def locator(self, rootpredicate, DEBUG=False):
         locs = {}
