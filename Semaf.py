@@ -38,7 +38,7 @@ class Semaf():
             if DEBUG:
                 print("%s %s" % (entity['label'], entity['concepturi']))
         if self.suggested:
-            self.selected = self.suggested[0]
+            self.selected = self.suggested
         return self.selected
 
     def dumps(self):
@@ -62,12 +62,10 @@ class Semaf():
             for k, v in self.filtered[statement].items():
                 keywords = v.split(', ')
                 for keyword in keywords:
-                    candidate = self.suggested_keywords(keyword) 
-                    try:
+                    candidates = self.suggested_keywords(keyword) 
+                    for candidate in candidates:                    
                         newstatement = { 'rootnode': 'citation/Keyword', 'keyword#Term': candidate['label'], 'keyword#Vocabulary': 'Wikidata', 'keyword#Vocabulary URL': candidate['concepturi']}               
                         self.enrichment.append(newstatement)
-                    except:
-                        skip = 1
                 if DEBUG:
                     print(keywords)
         return self.enrichment
