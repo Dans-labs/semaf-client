@@ -80,13 +80,17 @@ class Semaf():
         self.g.set((locators['subject'], locators['predicate'], Literal(newobject)))
         return
 
-    def add_statement(self, rootnode, predicate=False, newobject=False):
+    def add_statement(self, statements=False):
         staID = BNode()
-        gupredurl = URIRef('https://dataverse.org/schema/citation/keyword#Vocabulary')
-        g.add((staID, self.locators['gupred'], Literal(varlit)))
-        g.add((staID, gupredurl, Literal(varurl)))
+
+        for k,v in statements.items():
+            locurl = "%s%s" % ('https://dataverse.org/schema/citation/', k)
+            locurlRef = URIRef(locurl)
+            self.g.add((staID, locurlRef, Literal(v)))
+
         # root = citation/Keyword
-        g.add((self.locators[rootnode]['subject'], self.locators[rootnode]['predicate'], staID))
+        rootnode = statements['rootnode']
+        self.g.add((self.locators[rootnode]['subject'], self.locators[rootnode]['predicate'], staID))
         return 
 
     def serialize(self, filename, thisformat):
