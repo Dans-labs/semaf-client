@@ -1,2 +1,4 @@
 DATAVERSE_ROOT = "https://dataverse.harvard.edu"
 DATAVERSE_EXPORT = "/api/datasets/export?exporter=OAI_ORE&persistentId="
+SEMANTIC_GATEWAY = "http://192.168.1.101:8091"
+GATEWAY_LOOKUP = "/wikidata/search/$keyword/"
