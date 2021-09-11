@@ -11,7 +11,7 @@ import sys
 sm = Semaf()
 cmdifile = sys.argv[1:] 
 s = sm.loadcmdi(cmdifile[0])
-cwfile = "crosswalks.tsv"
+cwfile = "test-cmdi-crosswalks.csv"
 
 cmdigraph = jGraph(sm.json, "https://dataverse.org/schema/cmdi")
 cmdigraph.load_crosswalks(cwfile)
