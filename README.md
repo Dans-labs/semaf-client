@@ -9,4 +9,7 @@ git checkout mongodb
 cd ..
 cp ./config.default.py config.py
 ```
-And fill your configuration parameters in config.py
+Fill your configuration parameters in config.py and run
+```
+/cmdi-test.py /path-to-your-cmdi-file
+```

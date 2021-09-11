@@ -13,6 +13,7 @@ class jGraph():
         self.RootRef = RootRef 
         self.dictcontent = []
         self.locator = {}
+        self.EnrichFlag = False
 
         # Default Graph 
         self.g = Graph()
@@ -46,10 +47,13 @@ class jGraph():
                         complexarray = []
                         for item in v:
                             complexarray.append({ kRef: item, URIRef("%s#Vocabulary" % kRef) : "url" })
+                            # Create and add a new statement
                             staIDar = BNode()
                             self.g.add((staIDar, URIRef(kRef), Literal(item)))
-                            self.g.add((staIDar, URIRef("%s#Vocabulary" % kRef), Literal('vccabulary name')))
-                            self.g.add((staIDar, URIRef("%s#VocabularyURL" % kRef), Literal("http link to concept URI for %s" % item)))
+                            if self.EnrichFlag:
+                                self.g.add((staIDar, URIRef("%s#Vocabulary" % kRef), Literal('vccabulary name')))
+                                self.g.add((staIDar, URIRef("%s#VocabularyURL" % kRef), Literal("http link to concept URI for %s" % item)))
+                            # Add statements from array
                             self.g.add((staIDlocal, URIRef(kRef), staIDar)) 
                         complexstatements[URIRef(kRef)] = complexarray
                     if DEBUG:
