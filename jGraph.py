@@ -6,14 +6,16 @@ from rdflib.serializer import Serializer
 from collections import defaultdict, OrderedDict
 
 class jGraph():
-    def __init__(self, thisobject=None, RootRef=None, thisformat='json', debug=False):
+    def __init__(self, thisobject=None, RootRef=None, crosswolksfile=None, thisformat='json', debug=False):
         self.stats = {}
         self.json = {}
         self.context = json.loads(thisobject)
         self.RootRef = RootRef 
         self.dictcontent = []
+        self.mappings = {}
         self.locator = {}
         self.EnrichFlag = False
+        self.EnrichFlag = True
 
         # Default Graph 
         self.g = Graph()
@@ -28,8 +30,25 @@ class jGraph():
         
         # Second graph reservation 
         #self.gs = Graph()
+
+    def SetRef(self, value):
+        # Set references with loaded semantic mappings
+        if value in self.mappings:
+            RefURL = self.mappings[value]
+        else:
+            RefURL = "%s/%s" % (self.RootRef, value)
+        return RefURL        
         
+    def load_crosswalks(self, crossfile):        
+        with open(crossfile, encoding='utf-8') as fh:
+            content = fh.readlines()
+            for line in content:                
+                mapline = line.split(',')                
+                self.mappings[mapline[0]] = mapline[1]
+        return self.mappings
+            
     def rotatelist(self, thislist, pk, DEBUG=None):
+        # pk = parent key
         for keyID in range(0, len(thislist)):
             key = thislist[keyID]
             if type(key) is dict:
@@ -38,27 +57,27 @@ class jGraph():
                 staIDlocal = BNode()
                 for k, v in key.items():
                     root="%s/%s" % (self.RootRef, pk)
-                    kRef = "%s/%s" % (self.RootRef, k)
-                    self.dictcontent.append({"list": root, kRef: v, 'type': type(v), 'sort': keyID })                    
+                    #kRef = "%s/%s" % (self.RootRef, k)
+                    self.dictcontent.append({"list": root, self.SetRef(k): v, 'type': type(v), 'sort': keyID })                    
                     if type(v) is str:
-                        complexstatements[URIRef(kRef)] = v
-                        self.g.add((staIDlocal, URIRef(kRef), Literal(v)))                        
+                        complexstatements[URIRef(self.SetRef(k))] = v
+                        self.g.add((staIDlocal, URIRef(self.SetRef(k)), Literal(v)))                        
                     elif type(v) is list:
                         complexarray = []
                         for item in v:
-                            complexarray.append({ kRef: item, URIRef("%s#Vocabulary" % kRef) : "url" })
+                            complexarray.append({ self.SetRef(k): item, URIRef("%s#Vocabulary" % self.SetRef(k)) : "url" })
                             # Create and add a new statement
                             staIDar = BNode()
-                            self.g.add((staIDar, URIRef(kRef), Literal(item)))
+                            self.g.add((staIDar, URIRef(self.SetRef(k)), Literal(item)))
                             if self.EnrichFlag:
-                                self.g.add((staIDar, URIRef("%s#Vocabulary" % kRef), Literal('vccabulary name')))
-                                self.g.add((staIDar, URIRef("%s#VocabularyURL" % kRef), Literal("http link to concept URI for %s" % item)))
+                                self.g.add((staIDar, URIRef("%s#Vocabulary" % self.SetRef(k)), Literal('vocabulary name')))
+                                self.g.add((staIDar, URIRef("%s#VocabularyURL" % self.SetRef(k)), Literal("http link to concept URI for %s" % item)))
                             # Add statements from array
-                            self.g.add((staIDlocal, URIRef(kRef), staIDar)) 
-                        complexstatements[URIRef(kRef)] = complexarray
+                            self.g.add((staIDlocal, URIRef(self.SetRef(k)), staIDar)) 
+                        complexstatements[URIRef(self.SetRef(k))] = complexarray
                     if DEBUG:
                         print(complexstatements)
-                self.g.add((URIRef(root), URIRef(kRef), staIDlocal))
+                self.g.add((URIRef(root), URIRef(self.SetRef(k)), staIDlocal))
         return
     
     def rotate(self, thisdict, pk, DEBUG=None):
@@ -75,10 +94,10 @@ class jGraph():
             if (isinstance(v,dict)):
                 self.rotate(v, k)
                 root="%s/%s" % (self.RootRef, pk)
-                kRef = "%s/%s" % (self.RootRef, k)
+                #kRef = "%s/%s" % (self.RootRef, k)
                 staID = BNode()
                 staID = URIRef(self.RootRef)
-                self.g.add((staID, URIRef(root), URIRef(kRef)))
+                self.g.add((staID, URIRef(root), URIRef(self.SetRef(k))))
                 self.locator[root] = staID
                 continue    
             else:
@@ -88,22 +107,22 @@ class jGraph():
                     continue
                 
                 root="%s/%s" % (self.RootRef, pk)
-                kRef = "%s/%s" % (self.RootRef, k)
+                #kRef = "%s/%s" % (self.RootRef, k)
             
-                if kRef in self.cmdiloc:
+                if self.SetRef(k) in self.cmdiloc:
                     cache = self.cmdiloc['root']
                     if type(cache) is list:
-                        cache.append( { kRef: v })
+                        cache.append( { self.SetRef(k): v })
                     else:
-                        cache = { kRef: v }
+                        cache = { self.SetRef(k): v }
                 else:
-                    self.cmdiloc = { kRef: v }
-                self.dictcontent.append({"parent": root, kRef: v, 'type': type(v) })
+                    self.cmdiloc = { self.SetRef(k): v }
+                self.dictcontent.append({"parent": root, self.SetRef(k): v, 'type': type(v) })
                 
                 # Add statement
                 staID = BNode()                
-                self.locator[URIRef(kRef)] = staID
-                self.g.add((URIRef(root), URIRef(kRef), Literal(v)))
+                self.locator[URIRef(self.SetRef(k))] = staID
+                self.g.add((URIRef(root), URIRef(self.SetRef(k)), Literal(v)))
 
         return self.dictcontent
 

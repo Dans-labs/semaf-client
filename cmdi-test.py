@@ -11,9 +11,11 @@ import sys
 sm = Semaf()
 cmdifile = sys.argv[1:] 
 s = sm.loadcmdi(cmdifile[0])
+cwfile = "crosswalks.tsv"
 
 cmdigraph = jGraph(sm.json, "https://dataverse.org/schema/cmdi")
+cmdigraph.load_crosswalks(cwfile)
 cmdigraph.rotate(cmdigraph.context, False)
-cmdigraph.g.serialize(format='json-ld', destination='/tmp/Xcmdi.jsonld')
+cmdigraph.g.serialize(format='json-ld', destination='/tmp/maincmdi.jsonld')
 cmdigraph.g.serialize(format='n3', destination='/tmp/Xcmdi.nt')
 
