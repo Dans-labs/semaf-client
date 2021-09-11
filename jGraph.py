@@ -27,6 +27,8 @@ class jGraph():
         self.g.bind('cmdidoc', ns2)
         ns3 = Namespace("%s/Keyword#" % self.RootRef)
         self.g.bind('keywords', ns3)
+        ns4 = Namespace("https://dataverse.org/schema/citation")
+        self.g.bind('citation', ns4)
         
         # Second graph reservation 
         #self.gs = Graph()
@@ -85,15 +87,22 @@ class jGraph():
         
         if (isinstance(thisdict,list)):
             root="%s/%s" % (self.RootRef, pk)
-            kRef = "%s/%s" % (self.RootRef, k)
-            self.dictcontent.append({"list": root, kRef: v })
-            self.g.add((URIRef(root), URIRef(kRef), Literal(v)))
+            #kRef = "%s/%s" % (self.RootRef, k)
+            self.dictcontent.append({"list": root, self.SetRef(k): v })
+            self.g.add((URIRef(root), URIRef(self.SetRef(k)), Literal(v)))
             return
                 
         for k,v in thisdict.items():
             if (isinstance(v,dict)):
-                self.rotate(v, k)
-                root="%s/%s" % (self.RootRef, pk)
+                if pk:
+                    fullXpath = "%s/%s" % (pk, k)
+                else:
+                    fullXpath = k
+                if DEBUG:
+                    print("XPath %s [%s]" % (fullXpath, k))
+                self.rotate(v, fullXpath)
+                ###self.rotate(v, k)
+                root="%s%s" % (self.RootRef, pk)
                 #kRef = "%s/%s" % (self.RootRef, k)
                 staID = BNode()
                 staID = URIRef(self.RootRef)
@@ -106,7 +115,7 @@ class jGraph():
                     self.rotatelist(v, k)
                     continue
                 
-                root="%s/%s" % (self.RootRef, pk)
+                root="%s%s" % (self.RootRef, pk)
                 #kRef = "%s/%s" % (self.RootRef, k)
             
                 if self.SetRef(k) in self.cmdiloc:

@@ -19,3 +19,5 @@ cmdigraph.rotate(cmdigraph.context, False)
 cmdigraph.g.serialize(format='json-ld', destination='/tmp/maincmdi.jsonld')
 cmdigraph.g.serialize(format='n3', destination='/tmp/Xcmdi.nt')
 
+sm.loadjson(cmdigraph.g.serialize(format='json-ld'), 'json-ld')
+print(sm.dumps(True))
