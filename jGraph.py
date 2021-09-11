@@ -14,14 +14,19 @@ class jGraph():
         self.dictcontent = []
         self.mappings = {}
         self.locator = {}
+        self.namespaces = {}
         self.EnrichFlag = False
-        self.EnrichFlag = True
+        #self.EnrichFlag = True
 
         # Default Graph 
         self.g = Graph()
+        
+        # Second graph reservation 
+        #self.gs = Graph()
 
+    def setNamespaces(self):
         # Define namespaces
-        ns1 = Namespace("%s/" % self.RootRef)
+        ns1 = Namespace("%s" % self.RootRef)
         self.g.bind('cmdi', ns1)
         ns2 = Namespace("%s/#" % self.RootRef)
         self.g.bind('cmdidoc', ns2)
@@ -29,16 +34,19 @@ class jGraph():
         self.g.bind('keywords', ns3)
         ns4 = Namespace("https://dataverse.org/schema/citation")
         self.g.bind('citation', ns4)
-        
-        # Second graph reservation 
-        #self.gs = Graph()
+        ns5 = Namespace("https://dataverse.org/schema/")
+        self.g.bind('schema', ns5)        
+
+        for nsname in self.namespaces:
+            ns = Namespace(nsname)
+            self.g.bind(self.namespaces[nsname], "%s/" % ns)
 
     def SetRef(self, value):
         # Set references with loaded semantic mappings
         if value in self.mappings:
             RefURL = self.mappings[value]
         else:
-            RefURL = "%s/%s" % (self.RootRef, value)
+            RefURL = "%s%s" % (self.RootRef, value)
         return RefURL        
         
     def load_crosswalks(self, crossfile):        
@@ -98,6 +106,7 @@ class jGraph():
                     fullXpath = "%s/%s" % (pk, k)
                 else:
                     fullXpath = k
+                self.namespaces[self.SetRef(pk)] = k.lower()
                 if DEBUG:
                     print("XPath %s [%s]" % (fullXpath, k))
                 self.rotate(v, fullXpath)
@@ -133,6 +142,7 @@ class jGraph():
                 self.locator[URIRef(self.SetRef(k))] = staID
                 self.g.add((URIRef(root), URIRef(self.SetRef(k)), Literal(v)))
 
+        self.setNamespaces()
         return self.dictcontent
 
     def statements(self, limit=False, DEBUG=False):
