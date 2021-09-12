@@ -17,7 +17,7 @@ class jGraph():
         self.namespaces = {}
         self.EnrichFlag = False
         #self.EnrichFlag = True
-
+        self.crosswalks = {}
         # Default Graph 
         self.g = Graph()
         
@@ -36,6 +36,8 @@ class jGraph():
         self.g.bind('citation', ns4)
         ns5 = Namespace("https://dataverse.org/schema/")
         self.g.bind('schema', ns5)        
+        ns6 = Namespace("http://purl.org/dc/terms/")
+        self.g.bind('dcterms', ns6)        
 
         for nsname in self.namespaces:
             ns = Namespace(nsname)
@@ -47,6 +49,8 @@ class jGraph():
             RefURL = self.mappings[value]
         else:
             RefURL = "%s%s" % (self.RootRef, value)
+        self.crosswalks[RefURL] = value
+        #self.mappings[value] = RefURL
         return RefURL        
         
     def load_crosswalks(self, crossfile):        
@@ -66,7 +70,8 @@ class jGraph():
                 staID = BNode()
                 staIDlocal = BNode()
                 for k, v in key.items():
-                    root="%s/%s" % (self.RootRef, pk)
+                    #root="%s/%s" % (self.RootRef, pk)
+                    root = self.SetRef(pk)
                     #kRef = "%s/%s" % (self.RootRef, k)
                     self.dictcontent.append({"list": root, self.SetRef(k): v, 'type': type(v), 'sort': keyID })                    
                     if type(v) is str:
@@ -94,7 +99,8 @@ class jGraph():
         self.cmdiloc = {}        
         
         if (isinstance(thisdict,list)):
-            root="%s/%s" % (self.RootRef, pk)
+            #root="%s/%s" % (self.RootRef, pk)
+            root = self.SetRef(pk)
             #kRef = "%s/%s" % (self.RootRef, k)
             self.dictcontent.append({"list": root, self.SetRef(k): v })
             self.g.add((URIRef(root), URIRef(self.SetRef(k)), Literal(v)))
@@ -111,7 +117,8 @@ class jGraph():
                     print("XPath %s [%s]" % (fullXpath, k))
                 self.rotate(v, fullXpath)
                 ###self.rotate(v, k)
-                root="%s%s" % (self.RootRef, pk)
+                #root="%s%s" % (self.RootRef, pk)
+                root = self.SetRef(pk)
                 #kRef = "%s/%s" % (self.RootRef, k)
                 staID = BNode()
                 staID = URIRef(self.RootRef)
@@ -124,7 +131,8 @@ class jGraph():
                     self.rotatelist(v, k)
                     continue
                 
-                root="%s%s" % (self.RootRef, pk)
+                #root="%s%s" % (self.RootRef, pk)
+                root = self.SetRef(pk)
                 #kRef = "%s/%s" % (self.RootRef, k)
             
                 if self.SetRef(k) in self.cmdiloc:

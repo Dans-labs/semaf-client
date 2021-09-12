@@ -2,6 +2,7 @@ from rdflib import Graph, URIRef, Literal, BNode, plugin
 from rdflib.serializer import Serializer
 from collections import defaultdict, OrderedDict
 from xml.dom import minidom
+from CLARIAH_CMDI.xml2dict.processor import CMDI # load, xmldom2dict
 from os import listdir
 from os.path import isfile, join
 import re
@@ -15,6 +16,7 @@ class Semaf():
         self.stats = {}
         self.json = {}
         self.locators = {}
+        self.RootRef = "https://dataverse.org/schema/cmdi"
 
     def loadfile(self, filename=None, thisformat=None, parent=None):
         self.context = False
@@ -23,9 +25,50 @@ class Semaf():
         self.g = Graph().parse(data=json.dumps(self.context), format=thisformat)
         return self.context
 
+    def iterdict(self, thisdict, pk):
+        self.cmdiloc = {}
+        self.dictcontent = []
+        for k,v in thisdict.items():
+            if (isinstance(v,dict)):
+                #print(v)
+                self.iterdict(v, k)
+                continue
+            else:
+                root="%s/%s" % (self.RootRef, pk)
+                kRef = "%s/%s" % (self.RootRef, k)
+            
+                if kRef in self.cmdiloc:
+                    cache = self.cmdiloc['root']
+                    if type(cache) is list:
+                        cache.append( { kRef: v })
+                    else:
+                        cache = { kRef: v }
+                else:
+                    self.cmdiloc = { kRef: v }
+                #print("[%s] %s @value: %s " % (root, kRef, v))
+                self.dictcontent.append({ k: v })
+        return
+
+    def loadcmdi(self, cmdifile):
+        actions = {}
+        cmdi = CMDI(actions)
+        d = cmdi.load(cmdifile)
+        jsonobj = json.dumps(cmdi.json, indent=2)        
+        self.json = jsonobj
+        #self.iterdict(cmdi.json, False)
+        #print(self.dictcontent)
+        #thisformat = 'rdf-json'
+        #self.g = Graph().parse(data=json.dumps(cmdi.json), format=thisformat)
+        return cmdi.xpath()
+
     def loadurl(self, doi=None, thisformat=None, url=None, export=None):
         URL = "%s/%s%s" % (url, export, doi)
         self.context = json.loads(requests.get(URL).text)
+        self.g = Graph().parse(data=json.dumps(self.context), format=thisformat)
+        return self.context
+
+    def loadjson(self, content=None, thisformat=None, url=None, export=None):
+        self.context = json.loads(content)
         self.g = Graph().parse(data=json.dumps(self.context), format=thisformat)
         return self.context
 
@@ -41,8 +84,8 @@ class Semaf():
             self.selected = self.suggested
         return self.selected
 
-    def dumps(self):
-        return json.dumps(self.graph_to_jsonld(),indent=2)
+    def dumps(self, DEBUG=None):
+        return json.dumps(self.graph_to_jsonld(DEBUG),indent=2)
 
     def filter(self, thisfilter=None, DEBUG=False):
         self.statement = {}
@@ -148,13 +191,19 @@ class Semaf():
             thiskey = o[i]['@id']
             del item['@id']
             self.items[thiskey] = item
+            #if DEBUG:
+                #print(self.items)
         self.records = defaultdict(list)
+        indexblock = 0
 
         for i in range(0, len(o)):
             item = o[i]
             if re.search('terms\/title', str(item)):
                 #print("%s %s" % (i, item))
                 indexblock = i
+        if DEBUG:
+            print("DEBUG index block %s from %s" % (indexblock, len(o)))
+            print(type(o[indexblock]))
 
         # Delete internal id
         if '@id' in o[indexblock]:
@@ -167,7 +216,10 @@ class Semaf():
                 fullrecord = ''
                 #print("%s %s" % (ikey, element))
                 if '@id' in element:
-                    fullrecord = self.items[element['@id']]
+                    try:
+                        fullrecord = self.items[element['@id']]
+                    except:
+                        skip =1 
 
                 #print(fullrecord)
                 if fullrecord:
@@ -195,5 +247,11 @@ class Semaf():
                         self.records[ikey] = element
                     else:
                         self.records[ikey] = element
+
+        if DEBUG:
+            for blockID in range(0, len(o)):
+                for element in o[blockID]:
+                    self.records[element] = o[blockID][element]
+                    #print(element)
         return self.records
         
