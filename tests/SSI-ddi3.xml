@@ -1,0 +1,3209 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ddi:DDIInstance id="a72a785d-386c-4a30-9db9-4ed167b9a60a" version="19.0.0" versionDate="2010-07-17T17:49:29" agency="example.org" xmlns:ddi="ddi:instance:3_1" xmlns:r="ddi:reusable:3_1" xmlns:dc="ddi:dcelements:3_1" xmlns:dc2="http://purl.org/dc/elements/1.1/" xmlns:s="ddi:studyunit:3_1" xmlns:c="ddi:conceptualcomponent:3_1" xmlns:d="ddi:datacollection:3_1" xmlns:l="ddi:logicalproduct:3_1" xmlns:p="ddi:physicaldataproduct:3_1" xmlns:pi="ddi:physicalinstance:3_1" xmlns:a="ddi:archive:3_1">
+  <r:VersionResponsibility>local</r:VersionResponsibility>
+  <r:Citation>
+    <r:Title xml:lang="en-US">Supplemental Security Income (SSI) Public-Use Microdata File, 2001 Data</r:Title>
+    <dc:DCElements>
+      <dc2:title xml:lang="en-US">Supplemental Security Income (SSI) Public-Use Microdata File, 2001 Data</dc2:title>
+    </dc:DCElements>
+  </r:Citation>
+  <s:StudyUnit id="b72a785d-386c-4a30-9db9-4ed167b9a60a" version="19.0.0" versionDate="2010-07-17T17:49:29" agency="example.org">
+    <r:VersionResponsibility>local</r:VersionResponsibility>
+    <r:Citation>
+      <r:Title xml:lang="en-US">Supplemental Security Income (SSI) Public-Use Microdata File, 2001 Data</r:Title>
+      <dc:DCElements>
+        <dc2:title xml:lang="en-US">Supplemental Security Income (SSI) Public-Use Microdata File, 2001 Data</dc2:title>
+      </dc:DCElements>
+    </r:Citation>
+    <s:Abstract id="dd052a83-dac7-46db-871e-567c1c795591">
+      <r:Content xml:lang="en-US">The SSI Public-Use Microdata File contains an extract of data fields from SSA's Supplemental Security Record file and consists of a 5 percent random, representative sample of persons who received a federal SSI benefit in December 2001. This file contains approximately 320,000 records, with 13 data fields on each record.</r:Content>
+    </s:Abstract>
+    <r:UniverseReference>
+      <r:Scheme>
+        <r:ID>4829de57-4064-4423-86c0-72c091bc459c</r:ID>
+        <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+        <r:Version>4</r:Version>
+      </r:Scheme>
+      <r:ID>b91f1b1c-bcf3-44bc-995c-5818af22cd85</r:ID>
+      <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+      <r:Version>1</r:Version>
+    </r:UniverseReference>
+    <r:FundingInformation>
+      <r:AgencyOrganizationReference>
+        <r:Scheme>
+          <r:ID>f5020adb-7ca5-4252-a605-60c0d59b8a31</r:ID>
+          <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+          <r:Version>0</r:Version>
+        </r:Scheme>
+        <r:ID>2d49a4c2-da8d-4106-804a-1719e3e0e4ab</r:ID>
+        <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+        <r:Version>0</r:Version>
+      </r:AgencyOrganizationReference>
+      <r:GrantNumber>Funding</r:GrantNumber>
+      <r:Description xml:lang="en-US">Funded by the Social Security Administration</r:Description>
+    </r:FundingInformation>
+    <s:Purpose id="8cb2b64e-90cd-47fa-a8d3-e457e83cd494">
+      <r:Content xml:lang="en-US">Not specified</r:Content>
+    </s:Purpose>
+    <r:Coverage>
+      <r:TopicalCoverage id="fee01ec9-5e2d-4b53-aeb3-e4a275542b48" />
+      <r:SpatialCoverage id="9a6cc66f-02ac-4ca4-bb69-2ef98524b872">
+        <r:BoundingBox>
+          <r:WestLongitude>0</r:WestLongitude>
+          <r:EastLongitude>0</r:EastLongitude>
+          <r:SouthLatitude>0</r:SouthLatitude>
+          <r:NorthLatitude>0</r:NorthLatitude>
+        </r:BoundingBox>
+        <r:TopLevelReference />
+        <r:LowestLevelReference />
+      </r:SpatialCoverage>
+      <r:TemporalCoverage id="87c9a2a0-fb02-4f05-9d71-27febc63f44d" />
+    </r:Coverage>
+    <c:ConceptualComponent id="ba07a6ed-5098-447c-9ae9-71b1ff689b8a" version="19.0.0" versionDate="2010-07-17T17:49:29" agency="example.org">
+      <c:UniverseScheme id="4829de57-4064-4423-86c0-72c091bc459c" version="4.0.0" versionDate="2010-07-17T22:48:52" agency="example.org">
+        <c:UniverseSchemeName xml:lang="en-US">SSI Universes</c:UniverseSchemeName>
+        <c:Universe id="b91f1b1c-bcf3-44bc-995c-5818af22cd85" version="1.0.0" versionDate="2010-07-17T22:48:32">
+          <r:UserID type="11179-IRDI">example.org:b91f1b1c-bcf3-44bc-995c-5818af22cd85:1</r:UserID>
+          <r:Label xml:lang="en-US">SSI Recipients</r:Label>
+          <c:HumanReadable xml:lang="en-US">Persons who received a federal SSI benefit in December 2001.</c:HumanReadable>
+        </c:Universe>
+      </c:UniverseScheme>
+    </c:ConceptualComponent>
+    <d:DataCollection id="90821a15-2d0a-42cc-bab1-5968e41ad5e6" version="0.0.0" versionDate="2010-07-18T03:03:30" agency="example.org" />
+    <l:LogicalProduct id="6d52c47e-c67a-45f1-a27c-e29a38c20515" version="16.0.0" versionDate="2010-07-17T22:27:56" agency="example.org">
+      <l:DataRelationship id="8cf3212a-0b2b-44fd-82d0-d06d23ff365b" version="1.0.0" versionDate="2010-07-17T22:27:19">
+        <r:UserID type="11179-IRDI">example.org:8cf3212a-0b2b-44fd-82d0-d06d23ff365b:1</r:UserID>
+        <l:DataRelationshipName xml:lang="en-US">SSIDataRelationship</l:DataRelationshipName>
+        <l:LogicalRecord id="ac510f0e-ae0f-47eb-a9ca-0c9e3eced5d2" hasLocator="false">
+          <r:UserID type="11179-IRDI">example.org:ac510f0e-ae0f-47eb-a9ca-0c9e3eced5d2:3</r:UserID>
+          <l:LogicalRecordName xml:lang="en-US">Recipient</l:LogicalRecordName>
+          <r:Label xml:lang="en-US">SSI Recipient</r:Label>
+          <l:VariablesInRecord allVariablesInLogicalProduct="false">
+            <l:VariableSchemeReference>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </l:VariableSchemeReference>
+          </l:VariablesInRecord>
+        </l:LogicalRecord>
+      </l:DataRelationship>
+      <l:CategoryScheme id="d9f9d943-e996-4cf6-815b-c30a68fb596c" version="4.0.0" versionDate="2010-07-17T22:26:20" agency="example.org">
+        <l:CategorySchemeName xml:lang="en-US">stateCategories</l:CategorySchemeName>
+        <r:Label xml:lang="en-US">State</r:Label>
+        <l:Category id="3a6b599f-9ce9-43fc-aedc-a72ac6bb89ac" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:3a6b599f-9ce9-43fc-aedc-a72ac6bb89ac:2</r:UserID>
+          <r:Label xml:lang="en-US">Alabama</r:Label>
+        </l:Category>
+        <l:Category id="44e05917-e0b4-473e-83c2-7dd3ce46e842" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:44e05917-e0b4-473e-83c2-7dd3ce46e842:2</r:UserID>
+          <r:Label xml:lang="en-US">Alaska</r:Label>
+        </l:Category>
+        <l:Category id="0251d6a1-2f42-4bce-9c8d-91b401aa7f06" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:0251d6a1-2f42-4bce-9c8d-91b401aa7f06:2</r:UserID>
+          <r:Label xml:lang="en-US">Arizona</r:Label>
+        </l:Category>
+        <l:Category id="1c27b0e5-2cda-4d66-b6ca-8e271eb9fe1e" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:1c27b0e5-2cda-4d66-b6ca-8e271eb9fe1e:2</r:UserID>
+          <r:Label xml:lang="en-US">Arkansas</r:Label>
+        </l:Category>
+        <l:Category id="081f613e-eee9-49d4-a5c4-fe3bb7488956" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:081f613e-eee9-49d4-a5c4-fe3bb7488956:2</r:UserID>
+          <r:Label xml:lang="en-US">California</r:Label>
+        </l:Category>
+        <l:Category id="8c07be71-36f8-49fb-90f9-0bf45711e6cb" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:8c07be71-36f8-49fb-90f9-0bf45711e6cb:2</r:UserID>
+          <r:Label xml:lang="en-US">Colorado</r:Label>
+        </l:Category>
+        <l:Category id="d2666b62-4e1f-4216-abd5-bacc9de8effe" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:d2666b62-4e1f-4216-abd5-bacc9de8effe:2</r:UserID>
+          <r:Label xml:lang="en-US">Connecticut</r:Label>
+        </l:Category>
+        <l:Category id="54d4f8d9-332a-4310-8b13-b116184e366b" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:54d4f8d9-332a-4310-8b13-b116184e366b:2</r:UserID>
+          <r:Label xml:lang="en-US">Delaware</r:Label>
+        </l:Category>
+        <l:Category id="64775839-8fb0-4e18-8759-e07326310ede" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:64775839-8fb0-4e18-8759-e07326310ede:2</r:UserID>
+          <r:Label xml:lang="en-US">District of Columbia</r:Label>
+        </l:Category>
+        <l:Category id="e382f413-93c6-4974-9197-ba85d0263521" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:e382f413-93c6-4974-9197-ba85d0263521:2</r:UserID>
+          <r:Label xml:lang="en-US">Florida</r:Label>
+        </l:Category>
+        <l:Category id="27543b37-8bc2-483d-b9d1-8af6d5827217" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:27543b37-8bc2-483d-b9d1-8af6d5827217:2</r:UserID>
+          <r:Label xml:lang="en-US">Georgia</r:Label>
+        </l:Category>
+        <l:Category id="3bd1025a-a67a-45d8-9fbc-37740d7bd8a3" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:3bd1025a-a67a-45d8-9fbc-37740d7bd8a3:2</r:UserID>
+          <r:Label xml:lang="en-US">Hawaii</r:Label>
+        </l:Category>
+        <l:Category id="77ffc947-8fd4-4947-8a1b-b29aaa9c633b" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:77ffc947-8fd4-4947-8a1b-b29aaa9c633b:2</r:UserID>
+          <r:Label xml:lang="en-US">Idaho</r:Label>
+        </l:Category>
+        <l:Category id="40fdc0d0-4c6f-41b6-8c4c-32ab88074462" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:40fdc0d0-4c6f-41b6-8c4c-32ab88074462:2</r:UserID>
+          <r:Label xml:lang="en-US">Illinois</r:Label>
+        </l:Category>
+        <l:Category id="faf93548-db23-49d5-aa03-15627d214d29" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:faf93548-db23-49d5-aa03-15627d214d29:2</r:UserID>
+          <r:Label xml:lang="en-US">Indiana</r:Label>
+        </l:Category>
+        <l:Category id="5bf375b9-bb3d-408c-84f9-98c7c44a23d8" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:5bf375b9-bb3d-408c-84f9-98c7c44a23d8:2</r:UserID>
+          <r:Label xml:lang="en-US">Iowa</r:Label>
+        </l:Category>
+        <l:Category id="63fa5700-c359-4145-9e83-9252bfd0bb21" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:63fa5700-c359-4145-9e83-9252bfd0bb21:2</r:UserID>
+          <r:Label xml:lang="en-US">Kansas</r:Label>
+        </l:Category>
+        <l:Category id="50e4512c-562a-4985-9959-b5be91a4c1f5" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:50e4512c-562a-4985-9959-b5be91a4c1f5:2</r:UserID>
+          <r:Label xml:lang="en-US">Kentucky</r:Label>
+        </l:Category>
+        <l:Category id="a90866e2-7a15-45a0-a6d6-7286dc360fd2" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:a90866e2-7a15-45a0-a6d6-7286dc360fd2:2</r:UserID>
+          <r:Label xml:lang="en-US">Louisiana</r:Label>
+        </l:Category>
+        <l:Category id="373e53ef-78b5-4376-8a5c-042f9f03c366" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:373e53ef-78b5-4376-8a5c-042f9f03c366:2</r:UserID>
+          <r:Label xml:lang="en-US">Maine</r:Label>
+        </l:Category>
+        <l:Category id="19d77f13-2f79-4e53-ac2d-6bbf797b6db2" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:19d77f13-2f79-4e53-ac2d-6bbf797b6db2:2</r:UserID>
+          <r:Label xml:lang="en-US">Maryland</r:Label>
+        </l:Category>
+        <l:Category id="aa307b29-eea9-4e6b-93f6-158d509a7d9a" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:aa307b29-eea9-4e6b-93f6-158d509a7d9a:2</r:UserID>
+          <r:Label xml:lang="en-US">Massachusetts</r:Label>
+        </l:Category>
+        <l:Category id="bb760005-7a9f-492b-989c-ad7f1add0fbd" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:bb760005-7a9f-492b-989c-ad7f1add0fbd:2</r:UserID>
+          <r:Label xml:lang="en-US">Michigan</r:Label>
+        </l:Category>
+        <l:Category id="5dc3dead-f8a5-4ae4-a914-38babb077fe7" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:5dc3dead-f8a5-4ae4-a914-38babb077fe7:2</r:UserID>
+          <r:Label xml:lang="en-US">Minnesota</r:Label>
+        </l:Category>
+        <l:Category id="b7b97966-e0eb-4e00-8cfa-753301b16695" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:b7b97966-e0eb-4e00-8cfa-753301b16695:2</r:UserID>
+          <r:Label xml:lang="en-US">Mississippi</r:Label>
+        </l:Category>
+        <l:Category id="2a8280f6-05ce-4bcb-bc54-70a7d094771d" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:2a8280f6-05ce-4bcb-bc54-70a7d094771d:2</r:UserID>
+          <r:Label xml:lang="en-US">Missouri</r:Label>
+        </l:Category>
+        <l:Category id="6d3aebe7-dea8-40db-b2b1-09679de47408" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:6d3aebe7-dea8-40db-b2b1-09679de47408:2</r:UserID>
+          <r:Label xml:lang="en-US">Montana</r:Label>
+        </l:Category>
+        <l:Category id="8672701f-ecc2-4f29-b1a7-6515f18d6dd9" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:8672701f-ecc2-4f29-b1a7-6515f18d6dd9:2</r:UserID>
+          <r:Label xml:lang="en-US">Nebraska</r:Label>
+        </l:Category>
+        <l:Category id="975287f2-a5c3-4123-83ac-6059a874292e" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:975287f2-a5c3-4123-83ac-6059a874292e:2</r:UserID>
+          <r:Label xml:lang="en-US">Nevada</r:Label>
+        </l:Category>
+        <l:Category id="f9223d9b-109a-4240-86af-4b632c803018" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:f9223d9b-109a-4240-86af-4b632c803018:2</r:UserID>
+          <r:Label xml:lang="en-US">New Hampshire</r:Label>
+        </l:Category>
+        <l:Category id="c18fc8b9-dc80-4e7f-871b-3edd39835022" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:c18fc8b9-dc80-4e7f-871b-3edd39835022:2</r:UserID>
+          <r:Label xml:lang="en-US">New Jersey</r:Label>
+        </l:Category>
+        <l:Category id="7e18cc41-af08-4176-b423-764cee147bef" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:7e18cc41-af08-4176-b423-764cee147bef:2</r:UserID>
+          <r:Label xml:lang="en-US">New Mexico</r:Label>
+        </l:Category>
+        <l:Category id="b5bc9d11-3e6a-4570-b026-36eb5b4ccc70" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:b5bc9d11-3e6a-4570-b026-36eb5b4ccc70:2</r:UserID>
+          <r:Label xml:lang="en-US">New York</r:Label>
+        </l:Category>
+        <l:Category id="3bcd73e7-18dd-4ec4-b893-5a7b6f4cda6b" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:3bcd73e7-18dd-4ec4-b893-5a7b6f4cda6b:2</r:UserID>
+          <r:Label xml:lang="en-US">North Carolina</r:Label>
+        </l:Category>
+        <l:Category id="314a7ea0-46d9-47cb-9c01-806b4144879e" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:314a7ea0-46d9-47cb-9c01-806b4144879e:2</r:UserID>
+          <r:Label xml:lang="en-US">North Dakota</r:Label>
+        </l:Category>
+        <l:Category id="7517b3f9-d9c3-4b7f-a73a-0bb51e5d7d86" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:7517b3f9-d9c3-4b7f-a73a-0bb51e5d7d86:2</r:UserID>
+          <r:Label xml:lang="en-US">Ohio</r:Label>
+        </l:Category>
+        <l:Category id="5104bf92-c7ca-4c81-a9a3-bd0ef2fdd958" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:5104bf92-c7ca-4c81-a9a3-bd0ef2fdd958:2</r:UserID>
+          <r:Label xml:lang="en-US">Oklahoma</r:Label>
+        </l:Category>
+        <l:Category id="e036f7f7-956c-4b06-81e5-096ae4840299" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:e036f7f7-956c-4b06-81e5-096ae4840299:2</r:UserID>
+          <r:Label xml:lang="en-US">Oregon</r:Label>
+        </l:Category>
+        <l:Category id="2b926077-639c-4724-b532-8604f052e088" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:2b926077-639c-4724-b532-8604f052e088:2</r:UserID>
+          <r:Label xml:lang="en-US">Pennsylvania</r:Label>
+        </l:Category>
+        <l:Category id="950d98f2-f2f0-40b9-88fc-0b7356f053e8" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:950d98f2-f2f0-40b9-88fc-0b7356f053e8:2</r:UserID>
+          <r:Label xml:lang="en-US">Rhode Island</r:Label>
+        </l:Category>
+        <l:Category id="13844b3b-b1c7-4193-a602-0deb4289e60a" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:13844b3b-b1c7-4193-a602-0deb4289e60a:2</r:UserID>
+          <r:Label xml:lang="en-US">South Carolina</r:Label>
+        </l:Category>
+        <l:Category id="aed1baa5-5eb2-49a4-8e76-cc1caea3c694" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:aed1baa5-5eb2-49a4-8e76-cc1caea3c694:2</r:UserID>
+          <r:Label xml:lang="en-US">South Dakota</r:Label>
+        </l:Category>
+        <l:Category id="1a414485-994e-4e6a-bdee-ca143536fd3e" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:1a414485-994e-4e6a-bdee-ca143536fd3e:2</r:UserID>
+          <r:Label xml:lang="en-US">Tennessee</r:Label>
+        </l:Category>
+        <l:Category id="9e17a00a-5dca-43a9-8975-d85c3df5f74f" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:9e17a00a-5dca-43a9-8975-d85c3df5f74f:2</r:UserID>
+          <r:Label xml:lang="en-US">Texas</r:Label>
+        </l:Category>
+        <l:Category id="243b9ee2-e336-49a4-9393-9862d9850444" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:243b9ee2-e336-49a4-9393-9862d9850444:2</r:UserID>
+          <r:Label xml:lang="en-US">Utah</r:Label>
+        </l:Category>
+        <l:Category id="2e70ef3f-ff61-4c7a-a19e-563a949526ef" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:2e70ef3f-ff61-4c7a-a19e-563a949526ef:2</r:UserID>
+          <r:Label xml:lang="en-US">Vermont</r:Label>
+        </l:Category>
+        <l:Category id="317d138a-0da4-4f6e-8d8d-667fbf12b07f" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:317d138a-0da4-4f6e-8d8d-667fbf12b07f:2</r:UserID>
+          <r:Label xml:lang="en-US">Virginia</r:Label>
+        </l:Category>
+        <l:Category id="6f7143de-2c52-4338-8c2c-7dccda589644" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:6f7143de-2c52-4338-8c2c-7dccda589644:2</r:UserID>
+          <r:Label xml:lang="en-US">Washington</r:Label>
+        </l:Category>
+        <l:Category id="eaed6404-c376-4bd1-816c-3be5be6fa842" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:eaed6404-c376-4bd1-816c-3be5be6fa842:2</r:UserID>
+          <r:Label xml:lang="en-US">West Virginia</r:Label>
+        </l:Category>
+        <l:Category id="bd28e199-7b5a-45f7-8164-4729112fe922" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:bd28e199-7b5a-45f7-8164-4729112fe922:2</r:UserID>
+          <r:Label xml:lang="en-US">Wisconsin</r:Label>
+        </l:Category>
+        <l:Category id="87c69a63-4d92-4955-a87d-4cc69e763659" version="2.0.0" versionDate="2010-07-17T22:23:01" missing="false">
+          <r:UserID type="11179-IRDI">example.org:87c69a63-4d92-4955-a87d-4cc69e763659:2</r:UserID>
+          <r:Label xml:lang="en-US">Wyoming</r:Label>
+        </l:Category>
+      </l:CategoryScheme>
+      <l:CategoryScheme id="2b9c796c-3071-4c36-a113-ab0479b436b7" version="4.0.0" versionDate="2010-07-17T22:26:20" agency="example.org">
+        <l:CategorySchemeName xml:lang="en-US">sexCategories</l:CategorySchemeName>
+        <r:Label xml:lang="en-US">Sex</r:Label>
+        <l:Category id="55bd77ed-5f1c-41ae-9c94-b20790ae9e7e" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:55bd77ed-5f1c-41ae-9c94-b20790ae9e7e:2</r:UserID>
+          <r:Label xml:lang="en-US">Male</r:Label>
+        </l:Category>
+        <l:Category id="6e5addb3-a882-4af4-88ac-e418c3c22a77" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:6e5addb3-a882-4af4-88ac-e418c3c22a77:2</r:UserID>
+          <r:Label xml:lang="en-US">Female</r:Label>
+        </l:Category>
+        <l:Category id="5e0c5123-6c00-43af-a1d4-e5851704e488" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:5e0c5123-6c00-43af-a1d4-e5851704e488:2</r:UserID>
+          <r:Label xml:lang="en-US">Unspecified</r:Label>
+        </l:Category>
+      </l:CategoryScheme>
+      <l:CategoryScheme id="4a488e02-9658-44cb-a09c-b390a3b146fe" version="4.0.0" versionDate="2010-07-17T22:26:20" agency="example.org">
+        <l:CategorySchemeName xml:lang="en-US">ssiDiagnosisCategories</l:CategorySchemeName>
+        <r:Label xml:lang="en-US">SSI Diagnosis</r:Label>
+        <l:Category id="c86768e5-2f73-487e-8d70-bc4386e1744a" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:c86768e5-2f73-487e-8d70-bc4386e1744a:2</r:UserID>
+          <r:Label xml:lang="en-US">Diagnosis unspecified/aged</r:Label>
+        </l:Category>
+        <l:Category id="17d85a9f-5da5-4882-a2c7-7532d717de33" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:17d85a9f-5da5-4882-a2c7-7532d717de33:2</r:UserID>
+          <r:Label xml:lang="en-US">Mental retardation</r:Label>
+        </l:Category>
+        <l:Category id="ca8c30f7-6456-49ce-a84e-d0fd8560ffbe" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:ca8c30f7-6456-49ce-a84e-d0fd8560ffbe:2</r:UserID>
+          <r:Label xml:lang="en-US">Mental disorders, other than retardation</r:Label>
+        </l:Category>
+        <l:Category id="01cfdca9-809c-4341-b782-ce09ff0d9a11" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:01cfdca9-809c-4341-b782-ce09ff0d9a11:2</r:UserID>
+          <r:Label xml:lang="en-US">Physical diseases or disorders</r:Label>
+        </l:Category>
+      </l:CategoryScheme>
+      <l:CategoryScheme id="b8f1a812-caed-4425-9e0f-622106ed4b31" version="4.0.0" versionDate="2010-07-17T22:26:20" agency="example.org">
+        <l:CategorySchemeName xml:lang="en-US">ssiEligibilityCategories</l:CategorySchemeName>
+        <r:Label xml:lang="en-US">SSI Program Eligibility</r:Label>
+        <l:Category id="08d44662-b948-4626-b35d-19494e976fff" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:08d44662-b948-4626-b35d-19494e976fff:2</r:UserID>
+          <r:Label xml:lang="en-US">Unspecified</r:Label>
+        </l:Category>
+        <l:Category id="e52c7ec4-9bd1-46b3-ac41-babcb268192f" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:e52c7ec4-9bd1-46b3-ac41-babcb268192f:2</r:UserID>
+          <r:Label xml:lang="en-US">Aged individual</r:Label>
+        </l:Category>
+        <l:Category id="cb8e1aee-8ade-480d-a23f-093ecaa21dae" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:cb8e1aee-8ade-480d-a23f-093ecaa21dae:2</r:UserID>
+          <r:Label xml:lang="en-US">Aged spouse</r:Label>
+        </l:Category>
+        <l:Category id="a01251f7-fc72-4951-b23b-de19176a711e" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:a01251f7-fc72-4951-b23b-de19176a711e:2</r:UserID>
+          <r:Label xml:lang="en-US">Disabled or blind individual</r:Label>
+        </l:Category>
+        <l:Category id="fb023ba0-6d0b-4566-8ed5-694ca6d8a4c9" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:fb023ba0-6d0b-4566-8ed5-694ca6d8a4c9:2</r:UserID>
+          <r:Label xml:lang="en-US">Disabled or blind spouse</r:Label>
+        </l:Category>
+        <l:Category id="3e876eb6-643e-45fe-b437-6d615b482ca6" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:3e876eb6-643e-45fe-b437-6d615b482ca6:2</r:UserID>
+          <r:Label xml:lang="en-US">Disabled or blind child</r:Label>
+        </l:Category>
+      </l:CategoryScheme>
+      <l:CategoryScheme id="9f6b2107-2aa0-468c-8c45-3af191d48d0d" version="4.0.0" versionDate="2010-07-17T22:26:20" agency="example.org">
+        <l:CategorySchemeName xml:lang="en-US">hhCompositionCategories</l:CategorySchemeName>
+        <r:Label xml:lang="en-US">Household Composition</r:Label>
+        <l:Category id="f0a4c374-013d-4603-8e20-4197a374fa86" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:f0a4c374-013d-4603-8e20-4197a374fa86:2</r:UserID>
+          <r:Label xml:lang="en-US">Unspecified</r:Label>
+        </l:Category>
+        <l:Category id="73aa5cc8-85c4-48f1-ac3f-f51d45036a8e" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:73aa5cc8-85c4-48f1-ac3f-f51d45036a8e:2</r:UserID>
+          <r:Label xml:lang="en-US">Aged individual living alone</r:Label>
+        </l:Category>
+        <l:Category id="ce64ecdd-f4e2-44d9-976e-e468c1f09c24" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:ce64ecdd-f4e2-44d9-976e-e468c1f09c24:2</r:UserID>
+          <r:Label xml:lang="en-US">Aged individual living with spouse</r:Label>
+        </l:Category>
+        <l:Category id="a9c6b4c5-0320-4215-8134-f21e43b5e4be" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:a9c6b4c5-0320-4215-8134-f21e43b5e4be:2</r:UserID>
+          <r:Label xml:lang="en-US">Disabled or blind individual living alone</r:Label>
+        </l:Category>
+        <l:Category id="7104f3a4-91b0-43b1-8c21-c0f859b274cf" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:7104f3a4-91b0-43b1-8c21-c0f859b274cf:2</r:UserID>
+          <r:Label xml:lang="en-US">Disabled or blind individual living with spouse</r:Label>
+        </l:Category>
+        <l:Category id="f5aba92f-a5f0-46c6-b3e8-6d5de607aab3" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:f5aba92f-a5f0-46c6-b3e8-6d5de607aab3:2</r:UserID>
+          <r:Label xml:lang="en-US">Disabled or blind child not living with parents</r:Label>
+        </l:Category>
+        <l:Category id="6780581c-b667-403f-af14-50080a3fc06a" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:6780581c-b667-403f-af14-50080a3fc06a:2</r:UserID>
+          <r:Label xml:lang="en-US">Disabled or blind child living with one or more parent</r:Label>
+        </l:Category>
+      </l:CategoryScheme>
+      <l:CategoryScheme id="e5a3e16f-55d3-42f8-97ad-d0449e17e711" version="4.0.0" versionDate="2010-07-17T22:26:20" agency="example.org">
+        <l:CategorySchemeName xml:lang="en-US">livingArrangementCategories</l:CategorySchemeName>
+        <r:Label xml:lang="en-US">Living Arrangements</r:Label>
+        <l:Category id="f87af5c7-3c7d-43f5-b856-3a3b453b9840" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:f87af5c7-3c7d-43f5-b856-3a3b453b9840:2</r:UserID>
+          <r:Label xml:lang="en-US">Unspecified (no longer in current payment status and has no FBR; indicates a back payment)</r:Label>
+        </l:Category>
+        <l:Category id="11c35f03-6696-425c-9232-e5aa3853b288" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:11c35f03-6696-425c-9232-e5aa3853b288:2</r:UserID>
+          <r:Label xml:lang="en-US">Living in own household ($531 for an individual and $796 for an eligible couple)</r:Label>
+        </l:Category>
+        <l:Category id="c45486a8-c385-4430-b744-63099c48dc54" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:c45486a8-c385-4430-b744-63099c48dc54:2</r:UserID>
+          <r:Label xml:lang="en-US">Living in another's household ($354 for an individual and $530.67 for an eligible couple)</r:Label>
+        </l:Category>
+        <l:Category id="f3f22372-53a3-43e9-9588-942c4e7de5a6" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:f3f22372-53a3-43e9-9588-942c4e7de5a6:2</r:UserID>
+          <r:Label xml:lang="en-US">Living in parent's household and child under 18 ($531)</r:Label>
+        </l:Category>
+        <l:Category id="124fa2f4-b19b-4065-914a-d4ee32e29c1a" version="2.0.0" versionDate="2010-07-17T22:26:12" missing="false">
+          <r:UserID type="11179-IRDI">example.org:124fa2f4-b19b-4065-914a-d4ee32e29c1a:2</r:UserID>
+          <r:Label xml:lang="en-US">Living in Medicaid institution ($30 for an individual and $60 for an eligible couple)</r:Label>
+        </l:Category>
+      </l:CategoryScheme>
+      <l:CodeScheme id="36e8f115-824b-44c6-9ac4-2835fe540850" version="9.0.0" versionDate="2010-07-17T22:35:35" agency="example.org">
+        <l:CodeSchemeName xml:lang="en-US">stateCodes</l:CodeSchemeName>
+        <r:Label xml:lang="en-US">State (US) Codes</r:Label>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>3a6b599f-9ce9-43fc-aedc-a72ac6bb89ac</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>AL</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>44e05917-e0b4-473e-83c2-7dd3ce46e842</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>AK</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>0251d6a1-2f42-4bce-9c8d-91b401aa7f06</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>AZ</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>1c27b0e5-2cda-4d66-b6ca-8e271eb9fe1e</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>AR</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>081f613e-eee9-49d4-a5c4-fe3bb7488956</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>CA</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>8c07be71-36f8-49fb-90f9-0bf45711e6cb</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>CO</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>d2666b62-4e1f-4216-abd5-bacc9de8effe</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>CT</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>54d4f8d9-332a-4310-8b13-b116184e366b</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>DE</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>64775839-8fb0-4e18-8759-e07326310ede</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>DC</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>e382f413-93c6-4974-9197-ba85d0263521</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>FL</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>27543b37-8bc2-483d-b9d1-8af6d5827217</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>GA</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>3bd1025a-a67a-45d8-9fbc-37740d7bd8a3</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>HI</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>77ffc947-8fd4-4947-8a1b-b29aaa9c633b</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>ID</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>40fdc0d0-4c6f-41b6-8c4c-32ab88074462</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>IL</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>faf93548-db23-49d5-aa03-15627d214d29</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>IN</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>5bf375b9-bb3d-408c-84f9-98c7c44a23d8</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>IA</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>63fa5700-c359-4145-9e83-9252bfd0bb21</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>KS</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>50e4512c-562a-4985-9959-b5be91a4c1f5</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>KY</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>a90866e2-7a15-45a0-a6d6-7286dc360fd2</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>LA</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>373e53ef-78b5-4376-8a5c-042f9f03c366</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>ME</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>19d77f13-2f79-4e53-ac2d-6bbf797b6db2</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>MD</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>aa307b29-eea9-4e6b-93f6-158d509a7d9a</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>MA</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>bb760005-7a9f-492b-989c-ad7f1add0fbd</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>MI</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>5dc3dead-f8a5-4ae4-a914-38babb077fe7</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>MN</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>b7b97966-e0eb-4e00-8cfa-753301b16695</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>MS</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>2a8280f6-05ce-4bcb-bc54-70a7d094771d</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>MO</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>6d3aebe7-dea8-40db-b2b1-09679de47408</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>MT</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>8672701f-ecc2-4f29-b1a7-6515f18d6dd9</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>NE</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>975287f2-a5c3-4123-83ac-6059a874292e</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>NV</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>f9223d9b-109a-4240-86af-4b632c803018</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>NH</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>c18fc8b9-dc80-4e7f-871b-3edd39835022</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>NJ</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>7e18cc41-af08-4176-b423-764cee147bef</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>NM</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>b5bc9d11-3e6a-4570-b026-36eb5b4ccc70</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>NY</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>3bcd73e7-18dd-4ec4-b893-5a7b6f4cda6b</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>NC</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>314a7ea0-46d9-47cb-9c01-806b4144879e</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>ND</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>7517b3f9-d9c3-4b7f-a73a-0bb51e5d7d86</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>OH</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>5104bf92-c7ca-4c81-a9a3-bd0ef2fdd958</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>OK</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>e036f7f7-956c-4b06-81e5-096ae4840299</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>OR</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>2b926077-639c-4724-b532-8604f052e088</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>PA</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>950d98f2-f2f0-40b9-88fc-0b7356f053e8</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>RI</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>13844b3b-b1c7-4193-a602-0deb4289e60a</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>SC</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>aed1baa5-5eb2-49a4-8e76-cc1caea3c694</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>SD</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>1a414485-994e-4e6a-bdee-ca143536fd3e</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>TN</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>9e17a00a-5dca-43a9-8975-d85c3df5f74f</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>TX</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>243b9ee2-e336-49a4-9393-9862d9850444</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>UT</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>2e70ef3f-ff61-4c7a-a19e-563a949526ef</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>VT</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>317d138a-0da4-4f6e-8d8d-667fbf12b07f</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>VA</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>6f7143de-2c52-4338-8c2c-7dccda589644</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>WA</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>eaed6404-c376-4bd1-816c-3be5be6fa842</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>WV</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>bd28e199-7b5a-45f7-8164-4729112fe922</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>WI</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>d9f9d943-e996-4cf6-815b-c30a68fb596c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>87c69a63-4d92-4955-a87d-4cc69e763659</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>WY</l:Value>
+        </l:Code>
+      </l:CodeScheme>
+      <l:CodeScheme id="91e0117b-4c91-4b3b-8f08-95fc03cf33c9" version="10.0.0" versionDate="2010-07-17T22:35:35" agency="example.org">
+        <l:CodeSchemeName xml:lang="en-US">sexCodes</l:CodeSchemeName>
+        <r:Label xml:lang="en-US">Sex Codes</r:Label>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>2b9c796c-3071-4c36-a113-ab0479b436b7</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>55bd77ed-5f1c-41ae-9c94-b20790ae9e7e</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>M</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>2b9c796c-3071-4c36-a113-ab0479b436b7</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>6e5addb3-a882-4af4-88ac-e418c3c22a77</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>F</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>2b9c796c-3071-4c36-a113-ab0479b436b7</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>5e0c5123-6c00-43af-a1d4-e5851704e488</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>U</l:Value>
+        </l:Code>
+      </l:CodeScheme>
+      <l:CodeScheme id="274a1523-d2ab-4714-8c22-4d0cb0f1cbd4" version="10.0.0" versionDate="2010-07-17T22:35:35" agency="example.org">
+        <l:CodeSchemeName xml:lang="en-US">ssiDiagnosisCodes</l:CodeSchemeName>
+        <r:Label xml:lang="en-US">SSI Diagnosis Codes</r:Label>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>4a488e02-9658-44cb-a09c-b390a3b146fe</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>c86768e5-2f73-487e-8d70-bc4386e1744a</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>0</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>4a488e02-9658-44cb-a09c-b390a3b146fe</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>17d85a9f-5da5-4882-a2c7-7532d717de33</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>1</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>4a488e02-9658-44cb-a09c-b390a3b146fe</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>ca8c30f7-6456-49ce-a84e-d0fd8560ffbe</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>2</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>4a488e02-9658-44cb-a09c-b390a3b146fe</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>01cfdca9-809c-4341-b782-ce09ff0d9a11</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>3</l:Value>
+        </l:Code>
+      </l:CodeScheme>
+      <l:CodeScheme id="928363a8-6341-4796-bd92-56fd644e031f" version="10.0.0" versionDate="2010-07-17T22:35:35" agency="example.org">
+        <l:CodeSchemeName xml:lang="en-US">ssiProgramEligibilityCodes</l:CodeSchemeName>
+        <r:Label xml:lang="en-US">SSI Program Eligibility Codes</r:Label>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>b8f1a812-caed-4425-9e0f-622106ed4b31</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>08d44662-b948-4626-b35d-19494e976fff</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>0</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>b8f1a812-caed-4425-9e0f-622106ed4b31</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>e52c7ec4-9bd1-46b3-ac41-babcb268192f</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>1</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>b8f1a812-caed-4425-9e0f-622106ed4b31</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>cb8e1aee-8ade-480d-a23f-093ecaa21dae</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>2</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>b8f1a812-caed-4425-9e0f-622106ed4b31</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>a01251f7-fc72-4951-b23b-de19176a711e</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>3</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>b8f1a812-caed-4425-9e0f-622106ed4b31</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>fb023ba0-6d0b-4566-8ed5-694ca6d8a4c9</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>4</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>b8f1a812-caed-4425-9e0f-622106ed4b31</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>3e876eb6-643e-45fe-b437-6d615b482ca6</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>5</l:Value>
+        </l:Code>
+      </l:CodeScheme>
+      <l:CodeScheme id="b4f13025-4424-4c40-8bd2-74b58d70b04d" version="11.0.0" versionDate="2010-07-17T22:35:35" agency="example.org">
+        <l:CodeSchemeName xml:lang="en-US">hhCompositionCodes</l:CodeSchemeName>
+        <r:Label xml:lang="en-US">Household Composition Codes</r:Label>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>9f6b2107-2aa0-468c-8c45-3af191d48d0d</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>f0a4c374-013d-4603-8e20-4197a374fa86</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>0</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>9f6b2107-2aa0-468c-8c45-3af191d48d0d</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>73aa5cc8-85c4-48f1-ac3f-f51d45036a8e</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>1</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>9f6b2107-2aa0-468c-8c45-3af191d48d0d</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>ce64ecdd-f4e2-44d9-976e-e468c1f09c24</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>2</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>9f6b2107-2aa0-468c-8c45-3af191d48d0d</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>a9c6b4c5-0320-4215-8134-f21e43b5e4be</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>3</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>9f6b2107-2aa0-468c-8c45-3af191d48d0d</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>7104f3a4-91b0-43b1-8c21-c0f859b274cf</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>4</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>9f6b2107-2aa0-468c-8c45-3af191d48d0d</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>f5aba92f-a5f0-46c6-b3e8-6d5de607aab3</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>5</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>9f6b2107-2aa0-468c-8c45-3af191d48d0d</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>6780581c-b667-403f-af14-50080a3fc06a</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>6</l:Value>
+        </l:Code>
+      </l:CodeScheme>
+      <l:CodeScheme id="5e71f58c-4708-42d8-88dc-b22992eb8e7f" version="10.0.0" versionDate="2010-07-17T22:35:35" agency="example.org">
+        <l:CodeSchemeName xml:lang="en-US">livingArrangementCodes</l:CodeSchemeName>
+        <r:Label xml:lang="en-US">Living Arrangement Codes</r:Label>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>e5a3e16f-55d3-42f8-97ad-d0449e17e711</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>f87af5c7-3c7d-43f5-b856-3a3b453b9840</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>0</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>e5a3e16f-55d3-42f8-97ad-d0449e17e711</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>11c35f03-6696-425c-9232-e5aa3853b288</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>1</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>e5a3e16f-55d3-42f8-97ad-d0449e17e711</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>c45486a8-c385-4430-b744-63099c48dc54</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>2</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>e5a3e16f-55d3-42f8-97ad-d0449e17e711</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>f3f22372-53a3-43e9-9588-942c4e7de5a6</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>3</l:Value>
+        </l:Code>
+        <l:Code>
+          <l:CategoryReference>
+            <r:Scheme>
+              <r:ID>e5a3e16f-55d3-42f8-97ad-d0449e17e711</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>4</r:Version>
+            </r:Scheme>
+            <r:ID>124fa2f4-b19b-4065-914a-d4ee32e29c1a</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:CategoryReference>
+          <l:Value>4</l:Value>
+        </l:Code>
+      </l:CodeScheme>
+      <l:VariableScheme id="62e3a2fc-facc-4ce3-ae9b-cee96938c2b3" version="6.0.0" versionDate="2010-07-17T22:27:57" agency="example.org">
+        <l:VariableSchemeName xml:lang="en-US">SSI Variables</l:VariableSchemeName>
+        <l:Variable id="49465b27-86dc-472c-93a0-f74d8ea837fe" version="1.0.0" versionDate="2010-07-17T23:44:35" isWeight="false">
+          <r:UserID type="11179-IRDI">example.org:49465b27-86dc-472c-93a0-f74d8ea837fe:1</r:UserID>
+          <l:VariableName xml:lang="en-US">ID</l:VariableName>
+          <r:Label xml:lang="en-US">Identifier</r:Label>
+          <l:ResponseUnit />
+          <r:AnalysisUnit />
+          <l:Representation additivity="NonAdditive">
+            <l:NumericRepresentation type="Integer" blankIsMissingValue="true">
+              <r:NumberRange>
+                <r:Low>0</r:Low>
+              </r:NumberRange>
+            </l:NumericRepresentation>
+          </l:Representation>
+        </l:Variable>
+        <l:Variable id="d9017f32-bc88-4072-8627-75a6e86dab2e" version="7.0.0" versionDate="2010-07-17T22:35:35">
+          <r:UserID type="11179-IRDI">example.org:d9017f32-bc88-4072-8627-75a6e86dab2e:7</r:UserID>
+          <l:VariableName xml:lang="en-US">STAT</l:VariableName>
+          <r:Label xml:lang="en-US">State of residence of recipient</r:Label>
+          <r:Description xml:lang="en-US">This field indicates the state of residence on record as of December 2001.  Recipients from the outlying area of the Northern Mariana Islands are not included on this file. </r:Description>
+          <l:ResponseUnit />
+          <r:AnalysisUnit />
+          <l:Representation>
+            <l:CodeRepresentation blankIsMissingValue="true">
+              <r:CodeSchemeReference>
+                <r:ID>36e8f115-824b-44c6-9ac4-2835fe540850</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>9</r:Version>
+              </r:CodeSchemeReference>
+            </l:CodeRepresentation>
+          </l:Representation>
+        </l:Variable>
+        <l:Variable id="2f067c3d-f55e-43f6-8ca7-fc0dd8625e4b" version="8.0.0" versionDate="2010-07-17T22:35:35">
+          <r:UserID type="11179-IRDI">example.org:2f067c3d-f55e-43f6-8ca7-fc0dd8625e4b:8</r:UserID>
+          <l:VariableName xml:lang="en-US">YOB</l:VariableName>
+          <r:Label xml:lang="en-US">Year of birth of recipient</r:Label>
+          <r:Description xml:lang="en-US">The field YOB is bottomcoded at 1912; that is, the actual year of birth is not shown when it is before 1912.   Instead, each bottomcoded year of birth is replaced by the mean of year of birth computed for years before 1912 in the recipient's state of residence. 
+ 
+The field YOB is topcoded at 1997; that is, the actual year of birth is not shown when it is after 1997. Instead, each topcoded year of birth is replaced with 1999, which is the national mean of all those born after 1997.</r:Description>
+          <l:ResponseUnit />
+          <r:AnalysisUnit />
+          <l:Representation>
+            <l:DateTimeRepresentation type="Year" blankIsMissingValue="true" />
+          </l:Representation>
+        </l:Variable>
+        <l:Variable id="352c8e80-9902-4566-a7ff-ddd84a96e2a2" version="8.0.0" versionDate="2010-07-17T22:35:35">
+          <r:UserID type="11179-IRDI">example.org:352c8e80-9902-4566-a7ff-ddd84a96e2a2:8</r:UserID>
+          <l:VariableName xml:lang="en-US">SEX</l:VariableName>
+          <r:Label xml:lang="en-US">Sex of recipient</r:Label>
+          <l:ResponseUnit />
+          <r:AnalysisUnit />
+          <l:Representation>
+            <l:CodeRepresentation blankIsMissingValue="true">
+              <r:CodeSchemeReference>
+                <r:ID>91e0117b-4c91-4b3b-8f08-95fc03cf33c9</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>10</r:Version>
+              </r:CodeSchemeReference>
+            </l:CodeRepresentation>
+          </l:Representation>
+        </l:Variable>
+        <l:Variable id="55e286ba-ad3a-467a-920f-347054139cb6" version="7.0.0" versionDate="2010-07-17T22:35:35">
+          <r:UserID type="11179-IRDI">example.org:55e286ba-ad3a-467a-920f-347054139cb6:7</r:UserID>
+          <l:VariableName xml:lang="en-US">DIAG</l:VariableName>
+          <r:Label xml:lang="en-US">Primary diagnosis of recipient</r:Label>
+          <r:Description xml:lang="en-US">The primary diagnosis for recipients aged 64 or younger is the primary condition for which the recipient is receiving payments. The diagnostic code is "0" for recipients aged 65 or older. 
+  
+These diagnostic groupings closely parallel the major International Classification of Diseases, 9th Revision (ICD-9) disease classifications. The groupings shown here are aggregates of information on the Social Security Administration's internal files and have been grouped together to limit detail as a disclosure avoidance activity.</r:Description>
+          <l:ResponseUnit />
+          <r:AnalysisUnit />
+          <l:Representation>
+            <l:CodeRepresentation blankIsMissingValue="true">
+              <r:CodeSchemeReference>
+                <r:ID>274a1523-d2ab-4714-8c22-4d0cb0f1cbd4</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>10</r:Version>
+              </r:CodeSchemeReference>
+            </l:CodeRepresentation>
+          </l:Representation>
+        </l:Variable>
+        <l:Variable id="bf5250f6-425c-4c63-b007-b5aa23067dca" version="7.0.0" versionDate="2010-07-17T22:35:35">
+          <r:UserID type="11179-IRDI">example.org:bf5250f6-425c-4c63-b007-b5aa23067dca:7</r:UserID>
+          <l:VariableName xml:lang="en-US">DTEL</l:VariableName>
+          <r:Label xml:lang="en-US">Date of eligibility</r:Label>
+          <r:Description xml:lang="en-US">This field identifies the first year in which the recipient is eligible to receive payments.  For children born after 1997, the exact year of eligibility is not shown for disclosure purposes.  Instead, the year is recoded to 2000, which is the national mean of date of eligibility of all those born after 1997.   
+ </r:Description>
+          <l:ResponseUnit />
+          <r:AnalysisUnit />
+          <l:Representation>
+            <l:DateTimeRepresentation type="Year" blankIsMissingValue="true" />
+          </l:Representation>
+        </l:Variable>
+        <l:Variable id="5fee91a5-8a59-4725-a6d4-eac2e343b49e" version="7.0.0" versionDate="2010-07-17T22:35:35">
+          <r:UserID type="11179-IRDI">example.org:5fee91a5-8a59-4725-a6d4-eac2e343b49e:7</r:UserID>
+          <l:VariableName xml:lang="en-US">PREL</l:VariableName>
+          <r:Label xml:lang="en-US">Program eligibility</r:Label>
+          <r:Description xml:lang="en-US">This field identifies the criterion for a recipient’s program eligibility.  Individuals must be at least 65 years old to qualify as aged for SSI.  Individuals under age 65 must be blind or disabled to be eligible.  For SSI, a child is defined as being under age 18, or under age 22 and in school or other training to prepare for a job, and unmarried.   </r:Description>
+          <l:ResponseUnit />
+          <r:AnalysisUnit />
+          <l:Representation>
+            <l:CodeRepresentation blankIsMissingValue="true">
+              <r:CodeSchemeReference>
+                <r:ID>928363a8-6341-4796-bd92-56fd644e031f</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>10</r:Version>
+              </r:CodeSchemeReference>
+            </l:CodeRepresentation>
+          </l:Representation>
+        </l:Variable>
+        <l:Variable id="62f01381-e967-4c8e-9a42-c2baae7aac2e" version="7.0.0" versionDate="2010-07-17T22:35:35">
+          <r:UserID type="11179-IRDI">example.org:62f01381-e967-4c8e-9a42-c2baae7aac2e:7</r:UserID>
+          <l:VariableName xml:lang="en-US">HOUS</l:VariableName>
+          <r:Label xml:lang="en-US">Household composition</r:Label>
+          <r:Description xml:lang="en-US">This field describes the program category and the household composition of the recipient.  Information about household composition is used to compute benefits and includes only household members whose presence affects the payment.  Although this field can be used as a source for marital status for SSI program purposes, it does not indicate legal marital status.  The spouse or parent(s) may also be eligible for SSI; however, this file cannot be used to identify eligible couples.   </r:Description>
+          <l:ResponseUnit />
+          <r:AnalysisUnit />
+          <l:Representation>
+            <l:CodeRepresentation blankIsMissingValue="true">
+              <r:CodeSchemeReference>
+                <r:ID>b4f13025-4424-4c40-8bd2-74b58d70b04d</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>11</r:Version>
+              </r:CodeSchemeReference>
+            </l:CodeRepresentation>
+          </l:Representation>
+        </l:Variable>
+        <l:Variable id="9efeb0a9-6dc6-41ee-9b11-c1fce758113f" version="7.0.0" versionDate="2010-07-17T22:35:35">
+          <r:UserID type="11179-IRDI">example.org:9efeb0a9-6dc6-41ee-9b11-c1fce758113f:7</r:UserID>
+          <l:VariableName xml:lang="en-US">LIVA</l:VariableName>
+          <r:Label xml:lang="en-US">Living arrangement code</r:Label>
+          <r:Description xml:lang="en-US">This field indicates the recipient’s federal living arrangement for December 2001.  This information is used to determine the recipient’s SSI federal benefit rate (FBR), which is the maximum allowable monthly federal benefit if the person has no countable income.  The rates are adjusted annually to reflect changes in the cost of living.</r:Description>
+          <l:ResponseUnit />
+          <r:AnalysisUnit />
+          <l:Representation>
+            <l:CodeRepresentation blankIsMissingValue="true">
+              <r:CodeSchemeReference>
+                <r:ID>5e71f58c-4708-42d8-88dc-b22992eb8e7f</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>10</r:Version>
+              </r:CodeSchemeReference>
+            </l:CodeRepresentation>
+          </l:Representation>
+        </l:Variable>
+        <l:Variable id="edecfde9-5b7b-49b7-8fde-8766177e3b66" version="7.0.0" versionDate="2010-07-17T22:35:35" isWeight="false">
+          <r:UserID type="11179-IRDI">example.org:edecfde9-5b7b-49b7-8fde-8766177e3b66:7</r:UserID>
+          <l:VariableName xml:lang="en-US">FPMT</l:VariableName>
+          <r:Label xml:lang="en-US">Federal money amount paid</r:Label>
+          <r:Description xml:lang="en-US">This field indicates the actual federal money amount paid to a recipient in December 2001.  FPMT includes the federal benefit payment for December 2001, and it may include back payments or may be reduced by an amount withheld to recover an overpayment. 
+ 
+Rounded FPMT is topcoded at $535; that is, the rounded value of FPMT is not shown when it exceeds $535.   Instead, for each recipient’s state of residence, the state mean of values greater than the topcode replaces a topcoded value of FPMT on each data record.  Approximately 2 percent of SSI recipients at the national level have an FPMT value that is equal to or greater than this topcode value.  Since $531 is the maximum amount a person can receive unless they have back payments, the value of $531 is shown. 
+
+For an eligible couple, separate payments are made to each member of the couple.  The FPMT for the eligible couple is determined by the joint FBR and joint countable income (see below).  On this file, if the FPMT does not include a back payment (or payment recovery) for either member of the couple, the FPMT reflects half of the couple’s payment.  Back payments due (or payment recovery) may be reflected in the FPMT of one or both members of the couple.   </r:Description>
+          <l:ResponseUnit />
+          <r:AnalysisUnit />
+          <l:Representation additivity="Stock">
+            <l:NumericRepresentation type="Integer" blankIsMissingValue="true">
+              <r:NumberRange>
+                <r:Low>0</r:Low>
+                <r:High>535</r:High>
+              </r:NumberRange>
+            </l:NumericRepresentation>
+          </l:Representation>
+        </l:Variable>
+        <l:Variable id="553b3593-ee75-4055-9217-0864d918a1f9" version="7.0.0" versionDate="2010-07-17T22:35:35" isWeight="false">
+          <r:UserID type="11179-IRDI">example.org:553b3593-ee75-4055-9217-0864d918a1f9:7</r:UserID>
+          <l:VariableName xml:lang="en-US">FCNT</l:VariableName>
+          <r:Label xml:lang="en-US">Federal countable income</r:Label>
+          <r:Description xml:lang="en-US">This field represents the total amount of countable earned and unearned income that was charged in computing the recipient’s benefit payment for December 2001. The monthly FBR is reduced dollar for dollar by the amount of the person’s countable income, that is, income minus all applicable exclusions.  For an eligible couple, the FCNT reflects half of the combined countable income of the couple.   
+  
+Eligibility for benefits is determined on a current-month basis.  However, the amount of the monthly benefit generally is determined using income received 2 months before the month in which the benefit is paid.  Thus, for the majority of recipients, the FCNT value for December 2001 is derived by adding countable earned and unearned income received in October 2001.  The total FCNT is then subtracted from the recipient’s FBR to determine the federal benefit payment for December 2001.  
+ 
+In many cases, the FCNT and FBR value cannot be used to precisely derive the FPMT field because the FPMT may include back payments or may be reduced by an amount withheld to recover an overpayment.
+
+Rounded FCNT is topcoded at $510; that is, the rounded value of FCNT is not shown when it exceeds $510.  Instead, for each recipient’s state of residence, the state mean of values greater than the topcode replaces a topcoded value of FCNT on each data record.  Approximately 3 percent of SSI recipients at the national level have an FCNT value that is equal to or greater than this topcode value. 
+
+NOTE:  For the following income fields, the value represents the income the recipient expects to receive in January 2002.  Also, these values are anticipated gross amounts and do not take into account the various income exclusions that may be applied in order to  compute FPMT.  Accordingly, these fields cannot be compared directly with the FCNT on this file.
+
+For an eligible couple, these income fields reflect the individual’s own income, not half the combined income as in the FCNT and FPMT fields.</r:Description>
+          <l:ResponseUnit />
+          <r:AnalysisUnit />
+          <l:Representation additivity="Stock">
+            <l:NumericRepresentation type="Integer" blankIsMissingValue="true">
+              <r:NumberRange>
+                <r:Low>0</r:Low>
+                <r:High>510</r:High>
+              </r:NumberRange>
+            </l:NumericRepresentation>
+          </l:Representation>
+        </l:Variable>
+        <l:Variable id="f4223da9-fe4d-4e6d-88d7-904ef2a72c64" version="7.0.0" versionDate="2010-07-17T22:35:35" isWeight="false">
+          <r:UserID type="11179-IRDI">example.org:f4223da9-fe4d-4e6d-88d7-904ef2a72c64:7</r:UserID>
+          <l:VariableName xml:lang="en-US">SSIN</l:VariableName>
+          <r:Label xml:lang="en-US">Social Security income</r:Label>
+          <r:Description xml:lang="en-US">This field represents the amount of unearned income received from Social Security benefits (Title II)—that is, the gross benefit amount before the Medicare Part B premium is deducted.  Rounded SSIN is topcoded at $540; that is, the rounded value of SSIN is not shown when it exceeds $540.   Instead, for each recipient’s state of residence, the state mean of values greater than the topcode replaces a topcoded value of SSIN on each data record.  Approximately 3 percent of SSI recipients at the national level have an SSIN value that is equal to or greater than this topcode value.</r:Description>
+          <l:ResponseUnit />
+          <r:AnalysisUnit />
+          <l:Representation additivity="Stock">
+            <l:NumericRepresentation type="Integer" blankIsMissingValue="true">
+              <r:NumberRange>
+                <r:Low>0</r:Low>
+                <r:High>540</r:High>
+              </r:NumberRange>
+            </l:NumericRepresentation>
+          </l:Representation>
+        </l:Variable>
+        <l:Variable id="f5083d84-0f54-4326-bb64-259284369956" version="7.0.0" versionDate="2010-07-17T22:35:35" isWeight="false">
+          <r:UserID type="11179-IRDI">example.org:f5083d84-0f54-4326-bb64-259284369956:7</r:UserID>
+          <l:VariableName xml:lang="en-US">UEIN</l:VariableName>
+          <r:Label xml:lang="en-US">Unearned income other than Social Security income</r:Label>
+          <r:Description xml:lang="en-US">This field represents the amount of unearned income received by a recipient from all sources excluding Social Security income.  Rounded UEIN is topcoded at $195; that is, the rounded value of UEIN is not shown when it exceeds $195.   Instead, for each recipient’s state of residence, the state mean of values greater than the topcode replaces a topcoded value of UEIN on each data record.  Approximately 3 percent of SSI recipients at the national level have a UEIN value that is equal to or greater than this topcode value.</r:Description>
+          <l:ResponseUnit />
+          <r:AnalysisUnit />
+          <l:Representation additivity="Stock">
+            <l:NumericRepresentation type="Integer" blankIsMissingValue="true">
+              <r:NumberRange>
+                <r:Low>0</r:Low>
+                <r:High>195</r:High>
+              </r:NumberRange>
+            </l:NumericRepresentation>
+          </l:Representation>
+        </l:Variable>
+        <l:Variable id="8e237353-a149-47c4-89fb-0ac98ec778b7" version="7.0.0" versionDate="2010-07-17T22:35:35" isWeight="false">
+          <r:UserID type="11179-IRDI">example.org:8e237353-a149-47c4-89fb-0ac98ec778b7:7</r:UserID>
+          <l:VariableName xml:lang="en-US">ERIN</l:VariableName>
+          <r:Label xml:lang="en-US">Earned income</r:Label>
+          <r:Description xml:lang="en-US">This field represents the amount of earned income a recipient receives through wages or earnings from self-employment.   For those with earned income of $65 or less, the value is shown as zero because of the $65 income exclusion.  For those with earned income greater than $65, the state mean of values greater than $65 replaces the value of ERIN on each data record. Approximately 3 percent of SSI recipients at the national level have an ERIN value that is equal to or greater than $65. </r:Description>
+          <l:ResponseUnit />
+          <r:AnalysisUnit />
+          <l:Representation additivity="Stock">
+            <l:NumericRepresentation type="Integer" blankIsMissingValue="true">
+              <r:NumberRange>
+                <r:Low>0</r:Low>
+                <r:High>65</r:High>
+              </r:NumberRange>
+            </l:NumericRepresentation>
+          </l:Representation>
+        </l:Variable>
+        <l:VariableGroup id="9d60589f-292a-4635-abd2-6c54b53d4b0c" version="3.0.0" versionDate="2011-03-10T06:08:33">
+          <r:UserID type="11179-IRDI">example.org:9d60589f-292a-4635-abd2-6c54b53d4b0c:3</r:UserID>
+          <l:GroupType>Section</l:GroupType>
+          <l:VariableGroupName xml:lang="en-US">group1</l:VariableGroupName>
+          <r:Label xml:lang="en-US">Group 1</r:Label>
+          <l:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>49465b27-86dc-472c-93a0-f74d8ea837fe</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>1</r:Version>
+          </l:VariableReference>
+          <l:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>d9017f32-bc88-4072-8627-75a6e86dab2e</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </l:VariableReference>
+          <l:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>2f067c3d-f55e-43f6-8ca7-fc0dd8625e4b</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>8</r:Version>
+          </l:VariableReference>
+          <l:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>352c8e80-9902-4566-a7ff-ddd84a96e2a2</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>8</r:Version>
+          </l:VariableReference>
+          <l:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>55e286ba-ad3a-467a-920f-347054139cb6</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </l:VariableReference>
+          <l:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>bf5250f6-425c-4c63-b007-b5aa23067dca</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </l:VariableReference>
+          <l:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>5fee91a5-8a59-4725-a6d4-eac2e343b49e</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </l:VariableReference>
+          <l:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>62f01381-e967-4c8e-9a42-c2baae7aac2e</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </l:VariableReference>
+          <l:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>9efeb0a9-6dc6-41ee-9b11-c1fce758113f</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </l:VariableReference>
+          <l:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>edecfde9-5b7b-49b7-8fde-8766177e3b66</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </l:VariableReference>
+          <l:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>553b3593-ee75-4055-9217-0864d918a1f9</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </l:VariableReference>
+          <l:VariableGroupReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>c9ebf021-ea89-463c-85a9-831c8ea555d3</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>2</r:Version>
+          </l:VariableGroupReference>
+        </l:VariableGroup>
+        <l:VariableGroup id="bab6bba0-b945-4af0-9779-b394f70b64b2" version="2.0.0" versionDate="2011-03-10T06:08:36">
+          <r:UserID type="11179-IRDI">example.org:bab6bba0-b945-4af0-9779-b394f70b64b2:2</r:UserID>
+          <l:GroupType>Section</l:GroupType>
+          <l:VariableGroupName xml:lang="en-US">group2</l:VariableGroupName>
+          <r:Label xml:lang="en-US">Group 2</r:Label>
+          <l:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>f4223da9-fe4d-4e6d-88d7-904ef2a72c64</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </l:VariableReference>
+          <l:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>f5083d84-0f54-4326-bb64-259284369956</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </l:VariableReference>
+          <l:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>8e237353-a149-47c4-89fb-0ac98ec778b7</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </l:VariableReference>
+        </l:VariableGroup>
+        <l:VariableGroup id="c9ebf021-ea89-463c-85a9-831c8ea555d3" version="2.0.0" versionDate="2011-03-29T22:01:17">
+          <r:UserID type="11179-IRDI">example.org:c9ebf021-ea89-463c-85a9-831c8ea555d3:2</r:UserID>
+          <l:GroupType>Section</l:GroupType>
+          <l:VariableGroupName xml:lang="en-US">group3</l:VariableGroupName>
+          <r:Label xml:lang="en-US">Group 3, Nested</r:Label>
+          <l:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>2f067c3d-f55e-43f6-8ca7-fc0dd8625e4b</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>8</r:Version>
+          </l:VariableReference>
+          <l:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>352c8e80-9902-4566-a7ff-ddd84a96e2a2</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>8</r:Version>
+          </l:VariableReference>
+        </l:VariableGroup>
+      </l:VariableScheme>
+    </l:LogicalProduct>
+    <p:PhysicalDataProduct id="fde05728-ae40-47a6-b5b4-524fcbdbe082" version="5.0.0" versionDate="2010-07-17T22:35:35" agency="example.org">
+      <p:PhysicalDataProductName xml:lang="en-US">Data Format Description for SSIDataRelationship</p:PhysicalDataProductName>
+      <p:PhysicalStructureScheme id="8b430246-f91c-410a-b6c9-c190c14855d6" version="1.0.0" versionDate="2010-07-17T22:27:57" agency="example.org">
+        <p:PhysicalStructure id="aa5540eb-41c6-4e7d-b648-f34eb7ae8792" version="1.0.0" versionDate="2010-07-17T22:27:57">
+          <r:UserID type="11179-IRDI">example.org:aa5540eb-41c6-4e7d-b648-f34eb7ae8792:1</r:UserID>
+          <!--This does not resolve any identification ambiguities, and should not be required.-->
+          <p:LogicalProductReference>
+            <r:ID>00000000-0000-0000-0000-000000000000</r:ID>
+            <r:IdentifyingAgency>NotNeeded</r:IdentifyingAgency>
+            <r:Version>0</r:Version>
+          </p:LogicalProductReference>
+          <p:Format>Delimited</p:Format>
+          <p:DefaultDelimiter>,</p:DefaultDelimiter>
+          <p:GrossRecordStructure id="9a1697c1-56ae-4e80-8f77-b460c36ba4e2">
+            <p:LogicalRecordReference>
+              <r:ID>ac510f0e-ae0f-47eb-a9ca-0c9e3eced5d2</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </p:LogicalRecordReference>
+            <p:PhysicalRecordSegment id="ShouldNotBeRequiredForSingleSegmentProducts" />
+          </p:GrossRecordStructure>
+        </p:PhysicalStructure>
+      </p:PhysicalStructureScheme>
+      <p:RecordLayoutScheme id="df7295a4-2bd0-42ec-9eb7-407d414b61aa" version="5.0.0" versionDate="2010-07-17T22:35:35" agency="example.org">
+        <p:RecordLayout id="48989d91-594a-44d7-a289-fbd4f1ea0e26" version="1.0.0" versionDate="2010-07-17T22:27:57" namesOnFirstRow="false">
+          <r:UserID type="11179-IRDI">example.org:48989d91-594a-44d7-a289-fbd4f1ea0e26:1</r:UserID>
+          <p:PhysicalStructureReference>
+            <r:Scheme>
+              <r:ID>8b430246-f91c-410a-b6c9-c190c14855d6</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>1</r:Version>
+            </r:Scheme>
+            <r:ID>aa5540eb-41c6-4e7d-b648-f34eb7ae8792</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>1</r:Version>
+            <!--This should not be required for single segment products-->
+            <p:PhysicalRecordSegmentUsed>ShouldNotBeRequiredForSingleSegmentProducts</p:PhysicalRecordSegmentUsed>
+          </p:PhysicalStructureReference>
+          <p:CharacterSet>UTF-8</p:CharacterSet>
+          <p:ArrayBase>0</p:ArrayBase>
+          <p:DataItem>
+            <p:VariableReference>
+              <r:Scheme>
+                <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>6</r:Version>
+              </r:Scheme>
+              <r:ID>49465b27-86dc-472c-93a0-f74d8ea837fe</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>1</r:Version>
+            </p:VariableReference>
+            <p:PhysicalLocation>
+              <p:StorageFormat>Integer</p:StorageFormat>
+              <p:ArrayPosition>0</p:ArrayPosition>
+            </p:PhysicalLocation>
+          </p:DataItem>
+          <p:DataItem>
+            <p:VariableReference>
+              <r:Scheme>
+                <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>6</r:Version>
+              </r:Scheme>
+              <r:ID>d9017f32-bc88-4072-8627-75a6e86dab2e</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>7</r:Version>
+            </p:VariableReference>
+            <p:PhysicalLocation>
+              <p:StorageFormat>Integer</p:StorageFormat>
+              <p:ArrayPosition>1</p:ArrayPosition>
+            </p:PhysicalLocation>
+          </p:DataItem>
+          <p:DataItem>
+            <p:VariableReference>
+              <r:Scheme>
+                <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>6</r:Version>
+              </r:Scheme>
+              <r:ID>2f067c3d-f55e-43f6-8ca7-fc0dd8625e4b</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>8</r:Version>
+            </p:VariableReference>
+            <p:PhysicalLocation>
+              <p:StorageFormat>Integer</p:StorageFormat>
+              <p:ArrayPosition>2</p:ArrayPosition>
+            </p:PhysicalLocation>
+          </p:DataItem>
+          <p:DataItem>
+            <p:VariableReference>
+              <r:Scheme>
+                <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>6</r:Version>
+              </r:Scheme>
+              <r:ID>352c8e80-9902-4566-a7ff-ddd84a96e2a2</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>8</r:Version>
+            </p:VariableReference>
+            <p:PhysicalLocation>
+              <p:StorageFormat>Integer</p:StorageFormat>
+              <p:ArrayPosition>3</p:ArrayPosition>
+            </p:PhysicalLocation>
+          </p:DataItem>
+          <p:DataItem>
+            <p:VariableReference>
+              <r:Scheme>
+                <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>6</r:Version>
+              </r:Scheme>
+              <r:ID>55e286ba-ad3a-467a-920f-347054139cb6</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>7</r:Version>
+            </p:VariableReference>
+            <p:PhysicalLocation>
+              <p:StorageFormat>Integer</p:StorageFormat>
+              <p:ArrayPosition>4</p:ArrayPosition>
+            </p:PhysicalLocation>
+          </p:DataItem>
+          <p:DataItem>
+            <p:VariableReference>
+              <r:Scheme>
+                <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>6</r:Version>
+              </r:Scheme>
+              <r:ID>bf5250f6-425c-4c63-b007-b5aa23067dca</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>7</r:Version>
+            </p:VariableReference>
+            <p:PhysicalLocation>
+              <p:StorageFormat>Integer</p:StorageFormat>
+              <p:ArrayPosition>5</p:ArrayPosition>
+            </p:PhysicalLocation>
+          </p:DataItem>
+          <p:DataItem>
+            <p:VariableReference>
+              <r:Scheme>
+                <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>6</r:Version>
+              </r:Scheme>
+              <r:ID>5fee91a5-8a59-4725-a6d4-eac2e343b49e</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>7</r:Version>
+            </p:VariableReference>
+            <p:PhysicalLocation>
+              <p:StorageFormat>Integer</p:StorageFormat>
+              <p:ArrayPosition>6</p:ArrayPosition>
+            </p:PhysicalLocation>
+          </p:DataItem>
+          <p:DataItem>
+            <p:VariableReference>
+              <r:Scheme>
+                <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>6</r:Version>
+              </r:Scheme>
+              <r:ID>62f01381-e967-4c8e-9a42-c2baae7aac2e</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>7</r:Version>
+            </p:VariableReference>
+            <p:PhysicalLocation>
+              <p:StorageFormat>Integer</p:StorageFormat>
+              <p:ArrayPosition>7</p:ArrayPosition>
+            </p:PhysicalLocation>
+          </p:DataItem>
+          <p:DataItem>
+            <p:VariableReference>
+              <r:Scheme>
+                <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>6</r:Version>
+              </r:Scheme>
+              <r:ID>9efeb0a9-6dc6-41ee-9b11-c1fce758113f</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>7</r:Version>
+            </p:VariableReference>
+            <p:PhysicalLocation>
+              <p:StorageFormat>Integer</p:StorageFormat>
+              <p:ArrayPosition>8</p:ArrayPosition>
+            </p:PhysicalLocation>
+          </p:DataItem>
+          <p:DataItem>
+            <p:VariableReference>
+              <r:Scheme>
+                <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>6</r:Version>
+              </r:Scheme>
+              <r:ID>edecfde9-5b7b-49b7-8fde-8766177e3b66</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>7</r:Version>
+            </p:VariableReference>
+            <p:PhysicalLocation>
+              <p:StorageFormat>Integer</p:StorageFormat>
+              <p:ArrayPosition>9</p:ArrayPosition>
+            </p:PhysicalLocation>
+          </p:DataItem>
+          <p:DataItem>
+            <p:VariableReference>
+              <r:Scheme>
+                <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>6</r:Version>
+              </r:Scheme>
+              <r:ID>553b3593-ee75-4055-9217-0864d918a1f9</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>7</r:Version>
+            </p:VariableReference>
+            <p:PhysicalLocation>
+              <p:StorageFormat>Integer</p:StorageFormat>
+              <p:ArrayPosition>10</p:ArrayPosition>
+            </p:PhysicalLocation>
+          </p:DataItem>
+          <p:DataItem>
+            <p:VariableReference>
+              <r:Scheme>
+                <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>6</r:Version>
+              </r:Scheme>
+              <r:ID>f4223da9-fe4d-4e6d-88d7-904ef2a72c64</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>7</r:Version>
+            </p:VariableReference>
+            <p:PhysicalLocation>
+              <p:StorageFormat>Integer</p:StorageFormat>
+              <p:ArrayPosition>11</p:ArrayPosition>
+            </p:PhysicalLocation>
+          </p:DataItem>
+          <p:DataItem>
+            <p:VariableReference>
+              <r:Scheme>
+                <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>6</r:Version>
+              </r:Scheme>
+              <r:ID>f5083d84-0f54-4326-bb64-259284369956</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>7</r:Version>
+            </p:VariableReference>
+            <p:PhysicalLocation>
+              <p:StorageFormat>Integer</p:StorageFormat>
+              <p:ArrayPosition>12</p:ArrayPosition>
+            </p:PhysicalLocation>
+          </p:DataItem>
+          <p:DataItem>
+            <p:VariableReference>
+              <r:Scheme>
+                <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+                <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+                <r:Version>6</r:Version>
+              </r:Scheme>
+              <r:ID>8e237353-a149-47c4-89fb-0ac98ec778b7</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>7</r:Version>
+            </p:VariableReference>
+            <p:PhysicalLocation>
+              <p:StorageFormat>Integer</p:StorageFormat>
+              <p:ArrayPosition>13</p:ArrayPosition>
+            </p:PhysicalLocation>
+          </p:DataItem>
+        </p:RecordLayout>
+      </p:RecordLayoutScheme>
+    </p:PhysicalDataProduct>
+    <pi:PhysicalInstance id="0d241021-4a5c-4943-a08f-029a8b5e646f" version="12.0.0" versionDate="2010-07-17T22:32:31" agency="example.org">
+      <r:Citation>
+        <r:Title xml:lang="en-US">SSI-2001</r:Title>
+        <dc:DCElements>
+          <dc2:title xml:lang="en-US">SSI-2001</dc2:title>
+        </dc:DCElements>
+      </r:Citation>
+      <pi:Fingerprint>
+        <pi:Value>EC78C4B424F1BAF29B41F9E86216B276586D1748D2CF9C2AC8E30EE0C3F6CA97</pi:Value>
+        <pi:AlgorithmSpecification>SHA256</pi:AlgorithmSpecification>
+        <pi:AlgorithmVersion>SHA-2</pi:AlgorithmVersion>
+      </pi:Fingerprint>
+      <pi:RecordLayoutReference>
+        <r:Scheme>
+          <r:ID>df7295a4-2bd0-42ec-9eb7-407d414b61aa</r:ID>
+          <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+          <r:Version>5</r:Version>
+        </r:Scheme>
+        <r:ID>48989d91-594a-44d7-a289-fbd4f1ea0e26</r:ID>
+        <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+        <r:Version>1</r:Version>
+      </pi:RecordLayoutReference>
+      <pi:DataFileIdentification id="e792296e-465d-4a54-a348-c89a003acb2e">
+        <pi:URI isPublic="false">file:///SSI-2001.Recipient.dat</pi:URI>
+      </pi:DataFileIdentification>
+      <pi:Statistics>
+        <pi:VariableStatistics>
+          <pi:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>49465b27-86dc-472c-93a0-f74d8ea837fe</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>1</r:Version>
+          </pi:VariableReference>
+          <pi:TotalResponses>3000</pi:TotalResponses>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>ValidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>3000</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>InvalidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>0</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Minimum</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>5</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Maximum</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>25075</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Mean</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>7818.81500000001</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>StandardDeviation</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>5991.5760362841565</pi:Value>
+          </pi:SummaryStatistic>
+        </pi:VariableStatistics>
+        <pi:VariableStatistics>
+          <pi:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>d9017f32-bc88-4072-8627-75a6e86dab2e</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </pi:VariableReference>
+          <pi:TotalResponses>3000</pi:TotalResponses>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>ValidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>3000</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>InvalidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>0</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>AK</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>44</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>AL</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>52</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>AR</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>43</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>AZ</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>57</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>CA</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>52</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>CO</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>70</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>CT</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>65</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>DC</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>29</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>DE</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>36</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>FL</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>46</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>GA</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>68</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>HI</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>50</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>IA</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>104</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>ID</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>76</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>IL</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>47</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>IN</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>67</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>KS</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>67</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>KY</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>38</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>LA</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>66</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>MA</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>54</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>MD</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>49</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>ME</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>86</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>MI</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>62</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>MN</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>42</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>MO</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>74</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>MS</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>100</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>MT</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>74</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>NC</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>67</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>ND</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>66</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>NE</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>70</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>NH</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>97</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>NJ</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>34</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>NM</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>75</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>NV</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>29</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>NY</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>18</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>OH</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>65</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>OK</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>42</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>OR</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>32</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>PA</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>49</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>RI</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>53</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>SC</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>98</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>SD</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>85</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>TN</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>31</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>TX</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>86</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>UT</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>62</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>VA</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>33</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>VT</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>69</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>WA</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>66</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>WI</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>66</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>WV</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>39</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>WY</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>50</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+        </pi:VariableStatistics>
+        <pi:VariableStatistics>
+          <pi:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>352c8e80-9902-4566-a7ff-ddd84a96e2a2</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>8</r:Version>
+          </pi:VariableReference>
+          <pi:TotalResponses>3000</pi:TotalResponses>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>ValidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>3000</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>InvalidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>0</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>F</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>547</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>M</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>1569</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>U</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>884</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+        </pi:VariableStatistics>
+        <pi:VariableStatistics>
+          <pi:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>55e286ba-ad3a-467a-920f-347054139cb6</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </pi:VariableReference>
+          <pi:TotalResponses>3000</pi:TotalResponses>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>ValidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>3000</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>InvalidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>0</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Minimum</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>0</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Maximum</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>3</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>0</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>1278</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>1</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>336</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>2</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>603</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>3</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>783</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+        </pi:VariableStatistics>
+        <pi:VariableStatistics>
+          <pi:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>5fee91a5-8a59-4725-a6d4-eac2e343b49e</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </pi:VariableReference>
+          <pi:TotalResponses>3000</pi:TotalResponses>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>ValidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>3000</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>InvalidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>0</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Minimum</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>0</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Maximum</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>5</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>0</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>310</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>1</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>191</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>2</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>831</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>3</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>616</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>4</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>444</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>5</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>608</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+        </pi:VariableStatistics>
+        <pi:VariableStatistics>
+          <pi:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>62f01381-e967-4c8e-9a42-c2baae7aac2e</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </pi:VariableReference>
+          <pi:TotalResponses>3000</pi:TotalResponses>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>ValidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>3000</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>InvalidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>0</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Minimum</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>0</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Maximum</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>6</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>0</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>289</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>1</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>286</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>2</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>187</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>3</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>692</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>4</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>599</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>5</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>530</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>6</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>417</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+        </pi:VariableStatistics>
+        <pi:VariableStatistics>
+          <pi:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>9efeb0a9-6dc6-41ee-9b11-c1fce758113f</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </pi:VariableReference>
+          <pi:TotalResponses>3000</pi:TotalResponses>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>ValidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>3000</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>InvalidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>0</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Minimum</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>0</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Maximum</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>4</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>0</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>300</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>1</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>987</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>2</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>662</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>3</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>577</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+          <pi:CategoryStatistics>
+            <pi:CategoryValue>4</pi:CategoryValue>
+            <pi:CategoryStatistic>
+              <pi:CategoryStatisticType>Frequency</pi:CategoryStatisticType>
+              <pi:Weighted>false</pi:Weighted>
+              <pi:Value>474</pi:Value>
+            </pi:CategoryStatistic>
+          </pi:CategoryStatistics>
+        </pi:VariableStatistics>
+        <pi:VariableStatistics>
+          <pi:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>edecfde9-5b7b-49b7-8fde-8766177e3b66</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </pi:VariableReference>
+          <pi:TotalResponses>3000</pi:TotalResponses>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>ValidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>0</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>InvalidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>3000</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Mean</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>0</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>StandardDeviation</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>-0</pi:Value>
+          </pi:SummaryStatistic>
+        </pi:VariableStatistics>
+        <pi:VariableStatistics>
+          <pi:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>553b3593-ee75-4055-9217-0864d918a1f9</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </pi:VariableReference>
+          <pi:TotalResponses>3000</pi:TotalResponses>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>ValidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>89</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>InvalidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>2911</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Minimum</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>87</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Maximum</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>509</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Mean</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>104.22011998579141</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>StandardDeviation</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>254.53503530728617</pi:Value>
+          </pi:SummaryStatistic>
+        </pi:VariableStatistics>
+        <pi:VariableStatistics>
+          <pi:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>f4223da9-fe4d-4e6d-88d7-904ef2a72c64</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </pi:VariableReference>
+          <pi:TotalResponses>3000</pi:TotalResponses>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>ValidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>3000</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>InvalidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>0</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Minimum</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>0</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Maximum</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>539</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Mean</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>273.1993333333333</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>StandardDeviation</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>155.26383315349838</pi:Value>
+          </pi:SummaryStatistic>
+        </pi:VariableStatistics>
+        <pi:VariableStatistics>
+          <pi:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>f5083d84-0f54-4326-bb64-259284369956</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </pi:VariableReference>
+          <pi:TotalResponses>3000</pi:TotalResponses>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>ValidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>1027</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>InvalidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>1973</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Minimum</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>0</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Maximum</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>195</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Mean</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>100.49593087994158</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>StandardDeviation</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>55.679684829175976</pi:Value>
+          </pi:SummaryStatistic>
+        </pi:VariableStatistics>
+        <pi:VariableStatistics>
+          <pi:VariableReference>
+            <r:Scheme>
+              <r:ID>62e3a2fc-facc-4ce3-ae9b-cee96938c2b3</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>6</r:Version>
+            </r:Scheme>
+            <r:ID>8e237353-a149-47c4-89fb-0ac98ec778b7</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>7</r:Version>
+          </pi:VariableReference>
+          <pi:TotalResponses>3000</pi:TotalResponses>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>ValidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>2</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>InvalidCases</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>2998</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Minimum</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>14</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Maximum</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>52</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>Mean</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>0.026633570395435683</pi:Value>
+          </pi:SummaryStatistic>
+          <pi:SummaryStatistic>
+            <pi:SummaryStatisticType>StandardDeviation</pi:SummaryStatisticType>
+            <pi:Weighted>false</pi:Weighted>
+            <pi:Value>53.819009535683087</pi:Value>
+          </pi:SummaryStatistic>
+        </pi:VariableStatistics>
+      </pi:Statistics>
+    </pi:PhysicalInstance>
+    <a:Archive id="2b29f93c-15f1-4199-85fc-07e6fbcaf0a4" version="19.0.0" versionDate="2010-07-17T17:49:29" agency="example.org">
+      <!--Colectica does not currently support ArchiveSpecific element, but it is required by the schema.-->
+      <a:ArchiveSpecific>
+        <a:ArchiveOrganizationReference>
+          <r:ID>00000000-0000-0000-0000-000000000000</r:ID>
+          <r:IdentifyingAgency>Unsupported</r:IdentifyingAgency>
+          <r:Version>0</r:Version>
+        </a:ArchiveOrganizationReference>
+      </a:ArchiveSpecific>
+      <a:OrganizationScheme id="f5020adb-7ca5-4252-a605-60c0d59b8a31" version="0.0.0" versionDate="2010-07-17T15:31:19" agency="example.org">
+        <a:OrganizationSchemeName xml:lang="en-US">SSI Organizations</a:OrganizationSchemeName>
+        <a:Organization id="2d49a4c2-da8d-4106-804a-1719e3e0e4ab" version="0.0.0" versionDate="2010-07-17T15:31:22">
+          <r:UserID type="11179-IRDI">example.org:2d49a4c2-da8d-4106-804a-1719e3e0e4ab:0</r:UserID>
+          <a:OrganizationName xml:lang="en-US">Social Security Administration</a:OrganizationName>
+          <a:Nickname xml:lang="en-US">Social Security</a:Nickname>
+          <a:DDIMaintenanceAgencyID registryID="" />
+          <r:Description xml:lang="en-US">The United States Social Security Administration (SSA) is an independent agency of the United States federal government that administers Social Security, a social insurance program consisting of retirement, disability, and survivors' benefits. To qualify for these benefits, most American workers pay Social Security taxes on their earnings.</r:Description>
+          <r:Image>http://www.ssa.gov/history/ssa/logo2.gif</r:Image>
+        </a:Organization>
+      </a:OrganizationScheme>
+    </a:Archive>
+  </s:StudyUnit>
+</ddi:DDIInstance>

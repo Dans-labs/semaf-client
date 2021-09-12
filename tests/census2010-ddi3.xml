@@ -1,0 +1,2997 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ddi:DDIInstance id="1e16f38b-8aeb-4925-9024-aabf29fbd8be" version="8.0.0" versionDate="2011-04-05T03:54:50" agency="example.org" xmlns:ddi="ddi:instance:3_1" xmlns:r="ddi:reusable:3_1" xmlns:dc="ddi:dcelements:3_1" xmlns:dc2="http://purl.org/dc/elements/1.1/" xmlns:g="ddi:group:3_1" xmlns:s="ddi:studyunit:3_1" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:a="ddi:archive:3_1" xmlns:d="ddi:datacollection:3_1" xmlns:c="ddi:conceptualcomponent:3_1" xmlns:l="ddi:logicalproduct:3_1">
+  <r:Citation>
+    <r:Title xml:lang="en-US">United States Census 2010</r:Title>
+    <dc:DCElements>
+      <dc2:title xml:lang="en-US">United States Census 2010</dc2:title>
+    </dc:DCElements>
+  </r:Citation>
+  <g:Group id="2f0be21a-ad77-4a48-95ab-ac6f9d06b417" version="3.0.0" versionDate="2012-02-14T19:47:19" agency="example.org" time="T0" instrument="I0" panel="P0" geography="G0" dataSet="D0" language="L0">
+    <r:Citation>
+      <r:Title xml:lang="en-US">United States Census</r:Title>
+      <dc:DCElements>
+        <dc2:title xml:lang="en-US">United States Census</dc2:title>
+      </dc:DCElements>
+    </r:Citation>
+    <g:Abstract id="5c594784-cd9b-40e9-8942-3fc357d6a08e">
+      <r:Content xml:lang="en-US">The United States Census is a decennial census mandated by the United States Constitution. The population is enumerated every 10 years and the results are used to allocate Congressional seats (congressional apportionment), electoral votes, and government program funding. The United States Census Bureau (officially the Bureau of the Census, as defined in Title 13 U.S.C. § 11) is the government agency that is responsible for the United States Census. Some states or local jurisdictions also conduct local censuses.
+</r:Content>
+    </g:Abstract>
+    <g:Purpose id="4dcf2824-ac4c-4a6a-a6c0-556625a62083">
+      <r:Content xml:lang="en-US">Not specified</r:Content>
+    </g:Purpose>
+    <r:Note id="5d297a0f-4c2f-471e-9570-6a6768317795" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>2f0be21a-ad77-4a48-95ab-ac6f9d06b417</r:ID>
+          <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+          <r:Version>3</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:RequiredPackage</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>example.org:e1b87f0f-5a32-4d0d-9e70-9bd195597bed:8</r:Content>
+    </r:Note>
+    <g:StudyUnit>
+      <s:StudyUnit id="194d128c-93b2-4378-b626-2105edbdf561" version="3.0.0" versionDate="2011-04-05T04:00:53" agency="example.org">
+        <r:Citation>
+          <r:Title xml:lang="en-US">United States Census 2010</r:Title>
+          <dc:DCElements>
+            <dc2:title xml:lang="en-US">United States Census 2010</dc2:title>
+            <dc2:description xml:lang="en-US">United States Census 2010
+</dc2:description>
+          </dc:DCElements>
+        </r:Citation>
+        <s:Abstract id="a1ebbaae-5fea-4019-bd16-211fc7471f44">
+          <r:Content xml:lang="en-US">The U.S. Census counts every resident in the United States, and is required by the Constitution to take place every 10 years.</r:Content>
+        </s:Abstract>
+        <r:UniverseReference>
+          <r:ID>b2200741-9232-4d97-91ed-3ff1fb11f818</r:ID>
+          <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+          <r:Version>1</r:Version>
+        </r:UniverseReference>
+        <r:SeriesStatement>
+          <r:SeriesName xml:lang="en-US">Unknown</r:SeriesName>
+        </r:SeriesStatement>
+        <r:FundingInformation>
+          <r:AgencyOrganizationReference>
+            <r:ID>99f6fa39-bcc3-4752-93b7-93e467081406</r:ID>
+            <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+            <r:Version>0</r:Version>
+          </r:AgencyOrganizationReference>
+          <r:Description xml:lang="en-US">Funding for the United States 2010 Census</r:Description>
+        </r:FundingInformation>
+        <s:Purpose id="930decb8-5fe5-4860-a251-c932b1612aee">
+          <r:Content xml:lang="en-US">
+            <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml">
+              <xhtml:p>The purpose of the 2010 census is to determine the distribution of Congressional seats to states. The Census is</xhtml:p>
+              <xhtml:ul>
+                <xhtml:li>
+                  <xhtml:p>mandated by the U.S. Constitution</xhtml:p>
+                </xhtml:li>
+                <xhtml:li>
+                  <xhtml:p>used to apportion seats in the U.S. House of Representatives</xhtml:p>
+                </xhtml:li>
+                <xhtml:li>
+                  <xhtml:p>used to define legislature districts, school district assignment areas and other important functional areas of government</xhtml:p>
+                </xhtml:li>
+              </xhtml:ul>
+              <xhtml:p>The 2010 questionnaire is one of the shortest in history, and comes very close to the length and scope of inquiries asked in 1790. Everyone in the household answers seven questions: name, gender, race, ethnicity, and whether they sometimes live somewhere else. The head of household answers how many people live in the residence, whether it is a house, apartment, or mobile home, and provides a telephone number for Census workers to follow up if any information is incomplete or missing.</xhtml:p>
+            </xhtml:div>
+          </r:Content>
+        </s:Purpose>
+        <r:Coverage>
+          <r:SpatialCoverage id="af54f2bd-796d-4b5a-bb11-dfc1f9e29b59">
+            <r:TopLevelReference>
+              <r:LevelName>United States</r:LevelName>
+            </r:TopLevelReference>
+            <r:LowestLevelReference>
+              <r:LevelName>United States</r:LevelName>
+            </r:LowestLevelReference>
+          </r:SpatialCoverage>
+          <r:TemporalCoverage id="f9224828-876e-4aff-b6bc-8896ec06f9ac">
+            <r:ReferenceDate>
+              <r:SimpleDate>2010-04-01T00:00:00</r:SimpleDate>
+            </r:ReferenceDate>
+          </r:TemporalCoverage>
+        </r:Coverage>
+        <r:Note id="02719d31-3e13-48d6-a128-19dbfcc62651" type="System">
+          <r:Relationship>
+            <r:RelatedToReference>
+              <r:ID>194d128c-93b2-4378-b626-2105edbdf561</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </r:RelatedToReference>
+            <r:RelationshipDescription>colectica:RequiredPackage</r:RelationshipDescription>
+          </r:Relationship>
+          <r:Content>example.org:e1b87f0f-5a32-4d0d-9e70-9bd195597bed:8</r:Content>
+        </r:Note>
+        <a:Archive id="6b6f944f-4c89-4189-88d8-ba4b7fd8fbd2" version="3.0.0" versionDate="2011-04-05T04:00:53" agency="example.org">
+          <!--Colectica does not currently support ArchiveSpecific element, but it is required by the schema.-->
+          <a:ArchiveSpecific>
+            <a:ArchiveOrganizationReference>
+              <r:ID>00000000-0000-0000-0000-000000000000</r:ID>
+              <r:IdentifyingAgency>Unsupported</r:IdentifyingAgency>
+              <r:Version>0</r:Version>
+            </a:ArchiveOrganizationReference>
+          </a:ArchiveSpecific>
+          <a:OrganizationScheme id="b99fadd6-9349-427b-9a66-64faa6b46eb1" version="1.0.0" versionDate="2011-04-05T04:05:27" agency="example.org" />
+        </a:Archive>
+      </s:StudyUnit>
+    </g:StudyUnit>
+  </g:Group>
+  <g:ResourcePackage id="e1b87f0f-5a32-4d0d-9e70-9bd195597bed" version="8.0.0" versionDate="2011-04-05T04:04:59" agency="example.org">
+    <r:Citation>
+      <r:Title xml:lang="en-US">United States Census 2010</r:Title>
+      <dc:DCElements>
+        <dc2:title xml:lang="en-US">United States Census 2010</dc2:title>
+      </dc:DCElements>
+    </r:Citation>
+    <g:Purpose id="3c42f7b6-6565-4f7d-b7c3-44e5e55be957">
+      <r:Content xml:lang="en-US">Not specified</r:Content>
+    </g:Purpose>
+    <r:Note id="969559bb-17b1-4408-b1a1-d059d40b1beb" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>a6424d38-8e43-4dde-8450-d30cf2627244</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>30</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:MultipleResponseDomainHandling</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>All</r:Content>
+    </r:Note>
+    <r:Note id="0fce1a46-a3cf-4cca-a3dc-d7d8664fa7c3" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>1eec83f0-c5f6-4090-8863-e3c00a3a3343</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>32</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:MultipleResponseDomainHandling</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>All</r:Content>
+    </r:Note>
+    <r:Note id="8b76ca2e-0bab-4f68-9102-0b0ada914a95" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>1eec83f0-c5f6-4090-8863-e3c00a3a3343</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>32</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:MultipleChoiceType</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>6e2479f6-c09e-4eac-8c9a-f62cd8123f69:SelectOne</r:Content>
+    </r:Note>
+    <r:Note id="f4455d7c-20a4-4cff-9f57-bd4bfdd1bdc7" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>1eec83f0-c5f6-4090-8863-e3c00a3a3343</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>32</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:SelectUpTo</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>6e2479f6-c09e-4eac-8c9a-f62cd8123f69:0</r:Content>
+    </r:Note>
+    <r:Note id="0550de35-03ff-491f-89c0-de1444542a78" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>526cc18c-b672-40b8-a28d-3a589ea8ac1b</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>32</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:MultipleResponseDomainHandling</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>All</r:Content>
+    </r:Note>
+    <r:Note id="b7dd7ab1-20e1-4ca6-9057-a20c3e232d7c" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>526cc18c-b672-40b8-a28d-3a589ea8ac1b</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>32</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:MultipleChoiceType</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>83e405bb-eb47-408c-917c-b8c834cbbf8a:SelectOne</r:Content>
+    </r:Note>
+    <r:Note id="014b1950-5805-40ab-907e-cbdb7e648c51" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>526cc18c-b672-40b8-a28d-3a589ea8ac1b</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>32</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:SelectUpTo</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>83e405bb-eb47-408c-917c-b8c834cbbf8a:0</r:Content>
+    </r:Note>
+    <r:Note id="4ada7c33-0a0c-4f8a-b6f2-348b1b66b254" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>3928b8d3-c2f7-4ebd-995d-f7ccab3de071</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>31</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:MultipleResponseDomainHandling</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>All</r:Content>
+    </r:Note>
+    <r:Note id="35b6660f-ccdb-4f33-a618-2adb0151def1" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>6fc6291a-b9c1-4698-83f8-3983c2ec8cb4</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>30</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:MultipleResponseDomainHandling</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>All</r:Content>
+    </r:Note>
+    <r:Note id="9e1b10d2-f76a-492a-838d-9efccecfc037" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>ba540279-8bfc-461c-a07b-d25493c648a7</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>33</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:MultipleResponseDomainHandling</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>All</r:Content>
+    </r:Note>
+    <r:Note id="52b70a02-121f-4908-a810-c379efbab3cf" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>ba540279-8bfc-461c-a07b-d25493c648a7</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>33</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:MultipleChoiceType</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>e2648604-e1a5-4a75-8b0e-52a5c13dd89c:SelectOne</r:Content>
+    </r:Note>
+    <r:Note id="a0cf9e4b-f2da-4d94-9e32-9e09835741d3" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>ba540279-8bfc-461c-a07b-d25493c648a7</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>33</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:SelectUpTo</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>e2648604-e1a5-4a75-8b0e-52a5c13dd89c:0</r:Content>
+    </r:Note>
+    <r:Note id="fd7f087c-f5e8-4797-aa46-e41a925ef3c7" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>42b16e62-b1e5-4908-80a2-2d7702e44510</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>30</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:MultipleResponseDomainHandling</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>All</r:Content>
+    </r:Note>
+    <r:Note id="cfd4247f-32aa-401b-9327-d668664dc933" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>dca5ae11-19ae-432b-99f9-4866aaab5329</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>30</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:MultipleResponseDomainHandling</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>All</r:Content>
+    </r:Note>
+    <r:Note id="0581a30d-1795-4cc0-94e6-356f0a9c1696" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>dca5ae11-19ae-432b-99f9-4866aaab5329</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>30</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:MultipleChoiceType</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>0bda55b4-2c7d-4abe-8569-41ca01bbb912:SelectOne</r:Content>
+    </r:Note>
+    <r:Note id="d884efa6-a74d-4dba-b4fd-e3fb2fb9f0e6" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>dca5ae11-19ae-432b-99f9-4866aaab5329</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>30</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:SelectUpTo</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>0bda55b4-2c7d-4abe-8569-41ca01bbb912:0</r:Content>
+    </r:Note>
+    <r:Note id="db06d382-9be6-400d-af43-c6bc17a75f3e" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>9d2c5c60-a5ed-4d9b-bcf4-f6e9489214cf</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>30</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:MultipleResponseDomainHandling</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>All</r:Content>
+    </r:Note>
+    <r:Note id="e91a960a-f09f-484f-9ffb-5da8572c1a05" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>9d2c5c60-a5ed-4d9b-bcf4-f6e9489214cf</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>30</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:MultipleChoiceType</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>81b8d50c-700b-49e5-9dd5-488c5282f798:SelectOne</r:Content>
+    </r:Note>
+    <r:Note id="ba953d5f-76f0-46de-a0b9-999c6b544da7" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>9d2c5c60-a5ed-4d9b-bcf4-f6e9489214cf</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>30</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:SelectUpTo</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>81b8d50c-700b-49e5-9dd5-488c5282f798:0</r:Content>
+    </r:Note>
+    <r:Note id="ea2a9a5a-09ca-4c86-ba18-9428723a4eeb" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>75063293-a848-4e54-99f8-12ea9361ed33</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>24</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:MultipleResponseDomainHandling</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>All</r:Content>
+    </r:Note>
+    <r:Note id="d86b15a5-7374-482b-93fc-e7726b030071" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>75063293-a848-4e54-99f8-12ea9361ed33</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>24</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:MultipleChoiceType</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>fb9b3346-809e-41ff-9d8c-f122e246a3af:SelectOne</r:Content>
+    </r:Note>
+    <r:Note id="50e3a70b-59fd-4eb4-b11d-8e1f6101e993" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>75063293-a848-4e54-99f8-12ea9361ed33</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>24</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:SelectUpTo</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>fb9b3346-809e-41ff-9d8c-f122e246a3af:0</r:Content>
+    </r:Note>
+    <r:Note id="4180e94a-b804-437b-977e-c819d089a331" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>dfa2d0c1-9f85-468c-8b6a-327319cc55cf</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>24</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:MultipleResponseDomainHandling</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>All</r:Content>
+    </r:Note>
+    <r:Note id="baaf2c22-c284-4367-8e2e-47f778ec82dd" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>dfa2d0c1-9f85-468c-8b6a-327319cc55cf</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>24</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:MultipleChoiceType</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>115cc270-c8f5-44f8-a7fd-576b51345e75:SelectOne</r:Content>
+    </r:Note>
+    <r:Note id="80807768-57f0-45ed-979c-403730dcfbdc" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>dfa2d0c1-9f85-468c-8b6a-327319cc55cf</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>24</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:SelectUpTo</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>115cc270-c8f5-44f8-a7fd-576b51345e75:0</r:Content>
+    </r:Note>
+    <g:DataCollection>
+      <d:DataCollection id="419e20b2-dd3f-41e4-bce3-6b8bf649481c" version="3.0.0" versionDate="2011-04-05T04:04:59" agency="example.org">
+        <d:DataCollectionModuleName xml:lang="en-US">2010 Data Collection</d:DataCollectionModuleName>
+        <r:Coverage>
+          <r:TemporalCoverage id="aab21c4e-8616-4877-9d14-229e7d467db5">
+            <r:ReferenceDate>
+              <r:StartDate>2010-01-25T00:00:00</r:StartDate>
+              <r:EndDate>2010-08-10T00:00:00</r:EndDate>
+            </r:ReferenceDate>
+          </r:TemporalCoverage>
+        </r:Coverage>
+        <d:Methodology id="b215dc81-c6c6-4c97-905a-d603b2312d9f" version="3.0.0" versionDate="2012-02-14T19:11:59">
+          <r:UserID type="11179-IRDI">example.org:b215dc81-c6c6-4c97-905a-d603b2312d9f:3</r:UserID>
+        </d:Methodology>
+        <d:CollectionEvent id="0df5e715-8ff2-4003-9991-02704490de3a">
+          <d:DataCollectorOrganizationReference>
+            <r:ID>99f6fa39-bcc3-4752-93b7-93e467081406</r:ID>
+            <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+            <r:Version>0</r:Version>
+          </d:DataCollectorOrganizationReference>
+          <d:DataSource>
+            <d:SourceDescription xml:lang="en-US">On January 25, 2010, Census Bureau Director Robert Groves personally inaugurated the 2010 Census enumeration by counting World War II veteran Clifton Jackson, a resident of Noorvik, Alaska.
+</d:SourceDescription>
+            <d:Origin>
+              <r:Citation>
+                <r:Title xml:lang="en-US"> Director Robert Groves personally </r:Title>
+                <dc:DCElements>
+                  <dc2:title xml:lang="en-US"> Director Robert Groves personally </dc2:title>
+                </dc:DCElements>
+              </r:Citation>
+            </d:Origin>
+          </d:DataSource>
+          <d:DataCollectionDate>
+            <r:SimpleDate>2010-01-25T00:00:00</r:SimpleDate>
+          </d:DataCollectionDate>
+          <d:DataCollectionFrequency>
+            <r:SimpleDate>2010-01-25T00:00:00</r:SimpleDate>
+          </d:DataCollectionFrequency>
+        </d:CollectionEvent>
+        <d:CollectionEvent id="e53595fe-a59f-4b6f-8490-8ff7b43a50cd">
+          <d:DataCollectorOrganizationReference>
+            <r:ID>99f6fa39-bcc3-4752-93b7-93e467081406</r:ID>
+            <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+            <r:Version>0</r:Version>
+          </d:DataCollectorOrganizationReference>
+          <d:DataSource>
+            <d:SourceDescription xml:lang="en-US">Census forms were delivered by the U.S. Post Office beginning March 15, 2010. The number of forms mailed out or hand-delivered by the Census Bureau was about 134 million. Although the questionnaire used April 1 as the reference date as to where a person was living, an insert dated March 15, 2010 included the following printed in bold type: "Please complete and mail back the enclosed census form today."
+</d:SourceDescription>
+            <d:Origin>
+              <r:Citation>
+                <r:Title xml:lang="en-US">Census forms</r:Title>
+                <dc:DCElements>
+                  <dc2:title xml:lang="en-US">Census forms</dc2:title>
+                </dc:DCElements>
+              </r:Citation>
+            </d:Origin>
+          </d:DataSource>
+          <d:DataCollectionDate>
+            <r:SimpleDate>2010-03-15T00:00:00</r:SimpleDate>
+          </d:DataCollectionDate>
+          <d:DataCollectionFrequency>
+            <r:SimpleDate>2010-03-15T00:00:00</r:SimpleDate>
+          </d:DataCollectionFrequency>
+          <d:ModeOfCollection id="0f3ae32c-6bf8-47ca-a6fc-5e23e614f04e">
+            <r:Content xml:lang="en-US">Mail Survey
+</r:Content>
+          </d:ModeOfCollection>
+        </d:CollectionEvent>
+        <d:CollectionEvent id="f3e7ea15-b8bc-4bcf-87ca-c53f28dfbcc6">
+          <d:DataCollectorOrganizationReference>
+            <r:ID>99f6fa39-bcc3-4752-93b7-93e467081406</r:ID>
+            <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+            <r:Version>0</r:Version>
+          </d:DataCollectorOrganizationReference>
+          <d:DataSource>
+            <d:SourceDescription xml:lang="en-US">From April through July 2010, census takers visited households that did not return a form, an operation called "non-response follow-up" (NRFU).
+</d:SourceDescription>
+            <d:Origin>
+              <r:Citation>
+                <r:Title xml:lang="en-US">non-response follow-up</r:Title>
+                <dc:DCElements>
+                  <dc2:title xml:lang="en-US">non-response follow-up</dc2:title>
+                </dc:DCElements>
+              </r:Citation>
+            </d:Origin>
+          </d:DataSource>
+          <d:DataCollectionDate>
+            <r:StartDate>2010-04-01T00:00:00</r:StartDate>
+            <r:EndDate>2010-07-31T00:00:00</r:EndDate>
+          </d:DataCollectionDate>
+          <d:DataCollectionFrequency>
+            <r:StartDate>2010-04-01T00:00:00</r:StartDate>
+            <r:EndDate>2010-07-31T00:00:00</r:EndDate>
+          </d:DataCollectionFrequency>
+          <d:ModeOfCollection id="091a1325-d389-4e8c-ba42-3aa5fa987233">
+            <r:Content xml:lang="en-US">household visits
+</r:Content>
+          </d:ModeOfCollection>
+        </d:CollectionEvent>
+        <d:ControlConstructScheme id="0ea523de-96b3-4ff1-bc93-fd2f655baa21" version="1.0.0" versionDate="2012-02-14T20:30:47" agency="example.org">
+          <d:Sequence id="907349c4-0a2d-409d-b618-d5d28319f15a" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:907349c4-0a2d-409d-b618-d5d28319f15a:3</r:UserID>
+            <d:ControlConstructReference>
+              <r:ID>45ede464-7296-4e9d-827f-6470785127ff</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>d73ca4c9-17c0-4c55-a8eb-a2c6a9569bd1</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>15553caa-08c9-4cc6-9a2e-dd9f14d5abd7</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>a18c5492-195d-4805-8093-ea3fb8c2703b</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>17c320f4-2984-4150-a430-4e454b739ebe</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+          </d:Sequence>
+          <d:QuestionConstruct id="45ede464-7296-4e9d-827f-6470785127ff" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:45ede464-7296-4e9d-827f-6470785127ff:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>a6424d38-8e43-4dde-8450-d30cf2627244</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>30</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="d73ca4c9-17c0-4c55-a8eb-a2c6a9569bd1" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:d73ca4c9-17c0-4c55-a8eb-a2c6a9569bd1:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>1eec83f0-c5f6-4090-8863-e3c00a3a3343</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>32</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="15553caa-08c9-4cc6-9a2e-dd9f14d5abd7" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:15553caa-08c9-4cc6-9a2e-dd9f14d5abd7:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>526cc18c-b672-40b8-a28d-3a589ea8ac1b</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>32</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="a18c5492-195d-4805-8093-ea3fb8c2703b" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:a18c5492-195d-4805-8093-ea3fb8c2703b:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>3928b8d3-c2f7-4ebd-995d-f7ccab3de071</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>31</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:Loop id="17c320f4-2984-4150-a430-4e454b739ebe" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:17c320f4-2984-4150-a430-4e454b739ebe:3</r:UserID>
+            <d:InitialValue>
+              <r:Code programmingLanguage="Neutral">PersonCount = 1</r:Code>
+            </d:InitialValue>
+            <d:LoopWhile>
+              <r:Code programmingLanguage="Neutral">PersonCounter &lt; Q1</r:Code>
+            </d:LoopWhile>
+            <d:StepValue>
+              <r:Code programmingLanguage="Neutral" />
+            </d:StepValue>
+            <d:ControlConstructReference>
+              <r:ID>769ae3fa-f4f4-46e8-9fe2-9bcd8804acd1</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+          </d:Loop>
+          <d:Sequence id="769ae3fa-f4f4-46e8-9fe2-9bcd8804acd1" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:769ae3fa-f4f4-46e8-9fe2-9bcd8804acd1:3</r:UserID>
+            <d:ControlConstructReference>
+              <r:ID>14cf9bfc-708d-4e36-9e21-430eabdcdbd8</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>47764c78-5b99-47b8-b149-ede4a2f608c6</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>c4459670-e2f4-4038-a9ee-4b3ee05e895b</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>3a910308-4192-4484-8917-caf8e34a9db1</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>93543f84-43aa-4302-bee5-58d20e66299c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>bf0ba544-664e-47d4-a411-f46b7f16e71f</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>87f9872b-1196-448a-9a17-96bfb80c9eda</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+          </d:Sequence>
+          <d:QuestionConstruct id="14cf9bfc-708d-4e36-9e21-430eabdcdbd8" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:14cf9bfc-708d-4e36-9e21-430eabdcdbd8:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>6fc6291a-b9c1-4698-83f8-3983c2ec8cb4</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>30</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:IfThenElse id="47764c78-5b99-47b8-b149-ede4a2f608c6" version="3.0.0" versionDate="2012-02-14T19:11:59">
+            <r:UserID type="11179-IRDI">example.org:47764c78-5b99-47b8-b149-ede4a2f608c6:3</r:UserID>
+            <d:IfCondition>
+              <r:Code programmingLanguage="Neutral">PersonCounter != 1</r:Code>
+            </d:IfCondition>
+            <d:ThenConstructReference>
+              <r:ID>333ae135-784d-4435-9e54-a3763af8c338</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ThenConstructReference>
+          </d:IfThenElse>
+          <d:Sequence id="333ae135-784d-4435-9e54-a3763af8c338" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:333ae135-784d-4435-9e54-a3763af8c338:3</r:UserID>
+            <d:ControlConstructReference>
+              <r:ID>abd9e886-0bac-4a3b-8cec-78e2ba49fa72</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+          </d:Sequence>
+          <d:QuestionConstruct id="abd9e886-0bac-4a3b-8cec-78e2ba49fa72" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:abd9e886-0bac-4a3b-8cec-78e2ba49fa72:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>dfa2d0c1-9f85-468c-8b6a-327319cc55cf</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>24</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="c4459670-e2f4-4038-a9ee-4b3ee05e895b" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:c4459670-e2f4-4038-a9ee-4b3ee05e895b:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>ba540279-8bfc-461c-a07b-d25493c648a7</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>33</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="3a910308-4192-4484-8917-caf8e34a9db1" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:3a910308-4192-4484-8917-caf8e34a9db1:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>42b16e62-b1e5-4908-80a2-2d7702e44510</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>30</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="93543f84-43aa-4302-bee5-58d20e66299c" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:93543f84-43aa-4302-bee5-58d20e66299c:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>dca5ae11-19ae-432b-99f9-4866aaab5329</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>30</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="bf0ba544-664e-47d4-a411-f46b7f16e71f" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:bf0ba544-664e-47d4-a411-f46b7f16e71f:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>9d2c5c60-a5ed-4d9b-bcf4-f6e9489214cf</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>30</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="87f9872b-1196-448a-9a17-96bfb80c9eda" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:87f9872b-1196-448a-9a17-96bfb80c9eda:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>75063293-a848-4e54-99f8-12ea9361ed33</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>24</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+        </d:ControlConstructScheme>
+        <d:ControlConstructScheme id="c7d8da17-15eb-4297-ac3e-fa034d3fda52" version="3.0.0" versionDate="2011-05-21T01:41:32" agency="example.org">
+          <d:Sequence id="907349c4-0a2d-409d-b618-d5d28319f15a" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:907349c4-0a2d-409d-b618-d5d28319f15a:3</r:UserID>
+            <d:ControlConstructReference>
+              <r:ID>45ede464-7296-4e9d-827f-6470785127ff</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>d73ca4c9-17c0-4c55-a8eb-a2c6a9569bd1</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>15553caa-08c9-4cc6-9a2e-dd9f14d5abd7</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>a18c5492-195d-4805-8093-ea3fb8c2703b</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>17c320f4-2984-4150-a430-4e454b739ebe</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+          </d:Sequence>
+          <d:QuestionConstruct id="45ede464-7296-4e9d-827f-6470785127ff" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:45ede464-7296-4e9d-827f-6470785127ff:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>a6424d38-8e43-4dde-8450-d30cf2627244</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>30</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="d73ca4c9-17c0-4c55-a8eb-a2c6a9569bd1" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:d73ca4c9-17c0-4c55-a8eb-a2c6a9569bd1:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>1eec83f0-c5f6-4090-8863-e3c00a3a3343</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>32</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="15553caa-08c9-4cc6-9a2e-dd9f14d5abd7" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:15553caa-08c9-4cc6-9a2e-dd9f14d5abd7:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>526cc18c-b672-40b8-a28d-3a589ea8ac1b</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>32</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="a18c5492-195d-4805-8093-ea3fb8c2703b" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:a18c5492-195d-4805-8093-ea3fb8c2703b:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>3928b8d3-c2f7-4ebd-995d-f7ccab3de071</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>31</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:Loop id="17c320f4-2984-4150-a430-4e454b739ebe" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:17c320f4-2984-4150-a430-4e454b739ebe:3</r:UserID>
+            <d:InitialValue>
+              <r:Code programmingLanguage="Neutral">PersonCount = 1</r:Code>
+            </d:InitialValue>
+            <d:LoopWhile>
+              <r:Code programmingLanguage="Neutral">PersonCounter &lt; Q1</r:Code>
+            </d:LoopWhile>
+            <d:StepValue>
+              <r:Code programmingLanguage="Neutral" />
+            </d:StepValue>
+            <d:ControlConstructReference>
+              <r:ID>769ae3fa-f4f4-46e8-9fe2-9bcd8804acd1</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+          </d:Loop>
+          <d:Sequence id="769ae3fa-f4f4-46e8-9fe2-9bcd8804acd1" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:769ae3fa-f4f4-46e8-9fe2-9bcd8804acd1:3</r:UserID>
+            <d:ControlConstructReference>
+              <r:ID>14cf9bfc-708d-4e36-9e21-430eabdcdbd8</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>47764c78-5b99-47b8-b149-ede4a2f608c6</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>c4459670-e2f4-4038-a9ee-4b3ee05e895b</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>3a910308-4192-4484-8917-caf8e34a9db1</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>93543f84-43aa-4302-bee5-58d20e66299c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>bf0ba544-664e-47d4-a411-f46b7f16e71f</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>87f9872b-1196-448a-9a17-96bfb80c9eda</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+          </d:Sequence>
+          <d:QuestionConstruct id="14cf9bfc-708d-4e36-9e21-430eabdcdbd8" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:14cf9bfc-708d-4e36-9e21-430eabdcdbd8:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>6fc6291a-b9c1-4698-83f8-3983c2ec8cb4</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>30</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:IfThenElse id="47764c78-5b99-47b8-b149-ede4a2f608c6" version="3.0.0" versionDate="2012-02-14T19:11:59">
+            <r:UserID type="11179-IRDI">example.org:47764c78-5b99-47b8-b149-ede4a2f608c6:3</r:UserID>
+            <d:IfCondition>
+              <r:Code programmingLanguage="Neutral">PersonCounter != 1</r:Code>
+            </d:IfCondition>
+            <d:ThenConstructReference>
+              <r:ID>333ae135-784d-4435-9e54-a3763af8c338</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ThenConstructReference>
+          </d:IfThenElse>
+          <d:Sequence id="333ae135-784d-4435-9e54-a3763af8c338" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:333ae135-784d-4435-9e54-a3763af8c338:3</r:UserID>
+            <d:ControlConstructReference>
+              <r:ID>abd9e886-0bac-4a3b-8cec-78e2ba49fa72</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+          </d:Sequence>
+          <d:QuestionConstruct id="abd9e886-0bac-4a3b-8cec-78e2ba49fa72" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:abd9e886-0bac-4a3b-8cec-78e2ba49fa72:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>dfa2d0c1-9f85-468c-8b6a-327319cc55cf</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>24</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="c4459670-e2f4-4038-a9ee-4b3ee05e895b" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:c4459670-e2f4-4038-a9ee-4b3ee05e895b:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>ba540279-8bfc-461c-a07b-d25493c648a7</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>33</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="3a910308-4192-4484-8917-caf8e34a9db1" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:3a910308-4192-4484-8917-caf8e34a9db1:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>42b16e62-b1e5-4908-80a2-2d7702e44510</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>30</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="93543f84-43aa-4302-bee5-58d20e66299c" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:93543f84-43aa-4302-bee5-58d20e66299c:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>dca5ae11-19ae-432b-99f9-4866aaab5329</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>30</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="bf0ba544-664e-47d4-a411-f46b7f16e71f" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:bf0ba544-664e-47d4-a411-f46b7f16e71f:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>9d2c5c60-a5ed-4d9b-bcf4-f6e9489214cf</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>30</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="87f9872b-1196-448a-9a17-96bfb80c9eda" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:87f9872b-1196-448a-9a17-96bfb80c9eda:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>75063293-a848-4e54-99f8-12ea9361ed33</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>24</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+        </d:ControlConstructScheme>
+        <d:ControlConstructScheme id="4dbe22eb-b9ad-4dbd-87cc-3f314aae241e" version="3.0.0" versionDate="2011-04-05T04:05:27" agency="example.org">
+          <d:Sequence id="907349c4-0a2d-409d-b618-d5d28319f15a" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:907349c4-0a2d-409d-b618-d5d28319f15a:3</r:UserID>
+            <d:ControlConstructReference>
+              <r:ID>45ede464-7296-4e9d-827f-6470785127ff</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>d73ca4c9-17c0-4c55-a8eb-a2c6a9569bd1</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>15553caa-08c9-4cc6-9a2e-dd9f14d5abd7</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>a18c5492-195d-4805-8093-ea3fb8c2703b</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>17c320f4-2984-4150-a430-4e454b739ebe</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+          </d:Sequence>
+          <d:QuestionConstruct id="45ede464-7296-4e9d-827f-6470785127ff" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:45ede464-7296-4e9d-827f-6470785127ff:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>a6424d38-8e43-4dde-8450-d30cf2627244</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>30</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="d73ca4c9-17c0-4c55-a8eb-a2c6a9569bd1" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:d73ca4c9-17c0-4c55-a8eb-a2c6a9569bd1:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>1eec83f0-c5f6-4090-8863-e3c00a3a3343</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>32</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="15553caa-08c9-4cc6-9a2e-dd9f14d5abd7" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:15553caa-08c9-4cc6-9a2e-dd9f14d5abd7:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>526cc18c-b672-40b8-a28d-3a589ea8ac1b</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>32</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="a18c5492-195d-4805-8093-ea3fb8c2703b" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:a18c5492-195d-4805-8093-ea3fb8c2703b:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>3928b8d3-c2f7-4ebd-995d-f7ccab3de071</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>31</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:Loop id="17c320f4-2984-4150-a430-4e454b739ebe" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:17c320f4-2984-4150-a430-4e454b739ebe:3</r:UserID>
+            <d:InitialValue>
+              <r:Code programmingLanguage="Neutral">PersonCount = 1</r:Code>
+            </d:InitialValue>
+            <d:LoopWhile>
+              <r:Code programmingLanguage="Neutral">PersonCounter &lt; Q1</r:Code>
+            </d:LoopWhile>
+            <d:StepValue>
+              <r:Code programmingLanguage="Neutral" />
+            </d:StepValue>
+            <d:ControlConstructReference>
+              <r:ID>769ae3fa-f4f4-46e8-9fe2-9bcd8804acd1</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+          </d:Loop>
+          <d:Sequence id="769ae3fa-f4f4-46e8-9fe2-9bcd8804acd1" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:769ae3fa-f4f4-46e8-9fe2-9bcd8804acd1:3</r:UserID>
+            <d:ControlConstructReference>
+              <r:ID>14cf9bfc-708d-4e36-9e21-430eabdcdbd8</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>47764c78-5b99-47b8-b149-ede4a2f608c6</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>c4459670-e2f4-4038-a9ee-4b3ee05e895b</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>3a910308-4192-4484-8917-caf8e34a9db1</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>93543f84-43aa-4302-bee5-58d20e66299c</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>bf0ba544-664e-47d4-a411-f46b7f16e71f</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+            <d:ControlConstructReference>
+              <r:ID>87f9872b-1196-448a-9a17-96bfb80c9eda</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+          </d:Sequence>
+          <d:QuestionConstruct id="14cf9bfc-708d-4e36-9e21-430eabdcdbd8" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:14cf9bfc-708d-4e36-9e21-430eabdcdbd8:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>6fc6291a-b9c1-4698-83f8-3983c2ec8cb4</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>30</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:IfThenElse id="47764c78-5b99-47b8-b149-ede4a2f608c6" version="3.0.0" versionDate="2012-02-14T19:11:59">
+            <r:UserID type="11179-IRDI">example.org:47764c78-5b99-47b8-b149-ede4a2f608c6:3</r:UserID>
+            <d:IfCondition>
+              <r:Code programmingLanguage="Neutral">PersonCounter != 1</r:Code>
+            </d:IfCondition>
+            <d:ThenConstructReference>
+              <r:ID>333ae135-784d-4435-9e54-a3763af8c338</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ThenConstructReference>
+          </d:IfThenElse>
+          <d:Sequence id="333ae135-784d-4435-9e54-a3763af8c338" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:333ae135-784d-4435-9e54-a3763af8c338:3</r:UserID>
+            <d:ControlConstructReference>
+              <r:ID>abd9e886-0bac-4a3b-8cec-78e2ba49fa72</r:ID>
+              <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+              <r:Version>3</r:Version>
+            </d:ControlConstructReference>
+          </d:Sequence>
+          <d:QuestionConstruct id="abd9e886-0bac-4a3b-8cec-78e2ba49fa72" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:abd9e886-0bac-4a3b-8cec-78e2ba49fa72:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>dfa2d0c1-9f85-468c-8b6a-327319cc55cf</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>24</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="c4459670-e2f4-4038-a9ee-4b3ee05e895b" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:c4459670-e2f4-4038-a9ee-4b3ee05e895b:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>ba540279-8bfc-461c-a07b-d25493c648a7</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>33</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="3a910308-4192-4484-8917-caf8e34a9db1" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:3a910308-4192-4484-8917-caf8e34a9db1:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>42b16e62-b1e5-4908-80a2-2d7702e44510</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>30</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="93543f84-43aa-4302-bee5-58d20e66299c" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:93543f84-43aa-4302-bee5-58d20e66299c:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>dca5ae11-19ae-432b-99f9-4866aaab5329</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>30</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="bf0ba544-664e-47d4-a411-f46b7f16e71f" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:bf0ba544-664e-47d4-a411-f46b7f16e71f:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>9d2c5c60-a5ed-4d9b-bcf4-f6e9489214cf</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>30</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+          <d:QuestionConstruct id="87f9872b-1196-448a-9a17-96bfb80c9eda" version="3.0.0" versionDate="2011-04-05T04:04:59">
+            <r:UserID type="11179-IRDI">example.org:87f9872b-1196-448a-9a17-96bfb80c9eda:3</r:UserID>
+            <d:QuestionReference>
+              <r:ID>75063293-a848-4e54-99f8-12ea9361ed33</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>24</r:Version>
+            </d:QuestionReference>
+          </d:QuestionConstruct>
+        </d:ControlConstructScheme>
+        <d:Instrument id="e8852c93-1143-4e7e-9f2f-f3e688402aba" version="3.0.0" versionDate="2011-04-05T04:04:59" agency="example.org">
+          <d:InstrumentName xml:lang="en-US">2010 Instrument</d:InstrumentName>
+          <r:Description xml:lang="en-US">2010 United States Census Questionnaire</r:Description>
+          <r:Software id="e3e3d350-cbfe-4078-82f4-6d52dcbf05c1">
+            <r:Name>Colectica®</r:Name>
+            <r:Version>2243</r:Version>
+            <r:Description>Colectica® Data Management, http://www.colectica.com</r:Description>
+            <r:Date>
+              <r:SimpleDate>2012-02-09T13:42:49</r:SimpleDate>
+            </r:Date>
+          </r:Software>
+          <d:ControlConstructReference>
+            <r:ID>907349c4-0a2d-409d-b618-d5d28319f15a</r:ID>
+            <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+            <r:Version>3</r:Version>
+          </d:ControlConstructReference>
+        </d:Instrument>
+      </d:DataCollection>
+    </g:DataCollection>
+    <a:OrganizationScheme id="9df84617-2729-4df0-909b-3952b60bf7cb" version="0.0.0" versionDate="2010-07-23T10:52:00" agency="opendata.colectica.org">
+      <a:OrganizationSchemeName xml:lang="en-US">Census 2010 Organizations</a:OrganizationSchemeName>
+      <a:Organization id="99f6fa39-bcc3-4752-93b7-93e467081406" version="0.0.0" versionDate="2010-07-23T10:52:14">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:99f6fa39-bcc3-4752-93b7-93e467081406:0</r:UserID>
+        <a:OrganizationName xml:lang="en-US">US Census Bureau</a:OrganizationName>
+        <a:Nickname xml:lang="en-US">US Census Bureau</a:Nickname>
+        <a:DDIMaintenanceAgencyID registryID="" />
+        <r:Description xml:lang="en-US">US Census Bureau</r:Description>
+        <r:Image>http://2010.census.gov/partners/img/logo.png</r:Image>
+      </a:Organization>
+    </a:OrganizationScheme>
+    <c:UniverseScheme id="b23dbf22-860d-4064-95e2-853b11f8d760" version="3.0.0" versionDate="2011-04-05T03:54:50" agency="example.org">
+      <c:UniverseSchemeName xml:lang="en-US">Census Universes</c:UniverseSchemeName>
+      <c:Universe id="b2200741-9232-4d97-91ed-3ff1fb11f818" version="1.0.0" versionDate="2011-04-05T04:00:53">
+        <r:UserID type="11179-IRDI">example.org:b2200741-9232-4d97-91ed-3ff1fb11f818:1</r:UserID>
+        <c:UniverseName xml:lang="en-US">census2010</c:UniverseName>
+        <r:Label xml:lang="en-US">People Living in the United States on April 1, 2010</r:Label>
+      </c:Universe>
+      <c:Universe id="e5a212f1-5dc0-4355-860f-aee6b450bbb2" version="3.0.0" versionDate="2012-02-14T19:48:34">
+        <r:UserID type="11179-IRDI">example.org:e5a212f1-5dc0-4355-860f-aee6b450bbb2:3</r:UserID>
+        <c:UniverseName xml:lang="en-US">census</c:UniverseName>
+        <r:Label xml:lang="en-US">People Living in the United States</r:Label>
+      </c:Universe>
+    </c:UniverseScheme>
+    <d:QuestionScheme id="7df3514a-5182-46bf-a6de-f7edcb60d366" version="24.0.0" versionDate="2011-02-09T10:11:14" agency="opendata.colectica.org" isPublished="true">
+      <r:VersionResponsibility>admin</r:VersionResponsibility>
+      <r:VersionRationale xml:lang="en-US">Nothing much.</r:VersionRationale>
+      <d:QuestionSchemeName xml:lang="en-US">2010 Questions</d:QuestionSchemeName>
+      <d:QuestionItem id="a6424d38-8e43-4dde-8450-d30cf2627244" version="30.0.0" versionDate="2011-04-05T04:02:04">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:a6424d38-8e43-4dde-8450-d30cf2627244:30</r:UserID>
+        <r:UserID type="Colectica:UserAssignedId">1</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <d:QuestionItemName xml:lang="en-US">Q1</d:QuestionItemName>
+        <d:QuestionText xml:lang="en-US">
+          <d:LiteralText>
+            <d:Text>How many people were living or staying in this house, apartment, or mobile home on April 1, 2010?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sq">
+          <d:LiteralText>
+            <d:Text>Sa persona jetonin ose qëndronin në këtë shtëpi, apartament
+ose rulotë në datën 1 prill 2010?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="es">
+          <d:LiteralText>
+            <d:Text>¿Cuántas personas vivían o se quedaban en esta casa,
+apartamento o casa móvil el 1 de abril de 2010?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sw">
+          <d:LiteralText>
+            <d:Text>Ni watu wangapi waliyokuwa wakiishi au wanaishi katika nyumba
+hii, orofa, nyumba inayohamishika mnamo tarehe 1 Aprili, 2010?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="fr">
+          <d:LiteralText>
+            <d:Text>Combien de personnes vivaient ou séjournaient dans votre maison, appartement ou appartement mobile au 1er avril 2010 ?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="de">
+          <d:LiteralText>
+            <d:Text>Wie viele Personen wohnten oder lebten in diesem Haus, dieser Wohnung oder diesem Wohnmobil am 1. April 2010?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="zh-CHS">
+          <d:LiteralText>
+            <d:Text>在 2010 年 4 月 1 日那天，有几个人在这所房子、公寓或移动式房屋里居住或暂住？</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionIntent xml:lang="en-US">We ask this question to help get an accurate count of the number of people in the household on Census Day, April 1, 2010. The answer should be based on the guidelines in the 'Start here' section. We use the information to ensure response accuracy and completeness and to contact respondents whose forms have incomplete or missing information.</d:QuestionIntent>
+        <d:NumericDomain type="Integer" scale="1" blankIsMissingValue="false">
+          <r:NumberRange>
+            <r:Low>0</r:Low>
+          </r:NumberRange>
+          <d:Label xml:lang="en-US">Number of people</d:Label>
+          <d:Label xml:lang="sq">Numri i personave</d:Label>
+          <d:Label xml:lang="es">Número de personas</d:Label>
+          <d:Label xml:lang="sw">Idadi ya watu</d:Label>
+          <d:Label xml:lang="fr">Nombre de personnes</d:Label>
+          <d:Label xml:lang="de">Anzahl der Personen</d:Label>
+          <d:Label xml:lang="zh-CHS">人口数</d:Label>
+          <r:Description xml:lang="sq">Numri i personave</r:Description>
+        </d:NumericDomain>
+      </d:QuestionItem>
+      <d:QuestionItem id="1eec83f0-c5f6-4090-8863-e3c00a3a3343" version="32.0.0" versionDate="2011-04-05T04:02:04">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:1eec83f0-c5f6-4090-8863-e3c00a3a3343:32</r:UserID>
+        <r:UserID type="Colectica:UserAssignedId">2</r:UserID>
+        <r:VersionResponsibility>admin</r:VersionResponsibility>
+        <r:VersionRationale xml:lang="en-US">Nothing much.</r:VersionRationale>
+        <d:QuestionItemName xml:lang="en-US">Q2</d:QuestionItemName>
+        <d:QuestionText xml:lang="en-US">
+          <d:LiteralText>
+            <d:Text>Were there any additional people staying here April 1, 2010 that you did not include in Question 1?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sq">
+          <d:LiteralText>
+            <d:Text>A ka pasur ndonjë person tjetër shtesë që qëndronte këtu në
+datën 1 prill 2010 që nuk e keni përfshirë në Pyetjen 1??</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="es">
+          <d:LiteralText>
+            <d:Text>¿Había personas adicionales quedándose aquí el 1 de abril
+de 2010 que usted no incluyó en la Pregunta 1?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sw">
+          <d:LiteralText>
+            <d:Text>Je, kulikuwa na mtu yeyote wa zaidi aliyekuwa akiishi hapa mnamo
+tarehe 1 Aprili, 2010 ambaye hukumjumuisha katika Swali la 1?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="fr">
+          <d:LiteralText>
+            <d:Text>Y avait-il d’autres personnes qui résidaient à cet endroit au 1er avril 2010 que vous n’avez pas incluses à la question 1 ?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="de">
+          <d:LiteralText>
+            <d:Text>Wohnten noch weitere Personen hier am 1. April 2010, die Siein Frage 1 nichtberücksichtigt haben?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="zh-CHS">
+          <d:LiteralText>
+            <d:Text>除了在第一题已经包括的人以外，是否还有其他人在 2010 年4月 1 日暂住在这里？</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionIntent xml:lang="en-US">Asked since 1880. We ask this question to help identify people who may have been excluded in the count provided in Question 1. We use the information to ensure response accuracy and completeness and to contact respondents whose forms have incomplete or missing information.</d:QuestionIntent>
+        <d:CodeDomain blankIsMissingValue="false">
+          <r:CodeSchemeReference>
+            <r:ID>6e2479f6-c09e-4eac-8c9a-f62cd8123f69</r:ID>
+            <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+            <r:Version>14</r:Version>
+          </r:CodeSchemeReference>
+        </d:CodeDomain>
+      </d:QuestionItem>
+      <d:QuestionItem id="526cc18c-b672-40b8-a28d-3a589ea8ac1b" version="32.0.0" versionDate="2011-02-09T10:11:14">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:526cc18c-b672-40b8-a28d-3a589ea8ac1b:32</r:UserID>
+        <r:UserID type="Colectica:UserAssignedId">3</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <d:QuestionItemName xml:lang="en-US">Q3</d:QuestionItemName>
+        <d:QuestionText xml:lang="en-US">
+          <d:LiteralText>
+            <d:Text>Is this house, apartment, or mobile home</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sq">
+          <d:LiteralText>
+            <d:Text>Kjo shtëpi, apartament ose rulotë</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="es">
+          <d:LiteralText>
+            <d:Text>¿Es esta casa, apartamento o casa móvil</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sw">
+          <d:LiteralText>
+            <d:Text>Je, hii ni nyumba, orofa, au nyumba inayohamishika -</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="fr">
+          <d:LiteralText>
+            <d:Text>Cette maison, cet appartement ou cette maison mobile</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="de">
+          <d:LiteralText>
+            <d:Text>Dieses Haus, diese Wohnung oder dieses Wohnmobil</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="zh-CHS">
+          <d:LiteralText>
+            <d:Text>这所房子、公寓或移动式房屋是下面哪一种类型？</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionIntent xml:lang="en-US">Asked since 1890. Homeownership rates serve as an indicator of the nation's economy. The data are also used to administer housing programs and to inform planning decisions.</d:QuestionIntent>
+        <d:CodeDomain blankIsMissingValue="false">
+          <r:CodeSchemeReference>
+            <r:ID>83e405bb-eb47-408c-917c-b8c834cbbf8a</r:ID>
+            <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+            <r:Version>13</r:Version>
+          </r:CodeSchemeReference>
+        </d:CodeDomain>
+      </d:QuestionItem>
+      <d:QuestionItem id="3928b8d3-c2f7-4ebd-995d-f7ccab3de071" version="31.0.0" versionDate="2011-02-09T10:11:14">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:3928b8d3-c2f7-4ebd-995d-f7ccab3de071:31</r:UserID>
+        <r:UserID type="Colectica:UserAssignedId">4</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <d:QuestionItemName xml:lang="en-US">Q4</d:QuestionItemName>
+        <d:QuestionText xml:lang="en-US">
+          <d:LiteralText>
+            <d:Text>What is your telephone number? We may call if we don't understand an answer.</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sq">
+          <d:LiteralText>
+            <d:Text>Cili është numri i telefonit tuaj? Mund t’ju telefonojmë nëse nuk
+kuptojmë ndonjë pyetje.</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="es">
+          <d:LiteralText>
+            <d:Text>¿Cuál es su número de teléfono?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sw">
+          <d:LiteralText>
+            <d:Text>Nambari yako ya simu?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="fr">
+          <d:LiteralText>
+            <d:Text>Quel est votre numéro de téléphone ?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="de">
+          <d:LiteralText>
+            <d:Text>Wie lautet Ihre Telefonnummer?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="zh-CHS">
+          <d:LiteralText>
+            <d:Text>您的电话号码是什么？如果我们不明白您的回答，我们可能会给您打电话。</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionIntent xml:lang="en-US">We ask for a phone number in case we need to contact a respondent when a form is returned with incomplete or missing information.</d:QuestionIntent>
+        <d:TextDomain maxLength="10" minLength="10" blankIsMissingValue="false">
+          <r:Label xml:lang="en-US">Area Code + Number</r:Label>
+          <r:Label xml:lang="sq">Prefiksi + Numri</r:Label>
+          <r:Label xml:lang="es">Código de Área + Número</r:Label>
+          <r:Label xml:lang="sw">Nambari ya Eneo + Nambari</r:Label>
+          <r:Label xml:lang="fr">Indicatif + Numéro</r:Label>
+          <r:Label xml:lang="de">Ortsvorwahl + Telefonnummer</r:Label>
+          <r:Label xml:lang="zh-CHS">区号+电话号码</r:Label>
+        </d:TextDomain>
+      </d:QuestionItem>
+      <d:QuestionItem id="6fc6291a-b9c1-4698-83f8-3983c2ec8cb4" version="30.0.0" versionDate="2011-02-09T10:11:14">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:6fc6291a-b9c1-4698-83f8-3983c2ec8cb4:30</r:UserID>
+        <r:UserID type="Colectica:UserAssignedId">Q5</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <d:QuestionItemName xml:lang="en-US">Q5</d:QuestionItemName>
+        <d:QuestionText xml:lang="en-US">
+          <d:LiteralText>
+            <d:Text>What is Person {PersonCounter}'s name?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sq">
+          <d:LiteralText>
+            <d:Text>Si quhet Personi 1?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="es">
+          <d:LiteralText>
+            <d:Text>¿Cuál es el nombre de la Persona 1?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sw">
+          <d:LiteralText>
+            <d:Text>Jina la Mtu wa 1 ni lipi?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="fr">
+          <d:LiteralText>
+            <d:Text>Quel est le nom de la Personne 1 ?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="de">
+          <d:LiteralText>
+            <d:Text>Wie lautet der Name von Person 1?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="zh-CHS">
+          <d:LiteralText>
+            <d:Text>第 1 位人士的姓名是什么?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionIntent xml:lang="en-US">Listing the name of each person in the household helps the respondent to include all members, particularly in large households where a respondent may forget who was counted and who was not. Also, names are needed if additional information about an individual must be obtained to complete the census form. Federal law protects the confidentiality of personal information, including names.</d:QuestionIntent>
+        <d:StructuredMixedResponseDomain>
+          <d:TextDomain blankIsMissingValue="false">
+            <r:Label xml:lang="en-US">First Name</r:Label>
+            <r:Label xml:lang="sq">Mbiemri</r:Label>
+            <r:Label xml:lang="es">Apellido</r:Label>
+            <r:Label xml:lang="sw">Jina la Mwisho</r:Label>
+            <r:Label xml:lang="fr">Nom</r:Label>
+            <r:Label xml:lang="de">Nachname</r:Label>
+            <r:Label xml:lang="zh-CHS">姓</r:Label>
+          </d:TextDomain>
+          <d:TextDomain blankIsMissingValue="false">
+            <r:Label xml:lang="en-US">Last Name</r:Label>
+            <r:Label xml:lang="sq">Emri</r:Label>
+            <r:Label xml:lang="es">Nombre</r:Label>
+            <r:Label xml:lang="sw">Jina la kwanza</r:Label>
+            <r:Label xml:lang="fr">Prénom</r:Label>
+            <r:Label xml:lang="de">Vorname</r:Label>
+            <r:Label xml:lang="zh-CHS">名</r:Label>
+          </d:TextDomain>
+          <d:TextDomain blankIsMissingValue="false">
+            <r:Label xml:lang="en-US">MI</r:Label>
+            <r:Label xml:lang="sq">Emri i dytë</r:Label>
+            <r:Label xml:lang="es">Inicial</r:Label>
+            <r:Label xml:lang="sw">Herufi ya Kati</r:Label>
+            <r:Label xml:lang="fr">Initiale 2e prénom</r:Label>
+            <r:Label xml:lang="de">Mittl.Init.</r:Label>
+            <r:Label xml:lang="zh-CHS">中间名 字缩写</r:Label>
+            <r:Description xml:lang="en-US">Middle Initial</r:Description>
+          </d:TextDomain>
+        </d:StructuredMixedResponseDomain>
+      </d:QuestionItem>
+      <d:QuestionItem id="ba540279-8bfc-461c-a07b-d25493c648a7" version="33.0.0" versionDate="2011-02-09T10:11:14">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:ba540279-8bfc-461c-a07b-d25493c648a7:33</r:UserID>
+        <r:UserID type="Colectica:UserAssignedId">Q6</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <d:QuestionItemName xml:lang="en-US">Q6</d:QuestionItemName>
+        <d:QuestionText xml:lang="en-US">
+          <d:LiteralText>
+            <d:Text>What is Person {PersonCounter}'s sex?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sq">
+          <d:LiteralText>
+            <d:Text>Seksi i Personit 1?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="es">
+          <d:LiteralText>
+            <d:Text>¿Cuál es el sexo de la Persona 1?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sw">
+          <d:LiteralText>
+            <d:Text>Jinsia ya Mtu wa 1 ni ipi?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="fr">
+          <d:LiteralText>
+            <d:Text>Quel est le sexe de la Personne 1 ?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="de">
+          <d:LiteralText>
+            <d:Text>Was ist das Geschlecht von Person 1?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="zh-CHS">
+          <d:LiteralText>
+            <d:Text>第 1 位人士的性别是什么？</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionIntent xml:lang="en-US">Asked since 1790. Census data about sex are important because many federal programs must differentiate between males and females for funding, implementing and evaluating their programs. For instance, laws promoting equal employment opportunity for women require census data on sex. Also, sociologists, economists, and other researchers who analyze social and economic trends use the data.</d:QuestionIntent>
+        <d:CodeDomain blankIsMissingValue="false">
+          <r:CodeSchemeReference>
+            <r:ID>e2648604-e1a5-4a75-8b0e-52a5c13dd89c</r:ID>
+            <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+            <r:Version>13</r:Version>
+          </r:CodeSchemeReference>
+        </d:CodeDomain>
+      </d:QuestionItem>
+      <d:QuestionItem id="42b16e62-b1e5-4908-80a2-2d7702e44510" version="30.0.0" versionDate="2011-02-09T10:11:14">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:42b16e62-b1e5-4908-80a2-2d7702e44510:30</r:UserID>
+        <r:UserID type="Colectica:UserAssignedId">Q7</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <d:QuestionItemName xml:lang="en-US">Q7</d:QuestionItemName>
+        <d:QuestionText xml:lang="en-US">
+          <d:LiteralText>
+            <d:Text>What is Person {PersonCounter}'s age and what is Person {PersonCounter}'s date of birth?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sq">
+          <d:LiteralText>
+            <d:Text>Sa vjeç është Personi 1 dhe cila është data e lindjes së tij?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="es">
+          <d:LiteralText>
+            <d:Text>¿Cuál es la edad de la Persona 1 y cuál es su fecha de nacimiento?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sw">
+          <d:LiteralText>
+            <d:Text>Umri wa Mtu wa 1 ni upi na alizaliwa tarehe gani?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="fr">
+          <d:LiteralText>
+            <d:Text>Quel est l’âge de la Personne 1 et quelle est sa date de naissance ?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="de">
+          <d:LiteralText>
+            <d:Text>Wie alt ist Person 1 und was ist das Geburtsdatum von Person 1?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="zh-CHS">
+          <d:LiteralText>
+            <d:Text>第1 位人士的年龄及出生年月日是什么？</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionIntent xml:lang="en-US">Asked since 1800. Federal, state, and local governments need data about age to interpret most social and economic characteristics, such as forecasting the number of people eligible for Social Security or Medicare benefits. The data are widely used in planning and evaluating government programs and policies that provide funds or services for children, working-age adults, women of childbearing age, or the older population.</d:QuestionIntent>
+        <d:StructuredMixedResponseDomain>
+          <d:NumericDomain type="Integer" scale="1" blankIsMissingValue="false">
+            <r:NumberRange>
+              <r:Low>0</r:Low>
+            </r:NumberRange>
+            <d:Label xml:lang="en-US">Age on April 1, 2010</d:Label>
+            <d:Label xml:lang="sq">Mosha në datën 1 prill 2010</d:Label>
+            <d:Label xml:lang="es">Edad el 1 de abril de 2010</d:Label>
+            <d:Label xml:lang="sw">Umri mnamo 1 Aprili, 2010</d:Label>
+            <d:Label xml:lang="fr">Âge au 1er avril 2010</d:Label>
+            <d:Label xml:lang="de">Alter am 1. April 2010</d:Label>
+            <d:Label xml:lang="zh-CHS">2010年 4 月 1 日时的年龄</d:Label>
+          </d:NumericDomain>
+          <d:NumericDomain type="Integer" scale="1" blankIsMissingValue="false">
+            <r:NumberRange>
+              <r:Low>1</r:Low>
+              <r:High>12</r:High>
+            </r:NumberRange>
+            <d:Label xml:lang="en-US">Month</d:Label>
+            <d:Label xml:lang="sq">Muaji</d:Label>
+            <d:Label xml:lang="es">Mes</d:Label>
+            <d:Label xml:lang="sw">Mwezi</d:Label>
+            <d:Label xml:lang="fr">Mois</d:Label>
+            <d:Label xml:lang="de">Monat</d:Label>
+            <d:Label xml:lang="zh-CHS">􀝄</d:Label>
+          </d:NumericDomain>
+          <d:NumericDomain type="Integer" scale="1" blankIsMissingValue="false">
+            <r:NumberRange>
+              <r:Low>1</r:Low>
+              <r:High>31</r:High>
+            </r:NumberRange>
+            <d:Label xml:lang="en-US">Day</d:Label>
+            <d:Label xml:lang="sq">Data</d:Label>
+            <d:Label xml:lang="es">Día</d:Label>
+            <d:Label xml:lang="sw">Siku</d:Label>
+            <d:Label xml:lang="fr">Jour</d:Label>
+            <d:Label xml:lang="de">Tag</d:Label>
+            <d:Label xml:lang="zh-CHS">􀳔</d:Label>
+          </d:NumericDomain>
+          <d:NumericDomain type="Integer" scale="1" blankIsMissingValue="false">
+            <r:NumberRange>
+              <r:Low>1880</r:Low>
+              <r:High>2010</r:High>
+            </r:NumberRange>
+            <d:Label xml:lang="en-US">Year of birth</d:Label>
+            <d:Label xml:lang="sq">Viti i lindjes</d:Label>
+            <d:Label xml:lang="es">Año de nacimiento</d:Label>
+            <d:Label xml:lang="sw">Mwaka wa kuzaliwa</d:Label>
+            <d:Label xml:lang="fr">Année de naissance</d:Label>
+            <d:Label xml:lang="de">Geburtsjahr</d:Label>
+            <d:Label xml:lang="zh-CHS">􀳥</d:Label>
+          </d:NumericDomain>
+        </d:StructuredMixedResponseDomain>
+      </d:QuestionItem>
+      <d:QuestionItem id="dca5ae11-19ae-432b-99f9-4866aaab5329" version="30.0.0" versionDate="2011-02-09T10:11:14">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:dca5ae11-19ae-432b-99f9-4866aaab5329:30</r:UserID>
+        <r:UserID type="Colectica:UserAssignedId">Q8</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <d:QuestionItemName xml:lang="en-US">Q8</d:QuestionItemName>
+        <d:QuestionText xml:lang="en-US">
+          <d:LiteralText>
+            <d:Text>Is Person {PersonCounter} of Hispanic, Latino, or Spanish origin?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sq">
+          <d:LiteralText>
+            <d:Text>A është Personi 1 me origjinë hispanike, latine apo spanjolle?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="es">
+          <d:LiteralText>
+            <d:Text>¿Es la Persona 1 de origen hispano, latino o español?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sw">
+          <d:LiteralText>
+            <d:Text>Je, Mtu wa 1 ana asili ya Kihispania, Kilatino au Uhispania?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="fr">
+          <d:LiteralText>
+            <d:Text>La Personne 1 est-elle d’origine hispanique, latino ou espagnole ?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="de">
+          <d:LiteralText>
+            <d:Text>Ist Person 1 von hispanischer, lateinamerikanischer oder spanischer Herkunft?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="zh-CHS">
+          <d:LiteralText>
+            <d:Text>第 1 位人士是南美洲西班牙人、拉丁美洲西班牙人或西班牙后裔吗？</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionIntent xml:lang="en-US">Asked since 1970. The data collected in this question are needed by federal agencies to monitor compliance with anti-discrimination provisions, such as under the Voting Rights Act and the Civil Rights Act. State and local governments may use the data to help plan and administer bilingual programs for people of Hispanic origin.</d:QuestionIntent>
+        <d:StructuredMixedResponseDomain>
+          <d:TextDomain maxLength="19" blankIsMissingValue="false">
+            <r:Label xml:lang="en-US">Print origin, for example, Argentinean, Colombian, Dominican, Nicaraguan, Salvadoran, Spaniard, and so on.</r:Label>
+            <r:Label xml:lang="sq">Shkruani me shkronja shtypi origjinën, për shembull, argjentinas, kolumbian, domenikan, nikaraguan, salvadoran, spanjoll, e kështu me radhë.</r:Label>
+            <r:Label xml:lang="es">Escriba el origen, por ejemplo,
+argentino, colombiano, dominicano, nicaragüense, salvadoreño, español, etc.</r:Label>
+            <r:Label xml:lang="sw">Andika asili, kwa mfano,
+Mwajentina, Mkolombia, Mdominika, Mnikaragua, Msalvadorani, Mspaniadi na kuendelea.</r:Label>
+            <r:Label xml:lang="fr">Indiquez l’origine en caractères d’imprimerie, par exemple, origine argentine, colombienne, dominicaine, nicaraguayenne, salvadorienne, espagnole, etc.</r:Label>
+            <r:Label xml:lang="de">Herkunft in Druckschrift angeben, zum Beispiel Argentinier, Kolumbianer, Dominikaner, Nikaraguaner, Salvadorianer, Spanier usw.</r:Label>
+            <r:Label xml:lang="zh-CHS">请用正楷填写祖籍，例如阿根廷人、哥伦比亚人、多米尼加共和国人、尼加拉瓜人、萨尔瓦多人、西班牙人等。</r:Label>
+          </d:TextDomain>
+          <d:CodeDomain blankIsMissingValue="false">
+            <r:CodeSchemeReference>
+              <r:ID>0bda55b4-2c7d-4abe-8569-41ca01bbb912</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>12</r:Version>
+            </r:CodeSchemeReference>
+          </d:CodeDomain>
+        </d:StructuredMixedResponseDomain>
+      </d:QuestionItem>
+      <d:QuestionItem id="9d2c5c60-a5ed-4d9b-bcf4-f6e9489214cf" version="30.0.0" versionDate="2011-02-09T10:11:14">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:9d2c5c60-a5ed-4d9b-bcf4-f6e9489214cf:30</r:UserID>
+        <r:UserID type="Colectica:UserAssignedId">Q9</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <d:QuestionItemName xml:lang="en-US">Q9</d:QuestionItemName>
+        <d:QuestionText xml:lang="en-US">
+          <d:LiteralText>
+            <d:Text>What is Person {PersonCounter}'s race?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sq">
+          <d:LiteralText>
+            <d:Text>Çfarë race është Personi 1?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="es">
+          <d:LiteralText>
+            <d:Text>¿Cuál es la raza de la Persona 1?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sw">
+          <d:LiteralText>
+            <d:Text>Kabila la Mtu wa 1 ni ipi?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="fr">
+          <d:LiteralText>
+            <d:Text>Quel est la race de la Personne 1 ?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="de">
+          <d:LiteralText>
+            <d:Text>Von welcher Rasse ist Person 1?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="zh-CHS">
+          <d:LiteralText>
+            <d:Text>第 1 位人士的种族是什么？</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionIntent xml:lang="en-US">Asked since 1790. Race is key to implementing many federal laws and is needed to monitor compliance with the Voting Rights Act and the Civil Rights Act. State governments use the data to determine congressional, state and local voting districts. Race data are also used to assess fairness of employment practices, to monitor racial disparities in characteristics such as health and education and to plan and obtain funds for public services.</d:QuestionIntent>
+        <d:StructuredMixedResponseDomain>
+          <d:CodeDomain blankIsMissingValue="false">
+            <r:CodeSchemeReference>
+              <r:ID>81b8d50c-700b-49e5-9dd5-488c5282f798</r:ID>
+              <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+              <r:Version>12</r:Version>
+            </r:CodeSchemeReference>
+          </d:CodeDomain>
+          <d:TextDomain maxLength="19" blankIsMissingValue="false">
+            <r:Label xml:lang="en-US">American Indian or Alaska Native - Print name of enrolled or principal tribe.</r:Label>
+            <r:Label xml:lang="sq">Indian i Amerikës ose vendas i Alaskës — Shkruani me shkronja shtypi emrin
+e fisit kryesor ose të atij ku është regjistruar.</r:Label>
+            <r:Label xml:lang="es">India americana o nativa de Alaska — Escriba el nombre de la tribu en la
+que está inscrita o la tribu principal.</r:Label>
+            <r:Label xml:lang="sw">Mhindi Mwamerika au Asili ya Alaska – Andika jina la kabila lililoandikishwa au kuu.</r:Label>
+            <r:Label xml:lang="fr">Indiquez en caractères d’imprimerie le nom de la tribu principale ou d’appartenance.</r:Label>
+            <r:Label xml:lang="de">Geben Sie den Namen deseingeschriebenen oder Hauptstammes in Druckschrift an.</r:Label>
+            <r:Label xml:lang="zh-CHS">美洲印第安人或阿拉斯加原住民 - 请用正楷填写登记的名称或主要部族</r:Label>
+          </d:TextDomain>
+          <d:TextDomain maxLength="19" blankIsMissingValue="false">
+            <r:Label xml:lang="en-US">Other Asian - Print race, for example, Hmong, Laotian, Thai, Pakistani, Cambodian, and so on.</r:Label>
+            <r:Label xml:lang="sq">Aziatik tjetër — Shkruani me shkronja
+shtypi racën, për shembull mong, laosian,
+tajlandez, pakistanez, kamboxhian,
+e kështu me radhë.</r:Label>
+            <r:Label xml:lang="es">Otra asiática — Escriba la raza, por
+ejemplo, hmong, laosiana, tailandesa,
+paquistaní, camboyana, etc.</r:Label>
+            <r:Label xml:lang="sw">Masia Mwingine – Andika jamii, kwa
+mfano, Mhmong, Mlaotiani, Mthai,
+Mpakistani, Mkabodia, na kuendelea.</r:Label>
+            <r:Label xml:lang="fr">Indiquez la race en caractères d’imprimerie, par exemple, Hmong, Laotien, Thaïlandais, Pakistanais, Cambodgien, etc.</r:Label>
+            <r:Label xml:lang="de">Sonstiger Asiat—Geben Sie die Rasse, z. B. Hmong, Laote, Thai, Pakistani, Kambodschaner usw., in Druckschrift an.</r:Label>
+            <r:Label xml:lang="zh-CHS">其他亚洲人 - 请用正楷填写种族，如苗人、老挝人、泰国人、 巴基斯坦人、柬埔寨人等。</r:Label>
+          </d:TextDomain>
+          <d:TextDomain maxLength="19" blankIsMissingValue="false">
+            <r:Label xml:lang="en-US">Other Pacific Islander - Print race, for example, Fijian, Tongan, and so on.</r:Label>
+            <r:Label xml:lang="sq">Nga ishuj të tjerë të Paqësorit —
+Shkruani me shkronja shtypi racën,
+për shembull fixhian, tongan,
+e kështu me radhë.</r:Label>
+            <r:Label xml:lang="es">Otra de las islas del Pacífico —
+Escriba la raza, por ejemplo,
+fiyiana, tongana, etc.</r:Label>
+            <r:Label xml:lang="sw">Mpasifiki Mwingine wa Kisiwa -
+Andika jamii, kwa mfano, Mfiji,
+Mtongani, na kuendelea.</r:Label>
+            <r:Label xml:lang="fr">Indiquez la race en caractères d’imprimerie, par exemple, Fidjien, Tongien, etc.</r:Label>
+            <r:Label xml:lang="de">Sonstiger Pazifikinsulaner—Geben Sie die Rasse, z. B. Fidschianer, Tongaer usw., in Druckschrift an.</r:Label>
+            <r:Label xml:lang="zh-CHS">其他太平洋岛上居民 - 请用正楷填写种族，如斐济群岛人、 汤加人等。</r:Label>
+          </d:TextDomain>
+          <d:TextDomain maxLength="19" blankIsMissingValue="false">
+            <r:Label xml:lang="en-US">Some other race - print race.</r:Label>
+            <r:Label xml:lang="sq">Ndonjë racë tjetër — Shkruani me shkronja shtypi racën.</r:Label>
+            <r:Label xml:lang="es">Alguna otra raza — Escriba la raza.</r:Label>
+            <r:Label xml:lang="sw">Jamii zingine – Andika jamii.</r:Label>
+            <r:Label xml:lang="fr">Autre — Indiquez la race en caractères d’imprimerie</r:Label>
+            <r:Label xml:lang="de">GrundAndere Rasse—Geben Sie die Rasse in Druckschrift an.</r:Label>
+            <r:Label xml:lang="zh-CHS">其它种族 - 请用正楷填写</r:Label>
+          </d:TextDomain>
+        </d:StructuredMixedResponseDomain>
+      </d:QuestionItem>
+      <d:QuestionItem id="75063293-a848-4e54-99f8-12ea9361ed33" version="24.0.0" versionDate="2011-02-09T10:11:14">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:75063293-a848-4e54-99f8-12ea9361ed33:24</r:UserID>
+        <r:UserID type="Colectica:UserAssignedId">Q10</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <d:QuestionItemName xml:lang="en-US">Q10</d:QuestionItemName>
+        <d:QuestionText xml:lang="en-US">
+          <d:LiteralText>
+            <d:Text>Does Person {PersonCounter} sometimes live or stay somewhere else?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sq">
+          <d:LiteralText>
+            <d:Text>A jeton apo qëndron ndonjëherë Personi 1 në ndonjë vend tjetër?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="es">
+          <d:LiteralText>
+            <d:Text>¿Vive o se queda a veces la Persona 1 en algún otro lugar?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sw">
+          <d:LiteralText>
+            <d:Text>Je, Mtu wa 1 wakati mwingine huishi au hukaa mahali pengine?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="fr">
+          <d:LiteralText>
+            <d:Text>La Personne 1 vit-elle ou séjourne-t-elle parfois ailleurs ?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="de">
+          <d:LiteralText>
+            <d:Text>Wohnt oder hält sich Person 1 manchmal woanders auf?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="zh-CHS">
+          <d:LiteralText>
+            <d:Text>第 1 位人士是否有时居住或暂住在其它地方？</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionIntent xml:lang="en-US">This is another question we ask in order to ensure response accuracy and completeness and to contact respondents whose forms have incomplete or missing information.</d:QuestionIntent>
+        <d:CodeDomain blankIsMissingValue="false">
+          <r:CodeSchemeReference>
+            <r:ID>fb9b3346-809e-41ff-9d8c-f122e246a3af</r:ID>
+            <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+            <r:Version>12</r:Version>
+          </r:CodeSchemeReference>
+        </d:CodeDomain>
+      </d:QuestionItem>
+      <d:QuestionItem id="dfa2d0c1-9f85-468c-8b6a-327319cc55cf" version="24.0.0" versionDate="2011-02-09T10:11:14">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:dfa2d0c1-9f85-468c-8b6a-327319cc55cf:24</r:UserID>
+        <r:UserID type="Colectica:UserAssignedId">P2</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <d:QuestionItemName xml:lang="en-US">P2</d:QuestionItemName>
+        <d:QuestionText xml:lang="en-US">
+          <d:LiteralText>
+            <d:Text>How is this person related to Person 1?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sq">
+          <d:LiteralText>
+            <d:Text>Çfarë lidhjeje ka ky person me Personin 1?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="es">
+          <d:LiteralText>
+            <d:Text>¿Cómo está esta persona relacionada con la Persona 1?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="sw">
+          <d:LiteralText>
+            <d:Text>Mtu huyu anahusianaje na Mtu wa 1?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="fr">
+          <d:LiteralText>
+            <d:Text>Quel est le lien entre cette personne et la Personne 1 ?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="de">
+          <d:LiteralText>
+            <d:Text>JapanerKoreanerVietnameseIn welcher Beziehung steht diese Person zu Person 1?</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:QuestionText xml:lang="zh-CHS">
+          <d:LiteralText>
+            <d:Text>这个人与第1个人是什么关系？</d:Text>
+          </d:LiteralText>
+        </d:QuestionText>
+        <d:CodeDomain blankIsMissingValue="false">
+          <r:CodeSchemeReference>
+            <r:ID>115cc270-c8f5-44f8-a7fd-576b51345e75</r:ID>
+            <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+            <r:Version>12</r:Version>
+          </r:CodeSchemeReference>
+        </d:CodeDomain>
+      </d:QuestionItem>
+    </d:QuestionScheme>
+    <l:CategoryScheme id="97cc9a0a-dbe4-4c36-8383-838eb4d9ca6f" version="6.0.0" versionDate="2011-02-05T13:43:31" agency="opendata.colectica.org" isPublished="true">
+      <r:VersionResponsibility>admin</r:VersionResponsibility>
+      <r:VersionRationale xml:lang="en-US">Nothing much.</r:VersionRationale>
+      <l:CategorySchemeName xml:lang="en-US">additionalPeopleCategories</l:CategorySchemeName>
+      <r:Label xml:lang="en-US">Additional People</r:Label>
+      <l:Category id="66447128-5e8a-4f8a-89b4-cde7b20b74ce" version="19.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:66447128-5e8a-4f8a-89b4-cde7b20b74ce:19</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Children, such as newborn babies or foster children</r:Label>
+        <r:Label xml:lang="sq">Fëmijë, si foshnja të sapolindur ose fëmijë të birësuar</r:Label>
+        <r:Label xml:lang="es">Niños, tales como bebés recién nacidos o hijos de crianza (foster)</r:Label>
+        <r:Label xml:lang="sw">Watoto, kama vile watoto wachanga au watoto wanaolelewa</r:Label>
+        <r:Label xml:lang="fr">Enfants, notamment nouveau-nés ou enfants en famille d’accueil</r:Label>
+        <r:Label xml:lang="de">Kinder, z. B. Neugeborene oder Pflegekinder</r:Label>
+        <r:Label xml:lang="zh-CHS">儿童，如新生儿或政府委托寄养的孩子</r:Label>
+      </l:Category>
+      <l:Category id="fdc0160a-b431-4f55-8205-fd8e46728f54" version="19.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:fdc0160a-b431-4f55-8205-fd8e46728f54:19</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Relatives, such as adult children, cousins, or in-laws</r:Label>
+        <r:Label xml:lang="sq">Të afërm, si fëmijë të rritur, kushërinj ose krushq</r:Label>
+        <r:Label xml:lang="es">Parientes, tales como hijos adultos, primos o parientes políticos</r:Label>
+        <r:Label xml:lang="sw">Jamaa, kama vile watoto, binamu, au wakwe watu wazima</r:Label>
+        <r:Label xml:lang="fr">Parents, notamment enfants adultes, cousins ou belle-famille</r:Label>
+        <r:Label xml:lang="de">PflegekinderVerwandte, z. B. erwachsene Kinder, Cousin(e), oder angeheirateteVerwandte</r:Label>
+        <r:Label xml:lang="zh-CHS">亲属，如成年子女、表兄弟姊妹或姻亲</r:Label>
+      </l:Category>
+      <l:Category id="59e29a9f-1c4a-4d6f-b944-358b75a62106" version="20.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:59e29a9f-1c4a-4d6f-b944-358b75a62106:20</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Nonrelatives, such as roommates or live-in baby sitters</r:Label>
+        <r:Label xml:lang="sq">Jo të afërm, si shokë dhome ose dado fëmijësh që jeton aty</r:Label>
+        <r:Label xml:lang="es">Personas que no son parientes, tales como compañeros de cuarto o niñeras que viven en el hogar</r:Label>
+        <r:Label xml:lang="sw">Watu wasio jamaa, kama vile wakazi wenzako au walezi wa watoto wanaoishi na wewe</r:Label>
+        <r:Label xml:lang="fr">Personnes sans lien de parenté, notamment colocataires ou jeune fille au pair</r:Label>
+        <r:Label xml:lang="de">Nicht-Verwandte, z. B. Mitbewohner, oder Babysitter, die im Haus leben</r:Label>
+        <r:Label xml:lang="zh-CHS">非亲属，如室友或住在雇主家的保姆</r:Label>
+      </l:Category>
+      <l:Category id="24922297-e81a-4864-bf3d-9661f98d2914" version="20.0.0" versionDate="2011-02-05T13:43:31" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:24922297-e81a-4864-bf3d-9661f98d2914:20</r:UserID>
+        <r:VersionResponsibility>admin</r:VersionResponsibility>
+        <r:VersionRationale xml:lang="en-US">Nothing much.</r:VersionRationale>
+        <r:Label xml:lang="en-US">People staying here temporarily ...</r:Label>
+        <r:Label xml:lang="sq">Persona që qëndrojnë këtu përkohësisht</r:Label>
+        <r:Label xml:lang="es">Personas que se quedan aquí temporalmente</r:Label>
+        <r:Label xml:lang="sw">Watu wanaoishi hapa kwa muda</r:Label>
+        <r:Label xml:lang="fr">Personne séjournant temporairement chez vous</r:Label>
+        <r:Label xml:lang="de">Personen, die hier vorübergehend wohnen</r:Label>
+        <r:Label xml:lang="zh-CHS">暂住在这个住所的人</r:Label>
+      </l:Category>
+      <l:Category id="a8339f60-c3df-4939-bc59-ae485d8fc933" version="19.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:a8339f60-c3df-4939-bc59-ae485d8fc933:19</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">No additional people</r:Label>
+        <r:Label xml:lang="sq">Nuk ka persona shtesë</r:Label>
+        <r:Label xml:lang="es">No hay personas adicionales</r:Label>
+        <r:Label xml:lang="sw">Hakuna watu zaidi</r:Label>
+        <r:Label xml:lang="fr">Aucune personne supplémentaire</r:Label>
+        <r:Label xml:lang="de">Keine weiteren Personen</r:Label>
+        <r:Label xml:lang="zh-CHS">没有其他人</r:Label>
+      </l:Category>
+    </l:CategoryScheme>
+    <l:CategoryScheme id="661218e5-aeb1-4990-9a15-918600bf2694" version="5.0.0" versionDate="2010-03-19T09:52:34" agency="opendata.colectica.org" isPublished="true">
+      <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+      <l:CategorySchemeName xml:lang="en-US">houseOwnershipCategories</l:CategorySchemeName>
+      <r:Label xml:lang="en-US">House Ownership</r:Label>
+      <l:Category id="61428675-ddb2-4fbc-ad47-4cb077aae407" version="18.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:61428675-ddb2-4fbc-ad47-4cb077aae407:18</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Owned by you or someone in this household with a mortgage or loan? Include home equity loans.</r:Label>
+        <r:Label xml:lang="sq">Është në pronësinë tuaj apo të ndonjë banori tjetër të kësaj shtëpie me garanci hipotekare apo huamarrjeje? Përfshini huamarrjet me garanci.</r:Label>
+        <r:Label xml:lang="es">Propiedad suya o de alguien en este hogar con una hipoteca o préstamo? Incluya los préstamos sobre el valor líquido de la casa.</r:Label>
+        <r:Label xml:lang="sw">Unaimiliki au mtu mwingine katika nyumba hii kwa malipo benki au mkopo? Jumuisha mikopo ya hisa ya nyumba.</r:Label>
+        <r:Label xml:lang="fr">NuméroOnt-ils été achetés à crédit par vous ou quelqu’un de votre foyer ? Incluez les prêts sur la valeur nette de la maison.</r:Label>
+        <r:Label xml:lang="de">gehört Ihnen oder einer Person in diesem Haushalt mit einer Hypothek oder einem Darlehen?Das umfasst auch „Home Equity Loans“ (Kredit auf Eigenheim, basierend auf Höhe des Eigenkapitals).</r:Label>
+        <r:Label xml:lang="zh-CHS">属于您或您住户的某个成员（有房屋抵押贷款或房屋净值贷款）</r:Label>
+      </l:Category>
+      <l:Category id="e1e350d6-132b-4a74-b3b8-4f6b39fab9e1" version="17.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:e1e350d6-132b-4a74-b3b8-4f6b39fab9e1:17</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Owned by you or someone in this household free and clear (without a mortgage or loan)?</r:Label>
+        <r:Label xml:lang="sq">Është në pronësinë tuaj apo të ndonjë banori tjetër të kësaj shtëpie pa garanci (hipotekare apo huamarrjeje)?</r:Label>
+        <r:Label xml:lang="es">Propiedad suya o de alguien en este hogar libre y sin deuda (sin una hipoteca o préstamo)?</r:Label>
+        <r:Label xml:lang="sw">Unaimiliki au mtu mwingine katika kaya nyumba hii bila ya mkopo?</r:Label>
+        <r:Label xml:lang="fr">Ont-ils été achetés sans crédit par vous ou quelqu’un de votre foyer ?</r:Label>
+        <r:Label xml:lang="de">gehört Ihnen oder einer Person in diesem Haushalt ohne jegliche Belastung (ohne Hypothek oder Darlehen)?</r:Label>
+        <r:Label xml:lang="zh-CHS">属于您或您住户的某个成员，没有任何债务（无抵押或贷款）</r:Label>
+      </l:Category>
+      <l:Category id="1ebe6583-7268-48a2-bb6f-376caf977091" version="17.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:1ebe6583-7268-48a2-bb6f-376caf977091:17</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Rented?</r:Label>
+        <r:Label xml:lang="sq">E marrë me qira?</r:Label>
+        <r:Label xml:lang="es">Alquilado(a)?</r:Label>
+        <r:Label xml:lang="sw">Imepangishwa?</r:Label>
+        <r:Label xml:lang="fr">Sont-ils loués ?</r:Label>
+        <r:Label xml:lang="de">ist gemietet?</r:Label>
+        <r:Label xml:lang="zh-CHS">􀫇􀼻</r:Label>
+      </l:Category>
+      <l:Category id="5c6abc12-a25b-408f-ae54-451ab6a3f840" version="17.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:5c6abc12-a25b-408f-ae54-451ab6a3f840:17</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Occupied without payment of rent?</r:Label>
+        <r:Label xml:lang="sq">E zaptuar pa pagesë apo qira?</r:Label>
+        <r:Label xml:lang="es">Ocupado(a) sin pago de alquiler?</r:Label>
+        <r:Label xml:lang="sw">Unaishi bila malipo ya kodi?</r:Label>
+        <r:Label xml:lang="fr">Sont-ils gratuitement occupés (pas de loyer) ?</r:Label>
+        <r:Label xml:lang="de">wird ohne Mietzahlung bewohnt?</r:Label>
+        <r:Label xml:lang="zh-CHS">􀕄􀒎􀻔􀫇􀛚􀥅􀼻</r:Label>
+      </l:Category>
+    </l:CategoryScheme>
+    <l:CategoryScheme id="04898042-4f8c-4a59-bfb0-54ac6a4ba17e" version="4.0.0" versionDate="2010-03-19T10:00:36" agency="opendata.colectica.org" isPublished="true">
+      <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+      <l:CategorySchemeName xml:lang="en-US">genderCategories</l:CategorySchemeName>
+      <r:Label xml:lang="en-US">Gender</r:Label>
+      <l:Category id="475d46e2-1e97-42f5-84cf-abc671ba58b5" version="17.0.0" versionDate="2011-02-09T10:11:14" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:475d46e2-1e97-42f5-84cf-abc671ba58b5:17</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Male</r:Label>
+        <r:Label xml:lang="sq">Mashkull</r:Label>
+        <r:Label xml:lang="es">Masculino</r:Label>
+        <r:Label xml:lang="sw">Mwanaume</r:Label>
+        <r:Label xml:lang="fr">Masculin</r:Label>
+        <r:Label xml:lang="de">Männlich</r:Label>
+        <r:Label xml:lang="zh-CHS">男</r:Label>
+      </l:Category>
+      <l:Category id="96ac9380-0cf1-4c06-ae63-47da018d04c9" version="17.0.0" versionDate="2011-02-09T10:11:14" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:96ac9380-0cf1-4c06-ae63-47da018d04c9:17</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Female</r:Label>
+        <r:Label xml:lang="sq">Femër</r:Label>
+        <r:Label xml:lang="es">Femenino</r:Label>
+        <r:Label xml:lang="sw">Mwanamke</r:Label>
+        <r:Label xml:lang="fr">Féminin</r:Label>
+        <r:Label xml:lang="de">Weiblich</r:Label>
+        <r:Label xml:lang="zh-CHS">女</r:Label>
+      </l:Category>
+    </l:CategoryScheme>
+    <l:CategoryScheme id="bfea4147-cb8a-4cc5-86b5-89d32024e300" version="4.0.0" versionDate="2010-03-19T10:13:22" agency="opendata.colectica.org" isPublished="true">
+      <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+      <l:CategorySchemeName xml:lang="en-US">hispanicOriginCategories</l:CategorySchemeName>
+      <r:Label xml:lang="en-US">Hispanic origin</r:Label>
+      <l:Category id="3006a7be-7aa3-4128-8e25-29d9a8e6158f" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:3006a7be-7aa3-4128-8e25-29d9a8e6158f:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">No, not of Hispanic, Latino, or Spanish origin</r:Label>
+        <r:Label xml:lang="sq">Jo, nuk është me origjinë hispanike, latine ose spanjolle</r:Label>
+        <r:Label xml:lang="es">No, no es de origen hispano, latino o español</r:Label>
+        <r:Label xml:lang="sw">Hapana, hana asili ya Kihispania, Kilatino au Uhispania</r:Label>
+        <r:Label xml:lang="fr">Non,pas d’origine hispanique, latino ou espagnole</r:Label>
+        <r:Label xml:lang="de">Nein,nicht von hispanischer, lateinamerikanischer oder spanischer Herkunft</r:Label>
+        <r:Label xml:lang="zh-CHS">否，不是南美洲西班牙人、拉丁美洲西班牙人或西班牙后裔</r:Label>
+      </l:Category>
+      <l:Category id="17ca5407-8a80-4353-9700-e479dea251f6" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:17ca5407-8a80-4353-9700-e479dea251f6:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Yes, Mexican, Mexican Am., Chicano</r:Label>
+        <r:Label xml:lang="sq">Po, meksikan, meksikano-amerikan, çikano</r:Label>
+        <r:Label xml:lang="es">Sí, mexicano, mexicano americano, chicano</r:Label>
+        <r:Label xml:lang="sw">Ndiyo, Mmeksiko, Mwamerika Mmeksiko, Chikano</r:Label>
+        <r:Label xml:lang="fr">Oui, origine mexicaine, mexicaine-am., chicano</r:Label>
+        <r:Label xml:lang="de">Ja, Mexikaner, mexikanischer Amerikaner</r:Label>
+        <r:Label xml:lang="zh-CHS">是，墨西哥人、墨西哥裔美国人、奇卡诺人</r:Label>
+      </l:Category>
+      <l:Category id="0ec02954-063f-4d53-9bb5-7d7cc6fca309" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:0ec02954-063f-4d53-9bb5-7d7cc6fca309:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Yes, Puerto Rican</r:Label>
+        <r:Label xml:lang="sq">Po, portorikan</r:Label>
+        <r:Label xml:lang="es">Sí, puertorriqueño</r:Label>
+        <r:Label xml:lang="sw">Ndiyo, Mpoteriko</r:Label>
+        <r:Label xml:lang="fr">Oui, origine portoricaine</r:Label>
+        <r:Label xml:lang="de">Ja, Puertoricaner</r:Label>
+        <r:Label xml:lang="zh-CHS">是，波多黎各人</r:Label>
+      </l:Category>
+      <l:Category id="9da4a129-b3c9-40d9-b56f-07e99b3140de" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:9da4a129-b3c9-40d9-b56f-07e99b3140de:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Yes, Cuban</r:Label>
+        <r:Label xml:lang="sq">Po, kubanez</r:Label>
+        <r:Label xml:lang="es">Sí, cubano</r:Label>
+        <r:Label xml:lang="sw">Ndiyo, Mkuba</r:Label>
+        <r:Label xml:lang="fr">Oui, origine cubaine</r:Label>
+        <r:Label xml:lang="de">Ja, Kubaner</r:Label>
+        <r:Label xml:lang="zh-CHS">是，古巴人</r:Label>
+      </l:Category>
+      <l:Category id="6a16a27c-017b-4566-b560-8d43449cf2fa" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:6a16a27c-017b-4566-b560-8d43449cf2fa:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Yes, another Hispanic, Latino, or Spanish origin</r:Label>
+        <r:Label xml:lang="sq">Po, një origjinë tjetër hispanike, latine ose spanjolle</r:Label>
+        <r:Label xml:lang="es">Sí, otro origen hispano, latino o español</r:Label>
+        <r:Label xml:lang="sw">Ndiyo, asili nyingine ya Kihispania, Kilatino au Uhispania</r:Label>
+        <r:Label xml:lang="fr">Oui, autre origine hispanique, latino ou espagnole</r:Label>
+        <r:Label xml:lang="de">Ja, anderer hispanischer, lateinamerikanischer oder spanischer Herkunft</r:Label>
+        <r:Label xml:lang="zh-CHS">是，其他南美州西班牙人、拉丁美洲西班牙人或西班牙后裔</r:Label>
+      </l:Category>
+    </l:CategoryScheme>
+    <l:CategoryScheme id="f59b6e8d-973b-49f1-92c3-da877fb6544b" version="5.0.0" versionDate="2010-03-21T06:01:30" agency="opendata.colectica.org" isPublished="true">
+      <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+      <l:CategorySchemeName xml:lang="en-US">raceCategories</l:CategorySchemeName>
+      <r:Label xml:lang="en-US">Race</r:Label>
+      <l:Category id="3dda8040-219f-4982-905d-0ba9f019a8e0" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:3dda8040-219f-4982-905d-0ba9f019a8e0:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">White</r:Label>
+        <r:Label xml:lang="sq">E bardhë</r:Label>
+        <r:Label xml:lang="es">Blanca</r:Label>
+        <r:Label xml:lang="sw">Mzungu</r:Label>
+        <r:Label xml:lang="fr">Blanc</r:Label>
+        <r:Label xml:lang="de">Weiß</r:Label>
+        <r:Label xml:lang="zh-CHS">白种人</r:Label>
+      </l:Category>
+      <l:Category id="2eedcddc-0b6e-4e5a-a630-9388162914d8" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:2eedcddc-0b6e-4e5a-a630-9388162914d8:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Black, African Am., or Negro</r:Label>
+        <r:Label xml:lang="sq">Me ngjyrë, afrikano-amerikan, ose zezak</r:Label>
+        <r:Label xml:lang="es">Negra o africana americana</r:Label>
+        <r:Label xml:lang="sw">Mweusi, Mwamerika Mweusi, au Negro</r:Label>
+        <r:Label xml:lang="fr">Noir ou afro-américain</r:Label>
+        <r:Label xml:lang="de">Schwarz, afrik. Am. oder Farbiger/Neger</r:Label>
+        <r:Label xml:lang="zh-CHS">黑种人、非洲裔美国人或黑人</r:Label>
+      </l:Category>
+      <l:Category id="ad7bcfb5-e4a9-4b8a-bc4f-1f39502cd215" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:ad7bcfb5-e4a9-4b8a-bc4f-1f39502cd215:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">American Indian or Alaska Native</r:Label>
+        <r:Label xml:lang="sq">Indian i Amerikës ose vendas i Alaskës</r:Label>
+        <r:Label xml:lang="es">India americana o nativa de Alaska</r:Label>
+        <r:Label xml:lang="sw">Mhindi Mwamerika au Asili ya Alaska</r:Label>
+        <r:Label xml:lang="fr">Amérindien ou population autochtone de l’Alaska</r:Label>
+        <r:Label xml:lang="de">Indianer oder Ureinwohner von Alaska</r:Label>
+        <r:Label xml:lang="zh-CHS">美洲印第安人或阿拉斯加原住民</r:Label>
+      </l:Category>
+      <l:Category id="b1e9dbb9-4902-4c77-8436-9509106b38a2" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:b1e9dbb9-4902-4c77-8436-9509106b38a2:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Asian Indian</r:Label>
+        <r:Label xml:lang="sq">Indian Aziatik</r:Label>
+        <r:Label xml:lang="es">India asiática</r:Label>
+        <r:Label xml:lang="sw">Mhindi Masia</r:Label>
+        <r:Label xml:lang="fr">Indien asiatique</r:Label>
+        <r:Label xml:lang="de">Inder</r:Label>
+        <r:Label xml:lang="zh-CHS">亚洲印度人</r:Label>
+      </l:Category>
+      <l:Category id="c7c0877a-2fd0-412f-bf47-f7dd85d085e2" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:c7c0877a-2fd0-412f-bf47-f7dd85d085e2:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Chinese</r:Label>
+        <r:Label xml:lang="sq">Kinez</r:Label>
+        <r:Label xml:lang="es">China</r:Label>
+        <r:Label xml:lang="sw">Mchina</r:Label>
+        <r:Label xml:lang="fr">Chinois</r:Label>
+        <r:Label xml:lang="de">Chinese</r:Label>
+        <r:Label xml:lang="zh-CHS">中国人</r:Label>
+      </l:Category>
+      <l:Category id="38499467-8e5f-4f09-800d-a450590b5b46" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:38499467-8e5f-4f09-800d-a450590b5b46:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Filipino</r:Label>
+        <r:Label xml:lang="sq">Filipinas</r:Label>
+        <r:Label xml:lang="es">Filipina</r:Label>
+        <r:Label xml:lang="sw">Mfilipino</r:Label>
+        <r:Label xml:lang="fr">Philippin</r:Label>
+        <r:Label xml:lang="de">Filipino</r:Label>
+        <r:Label xml:lang="zh-CHS">菲律宾人</r:Label>
+      </l:Category>
+      <l:Category id="eaa53ae7-37e0-471e-88c6-52ce3dd3dbb6" version="12.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:eaa53ae7-37e0-471e-88c6-52ce3dd3dbb6:12</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Other Asian</r:Label>
+        <r:Label xml:lang="sq">Aziatik tjetër</r:Label>
+        <r:Label xml:lang="es">Otra asiática</r:Label>
+        <r:Label xml:lang="sw">Masia Mwingine</r:Label>
+        <r:Label xml:lang="fr">Autre Asiatique</r:Label>
+        <r:Label xml:lang="de">Sonstiger Asiat</r:Label>
+        <r:Label xml:lang="zh-CHS">其他亚洲人</r:Label>
+      </l:Category>
+      <l:Category id="e065de2f-ae00-4164-ae68-6f146b7f6fd4" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:e065de2f-ae00-4164-ae68-6f146b7f6fd4:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Japanese</r:Label>
+        <r:Label xml:lang="sq">Japonez</r:Label>
+        <r:Label xml:lang="es">Japonesa</r:Label>
+        <r:Label xml:lang="sw">Mjapani</r:Label>
+        <r:Label xml:lang="fr">Japonais</r:Label>
+        <r:Label xml:lang="de">Japaner</r:Label>
+        <r:Label xml:lang="zh-CHS">日本人</r:Label>
+      </l:Category>
+      <l:Category id="6f7f234c-009f-41fd-9c38-930161309692" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:6f7f234c-009f-41fd-9c38-930161309692:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Korean</r:Label>
+        <r:Label xml:lang="sq">Korean</r:Label>
+        <r:Label xml:lang="es">Coreana</r:Label>
+        <r:Label xml:lang="sw">Mkorea</r:Label>
+        <r:Label xml:lang="fr">Coréen</r:Label>
+        <r:Label xml:lang="de">Koreaner</r:Label>
+        <r:Label xml:lang="zh-CHS">韩国人</r:Label>
+      </l:Category>
+      <l:Category id="1e9bfd03-0b05-49ef-9859-42592c0b371e" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:1e9bfd03-0b05-49ef-9859-42592c0b371e:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Vietnamese</r:Label>
+        <r:Label xml:lang="sq">Vietnamez</r:Label>
+        <r:Label xml:lang="es">Vietnamita</r:Label>
+        <r:Label xml:lang="sw">Mvietinamu</r:Label>
+        <r:Label xml:lang="fr">Vietnamien</r:Label>
+        <r:Label xml:lang="de">Vietnamese</r:Label>
+        <r:Label xml:lang="zh-CHS">越南人</r:Label>
+      </l:Category>
+      <l:Category id="3321ee63-e5b5-4d82-9f07-5cc46de85b82" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:3321ee63-e5b5-4d82-9f07-5cc46de85b82:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Native Hawaiian</r:Label>
+        <r:Label xml:lang="sq">Vendas i Havait</r:Label>
+        <r:Label xml:lang="es">Nativa de Hawaii</r:Label>
+        <r:Label xml:lang="sw">Mhawaii Asili</r:Label>
+        <r:Label xml:lang="fr">Population autochtone de Hawaï</r:Label>
+        <r:Label xml:lang="de">Ureinwohner von Hawaii</r:Label>
+        <r:Label xml:lang="zh-CHS">夏威夷土著</r:Label>
+      </l:Category>
+      <l:Category id="22fbd448-c062-48b9-a7e1-ae71a35e6c7a" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:22fbd448-c062-48b9-a7e1-ae71a35e6c7a:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Guamanian or Chamorro</r:Label>
+        <r:Label xml:lang="sq">Nga ishulli Guam ose nga Kamorro</r:Label>
+        <r:Label xml:lang="es">Guameña o Chamorro</r:Label>
+        <r:Label xml:lang="sw">Mguamaniani au Chamoro</r:Label>
+        <r:Label xml:lang="fr">Guamanien ou Chamorro</r:Label>
+        <r:Label xml:lang="de">Guamer oder Chamorro</r:Label>
+        <r:Label xml:lang="zh-CHS">关岛人或查莫罗人</r:Label>
+      </l:Category>
+      <l:Category id="30305de0-a096-4b9a-b736-3d5601e2d669" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:30305de0-a096-4b9a-b736-3d5601e2d669:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Samoan</r:Label>
+        <r:Label xml:lang="sq">Samoan</r:Label>
+        <r:Label xml:lang="es">Samoana</r:Label>
+        <r:Label xml:lang="sw">Msamoa</r:Label>
+        <r:Label xml:lang="fr">Samoan</r:Label>
+        <r:Label xml:lang="de">Samoaner</r:Label>
+        <r:Label xml:lang="zh-CHS">萨摩亚人</r:Label>
+      </l:Category>
+      <l:Category id="2ab10dca-d428-4d49-8163-2fffd6a5509b" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:2ab10dca-d428-4d49-8163-2fffd6a5509b:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Other Pacific Islander</r:Label>
+        <r:Label xml:lang="sq">Nga ishuj të tjerë të Paqësorit</r:Label>
+        <r:Label xml:lang="es">Otra de las islas del Pacífico</r:Label>
+        <r:Label xml:lang="sw">Mpasifiki Mwingine wa Kisiwa</r:Label>
+        <r:Label xml:lang="fr">Autre natif d’Océanie</r:Label>
+        <r:Label xml:lang="de">Sonstiger Pazifikinsulaner</r:Label>
+        <r:Label xml:lang="zh-CHS">其他太平洋岛上居民</r:Label>
+      </l:Category>
+      <l:Category id="9b10a2e1-9baa-4949-83e8-1e7e4d07627c" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:9b10a2e1-9baa-4949-83e8-1e7e4d07627c:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Some other race</r:Label>
+        <r:Label xml:lang="sq">Ndonjë racë tjetër</r:Label>
+        <r:Label xml:lang="es">Alguna otra raza</r:Label>
+        <r:Label xml:lang="sw">Jamii zingine</r:Label>
+        <r:Label xml:lang="fr">Autre</r:Label>
+        <r:Label xml:lang="de">Andere Rasse</r:Label>
+        <r:Label xml:lang="zh-CHS">其它种族</r:Label>
+      </l:Category>
+    </l:CategoryScheme>
+    <l:CategoryScheme id="d9b3f083-444f-4a63-a43b-4178e45b7213" version="4.0.0" versionDate="2010-03-19T10:28:56" agency="opendata.colectica.org" isPublished="true">
+      <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+      <l:CategorySchemeName xml:lang="en-US">livesElsewhereCategories</l:CategorySchemeName>
+      <r:Label xml:lang="en-US">Lives Elsewhere</r:Label>
+      <l:Category id="65c74946-435b-4e9c-9119-386bcc0dcfa7" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:65c74946-435b-4e9c-9119-386bcc0dcfa7:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">No</r:Label>
+        <r:Label xml:lang="sq">Jo</r:Label>
+        <r:Label xml:lang="es">No</r:Label>
+        <r:Label xml:lang="sw">Hapana</r:Label>
+        <r:Label xml:lang="fr">Non</r:Label>
+        <r:Label xml:lang="de">Nein</r:Label>
+        <r:Label xml:lang="zh-CHS">否</r:Label>
+      </l:Category>
+      <l:Category id="605d2a7d-bc8f-4285-8ac5-bb41902550f0" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:605d2a7d-bc8f-4285-8ac5-bb41902550f0:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Yes</r:Label>
+        <r:Label xml:lang="sq">Po</r:Label>
+        <r:Label xml:lang="es">Sí</r:Label>
+        <r:Label xml:lang="sw">Ndiyo</r:Label>
+        <r:Label xml:lang="fr">Oui</r:Label>
+        <r:Label xml:lang="de">Ja</r:Label>
+        <r:Label xml:lang="zh-CHS">是</r:Label>
+      </l:Category>
+      <l:Category id="611bdf6c-c40f-4183-90d5-129e63a51036" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:611bdf6c-c40f-4183-90d5-129e63a51036:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">In college housing</r:Label>
+        <r:Label xml:lang="sq">Në kolegj</r:Label>
+        <r:Label xml:lang="es">En vivienda universitaria</r:Label>
+        <r:Label xml:lang="sw">Katika makazi ya chuo</r:Label>
+        <r:Label xml:lang="fr">Résidence universitaire</r:Label>
+        <r:Label xml:lang="de">Studentenwohnheim</r:Label>
+        <r:Label xml:lang="zh-CHS">在大学住宿</r:Label>
+      </l:Category>
+      <l:Category id="aa759108-f983-4a2a-93d2-b8d10010ad22" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:aa759108-f983-4a2a-93d2-b8d10010ad22:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">In the military</r:Label>
+        <r:Label xml:lang="sq">Në ushtri</r:Label>
+        <r:Label xml:lang="es">En el servicio militar</r:Label>
+        <r:Label xml:lang="sw">Katika kambi ya majeshi</r:Label>
+        <r:Label xml:lang="fr">Armée</r:Label>
+        <r:Label xml:lang="de">Militär</r:Label>
+        <r:Label xml:lang="zh-CHS">在军队服役</r:Label>
+      </l:Category>
+      <l:Category id="487fd6cc-6904-4c9c-bb60-6f1ad48e2add" version="17.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:487fd6cc-6904-4c9c-bb60-6f1ad48e2add:17</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">At a seasonal or second residence</r:Label>
+        <r:Label xml:lang="sq">Në një vendbanim sezonal ose të dytë</r:Label>
+        <r:Label xml:lang="es">En vivienda de temporada o segunda residencia</r:Label>
+        <r:Label xml:lang="sw">Kwa makazi ya muda au ya pili</r:Label>
+        <r:Label xml:lang="fr">Résidence secondaireou saisonnier</r:Label>
+        <r:Label xml:lang="de">an einem saisonabhängigen oder zweiten Wohnsitz</r:Label>
+        <r:Label xml:lang="zh-CHS">在季节性住所或第二住所</r:Label>
+      </l:Category>
+      <l:Category id="f8ea5246-6b5b-4295-8a67-e52799dbeef2" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:f8ea5246-6b5b-4295-8a67-e52799dbeef2:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">For child custody</r:Label>
+        <r:Label xml:lang="sq">Për kujdestari të një fëmije</r:Label>
+        <r:Label xml:lang="es">Por custodia de niños</r:Label>
+        <r:Label xml:lang="sw">Kwa malezi ya mtoto</r:Label>
+        <r:Label xml:lang="fr">Pour partage de garde d’enfant</r:Label>
+        <r:Label xml:lang="de">Zur Wahrnehmung des Sorgerechts für ein Kind</r:Label>
+        <r:Label xml:lang="zh-CHS">由于孩子监护权的原因</r:Label>
+      </l:Category>
+      <l:Category id="486a730e-2494-49fd-bcac-b1d7a0fe3279" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:486a730e-2494-49fd-bcac-b1d7a0fe3279:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">In jail or prison</r:Label>
+        <r:Label xml:lang="sq">Në burg</r:Label>
+        <r:Label xml:lang="es">En la cárcel o prisión</r:Label>
+        <r:Label xml:lang="sw">Gerezani au korokoroni</r:Label>
+        <r:Label xml:lang="fr">En prison</r:Label>
+        <r:Label xml:lang="de">Gefängnis oder Strafanstalt</r:Label>
+        <r:Label xml:lang="zh-CHS">在监狱或看守所</r:Label>
+      </l:Category>
+      <l:Category id="a027697a-93a6-4041-ace2-a4e2cb990aec" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:a027697a-93a6-4041-ace2-a4e2cb990aec:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">In a nursing home</r:Label>
+        <r:Label xml:lang="sq">Në spital</r:Label>
+        <r:Label xml:lang="es">En un hogar de convalecencia</r:Label>
+        <r:Label xml:lang="sw">Nyumba ya wazee</r:Label>
+        <r:Label xml:lang="fr">Dans une maison de retraite</r:Label>
+        <r:Label xml:lang="de">Seniorenheim</r:Label>
+        <r:Label xml:lang="zh-CHS">在安养中心／养老院</r:Label>
+      </l:Category>
+      <l:Category id="fdfb1233-c481-4ee5-ab2b-20cbbb3cc262" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:fdfb1233-c481-4ee5-ab2b-20cbbb3cc262:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">For another reason</r:Label>
+        <r:Label xml:lang="sq">Për një arsye tjetër</r:Label>
+        <r:Label xml:lang="es">Por alguna otra razón</r:Label>
+        <r:Label xml:lang="sw">Kwa sababu nyingine</r:Label>
+        <r:Label xml:lang="fr">Pour une autre raison</r:Label>
+        <r:Label xml:lang="de">aus anderem Grund</r:Label>
+        <r:Label xml:lang="zh-CHS">其它原因</r:Label>
+      </l:Category>
+    </l:CategoryScheme>
+    <l:CategoryScheme id="a3872eb5-3c79-495f-a8a7-e13224eb544b" version="6.0.0" versionDate="2010-03-21T06:59:15" agency="opendata.colectica.org" isPublished="true">
+      <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+      <l:CategorySchemeName xml:lang="en-US">relatedCategories</l:CategorySchemeName>
+      <r:Label xml:lang="en-US">Related</r:Label>
+      <l:Category id="8e1976e5-acfc-4cfa-8175-a9b67755d702" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:8e1976e5-acfc-4cfa-8175-a9b67755d702:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Husband or wife</r:Label>
+        <r:Label xml:lang="sq">Bashkëshorti ose bashkëshortja</r:Label>
+        <r:Label xml:lang="es">Esposo(a)</r:Label>
+        <r:Label xml:lang="sw">Mume au mke</r:Label>
+        <r:Label xml:lang="fr">Mari ou femme</r:Label>
+        <r:Label xml:lang="de">Ehemann oder Ehefrau</r:Label>
+        <r:Label xml:lang="zh-CHS">丈夫或妻子</r:Label>
+      </l:Category>
+      <l:Category id="18baaa31-7c21-4e73-9128-a6b6a4d02655" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:18baaa31-7c21-4e73-9128-a6b6a4d02655:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Biological son or daughter</r:Label>
+        <r:Label xml:lang="sq">I biri ose e bija biologjike</r:Label>
+        <r:Label xml:lang="es">Hijo(a) biológico(a)</r:Label>
+        <r:Label xml:lang="sw">Mwana wa kiume au wa kike wa kizazi</r:Label>
+        <r:Label xml:lang="fr">Fils ou fille biologique</r:Label>
+        <r:Label xml:lang="de">Biologischer Sohn oder Tochter</r:Label>
+        <r:Label xml:lang="zh-CHS">亲生子女</r:Label>
+      </l:Category>
+      <l:Category id="66424e0a-e488-4e2f-ab19-bf356b74065d" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:66424e0a-e488-4e2f-ab19-bf356b74065d:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Adopted son or daughter</r:Label>
+        <r:Label xml:lang="sq">I biri ose e bija e adoptuar</r:Label>
+        <r:Label xml:lang="es">Hijo(a) adoptivo(a)</r:Label>
+        <r:Label xml:lang="sw">Mwana wa kiume au wa kike wa kulea</r:Label>
+        <r:Label xml:lang="fr">Fils ou fille adoptif(ive)</r:Label>
+        <r:Label xml:lang="de">Adoptivsohn oder Adoptivtochter</r:Label>
+        <r:Label xml:lang="zh-CHS">养子女</r:Label>
+      </l:Category>
+      <l:Category id="ef9b6d1e-6f44-4b5d-b38b-790a39a9420a" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:ef9b6d1e-6f44-4b5d-b38b-790a39a9420a:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Stepson or stepdaughter</r:Label>
+        <r:Label xml:lang="sq">Thjeshtri ose thjeshtra</r:Label>
+        <r:Label xml:lang="es">Hijastro(a)</r:Label>
+        <r:Label xml:lang="sw">Mwana wa kiume au wa kike wa kambo</r:Label>
+        <r:Label xml:lang="fr">Beau-fils ou belle-fille</r:Label>
+        <r:Label xml:lang="de">Stiefsohn oder Stieftochter</r:Label>
+        <r:Label xml:lang="zh-CHS">继子女</r:Label>
+      </l:Category>
+      <l:Category id="d3780e3c-85ec-4dc0-87ac-52767d428f3d" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:d3780e3c-85ec-4dc0-87ac-52767d428f3d:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Brother or sister</r:Label>
+        <r:Label xml:lang="sq">I vëllai ose e motra</r:Label>
+        <r:Label xml:lang="es">Hermano(a)</r:Label>
+        <r:Label xml:lang="sw">Ndugu au dada</r:Label>
+        <r:Label xml:lang="fr">Frère ou soeur</r:Label>
+        <r:Label xml:lang="de">Bruder oder Schwester</r:Label>
+        <r:Label xml:lang="zh-CHS">兄弟或姐妹</r:Label>
+      </l:Category>
+      <l:Category id="91e44e85-003e-40e7-9b29-2c52c23cc3a6" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:91e44e85-003e-40e7-9b29-2c52c23cc3a6:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Father or mother</r:Label>
+        <r:Label xml:lang="sq">I ati ose e ëma</r:Label>
+        <r:Label xml:lang="es">Padre o madre</r:Label>
+        <r:Label xml:lang="sw">Baba au mama</r:Label>
+        <r:Label xml:lang="fr">Père ou mère</r:Label>
+        <r:Label xml:lang="de">Vater oder Mutter</r:Label>
+        <r:Label xml:lang="zh-CHS">父亲或母亲</r:Label>
+      </l:Category>
+      <l:Category id="eff6123a-2201-444a-a143-78ca75b640e9" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:eff6123a-2201-444a-a143-78ca75b640e9:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Grandchild</r:Label>
+        <r:Label xml:lang="sq">Nipi/mbesa</r:Label>
+        <r:Label xml:lang="es">Nieto(a)</r:Label>
+        <r:Label xml:lang="sw">Mjukuu</r:Label>
+        <r:Label xml:lang="fr">Petit-fils, petite-fille</r:Label>
+        <r:Label xml:lang="de">Enkel</r:Label>
+        <r:Label xml:lang="zh-CHS">(外）孙子（女）</r:Label>
+      </l:Category>
+      <l:Category id="fc74e6e6-b23f-4bb6-bfc2-906b797cf12a" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:fc74e6e6-b23f-4bb6-bfc2-906b797cf12a:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Parent-in-law</r:Label>
+        <r:Label xml:lang="sq">Vjehrri/vjehrra</r:Label>
+        <r:Label xml:lang="es">Suegro(a)</r:Label>
+        <r:Label xml:lang="sw">Wakwe</r:Label>
+        <r:Label xml:lang="fr">Beau-père, belle-mère</r:Label>
+        <r:Label xml:lang="de">Schwiegervater oder Schwiegermutter</r:Label>
+        <r:Label xml:lang="zh-CHS">配偶的父母</r:Label>
+      </l:Category>
+      <l:Category id="c7439cdc-6d03-47c1-9619-8b5d8eda7989" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:c7439cdc-6d03-47c1-9619-8b5d8eda7989:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Son-in-law or daughter-in-law</r:Label>
+        <r:Label xml:lang="sq">Dhëndri ose nusja</r:Label>
+        <r:Label xml:lang="es">Yerno o nuera</r:Label>
+        <r:Label xml:lang="sw">mkwe au wifi</r:Label>
+        <r:Label xml:lang="fr">Gendre ou belle-fille</r:Label>
+        <r:Label xml:lang="de">Schwiegersohn oder Schwiegertochter</r:Label>
+        <r:Label xml:lang="zh-CHS">女婿、儿媳</r:Label>
+      </l:Category>
+      <l:Category id="f3f06631-27d9-46dc-850e-ea7606e2f789" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:f3f06631-27d9-46dc-850e-ea7606e2f789:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Other relative</r:Label>
+        <r:Label xml:lang="sq">I/e afërm tjetër</r:Label>
+        <r:Label xml:lang="es">Otro pariente</r:Label>
+        <r:Label xml:lang="sw">Jamaa mwingine</r:Label>
+        <r:Label xml:lang="fr">Autre lien de parenté</r:Label>
+        <r:Label xml:lang="de">Sonstige(r) Verwandte(r)</r:Label>
+        <r:Label xml:lang="zh-CHS">其它亲属关系</r:Label>
+      </l:Category>
+      <l:Category id="ed4483e9-df7f-48c7-9f2e-c6d569595de9" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:ed4483e9-df7f-48c7-9f2e-c6d569595de9:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Roomer or boarder</r:Label>
+        <r:Label xml:lang="sq">Qiraxhi</r:Label>
+        <r:Label xml:lang="es">Inquilino(a) o pupilo(a)</r:Label>
+        <r:Label xml:lang="sw">Mpangaji au mkaaji</r:Label>
+        <r:Label xml:lang="fr">Pensionnaire</r:Label>
+        <r:Label xml:lang="de">Untermieter oder Pensionsgast</r:Label>
+        <r:Label xml:lang="zh-CHS">房客或包食宿的住宿者</r:Label>
+      </l:Category>
+      <l:Category id="175bc5f8-2de3-49f1-b66e-98a6bb14e06f" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:175bc5f8-2de3-49f1-b66e-98a6bb14e06f:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Housemate or roommate</r:Label>
+        <r:Label xml:lang="sq">Shok/shoqe shtëpie ose shok/shoqe dhome</r:Label>
+        <r:Label xml:lang="es">Compañero(a) de casa o de cuarto</r:Label>
+        <r:Label xml:lang="sw">Mkazi mwenzako</r:Label>
+        <r:Label xml:lang="fr">Colocataire</r:Label>
+        <r:Label xml:lang="de">Mitbewohner oder Hausgenosse</r:Label>
+        <r:Label xml:lang="zh-CHS">同住合租人或室友</r:Label>
+      </l:Category>
+      <l:Category id="ce6d93b4-6afd-4969-b515-09cf2be65685" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:ce6d93b4-6afd-4969-b515-09cf2be65685:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Unmarried partner</r:Label>
+        <r:Label xml:lang="sq">Bashkëjetues/bashkëjetuese</r:Label>
+        <r:Label xml:lang="es">Pareja no casada</r:Label>
+        <r:Label xml:lang="sw">Mwezio ambaye hamjafunga ndoa</r:Label>
+        <r:Label xml:lang="fr">Concubin(e)</r:Label>
+        <r:Label xml:lang="de">Unverheiratete(r) Lebenspartner(in)</r:Label>
+        <r:Label xml:lang="zh-CHS">同居伴侣</r:Label>
+      </l:Category>
+      <l:Category id="71b7fe16-2373-4690-8aa7-43508e01a585" version="16.0.0" versionDate="2010-03-28T05:04:58" missing="false">
+        <r:UserID type="11179-IRDI">opendata.colectica.org:71b7fe16-2373-4690-8aa7-43508e01a585:16</r:UserID>
+        <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+        <r:Label xml:lang="en-US">Other nonrelative</r:Label>
+        <r:Label xml:lang="sq">Jo i/e afërm tjetër</r:Label>
+        <r:Label xml:lang="es">Otro no pariente</r:Label>
+        <r:Label xml:lang="sw">Mtu mwingine asiye jamaa</r:Label>
+        <r:Label xml:lang="fr">Autre sans lien de parenté</r:Label>
+        <r:Label xml:lang="de">Sonstige(r) Nicht-Verwandte(r)</r:Label>
+        <r:Label xml:lang="zh-CHS">其它非亲属关系</r:Label>
+      </l:Category>
+    </l:CategoryScheme>
+    <l:CodeScheme id="6e2479f6-c09e-4eac-8c9a-f62cd8123f69" version="14.0.0" versionDate="2011-02-05T13:43:31" agency="opendata.colectica.org">
+      <r:VersionResponsibility>admin</r:VersionResponsibility>
+      <r:VersionRationale xml:lang="en-US">Nothing much.</r:VersionRationale>
+      <l:CodeSchemeName xml:lang="en-US">additionalPeopleCodes</l:CodeSchemeName>
+      <r:Label xml:lang="en-US">Additional People Codes</r:Label>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>66447128-5e8a-4f8a-89b4-cde7b20b74ce</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>19</r:Version>
+        </l:CategoryReference>
+        <l:Value>1</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>fdc0160a-b431-4f55-8205-fd8e46728f54</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>19</r:Version>
+        </l:CategoryReference>
+        <l:Value>2</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>59e29a9f-1c4a-4d6f-b944-358b75a62106</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>20</r:Version>
+        </l:CategoryReference>
+        <l:Value>3</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>24922297-e81a-4864-bf3d-9661f98d2914</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>20</r:Version>
+        </l:CategoryReference>
+        <l:Value>4</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>a8339f60-c3df-4939-bc59-ae485d8fc933</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>19</r:Version>
+        </l:CategoryReference>
+        <l:Value>5</l:Value>
+      </l:Code>
+    </l:CodeScheme>
+    <l:CodeScheme id="83e405bb-eb47-408c-917c-b8c834cbbf8a" version="13.0.0" versionDate="2010-03-28T05:04:58" agency="opendata.colectica.org">
+      <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+      <l:CodeSchemeName xml:lang="en-US">houseOwnershipCodes</l:CodeSchemeName>
+      <r:Label xml:lang="en-US">House Ownership Codes</r:Label>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>61428675-ddb2-4fbc-ad47-4cb077aae407</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>18</r:Version>
+        </l:CategoryReference>
+        <l:Value>1</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>e1e350d6-132b-4a74-b3b8-4f6b39fab9e1</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>17</r:Version>
+        </l:CategoryReference>
+        <l:Value>2</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>1ebe6583-7268-48a2-bb6f-376caf977091</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>17</r:Version>
+        </l:CategoryReference>
+        <l:Value>3</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>5c6abc12-a25b-408f-ae54-451ab6a3f840</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>17</r:Version>
+        </l:CategoryReference>
+        <l:Value>4</l:Value>
+      </l:Code>
+    </l:CodeScheme>
+    <l:CodeScheme id="e2648604-e1a5-4a75-8b0e-52a5c13dd89c" version="13.0.0" versionDate="2011-02-09T10:11:14" agency="opendata.colectica.org">
+      <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+      <l:CodeSchemeName xml:lang="en-US">genderCodes</l:CodeSchemeName>
+      <r:Label xml:lang="en-US">Gender Codes</r:Label>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>475d46e2-1e97-42f5-84cf-abc671ba58b5</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>17</r:Version>
+        </l:CategoryReference>
+        <l:Value>1</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>96ac9380-0cf1-4c06-ae63-47da018d04c9</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>17</r:Version>
+        </l:CategoryReference>
+        <l:Value>2</l:Value>
+      </l:Code>
+    </l:CodeScheme>
+    <l:CodeScheme id="0bda55b4-2c7d-4abe-8569-41ca01bbb912" version="12.0.0" versionDate="2010-03-28T05:04:58" agency="opendata.colectica.org">
+      <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+      <l:CodeSchemeName xml:lang="en-US">hispanicOriginCodes</l:CodeSchemeName>
+      <r:Label xml:lang="en-US">Hispanic origin Codes</r:Label>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>3006a7be-7aa3-4128-8e25-29d9a8e6158f</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>1</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>17ca5407-8a80-4353-9700-e479dea251f6</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>2</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>0ec02954-063f-4d53-9bb5-7d7cc6fca309</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>3</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>9da4a129-b3c9-40d9-b56f-07e99b3140de</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>4</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>6a16a27c-017b-4566-b560-8d43449cf2fa</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>5</l:Value>
+      </l:Code>
+    </l:CodeScheme>
+    <l:CodeScheme id="81b8d50c-700b-49e5-9dd5-488c5282f798" version="12.0.0" versionDate="2010-03-28T05:04:58" agency="opendata.colectica.org">
+      <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+      <l:CodeSchemeName xml:lang="en-US">raceCodes</l:CodeSchemeName>
+      <r:Label xml:lang="en-US">Race Codes</r:Label>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>3dda8040-219f-4982-905d-0ba9f019a8e0</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>1</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>2eedcddc-0b6e-4e5a-a630-9388162914d8</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>2</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>ad7bcfb5-e4a9-4b8a-bc4f-1f39502cd215</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>3</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>b1e9dbb9-4902-4c77-8436-9509106b38a2</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>4</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>c7c0877a-2fd0-412f-bf47-f7dd85d085e2</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>5</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>38499467-8e5f-4f09-800d-a450590b5b46</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>6</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>e065de2f-ae00-4164-ae68-6f146b7f6fd4</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>7</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>6f7f234c-009f-41fd-9c38-930161309692</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>8</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>1e9bfd03-0b05-49ef-9859-42592c0b371e</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>9</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>3321ee63-e5b5-4d82-9f07-5cc46de85b82</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>10</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>22fbd448-c062-48b9-a7e1-ae71a35e6c7a</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>11</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>30305de0-a096-4b9a-b736-3d5601e2d669</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>12</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>2ab10dca-d428-4d49-8163-2fffd6a5509b</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>13</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>9b10a2e1-9baa-4949-83e8-1e7e4d07627c</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>14</l:Value>
+      </l:Code>
+    </l:CodeScheme>
+    <l:CodeScheme id="fb9b3346-809e-41ff-9d8c-f122e246a3af" version="12.0.0" versionDate="2010-03-28T05:04:58" agency="opendata.colectica.org">
+      <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+      <l:CodeSchemeName xml:lang="en-US">livesElsewhereCodes</l:CodeSchemeName>
+      <r:Label xml:lang="en-US">Lives Elsewhere Codes</r:Label>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>65c74946-435b-4e9c-9119-386bcc0dcfa7</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>1</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>605d2a7d-bc8f-4285-8ac5-bb41902550f0</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>2</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>611bdf6c-c40f-4183-90d5-129e63a51036</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>3</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>aa759108-f983-4a2a-93d2-b8d10010ad22</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>4</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>487fd6cc-6904-4c9c-bb60-6f1ad48e2add</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>17</r:Version>
+        </l:CategoryReference>
+        <l:Value>5</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>f8ea5246-6b5b-4295-8a67-e52799dbeef2</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>6</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>486a730e-2494-49fd-bcac-b1d7a0fe3279</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>7</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>a027697a-93a6-4041-ace2-a4e2cb990aec</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>8</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>fdfb1233-c481-4ee5-ab2b-20cbbb3cc262</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>9</l:Value>
+      </l:Code>
+    </l:CodeScheme>
+    <l:CodeScheme id="115cc270-c8f5-44f8-a7fd-576b51345e75" version="12.0.0" versionDate="2010-03-28T05:04:58" agency="opendata.colectica.org">
+      <r:VersionRationale xml:lang="en-US">Publishing study</r:VersionRationale>
+      <l:CodeSchemeName xml:lang="en-US">relatedCodes</l:CodeSchemeName>
+      <r:Label xml:lang="en-US">Related Codes</r:Label>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>8e1976e5-acfc-4cfa-8175-a9b67755d702</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>1</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>18baaa31-7c21-4e73-9128-a6b6a4d02655</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>2</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>66424e0a-e488-4e2f-ab19-bf356b74065d</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>3</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>ef9b6d1e-6f44-4b5d-b38b-790a39a9420a</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>4</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>d3780e3c-85ec-4dc0-87ac-52767d428f3d</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>5</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>91e44e85-003e-40e7-9b29-2c52c23cc3a6</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>6</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>eff6123a-2201-444a-a143-78ca75b640e9</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>7</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>fc74e6e6-b23f-4bb6-bfc2-906b797cf12a</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>8</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>c7439cdc-6d03-47c1-9619-8b5d8eda7989</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>9</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>f3f06631-27d9-46dc-850e-ea7606e2f789</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>10</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>ed4483e9-df7f-48c7-9f2e-c6d569595de9</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>11</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>175bc5f8-2de3-49f1-b66e-98a6bb14e06f</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>12</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>ce6d93b4-6afd-4969-b515-09cf2be65685</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>13</l:Value>
+      </l:Code>
+      <l:Code>
+        <l:CategoryReference>
+          <r:ID>71b7fe16-2373-4690-8aa7-43508e01a585</r:ID>
+          <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+          <r:Version>16</r:Version>
+        </l:CategoryReference>
+        <l:Value>14</l:Value>
+      </l:Code>
+    </l:CodeScheme>
+  </g:ResourcePackage>
+  <s:StudyUnit id="194d128c-93b2-4378-b626-2105edbdf561" version="3.0.0" versionDate="2011-04-05T04:00:53" agency="example.org">
+    <r:Citation>
+      <r:Title xml:lang="en-US">United States Census 2010</r:Title>
+      <dc:DCElements>
+        <dc2:title xml:lang="en-US">United States Census 2010</dc2:title>
+        <dc2:description xml:lang="en-US">United States Census 2010
+</dc2:description>
+      </dc:DCElements>
+    </r:Citation>
+    <s:Abstract id="a1ebbaae-5fea-4019-bd16-211fc7471f44">
+      <r:Content xml:lang="en-US">The U.S. Census counts every resident in the United States, and is required by the Constitution to take place every 10 years.</r:Content>
+    </s:Abstract>
+    <r:UniverseReference>
+      <r:ID>b2200741-9232-4d97-91ed-3ff1fb11f818</r:ID>
+      <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+      <r:Version>1</r:Version>
+    </r:UniverseReference>
+    <r:SeriesStatement>
+      <r:SeriesName xml:lang="en-US">Unknown</r:SeriesName>
+    </r:SeriesStatement>
+    <r:FundingInformation>
+      <r:AgencyOrganizationReference>
+        <r:ID>99f6fa39-bcc3-4752-93b7-93e467081406</r:ID>
+        <r:IdentifyingAgency>opendata.colectica.org</r:IdentifyingAgency>
+        <r:Version>0</r:Version>
+      </r:AgencyOrganizationReference>
+      <r:Description xml:lang="en-US">Funding for the United States 2010 Census</r:Description>
+    </r:FundingInformation>
+    <s:Purpose id="930decb8-5fe5-4860-a251-c932b1612aee">
+      <r:Content xml:lang="en-US">
+        <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml">
+          <xhtml:p>The purpose of the 2010 census is to determine the distribution of Congressional seats to states. The Census is</xhtml:p>
+          <xhtml:ul>
+            <xhtml:li>
+              <xhtml:p>mandated by the U.S. Constitution</xhtml:p>
+            </xhtml:li>
+            <xhtml:li>
+              <xhtml:p>used to apportion seats in the U.S. House of Representatives</xhtml:p>
+            </xhtml:li>
+            <xhtml:li>
+              <xhtml:p>used to define legislature districts, school district assignment areas and other important functional areas of government</xhtml:p>
+            </xhtml:li>
+          </xhtml:ul>
+          <xhtml:p>The 2010 questionnaire is one of the shortest in history, and comes very close to the length and scope of inquiries asked in 1790. Everyone in the household answers seven questions: name, gender, race, ethnicity, and whether they sometimes live somewhere else. The head of household answers how many people live in the residence, whether it is a house, apartment, or mobile home, and provides a telephone number for Census workers to follow up if any information is incomplete or missing.</xhtml:p>
+        </xhtml:div>
+      </r:Content>
+    </s:Purpose>
+    <r:Coverage>
+      <r:SpatialCoverage id="af54f2bd-796d-4b5a-bb11-dfc1f9e29b59">
+        <r:TopLevelReference>
+          <r:LevelName>United States</r:LevelName>
+        </r:TopLevelReference>
+        <r:LowestLevelReference>
+          <r:LevelName>United States</r:LevelName>
+        </r:LowestLevelReference>
+      </r:SpatialCoverage>
+      <r:TemporalCoverage id="f9224828-876e-4aff-b6bc-8896ec06f9ac">
+        <r:ReferenceDate>
+          <r:SimpleDate>2010-04-01T00:00:00</r:SimpleDate>
+        </r:ReferenceDate>
+      </r:TemporalCoverage>
+    </r:Coverage>
+    <r:Note id="b5e4d065-18c4-43ba-8ac4-7ab09510492b" type="System">
+      <r:Relationship>
+        <r:RelatedToReference>
+          <r:ID>194d128c-93b2-4378-b626-2105edbdf561</r:ID>
+          <r:IdentifyingAgency>example.org</r:IdentifyingAgency>
+          <r:Version>3</r:Version>
+        </r:RelatedToReference>
+        <r:RelationshipDescription>colectica:RequiredPackage</r:RelationshipDescription>
+      </r:Relationship>
+      <r:Content>example.org:e1b87f0f-5a32-4d0d-9e70-9bd195597bed:8</r:Content>
+    </r:Note>
+    <a:Archive id="6b6f944f-4c89-4189-88d8-ba4b7fd8fbd2" version="3.0.0" versionDate="2011-04-05T04:00:53" agency="example.org">
+      <!--Colectica does not currently support ArchiveSpecific element, but it is required by the schema.-->
+      <a:ArchiveSpecific>
+        <a:ArchiveOrganizationReference>
+          <r:ID>00000000-0000-0000-0000-000000000000</r:ID>
+          <r:IdentifyingAgency>Unsupported</r:IdentifyingAgency>
+          <r:Version>0</r:Version>
+        </a:ArchiveOrganizationReference>
+      </a:ArchiveSpecific>
+      <a:OrganizationScheme id="b99fadd6-9349-427b-9a66-64faa6b46eb1" version="1.0.0" versionDate="2011-04-05T04:05:27" agency="example.org" />
+    </a:Archive>
+  </s:StudyUnit>
+</ddi:DDIInstance>

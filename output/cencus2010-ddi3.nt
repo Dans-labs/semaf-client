@@ -1,0 +1,1079 @@
+@prefix #attributes: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:Abstract/> .
+@prefix #attributes1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:Purpose/> .
+@prefix #attributes10: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/a:Archive/> .
+@prefix #attributes11: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/> .
+@prefix #attributes12: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/> .
+@prefix #attributes13: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:Purpose/> .
+@prefix #attributes14: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/r:Coverage/r:TemporalCoverage/> .
+@prefix #attributes15: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/d:Methodology/> .
+@prefix #attributes16: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/d:Instrument/r:Software/> .
+@prefix #attributes17: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/d:Instrument/> .
+@prefix #attributes18: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/> .
+@prefix #attributes19: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/a:OrganizationScheme/a:Organization/> .
+@prefix #attributes2: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/r:Note/> .
+@prefix #attributes20: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/a:OrganizationScheme/> .
+@prefix #attributes21: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/c:UniverseScheme/> .
+@prefix #attributes22: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/d:QuestionScheme/> .
+@prefix #attributes23: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/> .
+@prefix #attributes24: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/s:Abstract/> .
+@prefix #attributes25: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/s:Purpose/r:Content/xhtml:div/> .
+@prefix #attributes26: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/s:Purpose/r:Content/> .
+@prefix #attributes27: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/s:Purpose/> .
+@prefix #attributes28: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Coverage/r:SpatialCoverage/> .
+@prefix #attributes29: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Coverage/r:TemporalCoverage/> .
+@prefix #attributes3: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/s:Abstract/> .
+@prefix #attributes30: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Note/> .
+@prefix #attributes31: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/a:Archive/> .
+@prefix #attributes32: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/> .
+@prefix #attributes33: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/> .
+@prefix #attributes4: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/s:Purpose/r:Content/xhtml:div/> .
+@prefix #attributes5: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/s:Purpose/r:Content/> .
+@prefix #attributes6: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/s:Purpose/> .
+@prefix #attributes7: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Coverage/r:SpatialCoverage/> .
+@prefix #attributes8: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Coverage/r:TemporalCoverage/> .
+@prefix #attributes9: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Note/> .
+@prefix #document: <https://dataverse.org/schema/cmdi/False/> .
+@prefix a:archive: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/> .
+@prefix a:archive1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/> .
+@prefix a:archiveorganizationreference: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/a:Archive/a:ArchiveSpecific/> .
+@prefix a:archiveorganizationreference1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/a:Archive/a:ArchiveSpecific/> .
+@prefix a:archivespecific: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/a:Archive/> .
+@prefix a:archivespecific1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/a:Archive/> .
+@prefix a:nickname-attrs: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/a:OrganizationScheme/a:Organization/> .
+@prefix a:organization: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/a:OrganizationScheme/> .
+@prefix a:organizationname-attrs: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/a:OrganizationScheme/a:Organization/> .
+@prefix a:organizationscheme: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/> .
+@prefix a:organizationschemename-attrs: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/a:OrganizationScheme/> .
+@prefix c:universescheme: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/> .
+@prefix c:universeschemename-attrs: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/c:UniverseScheme/> .
+@prefix citation: <https://dataverse.org/schema/citation> .
+@prefix cmdi: <https://dataverse.org/schema/cmdi/> .
+@prefix cmdidoc: <https://dataverse.org/schema/cmdi//#> .
+@prefix d:controlconstructreference: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/d:Instrument/> .
+@prefix d:datacollection: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/> .
+@prefix d:datacollectionmodulename-attrs: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/> .
+@prefix d:instrument: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/> .
+@prefix d:instrumentname-attrs: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/d:Instrument/> .
+@prefix d:methodology: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/> .
+@prefix d:questionscheme: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/> .
+@prefix d:questionschemename-attrs: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/d:QuestionScheme/> .
+@prefix dc2:description-attrs: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Citation/dc:DCElements/> .
+@prefix dc2:description-attrs1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Citation/dc:DCElements/> .
+@prefix dc2:title-attrs: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/r:Citation/dc:DCElements/> .
+@prefix dc2:title-attrs1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/r:Citation/dc:DCElements/> .
+@prefix dc2:title-attrs2: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Citation/dc:DCElements/> .
+@prefix dc2:title-attrs3: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/r:Citation/dc:DCElements/> .
+@prefix dc2:title-attrs4: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Citation/dc:DCElements/> .
+@prefix dc:dcelements: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/r:Citation/> .
+@prefix dc:dcelements1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/r:Citation/> .
+@prefix dc:dcelements2: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Citation/> .
+@prefix dc:dcelements3: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/r:Citation/> .
+@prefix dc:dcelements4: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Citation/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ddi:ddiinstance: <https://dataverse.org/schema/cmdi/#document/> .
+@prefix g:abstract: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/> .
+@prefix g:datacollection: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/> .
+@prefix g:group: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/> .
+@prefix g:purpose: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/> .
+@prefix g:purpose1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/> .
+@prefix g:resourcepackage: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/> .
+@prefix g:studyunit: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/> .
+@prefix keywords: <https://dataverse.org/schema/cmdi//Keyword#> .
+@prefix ns1: <https://dataverse.org/schema/cmdi/xml:> .
+@prefix ns10: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/s:> .
+@prefix ns11: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:> .
+@prefix ns12: <https://dataverse.org/schema/cmdi/xmlns:> .
+@prefix ns13: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/c:> .
+@prefix ns14: <https://dataverse.org/schema/cmdi/xhtml:> .
+@prefix ns15: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Citation/dc:> .
+@prefix ns16: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:> .
+@prefix ns17: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:> .
+@prefix ns18: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/d:Instrument/r:> .
+@prefix ns19: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/d:> .
+@prefix ns2: <https://dataverse.org/schema/cmdi/d:> .
+@prefix ns20: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Coverage/r:> .
+@prefix ns21: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:> .
+@prefix ns22: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/a:OrganizationScheme/a:> .
+@prefix ns23: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/r:> .
+@prefix ns24: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Citation/dc:> .
+@prefix ns25: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/s:> .
+@prefix ns26: <https://dataverse.org/schema/cmdi/a:> .
+@prefix ns27: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/s:Purpose/r:Content/xhtml:> .
+@prefix ns28: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Coverage/r:> .
+@prefix ns29: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:> .
+@prefix ns3: <https://dataverse.org/schema/cmdi/r:> .
+@prefix ns30: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/a:Archive/a:> .
+@prefix ns31: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:> .
+@prefix ns32: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:> .
+@prefix ns33: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/r:> .
+@prefix ns34: <https://dataverse.org/schema/cmdi/c:> .
+@prefix ns35: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/s:Purpose/r:Content/xhtml:> .
+@prefix ns36: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/s:Purpose/r:> .
+@prefix ns37: <https://dataverse.org/schema/cmdi/#document/ddi:> .
+@prefix ns38: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Note/r:> .
+@prefix ns39: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Note/r:> .
+@prefix ns4: <https://dataverse.org/schema/cmdi/l:> .
+@prefix ns40: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/r:> .
+@prefix ns41: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/d:> .
+@prefix ns42: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/a:> .
+@prefix ns43: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/a:> .
+@prefix ns44: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/r:> .
+@prefix ns45: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/s:Purpose/r:> .
+@prefix ns46: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/r:Note/r:> .
+@prefix ns47: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/r:Citation/dc:> .
+@prefix ns48: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/a:> .
+@prefix ns49: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/r:Coverage/r:> .
+@prefix ns5: <https://dataverse.org/schema/citation/dsDescription#> .
+@prefix ns50: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/a:Archive/a:> .
+@prefix ns51: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/r:Citation/dc:> .
+@prefix ns6: <https://dataverse.org/schema/cmdi/dc2:> .
+@prefix ns7: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/r:Citation/dc:> .
+@prefix ns8: <https://dataverse.org/schema/cmdi/#> .
+@prefix ns9: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:> .
+@prefix r:agencyorganizationreference: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:FundingInformation/> .
+@prefix r:agencyorganizationreference1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:FundingInformation/> .
+@prefix r:citation: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/> .
+@prefix r:citation1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/> .
+@prefix r:citation2: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/> .
+@prefix r:citation3: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/> .
+@prefix r:citation4: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/> .
+@prefix r:content: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/s:Purpose/> .
+@prefix r:content-attrs: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:Abstract/> .
+@prefix r:content-attrs1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:Purpose/> .
+@prefix r:content-attrs2: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/s:Abstract/> .
+@prefix r:content-attrs3: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:Purpose/> .
+@prefix r:content-attrs4: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/s:Abstract/> .
+@prefix r:content1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/s:Purpose/> .
+@prefix r:coverage: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/> .
+@prefix r:coverage1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/> .
+@prefix r:coverage2: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/> .
+@prefix r:date: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/d:Instrument/r:Software/> .
+@prefix r:description-attrs: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:FundingInformation/> .
+@prefix r:description-attrs1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/d:Instrument/> .
+@prefix r:description-attrs2: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/a:OrganizationScheme/a:Organization/> .
+@prefix r:description-attrs3: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:FundingInformation/> .
+@prefix r:fundinginformation: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/> .
+@prefix r:fundinginformation1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/> .
+@prefix r:lowestlevelreference: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Coverage/r:SpatialCoverage/> .
+@prefix r:lowestlevelreference1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Coverage/r:SpatialCoverage/> .
+@prefix r:note: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/> .
+@prefix r:note1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/> .
+@prefix r:note2: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/> .
+@prefix r:referencedate: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Coverage/r:TemporalCoverage/> .
+@prefix r:referencedate1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/r:Coverage/r:TemporalCoverage/> .
+@prefix r:referencedate2: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Coverage/r:TemporalCoverage/> .
+@prefix r:relatedtoreference: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/r:Note/r:Relationship/> .
+@prefix r:relatedtoreference1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Note/r:Relationship/> .
+@prefix r:relatedtoreference2: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Note/r:Relationship/> .
+@prefix r:relationship: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/r:Note/> .
+@prefix r:relationship1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Note/> .
+@prefix r:relationship2: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Note/> .
+@prefix r:seriesname-attrs: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:SeriesStatement/> .
+@prefix r:seriesname-attrs1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:SeriesStatement/> .
+@prefix r:seriesstatement: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/> .
+@prefix r:seriesstatement1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/> .
+@prefix r:software: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/d:Instrument/> .
+@prefix r:spatialcoverage: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Coverage/> .
+@prefix r:spatialcoverage1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Coverage/> .
+@prefix r:temporalcoverage: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Coverage/> .
+@prefix r:temporalcoverage1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/r:Coverage/> .
+@prefix r:temporalcoverage2: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Coverage/> .
+@prefix r:title-attrs: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/r:Citation/> .
+@prefix r:title-attrs1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/r:Citation/> .
+@prefix r:title-attrs2: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Citation/> .
+@prefix r:title-attrs3: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/r:Citation/> .
+@prefix r:title-attrs4: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Citation/> .
+@prefix r:toplevelreference: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Coverage/r:SpatialCoverage/> .
+@prefix r:toplevelreference1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Coverage/r:SpatialCoverage/> .
+@prefix r:universereference: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/> .
+@prefix r:universereference1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/> .
+@prefix r:userid-attrs: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/d:Methodology/> .
+@prefix r:userid-attrs1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/a:OrganizationScheme/a:Organization/> .
+@prefix r:versionrationale-attrs: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/d:QuestionScheme/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s:abstract: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/> .
+@prefix s:abstract1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/> .
+@prefix s:purpose: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/> .
+@prefix s:purpose1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/> .
+@prefix s:studyunit: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/> .
+@prefix s:studyunit1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/> .
+@prefix schema: <https://dataverse.org/schema/> .
+@prefix xhtml:div: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/s:Purpose/r:Content/> .
+@prefix xhtml:div1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/s:Purpose/r:Content/> .
+@prefix xhtml:ul: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/s:Purpose/r:Content/xhtml:div/> .
+@prefix xhtml:ul1: <https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/s:Purpose/r:Content/xhtml:div/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cmdi: ns8:document <https://dataverse.org/schema/cmdi/ddi:DDIInstance> ;
+    ns37:DDIInstance ns8:attributes,
+        <https://dataverse.org/schema/cmdi/g:Group>,
+        <https://dataverse.org/schema/cmdi/g:ResourcePackage>,
+        ns3:Citation,
+        <https://dataverse.org/schema/cmdi/s:StudyUnit> ;
+    ns9:Group ns8:attributes,
+        <https://dataverse.org/schema/cmdi/g:Abstract>,
+        <https://dataverse.org/schema/cmdi/g:Purpose>,
+        <https://dataverse.org/schema/cmdi/g:StudyUnit>,
+        ns3:Citation,
+        ns3:Note ;
+    ns31:Abstract ns8:attributes,
+        ns3:Content-attrs ;
+    ns31:Purpose ns8:attributes,
+        ns3:Content-attrs ;
+    ns31:StudyUnit <https://dataverse.org/schema/cmdi/s:StudyUnit> ;
+    ns21:StudyUnit ns8:attributes,
+        ns26:Archive,
+        ns3:Citation,
+        ns3:Coverage,
+        ns3:FundingInformation,
+        ns3:Note,
+        ns3:SeriesStatement,
+        ns3:UniverseReference,
+        <https://dataverse.org/schema/cmdi/s:Abstract>,
+        <https://dataverse.org/schema/cmdi/s:Purpose> ;
+    ns43:Archive ns8:attributes,
+        ns26:ArchiveSpecific ;
+    ns50:ArchiveSpecific ns26:ArchiveOrganizationReference ;
+    ns17:Citation <https://dataverse.org/schema/cmdi/dc:DCElements>,
+        ns3:Title-attrs ;
+    ns15:DCElements ns6:description-attrs,
+        ns6:title-attrs ;
+    ns17:Coverage ns3:SpatialCoverage,
+        ns3:TemporalCoverage ;
+    ns28:SpatialCoverage ns8:attributes,
+        ns3:LowestLevelReference,
+        ns3:TopLevelReference ;
+    ns28:TemporalCoverage ns8:attributes,
+        ns3:ReferenceDate ;
+    ns17:FundingInformation ns3:AgencyOrganizationReference,
+        ns3:Description-attrs ;
+    ns17:Note ns8:attributes,
+        ns3:Relationship ;
+    ns39:Relationship ns3:RelatedToReference ;
+    ns17:SeriesStatement ns3:SeriesName-attrs ;
+    ns10:Abstract ns8:attributes,
+        ns3:Content-attrs ;
+    ns10:Purpose ns5:Text,
+        ns8:attributes ;
+    ns45:Content ns8:attributes,
+        ns14:div ;
+    ns35:div ns8:attributes,
+        ns14:ul ;
+    ns33:Citation <https://dataverse.org/schema/cmdi/dc:DCElements>,
+        ns3:Title-attrs ;
+    ns7:DCElements ns6:title-attrs ;
+    ns33:Note ns8:attributes,
+        ns3:Relationship ;
+    ns46:Relationship ns3:RelatedToReference ;
+    ns9:ResourcePackage ns8:attributes,
+        ns26:OrganizationScheme,
+        ns34:UniverseScheme,
+        ns2:QuestionScheme,
+        <https://dataverse.org/schema/cmdi/g:DataCollection>,
+        <https://dataverse.org/schema/cmdi/g:Purpose>,
+        ns3:Citation ;
+    ns42:OrganizationScheme ns8:attributes,
+        ns26:Organization,
+        ns26:OrganizationSchemeName-attrs ;
+    ns22:Organization ns8:attributes,
+        ns26:Nickname-attrs,
+        ns26:OrganizationName-attrs,
+        ns3:Description-attrs,
+        ns3:UserID-attrs ;
+    ns13:UniverseScheme ns8:attributes,
+        ns34:UniverseSchemeName-attrs ;
+    ns19:QuestionScheme ns8:attributes,
+        ns2:QuestionSchemeName-attrs,
+        ns3:VersionRationale-attrs ;
+    ns32:DataCollection ns2:DataCollection ;
+    ns16:DataCollection ns8:attributes,
+        ns2:DataCollectionModuleName-attrs,
+        ns2:Instrument,
+        ns2:Methodology,
+        ns3:Coverage ;
+    ns41:Instrument ns8:attributes,
+        ns2:ControlConstructReference,
+        ns2:InstrumentName-attrs,
+        ns3:Description-attrs,
+        ns3:Software ;
+    ns18:Software ns8:attributes,
+        ns3:Date ;
+    ns41:Methodology ns8:attributes,
+        ns3:UserID-attrs ;
+    ns44:Coverage ns3:TemporalCoverage ;
+    ns49:TemporalCoverage ns8:attributes,
+        ns3:ReferenceDate ;
+    ns32:Purpose ns8:attributes,
+        ns3:Content-attrs ;
+    ns23:Citation <https://dataverse.org/schema/cmdi/dc:DCElements>,
+        ns3:Title-attrs ;
+    ns47:DCElements ns6:title-attrs ;
+    ns40:Citation <https://dataverse.org/schema/cmdi/dc:DCElements>,
+        ns3:Title-attrs ;
+    ns51:DCElements ns6:title-attrs ;
+    ns11:StudyUnit ns8:attributes,
+        ns26:Archive,
+        ns3:Citation,
+        ns3:Coverage,
+        ns3:FundingInformation,
+        ns3:Note,
+        ns3:SeriesStatement,
+        ns3:UniverseReference,
+        <https://dataverse.org/schema/cmdi/s:Abstract>,
+        <https://dataverse.org/schema/cmdi/s:Purpose> ;
+    ns48:Archive ns8:attributes,
+        ns26:ArchiveSpecific ;
+    ns30:ArchiveSpecific ns26:ArchiveOrganizationReference ;
+    ns29:Citation <https://dataverse.org/schema/cmdi/dc:DCElements>,
+        ns3:Title-attrs ;
+    ns24:DCElements ns6:description-attrs,
+        ns6:title-attrs ;
+    ns29:Coverage ns3:SpatialCoverage,
+        ns3:TemporalCoverage ;
+    ns20:SpatialCoverage ns8:attributes,
+        ns3:LowestLevelReference,
+        ns3:TopLevelReference ;
+    ns20:TemporalCoverage ns8:attributes,
+        ns3:ReferenceDate ;
+    ns29:FundingInformation ns3:AgencyOrganizationReference,
+        ns3:Description-attrs ;
+    ns29:Note ns8:attributes,
+        ns3:Relationship ;
+    ns38:Relationship ns3:RelatedToReference ;
+    ns29:SeriesStatement ns3:SeriesName-attrs ;
+    ns25:Abstract ns8:attributes,
+        ns3:Content-attrs ;
+    ns25:Purpose ns5:Text,
+        ns8:attributes ;
+    ns36:Content ns8:attributes,
+        ns14:div ;
+    ns27:div ns8:attributes,
+        ns14:ul ;
+    cmdi:False ns8:document .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/#attributes> cmdi:agency "example.org" ;
+    cmdi:id "1e16f38b-8aeb-4925-9024-aabf29fbd8be" ;
+    cmdi:version "8.0.0" ;
+    cmdi:versionDate "2011-04-05T03:54:50" ;
+    ns12:a "ddi:archive:3_1" ;
+    ns12:c "ddi:conceptualcomponent:3_1" ;
+    ns12:d "ddi:datacollection:3_1" ;
+    ns12:dc "ddi:dcelements:3_1" ;
+    ns12:dc2 "http://purl.org/dc/elements/1.1/" ;
+    ns12:ddi "ddi:instance:3_1" ;
+    ns12:g "ddi:group:3_1" ;
+    ns12:l "ddi:logicalproduct:3_1" ;
+    ns12:r "ddi:reusable:3_1" ;
+    ns12:s "ddi:studyunit:3_1" ;
+    ns12:xhtml "http://www.w3.org/1999/xhtml" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/#attributes> cmdi:agency "example.org" ;
+    cmdi:dataSet "D0" ;
+    cmdi:geography "G0" ;
+    cmdi:id "2f0be21a-ad77-4a48-95ab-ac6f9d06b417" ;
+    cmdi:instrument "I0" ;
+    cmdi:language "L0" ;
+    cmdi:panel "P0" ;
+    cmdi:time "T0" ;
+    cmdi:version "3.0.0" ;
+    cmdi:versionDate "2012-02-14T19:47:19" .
+
+ns31:Abstract ns5:Text "The United States Census is a decennial census mandated by the United States Constitution. The population is enumerated every 10 years and the results are used to allocate Congressional seats (congressional apportionment), electoral votes, and government program funding. The United States Census Bureau (officially the Bureau of the Census, as defined in Title 13 U.S.C. § 11) is the government agency that is responsible for the United States Census. Some states or local jurisdictions also conduct local censuses." .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:Abstract/#attributes> cmdi:id "5c594784-cd9b-40e9-8942-3fc357d6a08e" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:Abstract/r:Content-attrs> ns1:lang "en-US" .
+
+ns31:Purpose ns5:Text "Not specified" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:Purpose/#attributes> cmdi:id "4dcf2824-ac4c-4a6a-a6c0-556625a62083" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:Purpose/r:Content-attrs> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/#attributes> cmdi:agency "example.org" ;
+    cmdi:id "194d128c-93b2-4378-b626-2105edbdf561" ;
+    cmdi:version "3.0.0" ;
+    cmdi:versionDate "2011-04-05T04:00:53" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/a:Archive/#attributes> cmdi:agency "example.org" ;
+    cmdi:id "6b6f944f-4c89-4189-88d8-ba4b7fd8fbd2" ;
+    cmdi:version "3.0.0" ;
+    cmdi:versionDate "2011-04-05T04:00:53" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/a:Archive/a:ArchiveSpecific/a:ArchiveOrganizationReference> ns3:ID "00000000-0000-0000-0000-000000000000" ;
+    ns3:IdentifyingAgency "Unsupported" ;
+    ns3:Version "0" .
+
+ns17:Citation dcterms:title "United States Census 2010" .
+
+ns15:DCElements ns6:description "United States Census 2010" ;
+    ns6:title "United States Census 2010" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Citation/dc:DCElements/dc2:description-attrs> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Citation/dc:DCElements/dc2:title-attrs> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Citation/r:Title-attrs> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Coverage/r:SpatialCoverage/#attributes> cmdi:id "af54f2bd-796d-4b5a-bb11-dfc1f9e29b59" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Coverage/r:SpatialCoverage/r:LowestLevelReference> ns3:LevelName "United States" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Coverage/r:SpatialCoverage/r:TopLevelReference> ns3:LevelName "United States" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Coverage/r:TemporalCoverage/#attributes> cmdi:id "f9224828-876e-4aff-b6bc-8896ec06f9ac" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Coverage/r:TemporalCoverage/r:ReferenceDate> ns3:SimpleDate "2010-04-01T00:00:00" .
+
+ns17:FundingInformation ns3:Description "Funding for the United States 2010 Census" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:FundingInformation/r:AgencyOrganizationReference> ns3:ID "99f6fa39-bcc3-4752-93b7-93e467081406" ;
+    ns3:IdentifyingAgency "opendata.colectica.org" ;
+    ns3:Version "0" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:FundingInformation/r:Description-attrs> ns1:lang "en-US" .
+
+ns17:Note ns5:Text "example.org:e1b87f0f-5a32-4d0d-9e70-9bd195597bed:8" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Note/#attributes> cmdi:id "02719d31-3e13-48d6-a128-19dbfcc62651" ;
+    cmdi:type "System" .
+
+ns39:Relationship ns3:RelationshipDescription "colectica:RequiredPackage" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:Note/r:Relationship/r:RelatedToReference> ns3:ID "194d128c-93b2-4378-b626-2105edbdf561" ;
+    ns3:IdentifyingAgency "example.org" ;
+    ns3:Version "3" .
+
+ns17:SeriesStatement ns3:SeriesName "Unknown" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/r:SeriesStatement/r:SeriesName-attrs> ns1:lang "en-US" .
+
+ns17:UniverseReference ns3:ID "b2200741-9232-4d97-91ed-3ff1fb11f818" ;
+    ns3:IdentifyingAgency "example.org" ;
+    ns3:Version "1" .
+
+ns10:Abstract ns5:Text "The U.S. Census counts every resident in the United States, and is required by the Constitution to take place every 10 years." .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/s:Abstract/#attributes> cmdi:id "a1ebbaae-5fea-4019-bd16-211fc7471f44" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/s:Abstract/r:Content-attrs> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/s:Purpose/#attributes> cmdi:id "930decb8-5fe5-4860-a251-c932b1612aee" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/s:Purpose/r:Content/#attributes> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/g:StudyUnit/s:StudyUnit/s:Purpose/r:Content/xhtml:div/#attributes> ns12:xhtml "http://www.w3.org/1999/xhtml" .
+
+ns33:Citation dcterms:title "United States Census" .
+
+ns7:DCElements ns6:title "United States Census" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/r:Citation/dc:DCElements/dc2:title-attrs> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/r:Citation/r:Title-attrs> ns1:lang "en-US" .
+
+ns33:Note ns5:Text "example.org:e1b87f0f-5a32-4d0d-9e70-9bd195597bed:8" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/r:Note/#attributes> cmdi:id "5d297a0f-4c2f-471e-9570-6a6768317795" ;
+    cmdi:type "System" .
+
+ns46:Relationship ns3:RelationshipDescription "colectica:RequiredPackage" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:Group/r:Note/r:Relationship/r:RelatedToReference> ns3:ID "2f0be21a-ad77-4a48-95ab-ac6f9d06b417" ;
+    ns3:IdentifyingAgency "example.org" ;
+    ns3:Version "3" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/#attributes> cmdi:agency "example.org" ;
+    cmdi:id "e1b87f0f-5a32-4d0d-9e70-9bd195597bed" ;
+    cmdi:version "8.0.0" ;
+    cmdi:versionDate "2011-04-05T04:04:59" .
+
+ns42:OrganizationScheme ns26:OrganizationSchemeName "Census 2010 Organizations" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/a:OrganizationScheme/#attributes> cmdi:agency "opendata.colectica.org" ;
+    cmdi:id "9df84617-2729-4df0-909b-3952b60bf7cb" ;
+    cmdi:version "0.0.0" ;
+    cmdi:versionDate "2010-07-23T10:52:00" .
+
+ns22:Organization ns26:Nickname "US Census Bureau" ;
+    ns26:OrganizationName "US Census Bureau" ;
+    ns3:Description "US Census Bureau" ;
+    ns3:Image "http://2010.census.gov/partners/img/logo.png" ;
+    ns3:UserID "opendata.colectica.org:99f6fa39-bcc3-4752-93b7-93e467081406:0" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/a:OrganizationScheme/a:Organization/#attributes> cmdi:id "99f6fa39-bcc3-4752-93b7-93e467081406" ;
+    cmdi:version "0.0.0" ;
+    cmdi:versionDate "2010-07-23T10:52:14" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/a:OrganizationScheme/a:Organization/a:Nickname-attrs> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/a:OrganizationScheme/a:Organization/a:OrganizationName-attrs> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/a:OrganizationScheme/a:Organization/r:Description-attrs> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/a:OrganizationScheme/a:Organization/r:UserID-attrs> cmdi:type "11179-IRDI" .
+
+ns22:OrganizationSchemeName-attrs ns1:lang "en-US" .
+
+ns13:UniverseScheme ns34:UniverseSchemeName "Census Universes" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/c:UniverseScheme/#attributes> cmdi:agency "example.org" ;
+    cmdi:id "b23dbf22-860d-4064-95e2-853b11f8d760" ;
+    cmdi:version "3.0.0" ;
+    cmdi:versionDate "2011-04-05T03:54:50" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/c:UniverseScheme/c:UniverseSchemeName-attrs> ns1:lang "en-US" .
+
+ns19:QuestionScheme ns2:QuestionSchemeName "2010 Questions" ;
+    ns3:VersionRationale "Nothing much." ;
+    ns3:VersionResponsibility "admin" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/d:QuestionScheme/#attributes> cmdi:agency "opendata.colectica.org" ;
+    cmdi:id "7df3514a-5182-46bf-a6de-f7edcb60d366" ;
+    cmdi:isPublished "true" ;
+    cmdi:version "24.0.0" ;
+    cmdi:versionDate "2011-02-09T10:11:14" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/d:QuestionScheme/d:QuestionSchemeName-attrs> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/d:QuestionScheme/r:VersionRationale-attrs> ns1:lang "en-US" .
+
+ns16:DataCollection ns2:DataCollectionModuleName "2010 Data Collection" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/#attributes> cmdi:agency "example.org" ;
+    cmdi:id "419e20b2-dd3f-41e4-bce3-6b8bf649481c" ;
+    cmdi:version "3.0.0" ;
+    cmdi:versionDate "2011-04-05T04:04:59" .
+
+ns41:DataCollectionModuleName-attrs ns1:lang "en-US" .
+
+ns41:Instrument ns2:InstrumentName "2010 Instrument" ;
+    ns3:Description "2010 United States Census Questionnaire" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/d:Instrument/#attributes> cmdi:agency "example.org" ;
+    cmdi:id "e8852c93-1143-4e7e-9f2f-f3e688402aba" ;
+    cmdi:version "3.0.0" ;
+    cmdi:versionDate "2011-04-05T04:04:59" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/d:Instrument/d:ControlConstructReference> ns3:ID "907349c4-0a2d-409d-b618-d5d28319f15a" ;
+    ns3:IdentifyingAgency "example.org" ;
+    ns3:Version "3" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/d:Instrument/d:InstrumentName-attrs> ns1:lang "en-US" .
+
+ns18:Description-attrs ns1:lang "en-US" .
+
+ns18:Software ns3:Description "Colectica® Data Management, http://www.colectica.com" ;
+    ns3:Name "Colectica®" ;
+    ns3:Version "2243" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/d:Instrument/r:Software/#attributes> cmdi:id "e3e3d350-cbfe-4078-82f4-6d52dcbf05c1" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/d:Instrument/r:Software/r:Date> ns3:SimpleDate "2012-02-09T13:42:49" .
+
+ns41:Methodology ns3:UserID "example.org:b215dc81-c6c6-4c97-905a-d603b2312d9f:3" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/d:Methodology/#attributes> cmdi:id "b215dc81-c6c6-4c97-905a-d603b2312d9f" ;
+    cmdi:version "3.0.0" ;
+    cmdi:versionDate "2012-02-14T19:11:59" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/d:Methodology/r:UserID-attrs> cmdi:type "11179-IRDI" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/r:Coverage/r:TemporalCoverage/#attributes> cmdi:id "aab21c4e-8616-4877-9d14-229e7d467db5" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:DataCollection/d:DataCollection/r:Coverage/r:TemporalCoverage/r:ReferenceDate> ns3:EndDate "2010-08-10T00:00:00" ;
+    ns3:StartDate "2010-01-25T00:00:00" .
+
+ns32:Purpose ns5:Text "Not specified" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:Purpose/#attributes> cmdi:id "3c42f7b6-6565-4f7d-b7c3-44e5e55be957" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/g:Purpose/r:Content-attrs> ns1:lang "en-US" .
+
+ns23:Citation dcterms:title "United States Census 2010" .
+
+ns47:DCElements ns6:title "United States Census 2010" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/r:Citation/dc:DCElements/dc2:title-attrs> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/g:ResourcePackage/r:Citation/r:Title-attrs> ns1:lang "en-US" .
+
+ns40:Citation dcterms:title "United States Census 2010" .
+
+ns51:DCElements ns6:title "United States Census 2010" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/r:Citation/dc:DCElements/dc2:title-attrs> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/r:Citation/r:Title-attrs> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/#attributes> cmdi:agency "example.org" ;
+    cmdi:id "194d128c-93b2-4378-b626-2105edbdf561" ;
+    cmdi:version "3.0.0" ;
+    cmdi:versionDate "2011-04-05T04:00:53" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/a:Archive/#attributes> cmdi:agency "example.org" ;
+    cmdi:id "6b6f944f-4c89-4189-88d8-ba4b7fd8fbd2" ;
+    cmdi:version "3.0.0" ;
+    cmdi:versionDate "2011-04-05T04:00:53" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/a:Archive/a:ArchiveSpecific/a:ArchiveOrganizationReference> ns3:ID "00000000-0000-0000-0000-000000000000" ;
+    ns3:IdentifyingAgency "Unsupported" ;
+    ns3:Version "0" .
+
+ns29:Citation dcterms:title "United States Census 2010" .
+
+ns24:DCElements ns6:description "United States Census 2010" ;
+    ns6:title "United States Census 2010" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Citation/dc:DCElements/dc2:description-attrs> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Citation/dc:DCElements/dc2:title-attrs> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Citation/r:Title-attrs> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Coverage/r:SpatialCoverage/#attributes> cmdi:id "af54f2bd-796d-4b5a-bb11-dfc1f9e29b59" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Coverage/r:SpatialCoverage/r:LowestLevelReference> ns3:LevelName "United States" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Coverage/r:SpatialCoverage/r:TopLevelReference> ns3:LevelName "United States" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Coverage/r:TemporalCoverage/#attributes> cmdi:id "f9224828-876e-4aff-b6bc-8896ec06f9ac" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Coverage/r:TemporalCoverage/r:ReferenceDate> ns3:SimpleDate "2010-04-01T00:00:00" .
+
+ns29:FundingInformation ns3:Description "Funding for the United States 2010 Census" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:FundingInformation/r:AgencyOrganizationReference> ns3:ID "99f6fa39-bcc3-4752-93b7-93e467081406" ;
+    ns3:IdentifyingAgency "opendata.colectica.org" ;
+    ns3:Version "0" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:FundingInformation/r:Description-attrs> ns1:lang "en-US" .
+
+ns29:Note ns5:Text "example.org:e1b87f0f-5a32-4d0d-9e70-9bd195597bed:8" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Note/#attributes> cmdi:id "b5e4d065-18c4-43ba-8ac4-7ab09510492b" ;
+    cmdi:type "System" .
+
+ns38:Relationship ns3:RelationshipDescription "colectica:RequiredPackage" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:Note/r:Relationship/r:RelatedToReference> ns3:ID "194d128c-93b2-4378-b626-2105edbdf561" ;
+    ns3:IdentifyingAgency "example.org" ;
+    ns3:Version "3" .
+
+ns29:SeriesStatement ns3:SeriesName "Unknown" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/r:SeriesStatement/r:SeriesName-attrs> ns1:lang "en-US" .
+
+ns29:UniverseReference ns3:ID "b2200741-9232-4d97-91ed-3ff1fb11f818" ;
+    ns3:IdentifyingAgency "example.org" ;
+    ns3:Version "1" .
+
+ns25:Abstract ns5:Text "The U.S. Census counts every resident in the United States, and is required by the Constitution to take place every 10 years." .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/s:Abstract/#attributes> cmdi:id "a1ebbaae-5fea-4019-bd16-211fc7471f44" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/s:Abstract/r:Content-attrs> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/s:Purpose/#attributes> cmdi:id "930decb8-5fe5-4860-a251-c932b1612aee" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/s:Purpose/r:Content/#attributes> ns1:lang "en-US" .
+
+<https://dataverse.org/schema/cmdi/#document/ddi:DDIInstance/s:StudyUnit/s:Purpose/r:Content/xhtml:div/#attributes> ns12:xhtml "http://www.w3.org/1999/xhtml" .
+
+ns34:Universe ns8:attributes [ ns34:UniverseName "census" ;
+            ns3:Label "People Living in the United States" ;
+            ns3:UserID "example.org:e5a212f1-5dc0-4355-860f-aee6b450bbb2:3" ],
+        [ ns34:UniverseName "census2010" ;
+            ns3:Label "People Living in the United States on April 1, 2010" ;
+            ns3:UserID "example.org:b2200741-9232-4d97-91ed-3ff1fb11f818:1" ] .
+
+ns2:CollectionEvent ns8:attributes [ ],
+        [ ],
+        [ ] .
+
+ns2:ControlConstructScheme ns8:attributes [ ns2:QuestionConstruct [ ns2:QuestionConstruct "{'r:UserID': 'example.org:abd9e886-0bac-4a3b-8cec-78e2ba49fa72:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': 'dfa2d0c1-9f85-468c-8b6a-327319cc55cf', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '24'}, '#attributes': {'id': 'abd9e886-0bac-4a3b-8cec-78e2ba49fa72', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:a18c5492-195d-4805-8093-ea3fb8c2703b:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '3928b8d3-c2f7-4ebd-995d-f7ccab3de071', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '31'}, '#attributes': {'id': 'a18c5492-195d-4805-8093-ea3fb8c2703b', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:bf0ba544-664e-47d4-a411-f46b7f16e71f:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '9d2c5c60-a5ed-4d9b-bcf4-f6e9489214cf', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '30'}, '#attributes': {'id': 'bf0ba544-664e-47d4-a411-f46b7f16e71f', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:d73ca4c9-17c0-4c55-a8eb-a2c6a9569bd1:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '1eec83f0-c5f6-4090-8863-e3c00a3a3343', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '32'}, '#attributes': {'id': 'd73ca4c9-17c0-4c55-a8eb-a2c6a9569bd1', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:87f9872b-1196-448a-9a17-96bfb80c9eda:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '75063293-a848-4e54-99f8-12ea9361ed33', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '24'}, '#attributes': {'id': '87f9872b-1196-448a-9a17-96bfb80c9eda', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:14cf9bfc-708d-4e36-9e21-430eabdcdbd8:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '6fc6291a-b9c1-4698-83f8-3983c2ec8cb4', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '30'}, '#attributes': {'id': '14cf9bfc-708d-4e36-9e21-430eabdcdbd8', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:93543f84-43aa-4302-bee5-58d20e66299c:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': 'dca5ae11-19ae-432b-99f9-4866aaab5329', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '30'}, '#attributes': {'id': '93543f84-43aa-4302-bee5-58d20e66299c', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:c4459670-e2f4-4038-a9ee-4b3ee05e895b:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': 'ba540279-8bfc-461c-a07b-d25493c648a7', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '33'}, '#attributes': {'id': 'c4459670-e2f4-4038-a9ee-4b3ee05e895b', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:15553caa-08c9-4cc6-9a2e-dd9f14d5abd7:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '526cc18c-b672-40b8-a28d-3a589ea8ac1b', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '32'}, '#attributes': {'id': '15553caa-08c9-4cc6-9a2e-dd9f14d5abd7', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:3a910308-4192-4484-8917-caf8e34a9db1:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '42b16e62-b1e5-4908-80a2-2d7702e44510', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '30'}, '#attributes': {'id': '3a910308-4192-4484-8917-caf8e34a9db1', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:45ede464-7296-4e9d-827f-6470785127ff:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': 'a6424d38-8e43-4dde-8450-d30cf2627244', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '30'}, '#attributes': {'id': '45ede464-7296-4e9d-827f-6470785127ff', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ] ;
+            ns2:Sequence [ ns2:Sequence "{'r:UserID': 'example.org:769ae3fa-f4f4-46e8-9fe2-9bcd8804acd1:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:ControlConstructReference': [{'r:ID': '14cf9bfc-708d-4e36-9e21-430eabdcdbd8', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': '47764c78-5b99-47b8-b149-ede4a2f608c6', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': 'c4459670-e2f4-4038-a9ee-4b3ee05e895b', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': '3a910308-4192-4484-8917-caf8e34a9db1', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': '93543f84-43aa-4302-bee5-58d20e66299c', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': 'bf0ba544-664e-47d4-a411-f46b7f16e71f', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': '87f9872b-1196-448a-9a17-96bfb80c9eda', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}], '#attributes': {'id': '769ae3fa-f4f4-46e8-9fe2-9bcd8804acd1', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:Sequence "{'r:UserID': 'example.org:907349c4-0a2d-409d-b618-d5d28319f15a:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:ControlConstructReference': [{'r:ID': '45ede464-7296-4e9d-827f-6470785127ff', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': 'd73ca4c9-17c0-4c55-a8eb-a2c6a9569bd1', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': '15553caa-08c9-4cc6-9a2e-dd9f14d5abd7', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': 'a18c5492-195d-4805-8093-ea3fb8c2703b', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': '17c320f4-2984-4150-a430-4e454b739ebe', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}], '#attributes': {'id': '907349c4-0a2d-409d-b618-d5d28319f15a', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:Sequence "{'r:UserID': 'example.org:333ae135-784d-4435-9e54-a3763af8c338:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:ControlConstructReference': {'r:ID': 'abd9e886-0bac-4a3b-8cec-78e2ba49fa72', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, '#attributes': {'id': '333ae135-784d-4435-9e54-a3763af8c338', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ] ],
+        [ ns2:QuestionConstruct [ ns2:QuestionConstruct "{'r:UserID': 'example.org:bf0ba544-664e-47d4-a411-f46b7f16e71f:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '9d2c5c60-a5ed-4d9b-bcf4-f6e9489214cf', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '30'}, '#attributes': {'id': 'bf0ba544-664e-47d4-a411-f46b7f16e71f', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:d73ca4c9-17c0-4c55-a8eb-a2c6a9569bd1:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '1eec83f0-c5f6-4090-8863-e3c00a3a3343', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '32'}, '#attributes': {'id': 'd73ca4c9-17c0-4c55-a8eb-a2c6a9569bd1', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:c4459670-e2f4-4038-a9ee-4b3ee05e895b:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': 'ba540279-8bfc-461c-a07b-d25493c648a7', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '33'}, '#attributes': {'id': 'c4459670-e2f4-4038-a9ee-4b3ee05e895b', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:15553caa-08c9-4cc6-9a2e-dd9f14d5abd7:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '526cc18c-b672-40b8-a28d-3a589ea8ac1b', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '32'}, '#attributes': {'id': '15553caa-08c9-4cc6-9a2e-dd9f14d5abd7', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:87f9872b-1196-448a-9a17-96bfb80c9eda:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '75063293-a848-4e54-99f8-12ea9361ed33', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '24'}, '#attributes': {'id': '87f9872b-1196-448a-9a17-96bfb80c9eda', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:3a910308-4192-4484-8917-caf8e34a9db1:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '42b16e62-b1e5-4908-80a2-2d7702e44510', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '30'}, '#attributes': {'id': '3a910308-4192-4484-8917-caf8e34a9db1', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:a18c5492-195d-4805-8093-ea3fb8c2703b:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '3928b8d3-c2f7-4ebd-995d-f7ccab3de071', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '31'}, '#attributes': {'id': 'a18c5492-195d-4805-8093-ea3fb8c2703b', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:93543f84-43aa-4302-bee5-58d20e66299c:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': 'dca5ae11-19ae-432b-99f9-4866aaab5329', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '30'}, '#attributes': {'id': '93543f84-43aa-4302-bee5-58d20e66299c', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:abd9e886-0bac-4a3b-8cec-78e2ba49fa72:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': 'dfa2d0c1-9f85-468c-8b6a-327319cc55cf', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '24'}, '#attributes': {'id': 'abd9e886-0bac-4a3b-8cec-78e2ba49fa72', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:45ede464-7296-4e9d-827f-6470785127ff:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': 'a6424d38-8e43-4dde-8450-d30cf2627244', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '30'}, '#attributes': {'id': '45ede464-7296-4e9d-827f-6470785127ff', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:14cf9bfc-708d-4e36-9e21-430eabdcdbd8:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '6fc6291a-b9c1-4698-83f8-3983c2ec8cb4', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '30'}, '#attributes': {'id': '14cf9bfc-708d-4e36-9e21-430eabdcdbd8', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ] ;
+            ns2:Sequence [ ns2:Sequence "{'r:UserID': 'example.org:769ae3fa-f4f4-46e8-9fe2-9bcd8804acd1:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:ControlConstructReference': [{'r:ID': '14cf9bfc-708d-4e36-9e21-430eabdcdbd8', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': '47764c78-5b99-47b8-b149-ede4a2f608c6', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': 'c4459670-e2f4-4038-a9ee-4b3ee05e895b', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': '3a910308-4192-4484-8917-caf8e34a9db1', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': '93543f84-43aa-4302-bee5-58d20e66299c', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': 'bf0ba544-664e-47d4-a411-f46b7f16e71f', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': '87f9872b-1196-448a-9a17-96bfb80c9eda', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}], '#attributes': {'id': '769ae3fa-f4f4-46e8-9fe2-9bcd8804acd1', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:Sequence "{'r:UserID': 'example.org:333ae135-784d-4435-9e54-a3763af8c338:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:ControlConstructReference': {'r:ID': 'abd9e886-0bac-4a3b-8cec-78e2ba49fa72', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, '#attributes': {'id': '333ae135-784d-4435-9e54-a3763af8c338', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:Sequence "{'r:UserID': 'example.org:907349c4-0a2d-409d-b618-d5d28319f15a:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:ControlConstructReference': [{'r:ID': '45ede464-7296-4e9d-827f-6470785127ff', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': 'd73ca4c9-17c0-4c55-a8eb-a2c6a9569bd1', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': '15553caa-08c9-4cc6-9a2e-dd9f14d5abd7', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': 'a18c5492-195d-4805-8093-ea3fb8c2703b', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': '17c320f4-2984-4150-a430-4e454b739ebe', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}], '#attributes': {'id': '907349c4-0a2d-409d-b618-d5d28319f15a', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ] ],
+        [ ns2:QuestionConstruct [ ns2:QuestionConstruct "{'r:UserID': 'example.org:93543f84-43aa-4302-bee5-58d20e66299c:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': 'dca5ae11-19ae-432b-99f9-4866aaab5329', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '30'}, '#attributes': {'id': '93543f84-43aa-4302-bee5-58d20e66299c', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:abd9e886-0bac-4a3b-8cec-78e2ba49fa72:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': 'dfa2d0c1-9f85-468c-8b6a-327319cc55cf', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '24'}, '#attributes': {'id': 'abd9e886-0bac-4a3b-8cec-78e2ba49fa72', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:87f9872b-1196-448a-9a17-96bfb80c9eda:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '75063293-a848-4e54-99f8-12ea9361ed33', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '24'}, '#attributes': {'id': '87f9872b-1196-448a-9a17-96bfb80c9eda', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:bf0ba544-664e-47d4-a411-f46b7f16e71f:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '9d2c5c60-a5ed-4d9b-bcf4-f6e9489214cf', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '30'}, '#attributes': {'id': 'bf0ba544-664e-47d4-a411-f46b7f16e71f', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:45ede464-7296-4e9d-827f-6470785127ff:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': 'a6424d38-8e43-4dde-8450-d30cf2627244', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '30'}, '#attributes': {'id': '45ede464-7296-4e9d-827f-6470785127ff', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:14cf9bfc-708d-4e36-9e21-430eabdcdbd8:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '6fc6291a-b9c1-4698-83f8-3983c2ec8cb4', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '30'}, '#attributes': {'id': '14cf9bfc-708d-4e36-9e21-430eabdcdbd8', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:d73ca4c9-17c0-4c55-a8eb-a2c6a9569bd1:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '1eec83f0-c5f6-4090-8863-e3c00a3a3343', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '32'}, '#attributes': {'id': 'd73ca4c9-17c0-4c55-a8eb-a2c6a9569bd1', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:a18c5492-195d-4805-8093-ea3fb8c2703b:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '3928b8d3-c2f7-4ebd-995d-f7ccab3de071', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '31'}, '#attributes': {'id': 'a18c5492-195d-4805-8093-ea3fb8c2703b', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:c4459670-e2f4-4038-a9ee-4b3ee05e895b:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': 'ba540279-8bfc-461c-a07b-d25493c648a7', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '33'}, '#attributes': {'id': 'c4459670-e2f4-4038-a9ee-4b3ee05e895b', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:3a910308-4192-4484-8917-caf8e34a9db1:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '42b16e62-b1e5-4908-80a2-2d7702e44510', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '30'}, '#attributes': {'id': '3a910308-4192-4484-8917-caf8e34a9db1', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:QuestionConstruct "{'r:UserID': 'example.org:15553caa-08c9-4cc6-9a2e-dd9f14d5abd7:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:QuestionReference': {'r:ID': '526cc18c-b672-40b8-a28d-3a589ea8ac1b', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '32'}, '#attributes': {'id': '15553caa-08c9-4cc6-9a2e-dd9f14d5abd7', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ] ;
+            ns2:Sequence [ ns2:Sequence "{'r:UserID': 'example.org:333ae135-784d-4435-9e54-a3763af8c338:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:ControlConstructReference': {'r:ID': 'abd9e886-0bac-4a3b-8cec-78e2ba49fa72', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, '#attributes': {'id': '333ae135-784d-4435-9e54-a3763af8c338', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:Sequence "{'r:UserID': 'example.org:907349c4-0a2d-409d-b618-d5d28319f15a:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:ControlConstructReference': [{'r:ID': '45ede464-7296-4e9d-827f-6470785127ff', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': 'd73ca4c9-17c0-4c55-a8eb-a2c6a9569bd1', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': '15553caa-08c9-4cc6-9a2e-dd9f14d5abd7', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': 'a18c5492-195d-4805-8093-ea3fb8c2703b', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': '17c320f4-2984-4150-a430-4e454b739ebe', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}], '#attributes': {'id': '907349c4-0a2d-409d-b618-d5d28319f15a', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ],
+                [ ns2:Sequence "{'r:UserID': 'example.org:769ae3fa-f4f4-46e8-9fe2-9bcd8804acd1:3', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'd:ControlConstructReference': [{'r:ID': '14cf9bfc-708d-4e36-9e21-430eabdcdbd8', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': '47764c78-5b99-47b8-b149-ede4a2f608c6', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': 'c4459670-e2f4-4038-a9ee-4b3ee05e895b', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': '3a910308-4192-4484-8917-caf8e34a9db1', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': '93543f84-43aa-4302-bee5-58d20e66299c', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': 'bf0ba544-664e-47d4-a411-f46b7f16e71f', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}, {'r:ID': '87f9872b-1196-448a-9a17-96bfb80c9eda', 'r:IdentifyingAgency': 'example.org', 'r:Version': '3'}], '#attributes': {'id': '769ae3fa-f4f4-46e8-9fe2-9bcd8804acd1', 'version': '3.0.0', 'versionDate': '2011-04-05T04:04:59'}}" ] ] .
+
+ns2:QuestionItem ns8:attributes [ ns2:QuestionIntent "Asked since 1790. Census data about sex are important because many federal programs must differentiate between males and females for funding, implementing and evaluating their programs. For instance, laws promoting equal employment opportunity for women require census data on sex. Also, sociologists, economists, and other researchers who analyze social and economic trends use the data." ;
+            ns2:QuestionItemName "Q6" ;
+            ns2:QuestionText [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '¿Cuál es el sexo de la Persona 1?'}, '#attributes': {'xml:lang': 'es'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': \"What is Person {PersonCounter}'s sex?\"}, '#attributes': {'xml:lang': 'en-US'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Jinsia ya Mtu wa 1 ni ipi?'}, '#attributes': {'xml:lang': 'sw'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '第 1 位人士的性别是什么？'}, '#attributes': {'xml:lang': 'zh-CHS'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Was ist das Geschlecht von Person 1?'}, '#attributes': {'xml:lang': 'de'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Quel est le sexe de la Personne 1 ?'}, '#attributes': {'xml:lang': 'fr'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Seksi i Personit 1?'}, '#attributes': {'xml:lang': 'sq'}}" ] ;
+            ns3:UserID [ ns3:UserID "opendata.colectica.org:ba540279-8bfc-461c-a07b-d25493c648a7:33" ],
+                [ ns3:UserID "Q6" ] ;
+            ns3:UserID-attrs [ ns3:UserID-attrs "{'type': 'Colectica:UserAssignedId'}" ],
+                [ ns3:UserID-attrs "{'type': '11179-IRDI'}" ] ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns2:QuestionIntent "Listing the name of each person in the household helps the respondent to include all members, particularly in large households where a respondent may forget who was counted and who was not. Also, names are needed if additional information about an individual must be obtained to complete the census form. Federal law protects the confidentiality of personal information, including names." ;
+            ns2:QuestionItemName "Q5" ;
+            ns2:QuestionText [ ns2:QuestionText "{'d:LiteralText': {'d:Text': \"What is Person {PersonCounter}'s name?\"}, '#attributes': {'xml:lang': 'en-US'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Si quhet Personi 1?'}, '#attributes': {'xml:lang': 'sq'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Quel est le nom de la Personne 1 ?'}, '#attributes': {'xml:lang': 'fr'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '¿Cuál es el nombre de la Persona 1?'}, '#attributes': {'xml:lang': 'es'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Jina la Mtu wa 1 ni lipi?'}, '#attributes': {'xml:lang': 'sw'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '第 1 位人士的姓名是什么?'}, '#attributes': {'xml:lang': 'zh-CHS'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Wie lautet der Name von Person 1?'}, '#attributes': {'xml:lang': 'de'}}" ] ;
+            ns3:UserID [ ns3:UserID "opendata.colectica.org:6fc6291a-b9c1-4698-83f8-3983c2ec8cb4:30" ],
+                [ ns3:UserID "Q5" ] ;
+            ns3:UserID-attrs [ ns3:UserID-attrs "{'type': '11179-IRDI'}" ],
+                [ ns3:UserID-attrs "{'type': 'Colectica:UserAssignedId'}" ] ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns2:QuestionIntent "This is another question we ask in order to ensure response accuracy and completeness and to contact respondents whose forms have incomplete or missing information." ;
+            ns2:QuestionItemName "Q10" ;
+            ns2:QuestionText [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Wohnt oder hält sich Person 1 manchmal woanders auf?'}, '#attributes': {'xml:lang': 'de'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Je, Mtu wa 1 wakati mwingine huishi au hukaa mahali pengine?'}, '#attributes': {'xml:lang': 'sw'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '第 1 位人士是否有时居住或暂住在其它地方？'}, '#attributes': {'xml:lang': 'zh-CHS'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'A jeton apo qëndron ndonjëherë Personi 1 në ndonjë vend tjetër?'}, '#attributes': {'xml:lang': 'sq'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'La Personne 1 vit-elle ou séjourne-t-elle parfois ailleurs ?'}, '#attributes': {'xml:lang': 'fr'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '¿Vive o se queda a veces la Persona 1 en algún otro lugar?'}, '#attributes': {'xml:lang': 'es'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Does Person {PersonCounter} sometimes live or stay somewhere else?'}, '#attributes': {'xml:lang': 'en-US'}}" ] ;
+            ns3:UserID [ ns3:UserID "opendata.colectica.org:75063293-a848-4e54-99f8-12ea9361ed33:24" ],
+                [ ns3:UserID "Q10" ] ;
+            ns3:UserID-attrs [ ns3:UserID-attrs "{'type': 'Colectica:UserAssignedId'}" ],
+                [ ns3:UserID-attrs "{'type': '11179-IRDI'}" ] ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns2:QuestionIntent "Asked since 1880. We ask this question to help identify people who may have been excluded in the count provided in Question 1. We use the information to ensure response accuracy and completeness and to contact respondents whose forms have incomplete or missing information." ;
+            ns2:QuestionItemName "Q2" ;
+            ns2:QuestionText [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Je, kulikuwa na mtu yeyote wa zaidi aliyekuwa akiishi hapa mnamo\\ntarehe 1 Aprili, 2010 ambaye hukumjumuisha katika Swali la 1?'}, '#attributes': {'xml:lang': 'sw'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'A ka pasur ndonjë person tjetër shtesë që qëndronte këtu në\\ndatën 1 prill 2010 që nuk e keni përfshirë në Pyetjen 1??'}, '#attributes': {'xml:lang': 'sq'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '¿Había personas adicionales quedándose aquí el 1 de abril\\nde 2010 que usted no incluyó en la Pregunta 1?'}, '#attributes': {'xml:lang': 'es'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '除了在第一题已经包括的人以外，是否还有其他人在 2010 年4月 1 日暂住在这里？'}, '#attributes': {'xml:lang': 'zh-CHS'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Wohnten noch weitere Personen hier am 1. April 2010, die Siein Frage 1 nichtberücksichtigt haben?'}, '#attributes': {'xml:lang': 'de'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Y avait-il d’autres personnes qui résidaient à cet endroit au 1er avril 2010 que vous n’avez pas incluses à la question 1 ?'}, '#attributes': {'xml:lang': 'fr'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Were there any additional people staying here April 1, 2010 that you did not include in Question 1?'}, '#attributes': {'xml:lang': 'en-US'}}" ] ;
+            ns3:UserID [ ns3:UserID "2" ],
+                [ ns3:UserID "opendata.colectica.org:1eec83f0-c5f6-4090-8863-e3c00a3a3343:32" ] ;
+            ns3:UserID-attrs [ ns3:UserID-attrs "{'type': 'Colectica:UserAssignedId'}" ],
+                [ ns3:UserID-attrs "{'type': '11179-IRDI'}" ] ;
+            ns3:VersionRationale "Nothing much." ;
+            ns3:VersionResponsibility "admin" ],
+        [ ns2:QuestionIntent "We ask for a phone number in case we need to contact a respondent when a form is returned with incomplete or missing information." ;
+            ns2:QuestionItemName "Q4" ;
+            ns2:QuestionText [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Cili është numri i telefonit tuaj? Mund t’ju telefonojmë nëse nuk\\nkuptojmë ndonjë pyetje.'}, '#attributes': {'xml:lang': 'sq'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '¿Cuál es su número de teléfono?'}, '#attributes': {'xml:lang': 'es'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Nambari yako ya simu?'}, '#attributes': {'xml:lang': 'sw'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Quel est votre numéro de téléphone ?'}, '#attributes': {'xml:lang': 'fr'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Wie lautet Ihre Telefonnummer?'}, '#attributes': {'xml:lang': 'de'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': \"What is your telephone number? We may call if we don't understand an answer.\"}, '#attributes': {'xml:lang': 'en-US'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '您的电话号码是什么？如果我们不明白您的回答，我们可能会给您打电话。'}, '#attributes': {'xml:lang': 'zh-CHS'}}" ] ;
+            ns3:UserID [ ns3:UserID "4" ],
+                [ ns3:UserID "opendata.colectica.org:3928b8d3-c2f7-4ebd-995d-f7ccab3de071:31" ] ;
+            ns3:UserID-attrs [ ns3:UserID-attrs "{'type': 'Colectica:UserAssignedId'}" ],
+                [ ns3:UserID-attrs "{'type': '11179-IRDI'}" ] ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns2:QuestionIntent "Asked since 1800. Federal, state, and local governments need data about age to interpret most social and economic characteristics, such as forecasting the number of people eligible for Social Security or Medicare benefits. The data are widely used in planning and evaluating government programs and policies that provide funds or services for children, working-age adults, women of childbearing age, or the older population." ;
+            ns2:QuestionItemName "Q7" ;
+            ns2:QuestionText [ ns2:QuestionText "{'d:LiteralText': {'d:Text': \"What is Person {PersonCounter}'s age and what is Person {PersonCounter}'s date of birth?\"}, '#attributes': {'xml:lang': 'en-US'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Wie alt ist Person 1 und was ist das Geburtsdatum von Person 1?'}, '#attributes': {'xml:lang': 'de'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Sa vjeç është Personi 1 dhe cila është data e lindjes së tij?'}, '#attributes': {'xml:lang': 'sq'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '¿Cuál es la edad de la Persona 1 y cuál es su fecha de nacimiento?'}, '#attributes': {'xml:lang': 'es'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Umri wa Mtu wa 1 ni upi na alizaliwa tarehe gani?'}, '#attributes': {'xml:lang': 'sw'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '第1 位人士的年龄及出生年月日是什么？'}, '#attributes': {'xml:lang': 'zh-CHS'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Quel est l’âge de la Personne 1 et quelle est sa date de naissance ?'}, '#attributes': {'xml:lang': 'fr'}}" ] ;
+            ns3:UserID [ ns3:UserID "Q7" ],
+                [ ns3:UserID "opendata.colectica.org:42b16e62-b1e5-4908-80a2-2d7702e44510:30" ] ;
+            ns3:UserID-attrs [ ns3:UserID-attrs "{'type': '11179-IRDI'}" ],
+                [ ns3:UserID-attrs "{'type': 'Colectica:UserAssignedId'}" ] ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns2:QuestionIntent "Asked since 1890. Homeownership rates serve as an indicator of the nation's economy. The data are also used to administer housing programs and to inform planning decisions." ;
+            ns2:QuestionItemName "Q3" ;
+            ns2:QuestionText [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Is this house, apartment, or mobile home'}, '#attributes': {'xml:lang': 'en-US'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Dieses Haus, diese Wohnung oder dieses Wohnmobil'}, '#attributes': {'xml:lang': 'de'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Cette maison, cet appartement ou cette maison mobile'}, '#attributes': {'xml:lang': 'fr'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '¿Es esta casa, apartamento o casa móvil'}, '#attributes': {'xml:lang': 'es'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '这所房子、公寓或移动式房屋是下面哪一种类型？'}, '#attributes': {'xml:lang': 'zh-CHS'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Je, hii ni nyumba, orofa, au nyumba inayohamishika -'}, '#attributes': {'xml:lang': 'sw'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Kjo shtëpi, apartament ose rulotë'}, '#attributes': {'xml:lang': 'sq'}}" ] ;
+            ns3:UserID [ ns3:UserID "3" ],
+                [ ns3:UserID "opendata.colectica.org:526cc18c-b672-40b8-a28d-3a589ea8ac1b:32" ] ;
+            ns3:UserID-attrs [ ns3:UserID-attrs "{'type': 'Colectica:UserAssignedId'}" ],
+                [ ns3:UserID-attrs "{'type': '11179-IRDI'}" ] ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns2:QuestionItemName "P2" ;
+            ns2:QuestionText [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'How is this person related to Person 1?'}, '#attributes': {'xml:lang': 'en-US'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '这个人与第1个人是什么关系？'}, '#attributes': {'xml:lang': 'zh-CHS'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Mtu huyu anahusianaje na Mtu wa 1?'}, '#attributes': {'xml:lang': 'sw'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Çfarë lidhjeje ka ky person me Personin 1?'}, '#attributes': {'xml:lang': 'sq'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'JapanerKoreanerVietnameseIn welcher Beziehung steht diese Person zu Person 1?'}, '#attributes': {'xml:lang': 'de'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '¿Cómo está esta persona relacionada con la Persona 1?'}, '#attributes': {'xml:lang': 'es'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Quel est le lien entre cette personne et la Personne 1 ?'}, '#attributes': {'xml:lang': 'fr'}}" ] ;
+            ns3:UserID [ ns3:UserID "opendata.colectica.org:dfa2d0c1-9f85-468c-8b6a-327319cc55cf:24" ],
+                [ ns3:UserID "P2" ] ;
+            ns3:UserID-attrs [ ns3:UserID-attrs "{'type': 'Colectica:UserAssignedId'}" ],
+                [ ns3:UserID-attrs "{'type': '11179-IRDI'}" ] ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns2:QuestionIntent "Asked since 1790. Race is key to implementing many federal laws and is needed to monitor compliance with the Voting Rights Act and the Civil Rights Act. State governments use the data to determine congressional, state and local voting districts. Race data are also used to assess fairness of employment practices, to monitor racial disparities in characteristics such as health and education and to plan and obtain funds for public services." ;
+            ns2:QuestionItemName "Q9" ;
+            ns2:QuestionText [ ns2:QuestionText "{'d:LiteralText': {'d:Text': \"What is Person {PersonCounter}'s race?\"}, '#attributes': {'xml:lang': 'en-US'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Von welcher Rasse ist Person 1?'}, '#attributes': {'xml:lang': 'de'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '第 1 位人士的种族是什么？'}, '#attributes': {'xml:lang': 'zh-CHS'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '¿Cuál es la raza de la Persona 1?'}, '#attributes': {'xml:lang': 'es'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Kabila la Mtu wa 1 ni ipi?'}, '#attributes': {'xml:lang': 'sw'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Quel est la race de la Personne 1 ?'}, '#attributes': {'xml:lang': 'fr'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Çfarë race është Personi 1?'}, '#attributes': {'xml:lang': 'sq'}}" ] ;
+            ns3:UserID [ ns3:UserID "Q9" ],
+                [ ns3:UserID "opendata.colectica.org:9d2c5c60-a5ed-4d9b-bcf4-f6e9489214cf:30" ] ;
+            ns3:UserID-attrs [ ns3:UserID-attrs "{'type': '11179-IRDI'}" ],
+                [ ns3:UserID-attrs "{'type': 'Colectica:UserAssignedId'}" ] ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns2:QuestionIntent "Asked since 1970. The data collected in this question are needed by federal agencies to monitor compliance with anti-discrimination provisions, such as under the Voting Rights Act and the Civil Rights Act. State and local governments may use the data to help plan and administer bilingual programs for people of Hispanic origin." ;
+            ns2:QuestionItemName "Q8" ;
+            ns2:QuestionText [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Is Person {PersonCounter} of Hispanic, Latino, or Spanish origin?'}, '#attributes': {'xml:lang': 'en-US'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'La Personne 1 est-elle d’origine hispanique, latino ou espagnole ?'}, '#attributes': {'xml:lang': 'fr'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '第 1 位人士是南美洲西班牙人、拉丁美洲西班牙人或西班牙后裔吗？'}, '#attributes': {'xml:lang': 'zh-CHS'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'A është Personi 1 me origjinë hispanike, latine apo spanjolle?'}, '#attributes': {'xml:lang': 'sq'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Ist Person 1 von hispanischer, lateinamerikanischer oder spanischer Herkunft?'}, '#attributes': {'xml:lang': 'de'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '¿Es la Persona 1 de origen hispano, latino o español?'}, '#attributes': {'xml:lang': 'es'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Je, Mtu wa 1 ana asili ya Kihispania, Kilatino au Uhispania?'}, '#attributes': {'xml:lang': 'sw'}}" ] ;
+            ns3:UserID [ ns3:UserID "Q8" ],
+                [ ns3:UserID "opendata.colectica.org:dca5ae11-19ae-432b-99f9-4866aaab5329:30" ] ;
+            ns3:UserID-attrs [ ns3:UserID-attrs "{'type': 'Colectica:UserAssignedId'}" ],
+                [ ns3:UserID-attrs "{'type': '11179-IRDI'}" ] ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns2:QuestionIntent "We ask this question to help get an accurate count of the number of people in the household on Census Day, April 1, 2010. The answer should be based on the guidelines in the 'Start here' section. We use the information to ensure response accuracy and completeness and to contact respondents whose forms have incomplete or missing information." ;
+            ns2:QuestionItemName "Q1" ;
+            ns2:QuestionText [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '¿Cuántas personas vivían o se quedaban en esta casa,\\napartamento o casa móvil el 1 de abril de 2010?'}, '#attributes': {'xml:lang': 'es'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Combien de personnes vivaient ou séjournaient dans votre maison, appartement ou appartement mobile au 1er avril 2010 ?'}, '#attributes': {'xml:lang': 'fr'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'How many people were living or staying in this house, apartment, or mobile home on April 1, 2010?'}, '#attributes': {'xml:lang': 'en-US'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Ni watu wangapi waliyokuwa wakiishi au wanaishi katika nyumba\\nhii, orofa, nyumba inayohamishika mnamo tarehe 1 Aprili, 2010?'}, '#attributes': {'xml:lang': 'sw'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Sa persona jetonin ose qëndronin në këtë shtëpi, apartament\\nose rulotë në datën 1 prill 2010?'}, '#attributes': {'xml:lang': 'sq'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': 'Wie viele Personen wohnten oder lebten in diesem Haus, dieser Wohnung oder diesem Wohnmobil am 1. April 2010?'}, '#attributes': {'xml:lang': 'de'}}" ],
+                [ ns2:QuestionText "{'d:LiteralText': {'d:Text': '在 2010 年 4 月 1 日那天，有几个人在这所房子、公寓或移动式房屋里居住或暂住？'}, '#attributes': {'xml:lang': 'zh-CHS'}}" ] ;
+            ns3:UserID [ ns3:UserID "1" ],
+                [ ns3:UserID "opendata.colectica.org:a6424d38-8e43-4dde-8450-d30cf2627244:30" ] ;
+            ns3:UserID-attrs [ ns3:UserID-attrs "{'type': 'Colectica:UserAssignedId'}" ],
+                [ ns3:UserID-attrs "{'type': '11179-IRDI'}" ] ;
+            ns3:VersionRationale "Publishing study" ] .
+
+ns4:CategoryScheme ns8:attributes [ ns4:Category [ ns4:Category "{'r:UserID': 'opendata.colectica.org:61428675-ddb2-4fbc-ad47-4cb077aae407:18', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Owned by you or someone in this household with a mortgage or loan? Include home equity loans.', 'Është në pronësinë tuaj apo të ndonjë banori tjetër të kësaj shtëpie me garanci hipotekare apo huamarrjeje? Përfshini huamarrjet me garanci.', 'Propiedad suya o de alguien en este hogar con una hipoteca o préstamo? Incluya los préstamos sobre el valor líquido de la casa.', 'Unaimiliki au mtu mwingine katika nyumba hii kwa malipo benki au mkopo? Jumuisha mikopo ya hisa ya nyumba.', 'NuméroOnt-ils été achetés à crédit par vous ou quelqu’un de votre foyer ? Incluez les prêts sur la valeur nette de la maison.', 'gehört Ihnen oder einer Person in diesem Haushalt mit einer Hypothek oder einem Darlehen?Das umfasst auch „Home Equity Loans“ (Kredit auf Eigenheim, basierend auf Höhe des Eigenkapitals).', '属于您或您住户的某个成员（有房屋抵押贷款或房屋净值贷款）'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '61428675-ddb2-4fbc-ad47-4cb077aae407', 'version': '18.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:1ebe6583-7268-48a2-bb6f-376caf977091:17', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Rented?', 'E marrë me qira?', 'Alquilado(a)?', 'Imepangishwa?', 'Sont-ils loués ?', 'ist gemietet?', '\\U00100ac7\\U00100f3b'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '1ebe6583-7268-48a2-bb6f-376caf977091', 'version': '17.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:5c6abc12-a25b-408f-ae54-451ab6a3f840:17', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Occupied without payment of rent?', 'E zaptuar pa pagesë apo qira?', 'Ocupado(a) sin pago de alquiler?', 'Unaishi bila malipo ya kodi?', 'Sont-ils gratuitement occupés (pas de loyer) ?', 'wird ohne Mietzahlung bewohnt?', '\\U00100544\\U0010048e\\U00100ed4\\U00100ac7\\U001006da\\U00100945\\U00100f3b'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '5c6abc12-a25b-408f-ae54-451ab6a3f840', 'version': '17.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:e1e350d6-132b-4a74-b3b8-4f6b39fab9e1:17', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Owned by you or someone in this household free and clear (without a mortgage or loan)?', 'Është në pronësinë tuaj apo të ndonjë banori tjetër të kësaj shtëpie pa garanci (hipotekare apo huamarrjeje)?', 'Propiedad suya o de alguien en este hogar libre y sin deuda (sin una hipoteca o préstamo)?', 'Unaimiliki au mtu mwingine katika kaya nyumba hii bila ya mkopo?', 'Ont-ils été achetés sans crédit par vous ou quelqu’un de votre foyer ?', 'gehört Ihnen oder einer Person in diesem Haushalt ohne jegliche Belastung (ohne Hypothek oder Darlehen)?', '属于您或您住户的某个成员，没有任何债务（无抵押或贷款）'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'e1e350d6-132b-4a74-b3b8-4f6b39fab9e1', 'version': '17.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ] ;
+            ns4:CategorySchemeName "houseOwnershipCategories" ;
+            ns3:Label "House Ownership" ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns4:Category [ ns4:Category "{'r:UserID': 'opendata.colectica.org:ed4483e9-df7f-48c7-9f2e-c6d569595de9:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Roomer or boarder', 'Qiraxhi', 'Inquilino(a) o pupilo(a)', 'Mpangaji au mkaaji', 'Pensionnaire', 'Untermieter oder Pensionsgast', '房客或包食宿的住宿者'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'ed4483e9-df7f-48c7-9f2e-c6d569595de9', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:c7439cdc-6d03-47c1-9619-8b5d8eda7989:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Son-in-law or daughter-in-law', 'Dhëndri ose nusja', 'Yerno o nuera', 'mkwe au wifi', 'Gendre ou belle-fille', 'Schwiegersohn oder Schwiegertochter', '女婿、儿媳'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'c7439cdc-6d03-47c1-9619-8b5d8eda7989', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:71b7fe16-2373-4690-8aa7-43508e01a585:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Other nonrelative', 'Jo i/e afërm tjetër', 'Otro no pariente', 'Mtu mwingine asiye jamaa', 'Autre sans lien de parenté', 'Sonstige(r) Nicht-Verwandte(r)', '其它非亲属关系'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '71b7fe16-2373-4690-8aa7-43508e01a585', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:f3f06631-27d9-46dc-850e-ea7606e2f789:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Other relative', 'I/e afërm tjetër', 'Otro pariente', 'Jamaa mwingine', 'Autre lien de parenté', 'Sonstige(r) Verwandte(r)', '其它亲属关系'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'f3f06631-27d9-46dc-850e-ea7606e2f789', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:8e1976e5-acfc-4cfa-8175-a9b67755d702:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Husband or wife', 'Bashkëshorti ose bashkëshortja', 'Esposo(a)', 'Mume au mke', 'Mari ou femme', 'Ehemann oder Ehefrau', '丈夫或妻子'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '8e1976e5-acfc-4cfa-8175-a9b67755d702', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:ef9b6d1e-6f44-4b5d-b38b-790a39a9420a:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Stepson or stepdaughter', 'Thjeshtri ose thjeshtra', 'Hijastro(a)', 'Mwana wa kiume au wa kike wa kambo', 'Beau-fils ou belle-fille', 'Stiefsohn oder Stieftochter', '继子女'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'ef9b6d1e-6f44-4b5d-b38b-790a39a9420a', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:175bc5f8-2de3-49f1-b66e-98a6bb14e06f:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Housemate or roommate', 'Shok/shoqe shtëpie ose shok/shoqe dhome', 'Compañero(a) de casa o de cuarto', 'Mkazi mwenzako', 'Colocataire', 'Mitbewohner oder Hausgenosse', '同住合租人或室友'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '175bc5f8-2de3-49f1-b66e-98a6bb14e06f', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:d3780e3c-85ec-4dc0-87ac-52767d428f3d:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Brother or sister', 'I vëllai ose e motra', 'Hermano(a)', 'Ndugu au dada', 'Frère ou soeur', 'Bruder oder Schwester', '兄弟或姐妹'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'd3780e3c-85ec-4dc0-87ac-52767d428f3d', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:fc74e6e6-b23f-4bb6-bfc2-906b797cf12a:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Parent-in-law', 'Vjehrri/vjehrra', 'Suegro(a)', 'Wakwe', 'Beau-père, belle-mère', 'Schwiegervater oder Schwiegermutter', '配偶的父母'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'fc74e6e6-b23f-4bb6-bfc2-906b797cf12a', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:ce6d93b4-6afd-4969-b515-09cf2be65685:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Unmarried partner', 'Bashkëjetues/bashkëjetuese', 'Pareja no casada', 'Mwezio ambaye hamjafunga ndoa', 'Concubin(e)', 'Unverheiratete(r) Lebenspartner(in)', '同居伴侣'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'ce6d93b4-6afd-4969-b515-09cf2be65685', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:91e44e85-003e-40e7-9b29-2c52c23cc3a6:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Father or mother', 'I ati ose e ëma', 'Padre o madre', 'Baba au mama', 'Père ou mère', 'Vater oder Mutter', '父亲或母亲'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '91e44e85-003e-40e7-9b29-2c52c23cc3a6', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:66424e0a-e488-4e2f-ab19-bf356b74065d:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Adopted son or daughter', 'I biri ose e bija e adoptuar', 'Hijo(a) adoptivo(a)', 'Mwana wa kiume au wa kike wa kulea', 'Fils ou fille adoptif(ive)', 'Adoptivsohn oder Adoptivtochter', '养子女'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '66424e0a-e488-4e2f-ab19-bf356b74065d', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:18baaa31-7c21-4e73-9128-a6b6a4d02655:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Biological son or daughter', 'I biri ose e bija biologjike', 'Hijo(a) biológico(a)', 'Mwana wa kiume au wa kike wa kizazi', 'Fils ou fille biologique', 'Biologischer Sohn oder Tochter', '亲生子女'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '18baaa31-7c21-4e73-9128-a6b6a4d02655', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:eff6123a-2201-444a-a143-78ca75b640e9:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Grandchild', 'Nipi/mbesa', 'Nieto(a)', 'Mjukuu', 'Petit-fils, petite-fille', 'Enkel', '(外）孙子（女）'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'eff6123a-2201-444a-a143-78ca75b640e9', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ] ;
+            ns4:CategorySchemeName "relatedCategories" ;
+            ns3:Label "Related" ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns4:Category [ ns4:Category "{'r:UserID': 'opendata.colectica.org:65c74946-435b-4e9c-9119-386bcc0dcfa7:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['No', 'Jo', 'No', 'Hapana', 'Non', 'Nein', '否'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '65c74946-435b-4e9c-9119-386bcc0dcfa7', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:aa759108-f983-4a2a-93d2-b8d10010ad22:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['In the military', 'Në ushtri', 'En el servicio militar', 'Katika kambi ya majeshi', 'Armée', 'Militär', '在军队服役'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'aa759108-f983-4a2a-93d2-b8d10010ad22', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:486a730e-2494-49fd-bcac-b1d7a0fe3279:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['In jail or prison', 'Në burg', 'En la cárcel o prisión', 'Gerezani au korokoroni', 'En prison', 'Gefängnis oder Strafanstalt', '在监狱或看守所'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '486a730e-2494-49fd-bcac-b1d7a0fe3279', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:f8ea5246-6b5b-4295-8a67-e52799dbeef2:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['For child custody', 'Për kujdestari të një fëmije', 'Por custodia de niños', 'Kwa malezi ya mtoto', 'Pour partage de garde d’enfant', 'Zur Wahrnehmung des Sorgerechts für ein Kind', '由于孩子监护权的原因'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'f8ea5246-6b5b-4295-8a67-e52799dbeef2', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:605d2a7d-bc8f-4285-8ac5-bb41902550f0:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Yes', 'Po', 'Sí', 'Ndiyo', 'Oui', 'Ja', '是'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '605d2a7d-bc8f-4285-8ac5-bb41902550f0', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:a027697a-93a6-4041-ace2-a4e2cb990aec:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['In a nursing home', 'Në spital', 'En un hogar de convalecencia', 'Nyumba ya wazee', 'Dans une maison de retraite', 'Seniorenheim', '在安养中心／养老院'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'a027697a-93a6-4041-ace2-a4e2cb990aec', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:611bdf6c-c40f-4183-90d5-129e63a51036:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['In college housing', 'Në kolegj', 'En vivienda universitaria', 'Katika makazi ya chuo', 'Résidence universitaire', 'Studentenwohnheim', '在大学住宿'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '611bdf6c-c40f-4183-90d5-129e63a51036', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:fdfb1233-c481-4ee5-ab2b-20cbbb3cc262:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['For another reason', 'Për një arsye tjetër', 'Por alguna otra razón', 'Kwa sababu nyingine', 'Pour une autre raison', 'aus anderem Grund', '其它原因'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'fdfb1233-c481-4ee5-ab2b-20cbbb3cc262', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:487fd6cc-6904-4c9c-bb60-6f1ad48e2add:17', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['At a seasonal or second residence', 'Në një vendbanim sezonal ose të dytë', 'En vivienda de temporada o segunda residencia', 'Kwa makazi ya muda au ya pili', 'Résidence secondaireou saisonnier', 'an einem saisonabhängigen oder zweiten Wohnsitz', '在季节性住所或第二住所'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '487fd6cc-6904-4c9c-bb60-6f1ad48e2add', 'version': '17.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ] ;
+            ns4:CategorySchemeName "livesElsewhereCategories" ;
+            ns3:Label "Lives Elsewhere" ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns4:Category [ ns4:Category "{'r:UserID': 'opendata.colectica.org:6a16a27c-017b-4566-b560-8d43449cf2fa:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Yes, another Hispanic, Latino, or Spanish origin', 'Po, një origjinë tjetër hispanike, latine ose spanjolle', 'Sí, otro origen hispano, latino o español', 'Ndiyo, asili nyingine ya Kihispania, Kilatino au Uhispania', 'Oui, autre origine hispanique, latino ou espagnole', 'Ja, anderer hispanischer, lateinamerikanischer oder spanischer Herkunft', '是，其他南美州西班牙人、拉丁美洲西班牙人或西班牙后裔'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '6a16a27c-017b-4566-b560-8d43449cf2fa', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:3006a7be-7aa3-4128-8e25-29d9a8e6158f:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['No, not of Hispanic, Latino, or Spanish origin', 'Jo, nuk është me origjinë hispanike, latine ose spanjolle', 'No, no es de origen hispano, latino o español', 'Hapana, hana asili ya Kihispania, Kilatino au Uhispania', 'Non,pas d’origine hispanique, latino ou espagnole', 'Nein,nicht von hispanischer, lateinamerikanischer oder spanischer Herkunft', '否，不是南美洲西班牙人、拉丁美洲西班牙人或西班牙后裔'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '3006a7be-7aa3-4128-8e25-29d9a8e6158f', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:0ec02954-063f-4d53-9bb5-7d7cc6fca309:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Yes, Puerto Rican', 'Po, portorikan', 'Sí, puertorriqueño', 'Ndiyo, Mpoteriko', 'Oui, origine portoricaine', 'Ja, Puertoricaner', '是，波多黎各人'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '0ec02954-063f-4d53-9bb5-7d7cc6fca309', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:9da4a129-b3c9-40d9-b56f-07e99b3140de:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Yes, Cuban', 'Po, kubanez', 'Sí, cubano', 'Ndiyo, Mkuba', 'Oui, origine cubaine', 'Ja, Kubaner', '是，古巴人'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '9da4a129-b3c9-40d9-b56f-07e99b3140de', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:17ca5407-8a80-4353-9700-e479dea251f6:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Yes, Mexican, Mexican Am., Chicano', 'Po, meksikan, meksikano-amerikan, çikano', 'Sí, mexicano, mexicano americano, chicano', 'Ndiyo, Mmeksiko, Mwamerika Mmeksiko, Chikano', 'Oui, origine mexicaine, mexicaine-am., chicano', 'Ja, Mexikaner, mexikanischer Amerikaner', '是，墨西哥人、墨西哥裔美国人、奇卡诺人'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '17ca5407-8a80-4353-9700-e479dea251f6', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ] ;
+            ns4:CategorySchemeName "hispanicOriginCategories" ;
+            ns3:Label "Hispanic origin" ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns4:Category [ ns4:Category "{'r:UserID': 'opendata.colectica.org:96ac9380-0cf1-4c06-ae63-47da018d04c9:17', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Female', 'Femër', 'Femenino', 'Mwanamke', 'Féminin', 'Weiblich', '女'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '96ac9380-0cf1-4c06-ae63-47da018d04c9', 'version': '17.0.0', 'versionDate': '2011-02-09T10:11:14', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:475d46e2-1e97-42f5-84cf-abc671ba58b5:17', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Male', 'Mashkull', 'Masculino', 'Mwanaume', 'Masculin', 'Männlich', '男'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '475d46e2-1e97-42f5-84cf-abc671ba58b5', 'version': '17.0.0', 'versionDate': '2011-02-09T10:11:14', 'missing': 'false'}}" ] ;
+            ns4:CategorySchemeName "genderCategories" ;
+            ns3:Label "Gender" ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns4:Category [ ns4:Category "{'r:UserID': 'opendata.colectica.org:fdc0160a-b431-4f55-8205-fd8e46728f54:19', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Relatives, such as adult children, cousins, or in-laws', 'Të afërm, si fëmijë të rritur, kushërinj ose krushq', 'Parientes, tales como hijos adultos, primos o parientes políticos', 'Jamaa, kama vile watoto, binamu, au wakwe watu wazima', 'Parents, notamment enfants adultes, cousins ou belle-famille', 'PflegekinderVerwandte, z. B. erwachsene Kinder, Cousin(e), oder angeheirateteVerwandte', '亲属，如成年子女、表兄弟姊妹或姻亲'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'fdc0160a-b431-4f55-8205-fd8e46728f54', 'version': '19.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:66447128-5e8a-4f8a-89b4-cde7b20b74ce:19', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Children, such as newborn babies or foster children', 'Fëmijë, si foshnja të sapolindur ose fëmijë të birësuar', 'Niños, tales como bebés recién nacidos o hijos de crianza (foster)', 'Watoto, kama vile watoto wachanga au watoto wanaolelewa', 'Enfants, notamment nouveau-nés ou enfants en famille d’accueil', 'Kinder, z. B. Neugeborene oder Pflegekinder', '儿童，如新生儿或政府委托寄养的孩子'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '66447128-5e8a-4f8a-89b4-cde7b20b74ce', 'version': '19.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:59e29a9f-1c4a-4d6f-b944-358b75a62106:20', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Nonrelatives, such as roommates or live-in baby sitters', 'Jo të afërm, si shokë dhome ose dado fëmijësh që jeton aty', 'Personas que no son parientes, tales como compañeros de cuarto o niñeras que viven en el hogar', 'Watu wasio jamaa, kama vile wakazi wenzako au walezi wa watoto wanaoishi na wewe', 'Personnes sans lien de parenté, notamment colocataires ou jeune fille au pair', 'Nicht-Verwandte, z. B. Mitbewohner, oder Babysitter, die im Haus leben', '非亲属，如室友或住在雇主家的保姆'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '59e29a9f-1c4a-4d6f-b944-358b75a62106', 'version': '20.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:24922297-e81a-4864-bf3d-9661f98d2914:20', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionResponsibility': 'admin', 'r:VersionRationale': 'Nothing much.', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['People staying here temporarily ...', 'Persona që qëndrojnë këtu përkohësisht', 'Personas que se quedan aquí temporalmente', 'Watu wanaoishi hapa kwa muda', 'Personne séjournant temporairement chez vous', 'Personen, die hier vorübergehend wohnen', '暂住在这个住所的人'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '24922297-e81a-4864-bf3d-9661f98d2914', 'version': '20.0.0', 'versionDate': '2011-02-05T13:43:31', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:a8339f60-c3df-4939-bc59-ae485d8fc933:19', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['No additional people', 'Nuk ka persona shtesë', 'No hay personas adicionales', 'Hakuna watu zaidi', 'Aucune personne supplémentaire', 'Keine weiteren Personen', '没有其他人'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'a8339f60-c3df-4939-bc59-ae485d8fc933', 'version': '19.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ] ;
+            ns4:CategorySchemeName "additionalPeopleCategories" ;
+            ns3:Label "Additional People" ;
+            ns3:VersionRationale "Nothing much." ;
+            ns3:VersionResponsibility "admin" ],
+        [ ns4:Category [ ns4:Category "{'r:UserID': 'opendata.colectica.org:ad7bcfb5-e4a9-4b8a-bc4f-1f39502cd215:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['American Indian or Alaska Native', 'Indian i Amerikës ose vendas i Alaskës', 'India americana o nativa de Alaska', 'Mhindi Mwamerika au Asili ya Alaska', 'Amérindien ou population autochtone de l’Alaska', 'Indianer oder Ureinwohner von Alaska', '美洲印第安人或阿拉斯加原住民'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'ad7bcfb5-e4a9-4b8a-bc4f-1f39502cd215', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:2eedcddc-0b6e-4e5a-a630-9388162914d8:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Black, African Am., or Negro', 'Me ngjyrë, afrikano-amerikan, ose zezak', 'Negra o africana americana', 'Mweusi, Mwamerika Mweusi, au Negro', 'Noir ou afro-américain', 'Schwarz, afrik. Am. oder Farbiger/Neger', '黑种人、非洲裔美国人或黑人'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '2eedcddc-0b6e-4e5a-a630-9388162914d8', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:2ab10dca-d428-4d49-8163-2fffd6a5509b:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Other Pacific Islander', 'Nga ishuj të tjerë të Paqësorit', 'Otra de las islas del Pacífico', 'Mpasifiki Mwingine wa Kisiwa', 'Autre natif d’Océanie', 'Sonstiger Pazifikinsulaner', '其他太平洋岛上居民'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '2ab10dca-d428-4d49-8163-2fffd6a5509b', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:30305de0-a096-4b9a-b736-3d5601e2d669:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Samoan', 'Samoan', 'Samoana', 'Msamoa', 'Samoan', 'Samoaner', '萨摩亚人'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '30305de0-a096-4b9a-b736-3d5601e2d669', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:3dda8040-219f-4982-905d-0ba9f019a8e0:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['White', 'E bardhë', 'Blanca', 'Mzungu', 'Blanc', 'Weiß', '白种人'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '3dda8040-219f-4982-905d-0ba9f019a8e0', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:e065de2f-ae00-4164-ae68-6f146b7f6fd4:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Japanese', 'Japonez', 'Japonesa', 'Mjapani', 'Japonais', 'Japaner', '日本人'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'e065de2f-ae00-4164-ae68-6f146b7f6fd4', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:38499467-8e5f-4f09-800d-a450590b5b46:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Filipino', 'Filipinas', 'Filipina', 'Mfilipino', 'Philippin', 'Filipino', '菲律宾人'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '38499467-8e5f-4f09-800d-a450590b5b46', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:eaa53ae7-37e0-471e-88c6-52ce3dd3dbb6:12', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Other Asian', 'Aziatik tjetër', 'Otra asiática', 'Masia Mwingine', 'Autre Asiatique', 'Sonstiger Asiat', '其他亚洲人'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'eaa53ae7-37e0-471e-88c6-52ce3dd3dbb6', 'version': '12.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:22fbd448-c062-48b9-a7e1-ae71a35e6c7a:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Guamanian or Chamorro', 'Nga ishulli Guam ose nga Kamorro', 'Guameña o Chamorro', 'Mguamaniani au Chamoro', 'Guamanien ou Chamorro', 'Guamer oder Chamorro', '关岛人或查莫罗人'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '22fbd448-c062-48b9-a7e1-ae71a35e6c7a', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:1e9bfd03-0b05-49ef-9859-42592c0b371e:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Vietnamese', 'Vietnamez', 'Vietnamita', 'Mvietinamu', 'Vietnamien', 'Vietnamese', '越南人'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '1e9bfd03-0b05-49ef-9859-42592c0b371e', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:3321ee63-e5b5-4d82-9f07-5cc46de85b82:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Native Hawaiian', 'Vendas i Havait', 'Nativa de Hawaii', 'Mhawaii Asili', 'Population autochtone de Hawaï', 'Ureinwohner von Hawaii', '夏威夷土著'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '3321ee63-e5b5-4d82-9f07-5cc46de85b82', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:b1e9dbb9-4902-4c77-8436-9509106b38a2:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Asian Indian', 'Indian Aziatik', 'India asiática', 'Mhindi Masia', 'Indien asiatique', 'Inder', '亚洲印度人'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'b1e9dbb9-4902-4c77-8436-9509106b38a2', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:9b10a2e1-9baa-4949-83e8-1e7e4d07627c:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Some other race', 'Ndonjë racë tjetër', 'Alguna otra raza', 'Jamii zingine', 'Autre', 'Andere Rasse', '其它种族'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '9b10a2e1-9baa-4949-83e8-1e7e4d07627c', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:c7c0877a-2fd0-412f-bf47-f7dd85d085e2:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Chinese', 'Kinez', 'China', 'Mchina', 'Chinois', 'Chinese', '中国人'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': 'c7c0877a-2fd0-412f-bf47-f7dd85d085e2', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ],
+                [ ns4:Category "{'r:UserID': 'opendata.colectica.org:6f7f234c-009f-41fd-9c38-930161309692:16', 'r:UserID-attrs': {'type': '11179-IRDI'}, 'r:VersionRationale': 'Publishing study', 'r:VersionRationale-attrs': {'xml:lang': 'en-US'}, 'r:Label': ['Korean', 'Korean', 'Coreana', 'Mkorea', 'Coréen', 'Koreaner', '韩国人'], 'r:Label-attrs': [{'xml:lang': 'en-US'}, {'xml:lang': 'sq'}, {'xml:lang': 'es'}, {'xml:lang': 'sw'}, {'xml:lang': 'fr'}, {'xml:lang': 'de'}, {'xml:lang': 'zh-CHS'}], '#attributes': {'id': '6f7f234c-009f-41fd-9c38-930161309692', 'version': '16.0.0', 'versionDate': '2010-03-28T05:04:58', 'missing': 'false'}}" ] ;
+            ns4:CategorySchemeName "raceCategories" ;
+            ns3:Label "Race" ;
+            ns3:VersionRationale "Publishing study" ] .
+
+ns4:CodeScheme ns8:attributes [ ns4:Code [ ns4:Code "{'l:CategoryReference': {'r:ID': '3006a7be-7aa3-4128-8e25-29d9a8e6158f', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '1'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '17ca5407-8a80-4353-9700-e479dea251f6', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '2'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '0ec02954-063f-4d53-9bb5-7d7cc6fca309', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '3'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '6a16a27c-017b-4566-b560-8d43449cf2fa', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '5'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '9da4a129-b3c9-40d9-b56f-07e99b3140de', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '4'}" ] ;
+            ns4:CodeSchemeName "hispanicOriginCodes" ;
+            ns3:Label "Hispanic origin Codes" ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns4:Code [ ns4:Code "{'l:CategoryReference': {'r:ID': 'c7439cdc-6d03-47c1-9619-8b5d8eda7989', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '9'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': 'eff6123a-2201-444a-a143-78ca75b640e9', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '7'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': 'd3780e3c-85ec-4dc0-87ac-52767d428f3d', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '5'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '66424e0a-e488-4e2f-ab19-bf356b74065d', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '3'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '8e1976e5-acfc-4cfa-8175-a9b67755d702', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '1'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '18baaa31-7c21-4e73-9128-a6b6a4d02655', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '2'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '91e44e85-003e-40e7-9b29-2c52c23cc3a6', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '6'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': 'f3f06631-27d9-46dc-850e-ea7606e2f789', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '10'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': 'ce6d93b4-6afd-4969-b515-09cf2be65685', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '13'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': 'ef9b6d1e-6f44-4b5d-b38b-790a39a9420a', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '4'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': 'ed4483e9-df7f-48c7-9f2e-c6d569595de9', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '11'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': 'fc74e6e6-b23f-4bb6-bfc2-906b797cf12a', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '8'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '175bc5f8-2de3-49f1-b66e-98a6bb14e06f', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '12'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '71b7fe16-2373-4690-8aa7-43508e01a585', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '14'}" ] ;
+            ns4:CodeSchemeName "relatedCodes" ;
+            ns3:Label "Related Codes" ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns4:Code [ ns4:Code "{'l:CategoryReference': {'r:ID': '5c6abc12-a25b-408f-ae54-451ab6a3f840', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '17'}, 'l:Value': '4'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '1ebe6583-7268-48a2-bb6f-376caf977091', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '17'}, 'l:Value': '3'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': 'e1e350d6-132b-4a74-b3b8-4f6b39fab9e1', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '17'}, 'l:Value': '2'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '61428675-ddb2-4fbc-ad47-4cb077aae407', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '18'}, 'l:Value': '1'}" ] ;
+            ns4:CodeSchemeName "houseOwnershipCodes" ;
+            ns3:Label "House Ownership Codes" ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns4:Code [ ns4:Code "{'l:CategoryReference': {'r:ID': '487fd6cc-6904-4c9c-bb60-6f1ad48e2add', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '17'}, 'l:Value': '5'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '611bdf6c-c40f-4183-90d5-129e63a51036', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '3'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': 'fdfb1233-c481-4ee5-ab2b-20cbbb3cc262', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '9'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': 'a027697a-93a6-4041-ace2-a4e2cb990aec', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '8'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '486a730e-2494-49fd-bcac-b1d7a0fe3279', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '7'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': 'f8ea5246-6b5b-4295-8a67-e52799dbeef2', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '6'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': 'aa759108-f983-4a2a-93d2-b8d10010ad22', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '4'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '605d2a7d-bc8f-4285-8ac5-bb41902550f0', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '2'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '65c74946-435b-4e9c-9119-386bcc0dcfa7', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '1'}" ] ;
+            ns4:CodeSchemeName "livesElsewhereCodes" ;
+            ns3:Label "Lives Elsewhere Codes" ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns4:Code [ ns4:Code "{'l:CategoryReference': {'r:ID': '1e9bfd03-0b05-49ef-9859-42592c0b371e', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '9'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '22fbd448-c062-48b9-a7e1-ae71a35e6c7a', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '11'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '2eedcddc-0b6e-4e5a-a630-9388162914d8', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '2'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': 'b1e9dbb9-4902-4c77-8436-9509106b38a2', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '4'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': 'e065de2f-ae00-4164-ae68-6f146b7f6fd4', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '7'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '2ab10dca-d428-4d49-8163-2fffd6a5509b', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '13'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '3321ee63-e5b5-4d82-9f07-5cc46de85b82', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '10'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '9b10a2e1-9baa-4949-83e8-1e7e4d07627c', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '14'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': 'ad7bcfb5-e4a9-4b8a-bc4f-1f39502cd215', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '3'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '3dda8040-219f-4982-905d-0ba9f019a8e0', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '1'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '38499467-8e5f-4f09-800d-a450590b5b46', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '6'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': 'c7c0877a-2fd0-412f-bf47-f7dd85d085e2', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '5'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '30305de0-a096-4b9a-b736-3d5601e2d669', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '12'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '6f7f234c-009f-41fd-9c38-930161309692', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '16'}, 'l:Value': '8'}" ] ;
+            ns4:CodeSchemeName "raceCodes" ;
+            ns3:Label "Race Codes" ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns4:Code [ ns4:Code "{'l:CategoryReference': {'r:ID': '96ac9380-0cf1-4c06-ae63-47da018d04c9', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '17'}, 'l:Value': '2'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '475d46e2-1e97-42f5-84cf-abc671ba58b5', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '17'}, 'l:Value': '1'}" ] ;
+            ns4:CodeSchemeName "genderCodes" ;
+            ns3:Label "Gender Codes" ;
+            ns3:VersionRationale "Publishing study" ],
+        [ ns4:Code [ ns4:Code "{'l:CategoryReference': {'r:ID': 'a8339f60-c3df-4939-bc59-ae485d8fc933', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '19'}, 'l:Value': '5'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '24922297-e81a-4864-bf3d-9661f98d2914', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '20'}, 'l:Value': '4'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '59e29a9f-1c4a-4d6f-b944-358b75a62106', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '20'}, 'l:Value': '3'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': '66447128-5e8a-4f8a-89b4-cde7b20b74ce', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '19'}, 'l:Value': '1'}" ],
+                [ ns4:Code "{'l:CategoryReference': {'r:ID': 'fdc0160a-b431-4f55-8205-fd8e46728f54', 'r:IdentifyingAgency': 'opendata.colectica.org', 'r:Version': '19'}, 'l:Value': '2'}" ] ;
+            ns4:CodeSchemeName "additionalPeopleCodes" ;
+            ns3:Label "Additional People Codes" ;
+            ns3:VersionRationale "Nothing much." ;
+            ns3:VersionResponsibility "admin" ] .
+
+ns14:li ns14:p [ ns14:p "mandated by the U.S. Constitution" ],
+        [ ns14:p "used to define legislature districts, school district assignment areas and other important functional areas of government" ],
+        [ ns14:p "used to apportion seats in the U.S. House of Representatives" ],
+        [ ns14:p "mandated by the U.S. Constitution" ],
+        [ ns14:p "used to define legislature districts, school district assignment areas and other important functional areas of government" ],
+        [ ns14:p "used to apportion seats in the U.S. House of Representatives" ] .
+
+ns3:Note ns8:attributes [ ns5:Text "81b8d50c-700b-49e5-9dd5-488c5282f798:SelectOne" ],
+        [ ns5:Text "All" ],
+        [ ns5:Text "fb9b3346-809e-41ff-9d8c-f122e246a3af:SelectOne" ],
+        [ ns5:Text "0bda55b4-2c7d-4abe-8569-41ca01bbb912:0" ],
+        [ ns5:Text "All" ],
+        [ ns5:Text "6e2479f6-c09e-4eac-8c9a-f62cd8123f69:0" ],
+        [ ns5:Text "e2648604-e1a5-4a75-8b0e-52a5c13dd89c:SelectOne" ],
+        [ ns5:Text "83e405bb-eb47-408c-917c-b8c834cbbf8a:SelectOne" ],
+        [ ns5:Text "All" ],
+        [ ns5:Text "All" ],
+        [ ns5:Text "All" ],
+        [ ns5:Text "All" ],
+        [ ns5:Text "83e405bb-eb47-408c-917c-b8c834cbbf8a:0" ],
+        [ ns5:Text "6e2479f6-c09e-4eac-8c9a-f62cd8123f69:SelectOne" ],
+        [ ns5:Text "All" ],
+        [ ns5:Text "115cc270-c8f5-44f8-a7fd-576b51345e75:0" ],
+        [ ns5:Text "e2648604-e1a5-4a75-8b0e-52a5c13dd89c:0" ],
+        [ ns5:Text "115cc270-c8f5-44f8-a7fd-576b51345e75:SelectOne" ],
+        [ ns5:Text "All" ],
+        [ ns5:Text "All" ],
+        [ ns5:Text "fb9b3346-809e-41ff-9d8c-f122e246a3af:0" ],
+        [ ns5:Text "All" ],
+        [ ns5:Text "0bda55b4-2c7d-4abe-8569-41ca01bbb912:SelectOne" ],
+        [ ns5:Text "81b8d50c-700b-49e5-9dd5-488c5282f798:0" ],
+        [ ns5:Text "All" ] .
+
