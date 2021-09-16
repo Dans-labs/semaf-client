@@ -2,3 +2,8 @@ DATAVERSE_ROOT = "https://dataverse.harvard.edu"
 DATAVERSE_EXPORT = "/api/datasets/export?exporter=OAI_ORE&persistentId="
 SEMANTIC_GATEWAY = "http://192.168.1.101:8091"
 GATEWAY_LOOKUP = "/wikidata/search/$keyword/"
+cmdifile = "path_to_your_cmdifile"
+# Fill your Dataverse connection details here
+ROOT = 'http://path-to-dataverse.domain'
+DATAVERSE_ID='root'
+API_TOKEN='some-token-from-Dataverse'
