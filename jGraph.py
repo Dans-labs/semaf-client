@@ -4,6 +4,7 @@ from Semaf import Semaf
 from rdflib import Graph, URIRef, Literal, BNode, plugin, Namespace
 from rdflib.serializer import Serializer
 from collections import defaultdict, OrderedDict
+import requests
 
 class jGraph():
     def __init__(self, thisobject=None, RootRef=None, crosswolksfile=None, thisformat='json', debug=False):
@@ -164,4 +165,10 @@ class jGraph():
         v = self.g.serialize(format='n3')
         statements = str(v) 
         statements = statements.replace('\\n', "\n")
-        return statements    
+        return statements  
+
+    def dataset_upload(self, ROOT, DATAVERSE_ID, API_TOKEN, filename):
+        headers = { "X-Dataverse-key" : API_TOKEN, 'Content-Type' : 'application/json-ld'}
+        url = "%s/%s" % (ROOT, "api/dataverses/%s/datasets" % DATAVERSE_ID)
+        r = requests.post(url, data=open(filename, 'rb'), headers=headers)
+        return r.text          
