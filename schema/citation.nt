@@ -1,6 +1,7 @@
 @prefix citation: <https://dataverse.org/schema/citation/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -52,7 +53,10 @@ citation: citation:accessToSources [ citation:advancedSearchField "False" ;
             citation:required "False" ;
             citation:title "Alternative URL" ;
             citation:watermark "Enter full URL, starting with http://" ] ;
-    citation:author [ citation:advancedSearchField "False" ;
+    citation:author [ skos:broader citation:authorAffiliation,
+                citation:authorIdentifier,
+                citation:authorName ;
+            citation:advancedSearchField "False" ;
             citation:allowControlledVocabulary "False" ;
             citation:allowmultiples "True" ;
             citation:authorAffiliation [ citation:advancedSearchField "True" ;
@@ -132,7 +136,8 @@ citation: citation:accessToSources [ citation:advancedSearchField "False" ;
             citation:required "False" ;
             citation:title "Characteristic of Sources Noted" ;
             citation:watermark "" ] ;
-    citation:contributor [ citation:advancedSearchField "False" ;
+    citation:contributor [ skos:broader citation:contributorName ;
+            citation:advancedSearchField "False" ;
             citation:allowControlledVocabulary "False" ;
             citation:allowmultiples "True" ;
             citation:contributorName [ citation:advancedSearchField "True" ;
@@ -164,7 +169,10 @@ citation: citation:accessToSources [ citation:advancedSearchField "False" ;
             citation:required "False" ;
             citation:title "Contributor" ;
             citation:watermark "" ] ;
-    citation:datasetContact [ citation:advancedSearchField "False" ;
+    citation:datasetContact [ skos:broader citation:datasetContactAffiliation,
+                citation:datasetContactEmail,
+                citation:datasetContactName ;
+            citation:advancedSearchField "False" ;
             citation:allowControlledVocabulary "False" ;
             citation:allowmultiples "True" ;
             citation:datasetContactAffiliation [ citation:advancedSearchField "False" ;
@@ -228,7 +236,9 @@ citation: citation:accessToSources [ citation:advancedSearchField "False" ;
             citation:required "True" ;
             citation:title "Contact" ;
             citation:watermark "" ] ;
-    citation:dateOfCollection [ citation:advancedSearchField "False" ;
+    citation:dateOfCollection [ skos:broader citation:dateOfCollectionEnd,
+                citation:dateOfCollectionStart ;
+            citation:advancedSearchField "False" ;
             citation:allowControlledVocabulary "False" ;
             citation:allowmultiples "True" ;
             citation:datasetField "" ;
@@ -324,7 +334,12 @@ citation: citation:accessToSources [ citation:advancedSearchField "False" ;
             citation:required "False" ;
             citation:title "Distribution Date" ;
             citation:watermark "YYYY-MM-DD" ] ;
-    citation:distributor [ citation:advancedSearchField "False" ;
+    citation:distributor [ skos:broader citation:distributorAbbreviation,
+                citation:distributorAffiliation,
+                citation:distributorLogoURL,
+                citation:distributorName,
+                citation:distributorURL ;
+            citation:advancedSearchField "False" ;
             citation:allowControlledVocabulary "False" ;
             citation:allowmultiples "True" ;
             citation:datasetField "" ;
@@ -420,7 +435,9 @@ citation: citation:accessToSources [ citation:advancedSearchField "False" ;
             citation:required "False" ;
             citation:title "Distributor" ;
             citation:watermark "" ] ;
-    citation:dsDescription [ citation:advancedSearchField "False" ;
+    citation:dsDescription [ skos:broader citation:dsDescriptionDate,
+                citation:dsDescriptionValue ;
+            citation:advancedSearchField "False" ;
             citation:allowControlledVocabulary "False" ;
             citation:allowmultiples "True" ;
             citation:datasetField "" ;
@@ -468,7 +485,9 @@ citation: citation:accessToSources [ citation:advancedSearchField "False" ;
             citation:required "True" ;
             citation:title "Description" ;
             citation:watermark "" ] ;
-    citation:grantNumber [ citation:advancedSearchField "False" ;
+    citation:grantNumber [ skos:broader citation:grantNumberAgency,
+                citation:grantNumberValue ;
+            citation:advancedSearchField "False" ;
             citation:allowControlledVocabulary "False" ;
             citation:allowmultiples "True" ;
             citation:datasetField "" ;
@@ -516,7 +535,10 @@ citation: citation:accessToSources [ citation:advancedSearchField "False" ;
             citation:required "False" ;
             citation:title "Grant Information" ;
             citation:watermark "" ] ;
-    citation:keyword [ citation:advancedSearchField "False" ;
+    citation:keyword [ skos:broader citation:keywordValue,
+                citation:keywordVocabulary,
+                citation:keywordVocabularyURI ;
+            citation:advancedSearchField "False" ;
             citation:allowControlledVocabulary "False" ;
             citation:allowmultiples "True" ;
             citation:datasetField "" ;
@@ -628,7 +650,9 @@ citation: citation:accessToSources [ citation:advancedSearchField "False" ;
             citation:required "False" ;
             citation:title "Origin of Sources" ;
             citation:watermark "" ] ;
-    citation:otherId [ citation:advancedSearchField "False" ;
+    citation:otherId [ skos:broader citation:otherIdAgency,
+                citation:otherIdValue ;
+            citation:advancedSearchField "False" ;
             citation:allowControlledVocabulary "False" ;
             citation:allowmultiples "True" ;
             citation:datasetField "" ;
@@ -692,7 +716,12 @@ citation: citation:accessToSources [ citation:advancedSearchField "False" ;
             citation:required "False" ;
             citation:title "Other References" ;
             citation:watermark "" ] ;
-    citation:producer [ citation:advancedSearchField "False" ;
+    citation:producer [ skos:broader citation:producerAbbreviation,
+                citation:producerAffiliation,
+                citation:producerLogoURL,
+                citation:producerName,
+                citation:producerURL ;
+            citation:advancedSearchField "False" ;
             citation:allowControlledVocabulary "False" ;
             citation:allowmultiples "True" ;
             citation:datasetField "" ;
@@ -820,7 +849,10 @@ citation: citation:accessToSources [ citation:advancedSearchField "False" ;
             citation:required "False" ;
             citation:title "Production Place" ;
             citation:watermark "" ] ;
-    citation:publication [ citation:advancedSearchField "False" ;
+    citation:publication [ skos:broader citation:publicationCitation,
+                citation:publicationIDNumber,
+                citation:publicationURL ;
+            citation:advancedSearchField "False" ;
             citation:allowControlledVocabulary "False" ;
             citation:allowmultiples "True" ;
             citation:datasetField "" ;
@@ -916,7 +948,9 @@ citation: citation:accessToSources [ citation:advancedSearchField "False" ;
             citation:required "False" ;
             citation:title "Related Material" ;
             citation:watermark "" ] ;
-    citation:series [ citation:advancedSearchField "False" ;
+    citation:series [ skos:broader citation:seriesInformation,
+                citation:seriesName ;
+            citation:advancedSearchField "False" ;
             citation:allowControlledVocabulary "False" ;
             citation:allowmultiples "False" ;
             citation:datasetField "" ;
@@ -964,7 +998,9 @@ citation: citation:accessToSources [ citation:advancedSearchField "False" ;
                     citation:watermark "" ] ;
             citation:title "Series" ;
             citation:watermark "" ] ;
-    citation:software [ citation:advancedSearchField "False" ;
+    citation:software [ skos:broader citation:softwareName,
+                citation:softwareVersion ;
+            citation:advancedSearchField "False" ;
             citation:allowControlledVocabulary "False" ;
             citation:allowmultiples "True" ;
             citation:datasetField "" ;
@@ -1028,7 +1064,9 @@ citation: citation:accessToSources [ citation:advancedSearchField "False" ;
             citation:required "False" ;
             citation:title "Subtitle" ;
             citation:watermark "" ] ;
-    citation:timePeriodCovered [ citation:advancedSearchField "False" ;
+    citation:timePeriodCovered [ skos:broader citation:timePeriodCoveredEnd,
+                citation:timePeriodCoveredStart ;
+            citation:advancedSearchField "False" ;
             citation:allowControlledVocabulary "False" ;
             citation:allowmultiples "True" ;
             citation:datasetField "" ;
@@ -1092,7 +1130,10 @@ citation: citation:accessToSources [ citation:advancedSearchField "False" ;
             citation:required "True" ;
             citation:title "Title" ;
             citation:watermark "Enter title..." ] ;
-    citation:topicClassification [ citation:advancedSearchField "False" ;
+    citation:topicClassification [ skos:broader citation:topicClassValue,
+                citation:topicClassVocab,
+                citation:topicClassVocabURI ;
+            citation:advancedSearchField "False" ;
             citation:allowControlledVocabulary "False" ;
             citation:allowmultiples "True" ;
             citation:datasetField "" ;
