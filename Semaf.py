@@ -59,7 +59,7 @@ class Semaf():
         #print(self.dictcontent)
         #thisformat = 'rdf-json'
         #self.g = Graph().parse(data=json.dumps(cmdi.json), format=thisformat)
-        return cmdi.xpath()
+        # return cmdi.xpath()
 
     def loadurl(self, doi=None, thisformat=None, url=None, export=None):
         URL = "%s/%s%s" % (url, export, doi)

@@ -16,3 +16,4 @@ Beschrijving,https://dataverse.org/schema/citation/dsDescription#Text,descriptio
 cmdp:Country,http://purl.org/dc/terms/country,
 Keyword,https://dataverse.org/schema/citation/keyword#Term,
 InterviewKeyWords,https://dataverse.org/schema/citation/Keyword,
+GeldigVanaf,https://dataverse.org/schema/citation/Distribution Date,
