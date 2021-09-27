@@ -13,7 +13,7 @@ sm = Semaf()
 cmdifile = sys.argv[1:]
 sm.loadcmdi(cmdifile[0])
 DEPOSIT = False
-cwfile = "test-cmdi-crosswalks.csv"
+cwfile = "odissei-cbs-crosswalks.csv"
 outputfile = 'cbs'
 output_folder = 'output'
 
