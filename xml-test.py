@@ -14,8 +14,10 @@ cmdifile = sys.argv[1:]
 sm.loadcmdi(cmdifile[0])
 DEPOSIT = False
 cwfile = "odissei-cbs-crosswalks.csv"
-outputfile = 'cbs'
+# outputfile = 'cbs'
+outputfile = os.path.splitext(os.path.basename(cmdifile[0]))[0]
 output_folder = 'output'
+n3_folder = 'rdf_output'
 
 cmdigraph = jGraph(sm.json, f'https://dataverse.org/schema/{outputfile}/')
 cmdigraph.load_crosswalks(cwfile)
@@ -26,12 +28,16 @@ cmdigraph.rotate(cmdigraph.context, False)
 # cmdigraph.g.serialize(format='turtle', destination=os.path.join(wd, output_folder, f'{outputfile}.ttl'))
 
 sm.loadjson(cmdigraph.g.serialize(format='json-ld'), 'json-ld')
-print(sm.dumps(True))
+# print(sm.dumps(True))
 
-# Write jsonld to file and ingest in Dataverse
+# Write jsonld and n3 to file ...
 upload_file = os.path.join(wd, output_folder, f'{outputfile}.jsonld')
-open(upload_file, 'w').write(sm.dumps(True))
+n3_file     = os.path.join(wd, n3_folder, f'{outputfile}.n3')
 
+open(upload_file, 'w').write(sm.dumps(True))
+open(n3_file, 'w').write(sm.graph_to_turtle())
+
+# ... and ingest in Dataverse:
 if DEPOSIT:
     dataset = json.loads(cmdigraph.dataset_upload(ROOT, DATAVERSE_ID, API_TOKEN, upload_file))
     if 'data' in dataset:
