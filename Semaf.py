@@ -1,5 +1,6 @@
 from rdflib import Graph, URIRef, Literal, BNode, plugin
 from rdflib.serializer import Serializer
+from rdflib.exceptions import Error
 from collections import defaultdict, OrderedDict
 from xml.dom import minidom
 from CLARIAH_CMDI.xml2dict.processor import CMDI # load, xmldom2dict
@@ -255,3 +256,5 @@ class Semaf():
                     #print(element)
         return self.records
         
+class PluginException(Error):
+    pass
