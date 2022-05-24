@@ -1,671 +1,921 @@
 @prefix citation: <https://dataverse.org/schema/citation/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-citation: citation:accessToSources [ citation:description "Level of documentation of the original sources." ;
-            citation:displayOrder "77" ;
-            citation:fieldType "textbox" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "accessToSources" ;
-            citation:title "Documentation and Access to Sources" ] ;
-    citation:alternativeTitle [ citation:description "A title by which the work is commonly referred, or an abbreviation of the title." ;
-            citation:displayOrder "2" ;
-            citation:fieldType "text" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "alternativeTitle" ;
-            citation:title "Alternative Title" ] ;
-    citation:alternativeURL [ citation:description "A URL where the dataset can be viewed, such as a personal or project website.  " ;
-            citation:displayFormat "<a href=\"#VALUE\" target=\"_blank\">#VALUE</a>" ;
-            citation:displayOrder "3" ;
-            citation:fieldType "url" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "alternativeURL" ;
-            citation:title "Alternative URL" ;
-            citation:watermark "Enter full URL, starting with http://" ] ;
+citation: citation:accessToSources [ citation:schema_description "Level of documentation of the original sources." ;
+            citation:schema_displayOrder 7.7e+01 ;
+            citation:schema_fieldType "textbox" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "accessToSources" ;
+            citation:schema_title "Documentation and Access to Sources" ] ;
+    citation:alternativeTitle [ citation:schema_description "A title by which the work is commonly referred, or an abbreviation of the title." ;
+            citation:schema_displayOrder 2e+00 ;
+            citation:schema_fieldType "text" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "alternativeTitle" ;
+            citation:schema_title "Alternative Title" ] ;
+    citation:alternativeURL [ citation:schema_description "A URL where the dataset can be viewed, such as a personal or project website.  " ;
+            citation:schema_displayFormat "<a href=\"#VALUE\" target=\"_blank\">#VALUE</a>" ;
+            citation:schema_displayOrder 3e+00 ;
+            citation:schema_fieldType "url" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "alternativeURL" ;
+            citation:schema_title "Alternative URL" ;
+            citation:schema_watermark "Enter full URL, starting with http://" ] ;
     citation:author [ skos:broader citation:authorAffiliation,
                 citation:authorIdentifier,
                 citation:authorName ;
-            citation:allowmultiples "True" ;
-            citation:authorAffiliation [ citation:advancedSearchField "True" ;
-                    citation:description "The organization with which the author is affiliated." ;
-                    citation:displayFormat "(#VALUE)" ;
-                    citation:displayOrder "9" ;
-                    citation:displayoncreate "True" ;
-                    citation:facetable "True" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "authorAffiliation" ;
-                    citation:parent "author" ;
-                    citation:title "Affiliation" ] ;
-            citation:authorIdentifier [ citation:description "Uniquely identifies an individual author or organization, according to various schemes." ;
-                    citation:displayFormat "#VALUE" ;
-                    citation:displayOrder "11" ;
-                    citation:displayoncreate "True" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "authorIdentifier" ;
-                    citation:parent "author" ;
-                    citation:title "Identifier" ] ;
-            citation:authorName [ citation:advancedSearchField "True" ;
-                    citation:description "The author's Family Name, Given Name or the name of the organization responsible for this Dataset." ;
-                    citation:displayFormat "#VALUE" ;
-                    citation:displayOrder "8" ;
-                    citation:displayoncreate "True" ;
-                    citation:facetable "True" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "authorName" ;
-                    citation:parent "author" ;
-                    citation:required "True" ;
-                    citation:title "Name" ;
-                    citation:watermark "FamilyName, GivenName or Organization" ] ;
-            citation:description "The person(s), corporate body(ies), or agency(ies) responsible for creating the work." ;
-            citation:displayOrder "7" ;
-            citation:displayoncreate "True" ;
-            citation:fieldType "none" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "author" ;
-            citation:required "True" ;
-            citation:title "Author" ] ;
-    citation:characteristicOfSources [ citation:description "Assessment of characteristics and source material." ;
-            citation:displayOrder "76" ;
-            citation:fieldType "textbox" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "characteristicOfSources" ;
-            citation:title "Characteristic of Sources Noted" ] ;
+            citation:authorAffiliation [ citation:schema_advancedSearchField "True" ;
+                    citation:schema_description "The organization with which the author is affiliated." ;
+                    citation:schema_displayFormat "(#VALUE)" ;
+                    citation:schema_displayOrder 9e+00 ;
+                    citation:schema_displayoncreate "True" ;
+                    citation:schema_facetable "True" ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "authorAffiliation" ;
+                    citation:schema_parent "author" ;
+                    citation:schema_title "Affiliation" ] ;
+            citation:authorIdentifier [ citation:schema_description "Uniquely identifies an individual author or organization, according to various schemes." ;
+                    citation:schema_displayFormat "#VALUE" ;
+                    citation:schema_displayOrder 1.1e+01 ;
+                    citation:schema_displayoncreate "True" ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "authorIdentifier" ;
+                    citation:schema_parent "author" ;
+                    citation:schema_title "Identifier" ] ;
+            citation:authorName [ citation:schema_advancedSearchField "True" ;
+                    citation:schema_description "The author's Family Name, Given Name or the name of the organization responsible for this Dataset." ;
+                    citation:schema_displayFormat "#VALUE" ;
+                    citation:schema_displayOrder 8e+00 ;
+                    citation:schema_displayoncreate "True" ;
+                    citation:schema_facetable "True" ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "authorName" ;
+                    citation:schema_parent "author" ;
+                    citation:schema_required "True" ;
+                    citation:schema_title "Name" ;
+                    citation:schema_watermark "FamilyName, GivenName or Organization" ] ;
+            citation:schema_allowmultiples "True" ;
+            citation:schema_description "The person(s), corporate body(ies), or agency(ies) responsible for creating the work." ;
+            citation:schema_displayOrder 7e+00 ;
+            citation:schema_displayoncreate "True" ;
+            citation:schema_fieldType "none" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "author" ;
+            citation:schema_required "True" ;
+            citation:schema_title "Author" ] ;
+    citation:characteristicOfSources [ citation:schema_description "Assessment of characteristics and source material." ;
+            citation:schema_displayOrder 7.6e+01 ;
+            citation:schema_fieldType "textbox" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "characteristicOfSources" ;
+            citation:schema_title "Characteristic of Sources Noted" ] ;
     citation:contributor [ skos:broader citation:contributorName ;
-            citation:allowmultiples "True" ;
-            citation:contributorName [ citation:advancedSearchField "True" ;
-                    citation:description "The Family Name, Given Name or organization name of the contributor." ;
-                    citation:displayFormat "#VALUE" ;
-                    citation:displayOrder "45" ;
-                    citation:facetable "True" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "contributorName" ;
-                    citation:parent "contributor" ;
-                    citation:title "Name" ;
-                    citation:watermark "FamilyName, GivenName or Organization" ] ;
-            citation:description "The organization or person responsible for either collecting, managing, or otherwise contributing in some form to the development of the resource." ;
-            citation:displayFormat ":" ;
-            citation:displayOrder "43" ;
-            citation:fieldType "none" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "contributor" ;
-            citation:title "Contributor" ] ;
+            citation:contributorName [ citation:schema_advancedSearchField "True" ;
+                    citation:schema_description "The Family Name, Given Name or organization name of the contributor." ;
+                    citation:schema_displayFormat "#VALUE" ;
+                    citation:schema_displayOrder 4.5e+01 ;
+                    citation:schema_facetable "True" ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "contributorName" ;
+                    citation:schema_parent "contributor" ;
+                    citation:schema_title "Name" ;
+                    citation:schema_watermark "FamilyName, GivenName or Organization" ] ;
+            citation:schema_allowmultiples "True" ;
+            citation:schema_description "The organization or person responsible for either collecting, managing, or otherwise contributing in some form to the development of the resource." ;
+            citation:schema_displayFormat ":" ;
+            citation:schema_displayOrder 4.3e+01 ;
+            citation:schema_fieldType "none" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "contributor" ;
+            citation:schema_title "Contributor" ] ;
     citation:datasetContact [ skos:broader citation:datasetContactAffiliation,
                 citation:datasetContactEmail,
                 citation:datasetContactName ;
-            citation:allowmultiples "True" ;
-            citation:datasetContactAffiliation [ citation:description "The organization with which the contact is affiliated." ;
-                    citation:displayFormat "(#VALUE)" ;
-                    citation:displayOrder "14" ;
-                    citation:displayoncreate "True" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "datasetContactAffiliation" ;
-                    citation:parent "datasetContact" ;
-                    citation:title "Affiliation" ] ;
-            citation:datasetContactEmail [ citation:description "The e-mail address(es) of the contact(s) for the Dataset. This will not be displayed." ;
-                    citation:displayFormat "#EMAIL" ;
-                    citation:displayOrder "15" ;
-                    citation:displayoncreate "True" ;
-                    citation:fieldType "email" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "datasetContactEmail" ;
-                    citation:parent "datasetContact" ;
-                    citation:required "True" ;
-                    citation:title "E-mail" ] ;
-            citation:datasetContactName [ citation:description "The contact's Family Name, Given Name or the name of the organization." ;
-                    citation:displayFormat "#VALUE" ;
-                    citation:displayOrder "13" ;
-                    citation:displayoncreate "True" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "datasetContactName" ;
-                    citation:parent "datasetContact" ;
-                    citation:title "Name" ;
-                    citation:watermark "FamilyName, GivenName or Organization" ] ;
-            citation:description "The contact(s) for this Dataset." ;
-            citation:displayOrder "12" ;
-            citation:displayoncreate "True" ;
-            citation:fieldType "none" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "datasetContact" ;
-            citation:required "True" ;
-            citation:title "Contact" ] ;
+            citation:datasetContactAffiliation [ citation:schema_description "The organization with which the contact is affiliated." ;
+                    citation:schema_displayFormat "(#VALUE)" ;
+                    citation:schema_displayOrder 1.4e+01 ;
+                    citation:schema_displayoncreate "True" ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "datasetContactAffiliation" ;
+                    citation:schema_parent "datasetContact" ;
+                    citation:schema_title "Affiliation" ] ;
+            citation:datasetContactEmail [ citation:schema_description "The e-mail address(es) of the contact(s) for the Dataset. This will not be displayed." ;
+                    citation:schema_displayFormat "#EMAIL" ;
+                    citation:schema_displayOrder 1.5e+01 ;
+                    citation:schema_displayoncreate "True" ;
+                    citation:schema_fieldType "email" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "datasetContactEmail" ;
+                    citation:schema_parent "datasetContact" ;
+                    citation:schema_required "True" ;
+                    citation:schema_title "E-mail" ] ;
+            citation:datasetContactName [ citation:schema_description "The contact's Family Name, Given Name or the name of the organization." ;
+                    citation:schema_displayFormat "#VALUE" ;
+                    citation:schema_displayOrder 1.3e+01 ;
+                    citation:schema_displayoncreate "True" ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "datasetContactName" ;
+                    citation:schema_parent "datasetContact" ;
+                    citation:schema_title "Name" ;
+                    citation:schema_watermark "FamilyName, GivenName or Organization" ] ;
+            citation:schema_allowmultiples "True" ;
+            citation:schema_description "The contact(s) for this Dataset." ;
+            citation:schema_displayOrder 1.2e+01 ;
+            citation:schema_displayoncreate "True" ;
+            citation:schema_fieldType "none" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "datasetContact" ;
+            citation:schema_required "True" ;
+            citation:schema_title "Contact" ] ;
     citation:dateOfCollection [ skos:broader citation:dateOfCollectionEnd,
                 citation:dateOfCollectionStart ;
-            citation:allowmultiples "True" ;
-            citation:dateOfCollectionEnd [ citation:description "Date when the data collection ended." ;
-                    citation:displayFormat "#NAME: #VALUE " ;
-                    citation:displayOrder "63" ;
-                    citation:fieldType "date" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "dateOfCollectionEnd" ;
-                    citation:parent "dateOfCollection" ;
-                    citation:title "End" ;
-                    citation:watermark "YYYY-MM-DD" ] ;
-            citation:dateOfCollectionStart [ citation:description "Date when the data collection started." ;
-                    citation:displayFormat "#NAME: #VALUE " ;
-                    citation:displayOrder "62" ;
-                    citation:fieldType "date" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "dateOfCollectionStart" ;
-                    citation:parent "dateOfCollection" ;
-                    citation:title "Start" ;
-                    citation:watermark "YYYY-MM-DD" ] ;
-            citation:description "Contains the date(s) when the data were collected." ;
-            citation:displayFormat ";" ;
-            citation:displayOrder "61" ;
-            citation:fieldType "none" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "dateOfCollection" ;
-            citation:title "Date of Collection" ] ;
-    citation:dateOfDeposit [ citation:description "Date that the Dataset was deposited into the repository." ;
-            citation:displayOrder "57" ;
-            citation:facetable "True" ;
-            citation:fieldType "date" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "dateOfDeposit" ;
-            citation:title "Deposit Date" ;
-            citation:watermark "YYYY-MM-DD" ] ;
-    citation:depositor [ citation:description "The person (Family Name, Given Name) or the name of the organization that deposited this Dataset to the repository." ;
-            citation:displayOrder "56" ;
-            citation:fieldType "text" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "depositor" ;
-            citation:title "Depositor" ] ;
-    citation:distributionDate [ citation:advancedSearchField "True" ;
-            citation:description "Date that the work was made available for distribution/presentation." ;
-            citation:displayOrder "55" ;
-            citation:facetable "True" ;
-            citation:fieldType "date" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "distributionDate" ;
-            citation:title "Distribution Date" ;
-            citation:watermark "YYYY-MM-DD" ] ;
+            citation:dateOfCollectionEnd [ citation:schema_description "Date when the data collection ended." ;
+                    citation:schema_displayFormat "#NAME: #VALUE " ;
+                    citation:schema_displayOrder 6.3e+01 ;
+                    citation:schema_fieldType "date" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "dateOfCollectionEnd" ;
+                    citation:schema_parent "dateOfCollection" ;
+                    citation:schema_title "End" ;
+                    citation:schema_watermark "YYYY-MM-DD" ] ;
+            citation:dateOfCollectionStart [ citation:schema_description "Date when the data collection started." ;
+                    citation:schema_displayFormat "#NAME: #VALUE " ;
+                    citation:schema_displayOrder 6.2e+01 ;
+                    citation:schema_fieldType "date" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "dateOfCollectionStart" ;
+                    citation:schema_parent "dateOfCollection" ;
+                    citation:schema_title "Start" ;
+                    citation:schema_watermark "YYYY-MM-DD" ] ;
+            citation:schema_allowmultiples "True" ;
+            citation:schema_description "Contains the date(s) when the data were collected." ;
+            citation:schema_displayFormat ";" ;
+            citation:schema_displayOrder 6.1e+01 ;
+            citation:schema_fieldType "none" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "dateOfCollection" ;
+            citation:schema_title "Date of Collection" ] ;
+    citation:dateOfDeposit [ citation:schema_description "Date that the Dataset was deposited into the repository." ;
+            citation:schema_displayOrder 5.7e+01 ;
+            citation:schema_facetable "True" ;
+            citation:schema_fieldType "date" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "dateOfDeposit" ;
+            citation:schema_title "Deposit Date" ;
+            citation:schema_watermark "YYYY-MM-DD" ] ;
+    citation:depositor [ citation:schema_description "The person (Family Name, Given Name) or the name of the organization that deposited this Dataset to the repository." ;
+            citation:schema_displayOrder 5.6e+01 ;
+            citation:schema_fieldType "text" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "depositor" ;
+            citation:schema_title "Depositor" ] ;
+    citation:distributionDate [ citation:schema_advancedSearchField "True" ;
+            citation:schema_description "Date that the work was made available for distribution/presentation." ;
+            citation:schema_displayOrder 5.5e+01 ;
+            citation:schema_facetable "True" ;
+            citation:schema_fieldType "date" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "distributionDate" ;
+            citation:schema_title "Distribution Date" ;
+            citation:schema_watermark "YYYY-MM-DD" ] ;
     citation:distributor [ skos:broader citation:distributorAbbreviation,
                 citation:distributorAffiliation,
                 citation:distributorLogoURL,
                 citation:distributorName,
                 citation:distributorURL ;
-            citation:allowmultiples "True" ;
-            citation:description "The organization designated by the author or producer to generate copies of the particular work including any necessary editions or revisions." ;
-            citation:displayOrder "49" ;
-            citation:distributorAbbreviation [ citation:description "The abbreviation by which this distributor is commonly known (e.g., IQSS, ICPSR)." ;
-                    citation:displayFormat "(#VALUE)" ;
-                    citation:displayOrder "52" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "distributorAbbreviation" ;
-                    citation:parent "distributor" ;
-                    citation:title "Abbreviation" ] ;
-            citation:distributorAffiliation [ citation:description "The organization with which the distributor contact is affiliated." ;
-                    citation:displayFormat "(#VALUE)" ;
-                    citation:displayOrder "51" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "distributorAffiliation" ;
-                    citation:parent "distributor" ;
-                    citation:title "Affiliation" ] ;
-            citation:distributorLogoURL [ citation:description "URL of the distributor's logo, which points to this  distributor's web-accessible logo image. Enter an absolute URL where the distributor's logo image is found, such as http://www.my.org/images/logo.gif." ;
-                    citation:displayFormat "<img src=\"#VALUE\" alt=\"#NAME\" class=\"metadata-logo\"/><br/>" ;
-                    citation:displayOrder "54" ;
-                    citation:fieldType "url" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "distributorLogoURL" ;
-                    citation:parent "distributor" ;
-                    citation:title "Logo URL" ;
-                    citation:watermark "Enter full URL for image, starting with http://" ] ;
-            citation:distributorName [ citation:advancedSearchField "True" ;
-                    citation:description "Distributor name" ;
-                    citation:displayFormat "#VALUE" ;
-                    citation:displayOrder "50" ;
-                    citation:facetable "True" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "distributorName" ;
-                    citation:parent "distributor" ;
-                    citation:title "Name" ;
-                    citation:watermark "FamilyName, GivenName or Organization" ] ;
-            citation:distributorURL [ citation:description "Distributor URL points to the distributor's web presence, if appropriate. Enter an absolute URL where the distributor's web site is found, such as http://www.my.org." ;
-                    citation:displayFormat "<a href=\"#VALUE\" target=\"_blank\" rel=\"noopener\">#VALUE</a>" ;
-                    citation:displayOrder "53" ;
-                    citation:fieldType "url" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "distributorURL" ;
-                    citation:parent "distributor" ;
-                    citation:title "URL" ;
-                    citation:watermark "Enter full URL, starting with http://" ] ;
-            citation:fieldType "none" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "distributor" ;
-            citation:title "Distributor" ] ;
+            citation:distributorAbbreviation [ citation:schema_description "The abbreviation by which this distributor is commonly known (e.g., IQSS, ICPSR)." ;
+                    citation:schema_displayFormat "(#VALUE)" ;
+                    citation:schema_displayOrder 5.2e+01 ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "distributorAbbreviation" ;
+                    citation:schema_parent "distributor" ;
+                    citation:schema_title "Abbreviation" ] ;
+            citation:distributorAffiliation [ citation:schema_description "The organization with which the distributor contact is affiliated." ;
+                    citation:schema_displayFormat "(#VALUE)" ;
+                    citation:schema_displayOrder 5.1e+01 ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "distributorAffiliation" ;
+                    citation:schema_parent "distributor" ;
+                    citation:schema_title "Affiliation" ] ;
+            citation:distributorLogoURL [ citation:schema_description "URL of the distributor's logo, which points to this  distributor's web-accessible logo image. Enter an absolute URL where the distributor's logo image is found, such as http://www.my.org/images/logo.gif." ;
+                    citation:schema_displayFormat "<img src=\"#VALUE\" alt=\"#NAME\" class=\"metadata-logo\"/><br/>" ;
+                    citation:schema_displayOrder 5.4e+01 ;
+                    citation:schema_fieldType "url" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "distributorLogoURL" ;
+                    citation:schema_parent "distributor" ;
+                    citation:schema_title "Logo URL" ;
+                    citation:schema_watermark "Enter full URL for image, starting with http://" ] ;
+            citation:distributorName [ citation:schema_advancedSearchField "True" ;
+                    citation:schema_description "Distributor name" ;
+                    citation:schema_displayFormat "#VALUE" ;
+                    citation:schema_displayOrder 5e+01 ;
+                    citation:schema_facetable "True" ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "distributorName" ;
+                    citation:schema_parent "distributor" ;
+                    citation:schema_title "Name" ;
+                    citation:schema_watermark "FamilyName, GivenName or Organization" ] ;
+            citation:distributorURL [ citation:schema_description "Distributor URL points to the distributor's web presence, if appropriate. Enter an absolute URL where the distributor's web site is found, such as http://www.my.org." ;
+                    citation:schema_displayFormat "<a href=\"#VALUE\" target=\"_blank\" rel=\"noopener\">#VALUE</a>" ;
+                    citation:schema_displayOrder 5.3e+01 ;
+                    citation:schema_fieldType "url" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "distributorURL" ;
+                    citation:schema_parent "distributor" ;
+                    citation:schema_title "URL" ;
+                    citation:schema_watermark "Enter full URL, starting with http://" ] ;
+            citation:schema_allowmultiples "True" ;
+            citation:schema_description "The organization designated by the author or producer to generate copies of the particular work including any necessary editions or revisions." ;
+            citation:schema_displayOrder 4.9e+01 ;
+            citation:schema_fieldType "none" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "distributor" ;
+            citation:schema_title "Distributor" ] ;
     citation:dsDescription [ skos:broader citation:dsDescriptionDate,
                 citation:dsDescriptionValue ;
-            citation:allowmultiples "True" ;
-            citation:description "A summary describing the purpose, nature, and scope of the Dataset." ;
-            citation:displayOrder "16" ;
-            citation:displayoncreate "True" ;
-            citation:dsDescriptionDate [ citation:description "In cases where a Dataset contains more than one description (for example, one might be supplied by the data producer and another prepared by the data repository where the data are deposited), the date attribute is used to distinguish between the two descriptions. The date attribute follows the ISO convention of YYYY-MM-DD." ;
-                    citation:displayFormat "(#VALUE)" ;
-                    citation:displayOrder "18" ;
-                    citation:displayoncreate "True" ;
-                    citation:fieldType "date" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "dsDescriptionDate" ;
-                    citation:parent "dsDescription" ;
-                    citation:title "Date" ;
-                    citation:watermark "YYYY-MM-DD" ] ;
-            citation:dsDescriptionValue [ citation:advancedSearchField "True" ;
-                    citation:description "A summary describing the purpose, nature, and scope of the Dataset." ;
-                    citation:displayFormat "#VALUE" ;
-                    citation:displayOrder "17" ;
-                    citation:displayoncreate "True" ;
-                    citation:fieldType "textbox" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "dsDescriptionValue" ;
-                    citation:parent "dsDescription" ;
-                    citation:required "True" ;
-                    citation:title "Text" ] ;
-            citation:fieldType "none" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "dsDescription" ;
-            citation:required "True" ;
-            citation:title "Description" ] ;
+            citation:dsDescriptionDate [ citation:schema_description "In cases where a Dataset contains more than one description (for example, one might be supplied by the data producer and another prepared by the data repository where the data are deposited), the date attribute is used to distinguish between the two descriptions. The date attribute follows the ISO convention of YYYY-MM-DD." ;
+                    citation:schema_displayFormat "(#VALUE)" ;
+                    citation:schema_displayOrder 1.8e+01 ;
+                    citation:schema_displayoncreate "True" ;
+                    citation:schema_fieldType "date" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "dsDescriptionDate" ;
+                    citation:schema_parent "dsDescription" ;
+                    citation:schema_title "Date" ;
+                    citation:schema_watermark "YYYY-MM-DD" ] ;
+            citation:dsDescriptionValue [ citation:schema_advancedSearchField "True" ;
+                    citation:schema_description "A summary describing the purpose, nature, and scope of the Dataset." ;
+                    citation:schema_displayFormat "#VALUE" ;
+                    citation:schema_displayOrder 1.7e+01 ;
+                    citation:schema_displayoncreate "True" ;
+                    citation:schema_fieldType "textbox" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "dsDescriptionValue" ;
+                    citation:schema_parent "dsDescription" ;
+                    citation:schema_required "True" ;
+                    citation:schema_title "Text" ] ;
+            citation:schema_allowmultiples "True" ;
+            citation:schema_description "A summary describing the purpose, nature, and scope of the Dataset." ;
+            citation:schema_displayOrder 1.6e+01 ;
+            citation:schema_displayoncreate "True" ;
+            citation:schema_fieldType "none" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "dsDescription" ;
+            citation:schema_required "True" ;
+            citation:schema_title "Description" ] ;
     citation:grantNumber [ skos:broader citation:grantNumberAgency,
                 citation:grantNumberValue ;
-            citation:allowmultiples "True" ;
-            citation:description "Grant Information" ;
-            citation:displayFormat ":" ;
-            citation:displayOrder "46" ;
-            citation:fieldType "none" ;
-            citation:grantNumberAgency [ citation:advancedSearchField "True" ;
-                    citation:description "Grant Number Agency" ;
-                    citation:displayFormat "#VALUE" ;
-                    citation:displayOrder "47" ;
-                    citation:facetable "True" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "grantNumberAgency" ;
-                    citation:parent "grantNumber" ;
-                    citation:title "Grant Agency" ] ;
-            citation:grantNumberValue [ citation:advancedSearchField "True" ;
-                    citation:description "The grant or contract number of the project that  sponsored the effort." ;
-                    citation:displayFormat "#VALUE" ;
-                    citation:displayOrder "48" ;
-                    citation:facetable "True" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "grantNumberValue" ;
-                    citation:parent "grantNumber" ;
-                    citation:title "Grant Number" ] ;
-            citation:metadatablock_id "citation" ;
-            citation:name "grantNumber" ;
-            citation:title "Grant Information" ] ;
+            citation:grantNumberAgency [ citation:schema_advancedSearchField "True" ;
+                    citation:schema_description "Grant Number Agency" ;
+                    citation:schema_displayFormat "#VALUE" ;
+                    citation:schema_displayOrder 4.7e+01 ;
+                    citation:schema_facetable "True" ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "grantNumberAgency" ;
+                    citation:schema_parent "grantNumber" ;
+                    citation:schema_title "Grant Agency" ] ;
+            citation:grantNumberValue [ citation:schema_advancedSearchField "True" ;
+                    citation:schema_description "The grant or contract number of the project that  sponsored the effort." ;
+                    citation:schema_displayFormat "#VALUE" ;
+                    citation:schema_displayOrder 4.8e+01 ;
+                    citation:schema_facetable "True" ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "grantNumberValue" ;
+                    citation:schema_parent "grantNumber" ;
+                    citation:schema_title "Grant Number" ] ;
+            citation:schema_allowmultiples "True" ;
+            citation:schema_description "Grant Information" ;
+            citation:schema_displayFormat ":" ;
+            citation:schema_displayOrder 4.6e+01 ;
+            citation:schema_fieldType "none" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "grantNumber" ;
+            citation:schema_title "Grant Information" ] ;
     citation:keyword [ skos:broader citation:keywordValue,
                 citation:keywordVocabulary,
                 citation:keywordVocabularyURI ;
-            citation:allowmultiples "True" ;
-            citation:description "Key terms that describe important aspects of the Dataset." ;
-            citation:displayOrder "20" ;
-            citation:displayoncreate "True" ;
-            citation:fieldType "none" ;
-            citation:keywordValue [ citation:advancedSearchField "True" ;
-                    citation:description "Key terms that describe important aspects of the Dataset. Can be used for building keyword indexes and for classification and retrieval purposes. A controlled vocabulary can be employed. The vocab attribute is provided for specification of the controlled vocabulary in use, such as LCSH, MeSH, or others. The vocabURI attribute specifies the location for the full controlled vocabulary." ;
-                    citation:displayFormat "#VALUE" ;
-                    citation:displayOrder "21" ;
-                    citation:displayoncreate "True" ;
-                    citation:facetable "True" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "keywordValue" ;
-                    citation:parent "keyword" ;
-                    citation:title "Term" ] ;
-            citation:keywordVocabulary [ citation:description "For the specification of the keyword controlled vocabulary in use, such as LCSH, MeSH, or others." ;
-                    citation:displayFormat "(#VALUE)" ;
-                    citation:displayOrder "22" ;
-                    citation:displayoncreate "True" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "keywordVocabulary" ;
-                    citation:parent "keyword" ;
-                    citation:title "Vocabulary" ] ;
-            citation:keywordVocabularyURI [ citation:description "Keyword vocabulary URL points to the web presence that describes the keyword vocabulary, if appropriate. Enter an absolute URL where the keyword vocabulary web site is found, such as http://www.my.org." ;
-                    citation:displayFormat "<a href=\"#VALUE\" target=\"_blank\" rel=\"noopener\">#VALUE</a>" ;
-                    citation:displayOrder "23" ;
-                    citation:displayoncreate "True" ;
-                    citation:fieldType "url" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "keywordVocabularyURI" ;
-                    citation:parent "keyword" ;
-                    citation:title "Vocabulary URL" ;
-                    citation:watermark "Enter full URL, starting with http://" ] ;
-            citation:metadatablock_id "citation" ;
-            citation:name "keyword" ;
-            citation:title "Keyword" ] ;
-    citation:kindOfData [ citation:advancedSearchField "True" ;
-            citation:allowmultiples "True" ;
-            citation:description "Type of data included in the file: survey data, census/enumeration data, aggregate data, clinical data, event/transaction data, program source code, machine-readable text, administrative records data, experimental data, psychological test, textual data, coded textual, coded documents, time budget diaries, observation data/ratings, process-produced data, or other." ;
-            citation:displayOrder "64" ;
-            citation:facetable "True" ;
-            citation:fieldType "text" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "kindOfData" ;
-            citation:title "Kind of Data" ] ;
-    citation:notesText [ citation:description "Additional important information about the Dataset." ;
-            citation:displayOrder "33" ;
-            citation:displayoncreate "True" ;
-            citation:fieldType "textbox" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "notesText" ;
-            citation:title "Notes" ] ;
-    citation:originOfSources [ citation:description "For historical materials, information about the origin of the sources and the rules followed in establishing the sources should be specified." ;
-            citation:displayOrder "75" ;
-            citation:fieldType "textbox" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "originOfSources" ;
-            citation:title "Origin of Sources" ] ;
+            citation:keywordValue [ citation:schema_advancedSearchField "True" ;
+                    citation:schema_description "Key terms that describe important aspects of the Dataset. Can be used for building keyword indexes and for classification and retrieval purposes. A controlled vocabulary can be employed. The vocab attribute is provided for specification of the controlled vocabulary in use, such as LCSH, MeSH, or others. The vocabURI attribute specifies the location for the full controlled vocabulary." ;
+                    citation:schema_displayFormat "#VALUE" ;
+                    citation:schema_displayOrder 2.1e+01 ;
+                    citation:schema_displayoncreate "True" ;
+                    citation:schema_facetable "True" ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "keywordValue" ;
+                    citation:schema_parent "keyword" ;
+                    citation:schema_title "Term" ] ;
+            citation:keywordVocabulary [ citation:schema_description "For the specification of the keyword controlled vocabulary in use, such as LCSH, MeSH, or others." ;
+                    citation:schema_displayFormat "(#VALUE)" ;
+                    citation:schema_displayOrder 2.2e+01 ;
+                    citation:schema_displayoncreate "True" ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "keywordVocabulary" ;
+                    citation:schema_parent "keyword" ;
+                    citation:schema_title "Vocabulary" ] ;
+            citation:keywordVocabularyURI [ citation:schema_description "Keyword vocabulary URL points to the web presence that describes the keyword vocabulary, if appropriate. Enter an absolute URL where the keyword vocabulary web site is found, such as http://www.my.org." ;
+                    citation:schema_displayFormat "<a href=\"#VALUE\" target=\"_blank\" rel=\"noopener\">#VALUE</a>" ;
+                    citation:schema_displayOrder 2.3e+01 ;
+                    citation:schema_displayoncreate "True" ;
+                    citation:schema_fieldType "url" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "keywordVocabularyURI" ;
+                    citation:schema_parent "keyword" ;
+                    citation:schema_title "Vocabulary URL" ;
+                    citation:schema_watermark "Enter full URL, starting with http://" ] ;
+            citation:schema_allowmultiples "True" ;
+            citation:schema_description "Key terms that describe important aspects of the Dataset." ;
+            citation:schema_displayOrder 2e+01 ;
+            citation:schema_displayoncreate "True" ;
+            citation:schema_fieldType "none" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "keyword" ;
+            citation:schema_title "Keyword" ] ;
+    citation:kindOfData [ citation:schema_advancedSearchField "True" ;
+            citation:schema_allowmultiples "True" ;
+            citation:schema_description "Type of data included in the file: survey data, census/enumeration data, aggregate data, clinical data, event/transaction data, program source code, machine-readable text, administrative records data, experimental data, psychological test, textual data, coded textual, coded documents, time budget diaries, observation data/ratings, process-produced data, or other." ;
+            citation:schema_displayOrder 6.4e+01 ;
+            citation:schema_facetable "True" ;
+            citation:schema_fieldType "text" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "kindOfData" ;
+            citation:schema_title "Kind of Data" ] ;
+    citation:notesText [ citation:schema_description "Additional important information about the Dataset." ;
+            citation:schema_displayOrder 3.3e+01 ;
+            citation:schema_displayoncreate "True" ;
+            citation:schema_fieldType "textbox" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "notesText" ;
+            citation:schema_title "Notes" ] ;
+    citation:originOfSources [ citation:schema_description "For historical materials, information about the origin of the sources and the rules followed in establishing the sources should be specified." ;
+            citation:schema_displayOrder 7.5e+01 ;
+            citation:schema_fieldType "textbox" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "originOfSources" ;
+            citation:schema_title "Origin of Sources" ] ;
     citation:otherId [ skos:broader citation:otherIdAgency,
                 citation:otherIdValue ;
-            citation:allowmultiples "True" ;
-            citation:description "Another unique identifier that identifies this Dataset (e.g., producer's or another repository's number)." ;
-            citation:displayFormat ":" ;
-            citation:displayOrder "4" ;
-            citation:fieldType "none" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "otherId" ;
-            citation:otherIdAgency [ citation:description "Name of agency which generated this identifier." ;
-                    citation:displayFormat "#VALUE" ;
-                    citation:displayOrder "5" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "otherIdAgency" ;
-                    citation:parent "otherId" ;
-                    citation:title "Agency" ] ;
-            citation:otherIdValue [ citation:description "Other identifier that corresponds to this Dataset." ;
-                    citation:displayFormat "#VALUE" ;
-                    citation:displayOrder "6" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "otherIdValue" ;
-                    citation:parent "otherId" ;
-                    citation:title "Identifier" ] ;
-            citation:title "Other ID" ] ;
-    citation:otherReferences [ citation:allowmultiples "True" ;
-            citation:description "Any references that would serve as background or supporting material to this Dataset." ;
-            citation:displayOrder "73" ;
-            citation:fieldType "text" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "otherReferences" ;
-            citation:title "Other References" ] ;
+            citation:otherIdAgency [ citation:schema_description "Name of agency which generated this identifier." ;
+                    citation:schema_displayFormat "#VALUE" ;
+                    citation:schema_displayOrder 5e+00 ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "otherIdAgency" ;
+                    citation:schema_parent "otherId" ;
+                    citation:schema_title "Agency" ] ;
+            citation:otherIdValue [ citation:schema_description "Other identifier that corresponds to this Dataset." ;
+                    citation:schema_displayFormat "#VALUE" ;
+                    citation:schema_displayOrder 6e+00 ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "otherIdValue" ;
+                    citation:schema_parent "otherId" ;
+                    citation:schema_title "Identifier" ] ;
+            citation:schema_allowmultiples "True" ;
+            citation:schema_description "Another unique identifier that identifies this Dataset (e.g., producer's or another repository's number)." ;
+            citation:schema_displayFormat ":" ;
+            citation:schema_displayOrder 4e+00 ;
+            citation:schema_fieldType "none" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "otherId" ;
+            citation:schema_title "Other ID" ] ;
+    citation:otherReferences [ citation:schema_allowmultiples "True" ;
+            citation:schema_description "Any references that would serve as background or supporting material to this Dataset." ;
+            citation:schema_displayOrder 7.3e+01 ;
+            citation:schema_fieldType "text" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "otherReferences" ;
+            citation:schema_title "Other References" ] ;
     citation:producer [ skos:broader citation:producerAbbreviation,
                 citation:producerAffiliation,
                 citation:producerLogoURL,
                 citation:producerName,
                 citation:producerURL ;
-            citation:allowmultiples "True" ;
-            citation:description "Person or organization with the financial or administrative responsibility over this Dataset" ;
-            citation:displayOrder "35" ;
-            citation:fieldType "none" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "producer" ;
-            citation:producerAbbreviation [ citation:description "The abbreviation by which the producer is commonly known. (ex. IQSS, ICPSR)" ;
-                    citation:displayFormat "(#VALUE)" ;
-                    citation:displayOrder "38" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "producerAbbreviation" ;
-                    citation:parent "producer" ;
-                    citation:title "Abbreviation" ] ;
-            citation:producerAffiliation [ citation:description "The organization with which the producer is affiliated." ;
-                    citation:displayFormat "(#VALUE)" ;
-                    citation:displayOrder "37" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "producerAffiliation" ;
-                    citation:parent "producer" ;
-                    citation:title "Affiliation" ] ;
-            citation:producerLogoURL [ citation:description "URL for the producer's logo, which points to this  producer's web-accessible logo image. Enter an absolute URL where the producer's logo image is found, such as http://www.my.org/images/logo.gif." ;
-                    citation:displayFormat "<img src=\"#VALUE\" alt=\"#NAME\" class=\"metadata-logo\"/><br/>" ;
-                    citation:displayOrder "40" ;
-                    citation:fieldType "url" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "producerLogoURL" ;
-                    citation:parent "producer" ;
-                    citation:title "Logo URL" ;
-                    citation:watermark "Enter full URL for image, starting with http://" ] ;
-            citation:producerName [ citation:advancedSearchField "True" ;
-                    citation:description "Producer name" ;
-                    citation:displayFormat "#VALUE" ;
-                    citation:displayOrder "36" ;
-                    citation:facetable "True" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "producerName" ;
-                    citation:parent "producer" ;
-                    citation:required "True" ;
-                    citation:title "Name" ;
-                    citation:watermark "FamilyName, GivenName or Organization" ] ;
-            citation:producerURL [ citation:description "Producer URL points to the producer's web presence, if appropriate. Enter an absolute URL where the producer's web site is found, such as http://www.my.org.  " ;
-                    citation:displayFormat "<a href=\"#VALUE\" target=\"_blank\" rel=\"noopener\">#VALUE</a>" ;
-                    citation:displayOrder "39" ;
-                    citation:fieldType "url" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "producerURL" ;
-                    citation:parent "producer" ;
-                    citation:title "URL" ;
-                    citation:watermark "Enter full URL, starting with http://" ] ;
-            citation:title "Producer" ] ;
-    citation:productionDate [ citation:advancedSearchField "True" ;
-            citation:description "Date when the data collection or other materials were produced (not distributed, published or archived)." ;
-            citation:displayOrder "41" ;
-            citation:facetable "True" ;
-            citation:fieldType "date" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "productionDate" ;
-            citation:title "Production Date" ;
-            citation:watermark "YYYY-MM-DD" ] ;
-    citation:productionPlace [ citation:description "The location where the data collection and any other related materials were produced." ;
-            citation:displayOrder "42" ;
-            citation:fieldType "text" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "productionPlace" ;
-            citation:title "Production Place" ] ;
+            citation:producerAbbreviation [ citation:schema_description "The abbreviation by which the producer is commonly known. (ex. IQSS, ICPSR)" ;
+                    citation:schema_displayFormat "(#VALUE)" ;
+                    citation:schema_displayOrder 3.8e+01 ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "producerAbbreviation" ;
+                    citation:schema_parent "producer" ;
+                    citation:schema_title "Abbreviation" ] ;
+            citation:producerAffiliation [ citation:schema_description "The organization with which the producer is affiliated." ;
+                    citation:schema_displayFormat "(#VALUE)" ;
+                    citation:schema_displayOrder 3.7e+01 ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "producerAffiliation" ;
+                    citation:schema_parent "producer" ;
+                    citation:schema_title "Affiliation" ] ;
+            citation:producerLogoURL [ citation:schema_description "URL for the producer's logo, which points to this  producer's web-accessible logo image. Enter an absolute URL where the producer's logo image is found, such as http://www.my.org/images/logo.gif." ;
+                    citation:schema_displayFormat "<img src=\"#VALUE\" alt=\"#NAME\" class=\"metadata-logo\"/><br/>" ;
+                    citation:schema_displayOrder 4e+01 ;
+                    citation:schema_fieldType "url" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "producerLogoURL" ;
+                    citation:schema_parent "producer" ;
+                    citation:schema_title "Logo URL" ;
+                    citation:schema_watermark "Enter full URL for image, starting with http://" ] ;
+            citation:producerName [ citation:schema_advancedSearchField "True" ;
+                    citation:schema_description "Producer name" ;
+                    citation:schema_displayFormat "#VALUE" ;
+                    citation:schema_displayOrder 3.6e+01 ;
+                    citation:schema_facetable "True" ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "producerName" ;
+                    citation:schema_parent "producer" ;
+                    citation:schema_required "True" ;
+                    citation:schema_title "Name" ;
+                    citation:schema_watermark "FamilyName, GivenName or Organization" ] ;
+            citation:producerURL [ citation:schema_description "Producer URL points to the producer's web presence, if appropriate. Enter an absolute URL where the producer's web site is found, such as http://www.my.org.  " ;
+                    citation:schema_displayFormat "<a href=\"#VALUE\" target=\"_blank\" rel=\"noopener\">#VALUE</a>" ;
+                    citation:schema_displayOrder 3.9e+01 ;
+                    citation:schema_fieldType "url" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "producerURL" ;
+                    citation:schema_parent "producer" ;
+                    citation:schema_title "URL" ;
+                    citation:schema_watermark "Enter full URL, starting with http://" ] ;
+            citation:schema_allowmultiples "True" ;
+            citation:schema_description "Person or organization with the financial or administrative responsibility over this Dataset" ;
+            citation:schema_displayOrder 3.5e+01 ;
+            citation:schema_fieldType "none" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "producer" ;
+            citation:schema_title "Producer" ] ;
+    citation:productionDate [ citation:schema_advancedSearchField "True" ;
+            citation:schema_description "Date when the data collection or other materials were produced (not distributed, published or archived)." ;
+            citation:schema_displayOrder 4.1e+01 ;
+            citation:schema_facetable "True" ;
+            citation:schema_fieldType "date" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "productionDate" ;
+            citation:schema_title "Production Date" ;
+            citation:schema_watermark "YYYY-MM-DD" ] ;
+    citation:productionPlace [ citation:schema_description "The location where the data collection and any other related materials were produced." ;
+            citation:schema_displayOrder 4.2e+01 ;
+            citation:schema_fieldType "text" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "productionPlace" ;
+            citation:schema_title "Production Place" ] ;
     citation:publication [ skos:broader citation:publicationCitation,
                 citation:publicationIDNumber,
                 citation:publicationURL ;
-            citation:allowmultiples "True" ;
-            citation:description "Publications that use the data from this Dataset. The full list of Related Publications will be displayed on the metadata tab." ;
-            citation:displayOrder "28" ;
-            citation:displayoncreate "True" ;
-            citation:fieldType "none" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "publication" ;
-            citation:publicationCitation [ citation:advancedSearchField "True" ;
-                    citation:description "The full bibliographic citation for this related publication." ;
-                    citation:displayFormat "#VALUE" ;
-                    citation:displayOrder "29" ;
-                    citation:displayoncreate "True" ;
-                    citation:fieldType "textbox" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "publicationCitation" ;
-                    citation:parent "publication" ;
-                    citation:title "Citation" ] ;
-            citation:publicationIDNumber [ citation:advancedSearchField "True" ;
-                    citation:description "The identifier for the selected ID type." ;
-                    citation:displayFormat "#VALUE" ;
-                    citation:displayOrder "31" ;
-                    citation:displayoncreate "True" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "publicationIDNumber" ;
-                    citation:parent "publication" ;
-                    citation:title "ID Number" ] ;
-            citation:publicationURL [ citation:description "Link to the publication web page (e.g., journal article page, archive record page, or other)." ;
-                    citation:displayFormat "<a href=\"#VALUE\" target=\"_blank\" rel=\"noopener\">#VALUE</a>" ;
-                    citation:displayOrder "32" ;
-                    citation:fieldType "url" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "publicationURL" ;
-                    citation:parent "publication" ;
-                    citation:title "URL" ;
-                    citation:watermark "Enter full URL, starting with http://" ] ;
-            citation:title "Related Publication" ] ;
-    citation:relatedDatasets [ citation:allowmultiples "True" ;
-            citation:description "Any Datasets that are related to this Dataset, such as previous research on this subject." ;
-            citation:displayOrder "72" ;
-            citation:fieldType "textbox" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "relatedDatasets" ;
-            citation:title "Related Datasets" ] ;
-    citation:relatedMaterial [ citation:allowmultiples "True" ;
-            citation:description "Any material related to this Dataset." ;
-            citation:displayOrder "71" ;
-            citation:fieldType "textbox" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "relatedMaterial" ;
-            citation:title "Related Material" ] ;
+            citation:publicationCitation [ citation:schema_advancedSearchField "True" ;
+                    citation:schema_description "The full bibliographic citation for this related publication." ;
+                    citation:schema_displayFormat "#VALUE" ;
+                    citation:schema_displayOrder 2.9e+01 ;
+                    citation:schema_displayoncreate "True" ;
+                    citation:schema_fieldType "textbox" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "publicationCitation" ;
+                    citation:schema_parent "publication" ;
+                    citation:schema_title "Citation" ] ;
+            citation:publicationIDNumber [ citation:schema_advancedSearchField "True" ;
+                    citation:schema_description "The identifier for the selected ID type." ;
+                    citation:schema_displayFormat "#VALUE" ;
+                    citation:schema_displayOrder 3.1e+01 ;
+                    citation:schema_displayoncreate "True" ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "publicationIDNumber" ;
+                    citation:schema_parent "publication" ;
+                    citation:schema_title "ID Number" ] ;
+            citation:publicationURL [ citation:schema_description "Link to the publication web page (e.g., journal article page, archive record page, or other)." ;
+                    citation:schema_displayFormat "<a href=\"#VALUE\" target=\"_blank\" rel=\"noopener\">#VALUE</a>" ;
+                    citation:schema_displayOrder 3.2e+01 ;
+                    citation:schema_fieldType "url" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "publicationURL" ;
+                    citation:schema_parent "publication" ;
+                    citation:schema_title "URL" ;
+                    citation:schema_watermark "Enter full URL, starting with http://" ] ;
+            citation:schema_allowmultiples "True" ;
+            citation:schema_description "Publications that use the data from this Dataset. The full list of Related Publications will be displayed on the metadata tab." ;
+            citation:schema_displayOrder 2.8e+01 ;
+            citation:schema_displayoncreate "True" ;
+            citation:schema_fieldType "none" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "publication" ;
+            citation:schema_title "Related Publication" ] ;
+    citation:relatedDatasets [ citation:schema_allowmultiples "True" ;
+            citation:schema_description "Any Datasets that are related to this Dataset, such as previous research on this subject." ;
+            citation:schema_displayOrder 7.2e+01 ;
+            citation:schema_fieldType "textbox" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "relatedDatasets" ;
+            citation:schema_title "Related Datasets" ] ;
+    citation:relatedMaterial [ citation:schema_allowmultiples "True" ;
+            citation:schema_description "Any material related to this Dataset." ;
+            citation:schema_displayOrder 7.1e+01 ;
+            citation:schema_fieldType "textbox" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "relatedMaterial" ;
+            citation:schema_title "Related Material" ] ;
     citation:series [ skos:broader citation:seriesInformation,
                 citation:seriesName ;
-            citation:description "Information about the Dataset series." ;
-            citation:displayFormat ":" ;
-            citation:displayOrder "65" ;
-            citation:fieldType "none" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "series" ;
-            citation:seriesInformation [ citation:description "History of the series and summary of those features that apply to the series as a whole." ;
-                    citation:displayFormat "#VALUE" ;
-                    citation:displayOrder "67" ;
-                    citation:fieldType "textbox" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "seriesInformation" ;
-                    citation:parent "series" ;
-                    citation:title "Information" ] ;
-            citation:seriesName [ citation:advancedSearchField "True" ;
-                    citation:description "Name of the dataset series to which the Dataset belongs." ;
-                    citation:displayFormat "#VALUE" ;
-                    citation:displayOrder "66" ;
-                    citation:facetable "True" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "seriesName" ;
-                    citation:parent "series" ;
-                    citation:title "Name" ] ;
-            citation:title "Series" ] ;
+            citation:schema_description "Information about the Dataset series." ;
+            citation:schema_displayFormat ":" ;
+            citation:schema_displayOrder 6.5e+01 ;
+            citation:schema_fieldType "none" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "series" ;
+            citation:schema_title "Series" ;
+            citation:seriesInformation [ citation:schema_description "History of the series and summary of those features that apply to the series as a whole." ;
+                    citation:schema_displayFormat "#VALUE" ;
+                    citation:schema_displayOrder 6.7e+01 ;
+                    citation:schema_fieldType "textbox" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "seriesInformation" ;
+                    citation:schema_parent "series" ;
+                    citation:schema_title "Information" ] ;
+            citation:seriesName [ citation:schema_advancedSearchField "True" ;
+                    citation:schema_description "Name of the dataset series to which the Dataset belongs." ;
+                    citation:schema_displayFormat "#VALUE" ;
+                    citation:schema_displayOrder 6.6e+01 ;
+                    citation:schema_facetable "True" ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "seriesName" ;
+                    citation:schema_parent "series" ;
+                    citation:schema_title "Name" ] ] ;
     citation:software [ skos:broader citation:softwareName,
                 citation:softwareVersion ;
-            citation:allowmultiples "True" ;
-            citation:description "Information about the software used to generate the Dataset." ;
-            citation:displayFormat "," ;
-            citation:displayOrder "68" ;
-            citation:fieldType "none" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "software" ;
-            citation:softwareName [ citation:allowControlledVocabulary "True" ;
-                    citation:description "Name of software used to generate the Dataset." ;
-                    citation:displayFormat "#VALUE" ;
-                    citation:displayOrder "69" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "softwareName" ;
-                    citation:parent "software" ;
-                    citation:title "Name" ] ;
-            citation:softwareVersion [ citation:description "Version of the software used to generate the Dataset." ;
-                    citation:displayFormat "#NAME: #VALUE" ;
-                    citation:displayOrder "70" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "softwareVersion" ;
-                    citation:parent "software" ;
-                    citation:title "Version" ] ;
-            citation:title "Software" ] ;
-    citation:subtitle [ citation:description "A secondary title used to amplify or state certain limitations on the main title." ;
-            citation:displayOrder "1" ;
-            citation:fieldType "text" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "subtitle" ;
-            citation:title "Subtitle" ] ;
+            citation:schema_allowmultiples "True" ;
+            citation:schema_description "Information about the software used to generate the Dataset." ;
+            citation:schema_displayFormat "," ;
+            citation:schema_displayOrder 6.8e+01 ;
+            citation:schema_fieldType "none" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "software" ;
+            citation:schema_title "Software" ;
+            citation:softwareName [ citation:schema_allowControlledVocabulary "True" ;
+                    citation:schema_description "Name of software used to generate the Dataset." ;
+                    citation:schema_displayFormat "#VALUE" ;
+                    citation:schema_displayOrder 6.9e+01 ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "softwareName" ;
+                    citation:schema_parent "software" ;
+                    citation:schema_title "Name" ] ;
+            citation:softwareVersion [ citation:schema_description "Version of the software used to generate the Dataset." ;
+                    citation:schema_displayFormat "#NAME: #VALUE" ;
+                    citation:schema_displayOrder 7e+01 ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "softwareVersion" ;
+                    citation:schema_parent "software" ;
+                    citation:schema_title "Version" ] ] ;
+    citation:subject [ citation:schema_advancedSearchField "True" ;
+            citation:schema_allowControlledVocabulary "True" ;
+            citation:schema_allowmultiples "True" ;
+            citation:schema_description "Domain-specific Subject Categories that are topically relevant to the Dataset." ;
+            citation:schema_displayOrder 1.9e+01 ;
+            citation:schema_displayoncreate "True" ;
+            citation:schema_facetable "True" ;
+            citation:schema_fieldType "text" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "subject" ;
+            citation:schema_required "True" ;
+            citation:schema_title "Subject" ] ;
+    citation:subtitle [ citation:schema_description "A secondary title used to amplify or state certain limitations on the main title." ;
+            citation:schema_displayOrder 1e+00 ;
+            citation:schema_fieldType "text" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "subtitle" ;
+            citation:schema_title "Subtitle" ] ;
     citation:timePeriodCovered [ skos:broader citation:timePeriodCoveredEnd,
                 citation:timePeriodCoveredStart ;
-            citation:allowmultiples "True" ;
-            citation:description "Time period to which the data refer. This item reflects the time period covered by the data, not the dates of coding or making documents machine-readable or the dates the data were collected. Also known as span." ;
-            citation:displayFormat ";" ;
-            citation:displayOrder "58" ;
-            citation:fieldType "none" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "timePeriodCovered" ;
-            citation:timePeriodCoveredEnd [ citation:advancedSearchField "True" ;
-                    citation:description "End date which reflects the time period covered by the data, not the dates of coding or making documents machine-readable or the dates the data were collected." ;
-                    citation:displayFormat "#NAME: #VALUE " ;
-                    citation:displayOrder "60" ;
-                    citation:facetable "True" ;
-                    citation:fieldType "date" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "timePeriodCoveredEnd" ;
-                    citation:parent "timePeriodCovered" ;
-                    citation:title "End" ;
-                    citation:watermark "YYYY-MM-DD" ] ;
-            citation:timePeriodCoveredStart [ citation:advancedSearchField "True" ;
-                    citation:description "Start date which reflects the time period covered by the data, not the dates of coding or making documents machine-readable or the dates the data were collected." ;
-                    citation:displayFormat "#NAME: #VALUE " ;
-                    citation:displayOrder "59" ;
-                    citation:facetable "True" ;
-                    citation:fieldType "date" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "timePeriodCoveredStart" ;
-                    citation:parent "timePeriodCovered" ;
-                    citation:title "Start" ;
-                    citation:watermark "YYYY-MM-DD" ] ;
-            citation:title "Time Period Covered" ] ;
-    citation:title [ citation:advancedSearchField "True" ;
-            citation:description "Full title by which the Dataset is known." ;
-            citation:displayoncreate "True" ;
-            citation:fieldType "text" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "title" ;
-            citation:required "True" ;
-            citation:title "Title" ;
-            citation:watermark "Enter title..." ] ;
+            citation:schema_allowmultiples "True" ;
+            citation:schema_description "Time period to which the data refer. This item reflects the time period covered by the data, not the dates of coding or making documents machine-readable or the dates the data were collected. Also known as span." ;
+            citation:schema_displayFormat ";" ;
+            citation:schema_displayOrder 5.8e+01 ;
+            citation:schema_fieldType "none" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "timePeriodCovered" ;
+            citation:schema_title "Time Period Covered" ;
+            citation:timePeriodCoveredEnd [ citation:schema_advancedSearchField "True" ;
+                    citation:schema_description "End date which reflects the time period covered by the data, not the dates of coding or making documents machine-readable or the dates the data were collected." ;
+                    citation:schema_displayFormat "#NAME: #VALUE " ;
+                    citation:schema_displayOrder 6e+01 ;
+                    citation:schema_facetable "True" ;
+                    citation:schema_fieldType "date" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "timePeriodCoveredEnd" ;
+                    citation:schema_parent "timePeriodCovered" ;
+                    citation:schema_title "End" ;
+                    citation:schema_watermark "YYYY-MM-DD" ] ;
+            citation:timePeriodCoveredStart [ citation:schema_advancedSearchField "True" ;
+                    citation:schema_description "Start date which reflects the time period covered by the data, not the dates of coding or making documents machine-readable or the dates the data were collected." ;
+                    citation:schema_displayFormat "#NAME: #VALUE " ;
+                    citation:schema_displayOrder 5.9e+01 ;
+                    citation:schema_facetable "True" ;
+                    citation:schema_fieldType "date" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "timePeriodCoveredStart" ;
+                    citation:schema_parent "timePeriodCovered" ;
+                    citation:schema_title "Start" ;
+                    citation:schema_watermark "YYYY-MM-DD" ] ] ;
+    citation:title [ citation:schema_advancedSearchField "True" ;
+            citation:schema_description "Full title by which the Dataset is known." ;
+            citation:schema_displayoncreate "True" ;
+            citation:schema_fieldType "text" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "title" ;
+            citation:schema_required "True" ;
+            citation:schema_title "Title" ;
+            citation:schema_watermark "Enter title..." ] ;
     citation:topicClassification [ skos:broader citation:topicClassValue,
                 citation:topicClassVocab,
                 citation:topicClassVocabURI ;
-            citation:allowmultiples "True" ;
-            citation:description "The classification field indicates the broad important topic(s) and subjects that the data cover. Library of Congress subject terms may be used here.  " ;
-            citation:displayOrder "24" ;
-            citation:fieldType "none" ;
-            citation:metadatablock_id "citation" ;
-            citation:name "topicClassification" ;
-            citation:title "Topic Classification" ;
-            citation:topicClassValue [ citation:advancedSearchField "True" ;
-                    citation:description "Topic or Subject term that is relevant to this Dataset." ;
-                    citation:displayFormat "#VALUE" ;
-                    citation:displayOrder "25" ;
-                    citation:facetable "True" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "topicClassValue" ;
-                    citation:parent "topicClassification" ;
-                    citation:title "Term" ] ;
-            citation:topicClassVocab [ citation:description "Provided for specification of the controlled vocabulary in use, e.g., LCSH, MeSH, etc." ;
-                    citation:displayFormat "(#VALUE)" ;
-                    citation:displayOrder "26" ;
-                    citation:fieldType "text" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "topicClassVocab" ;
-                    citation:parent "topicClassification" ;
-                    citation:title "Vocabulary" ] ;
-            citation:topicClassVocabURI [ citation:description "Specifies the URL location for the full controlled vocabulary." ;
-                    citation:displayFormat "<a href=\"#VALUE\" target=\"_blank\" rel=\"noopener\">#VALUE</a>" ;
-                    citation:displayOrder "27" ;
-                    citation:fieldType "url" ;
-                    citation:metadatablock_id "citation" ;
-                    citation:name "topicClassVocabURI" ;
-                    citation:parent "topicClassification" ;
-                    citation:title "Vocabulary URL" ;
-                    citation:watermark "Enter full URL, starting with http://" ] ] .
+            citation:schema_allowmultiples "True" ;
+            citation:schema_description "The classification field indicates the broad important topic(s) and subjects that the data cover. Library of Congress subject terms may be used here.  " ;
+            citation:schema_displayOrder 2.4e+01 ;
+            citation:schema_fieldType "none" ;
+            citation:schema_metadatablock_id "citation" ;
+            citation:schema_name "topicClassification" ;
+            citation:schema_title "Topic Classification" ;
+            citation:topicClassValue [ citation:schema_advancedSearchField "True" ;
+                    citation:schema_description "Topic or Subject term that is relevant to this Dataset." ;
+                    citation:schema_displayFormat "#VALUE" ;
+                    citation:schema_displayOrder 2.5e+01 ;
+                    citation:schema_facetable "True" ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "topicClassValue" ;
+                    citation:schema_parent "topicClassification" ;
+                    citation:schema_title "Term" ] ;
+            citation:topicClassVocab [ citation:schema_description "Provided for specification of the controlled vocabulary in use, e.g., LCSH, MeSH, etc." ;
+                    citation:schema_displayFormat "(#VALUE)" ;
+                    citation:schema_displayOrder 2.6e+01 ;
+                    citation:schema_fieldType "text" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "topicClassVocab" ;
+                    citation:schema_parent "topicClassification" ;
+                    citation:schema_title "Vocabulary" ] ;
+            citation:topicClassVocabURI [ citation:schema_description "Specifies the URL location for the full controlled vocabulary." ;
+                    citation:schema_displayFormat "<a href=\"#VALUE\" target=\"_blank\" rel=\"noopener\">#VALUE</a>" ;
+                    citation:schema_displayOrder 2.7e+01 ;
+                    citation:schema_fieldType "url" ;
+                    citation:schema_metadatablock_id "citation" ;
+                    citation:schema_name "topicClassVocabURI" ;
+                    citation:schema_parent "topicClassification" ;
+                    citation:schema_title "Vocabulary URL" ;
+                    citation:schema_watermark "Enter full URL, starting with http://" ] ] .
+
+citation:alternativeTitle skos:exactMatch "http://purl.org/dc/terms/alternative" .
+
+citation:alternativeURL skos:exactMatch "https://schema.org/distribution" .
+
+citation:dateOfDeposit skos:exactMatch "http://purl.org/dc/terms/dateSubmitted" .
+
+citation:kindOfData skos:exactMatch "http://rdf-vocabulary.ddialliance.org/discovery#kindOfData" .
+
+citation:otherReferences skos:exactMatch "http://purl.org/dc/terms/references" .
+
+citation:relatedDatasets skos:exactMatch "http://purl.org/dc/terms/relation" .
+
+citation:subject skos:exactMatch "http://purl.org/dc/terms/subject" .
+
+citation:title skos:exactMatch "http://purl.org/dc/terms/title" .
+
+citation:contributor skos:exactMatch "http://purl.org/dc/terms/contributor" ;
+    skos:narrower citation:contributorName .
+
+citation:authorAffiliation skos:altLabel "authorAffiliation" ;
+    skos:broader citation:author ;
+    skos:prefLabel "Affiliation" .
+
+citation:authorIdentifier skos:altLabel "authorIdentifier" ;
+    skos:broader citation:author ;
+    skos:exactMatch "http://purl.org/spar/datacite/AgentIdentifier" ;
+    skos:prefLabel "Identifier" .
+
+citation:authorName skos:altLabel "authorName" ;
+    skos:broader citation:author ;
+    skos:prefLabel "Name" .
+
+citation:contributorName skos:altLabel "contributorName" ;
+    skos:broader citation:contributor ;
+    skos:prefLabel "Name" .
+
+citation:datasetContactAffiliation skos:altLabel "datasetContactAffiliation" ;
+    skos:broader citation:datasetContact ;
+    skos:prefLabel "Affiliation" .
+
+citation:datasetContactEmail skos:altLabel "datasetContactEmail" ;
+    skos:broader citation:datasetContact ;
+    skos:prefLabel "E-mail" .
+
+citation:datasetContactName skos:altLabel "datasetContactName" ;
+    skos:broader citation:datasetContact ;
+    skos:prefLabel "Name" .
+
+citation:dateOfCollection skos:narrower citation:dateOfCollectionEnd,
+        citation:dateOfCollectionStart .
+
+citation:dateOfCollectionEnd skos:altLabel "dateOfCollectionEnd" ;
+    skos:broader citation:dateOfCollection ;
+    skos:prefLabel "End" .
+
+citation:dateOfCollectionStart skos:altLabel "dateOfCollectionStart" ;
+    skos:broader citation:dateOfCollection ;
+    skos:prefLabel "Start" .
+
+citation:distributorAbbreviation skos:altLabel "distributorAbbreviation" ;
+    skos:broader citation:distributor ;
+    skos:prefLabel "Abbreviation" .
+
+citation:distributorAffiliation skos:altLabel "distributorAffiliation" ;
+    skos:broader citation:distributor ;
+    skos:prefLabel "Affiliation" .
+
+citation:distributorLogoURL skos:altLabel "distributorLogoURL" ;
+    skos:broader citation:distributor ;
+    skos:prefLabel "Logo URL" .
+
+citation:distributorName skos:altLabel "distributorName" ;
+    skos:broader citation:distributor ;
+    skos:prefLabel "Name" .
+
+citation:distributorURL skos:altLabel "distributorURL" ;
+    skos:broader citation:distributor ;
+    skos:prefLabel "URL" .
+
+citation:dsDescription skos:narrower citation:dsDescriptionDate,
+        citation:dsDescriptionValue .
+
+citation:dsDescriptionDate skos:altLabel "dsDescriptionDate" ;
+    skos:broader citation:dsDescription ;
+    skos:prefLabel "Date" .
+
+citation:dsDescriptionValue skos:altLabel "dsDescriptionValue" ;
+    skos:broader citation:dsDescription ;
+    skos:prefLabel "Text" .
+
+citation:grantNumber skos:exactMatch "https://schema.org/sponsor" ;
+    skos:narrower citation:grantNumberAgency,
+        citation:grantNumberValue .
+
+citation:grantNumberAgency skos:altLabel "grantNumberAgency" ;
+    skos:broader citation:grantNumber ;
+    skos:prefLabel "Grant Agency" .
+
+citation:grantNumberValue skos:altLabel "grantNumberValue" ;
+    skos:broader citation:grantNumber ;
+    skos:prefLabel "Grant Number" .
+
+citation:keywordValue skos:altLabel "keywordValue" ;
+    skos:broader citation:keyword ;
+    skos:prefLabel "Term" .
+
+citation:keywordVocabulary skos:altLabel "keywordVocabulary" ;
+    skos:broader citation:keyword ;
+    skos:prefLabel "Vocabulary" .
+
+citation:keywordVocabularyURI skos:altLabel "keywordVocabularyURI" ;
+    skos:broader citation:keyword ;
+    skos:prefLabel "Vocabulary URL" .
+
+citation:otherId skos:narrower citation:otherIdAgency,
+        citation:otherIdValue .
+
+citation:otherIdAgency skos:altLabel "otherIdAgency" ;
+    skos:broader citation:otherId ;
+    skos:prefLabel "Agency" .
+
+citation:otherIdValue skos:altLabel "otherIdValue" ;
+    skos:broader citation:otherId ;
+    skos:prefLabel "Identifier" .
+
+citation:producerAbbreviation skos:altLabel "producerAbbreviation" ;
+    skos:broader citation:producer ;
+    skos:prefLabel "Abbreviation" .
+
+citation:producerAffiliation skos:altLabel "producerAffiliation" ;
+    skos:broader citation:producer ;
+    skos:prefLabel "Affiliation" .
+
+citation:producerLogoURL skos:altLabel "producerLogoURL" ;
+    skos:broader citation:producer ;
+    skos:prefLabel "Logo URL" .
+
+citation:producerName skos:altLabel "producerName" ;
+    skos:broader citation:producer ;
+    skos:prefLabel "Name" .
+
+citation:producerURL skos:altLabel "producerURL" ;
+    skos:broader citation:producer ;
+    skos:prefLabel "URL" .
+
+citation:publicationCitation skos:altLabel "publicationCitation" ;
+    skos:broader citation:publication ;
+    skos:exactMatch "http://purl.org/dc/terms/bibliographicCitation" ;
+    skos:prefLabel "Citation" .
+
+citation:publicationIDNumber skos:altLabel "publicationIDNumber" ;
+    skos:broader citation:publication ;
+    skos:exactMatch "http://purl.org/spar/datacite/ResourceIdentifier" ;
+    skos:prefLabel "ID Number" .
+
+citation:publicationURL skos:altLabel "publicationURL" ;
+    skos:broader citation:publication ;
+    skos:exactMatch "https://schema.org/distribution" ;
+    skos:prefLabel "URL" .
+
+citation:series skos:narrower citation:seriesInformation,
+        citation:seriesName .
+
+citation:seriesInformation skos:altLabel "seriesInformation" ;
+    skos:broader citation:series ;
+    skos:prefLabel "Information" .
+
+citation:seriesName skos:altLabel "seriesName" ;
+    skos:broader citation:series ;
+    skos:prefLabel "Name" .
+
+citation:software skos:exactMatch "https://www.w3.org/TR/prov-o/#wasGeneratedBy" ;
+    skos:narrower citation:softwareName,
+        citation:softwareVersion .
+
+citation:softwareName skos:altLabel "softwareName" ;
+    skos:broader citation:software ;
+    skos:prefLabel "Name" .
+
+citation:softwareVersion skos:altLabel "softwareVersion" ;
+    skos:broader citation:software ;
+    skos:prefLabel "Version" .
+
+citation:timePeriodCovered skos:exactMatch "https://schema.org/temporalCoverage" ;
+    skos:narrower citation:timePeriodCoveredEnd,
+        citation:timePeriodCoveredStart .
+
+citation:timePeriodCoveredEnd skos:altLabel "timePeriodCoveredEnd" ;
+    skos:broader citation:timePeriodCovered ;
+    skos:prefLabel "End" .
+
+citation:timePeriodCoveredStart skos:altLabel "timePeriodCoveredStart" ;
+    skos:broader citation:timePeriodCovered ;
+    skos:prefLabel "Start" .
+
+citation:topicClassValue skos:altLabel "topicClassValue" ;
+    skos:broader citation:topicClassification ;
+    skos:prefLabel "Term" .
+
+citation:topicClassVocab skos:altLabel "topicClassVocab" ;
+    skos:broader citation:topicClassification ;
+    skos:prefLabel "Vocabulary" .
+
+citation:topicClassVocabURI skos:altLabel "topicClassVocabURI" ;
+    skos:broader citation:topicClassification ;
+    skos:prefLabel "Vocabulary URL" .
+
+citation:author skos:exactMatch "http://purl.org/dc/terms/creator" ;
+    skos:narrower citation:authorAffiliation,
+        citation:authorIdentifier,
+        citation:authorName .
+
+citation:datasetContact skos:narrower citation:datasetContactAffiliation,
+        citation:datasetContactEmail,
+        citation:datasetContactName .
+
+citation:keyword skos:narrower citation:keywordValue,
+        citation:keywordVocabulary,
+        citation:keywordVocabularyURI .
+
+citation:publication skos:exactMatch "http://purl.org/dc/terms/isReferencedBy" ;
+    skos:narrower citation:publicationCitation,
+        citation:publicationIDNumber,
+        citation:publicationURL .
+
+citation:topicClassification skos:narrower citation:topicClassValue,
+        citation:topicClassVocab,
+        citation:topicClassVocabURI .
+
+citation:distributor skos:narrower citation:distributorAbbreviation,
+        citation:distributorAffiliation,
+        citation:distributorLogoURL,
+        citation:distributorName,
+        citation:distributorURL .
+
+citation:producer skos:narrower citation:producerAbbreviation,
+        citation:producerAffiliation,
+        citation:producerLogoURL,
+        citation:producerName,
+        citation:producerURL .
 
