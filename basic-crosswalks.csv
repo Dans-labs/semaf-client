@@ -1,5 +1,5 @@
 originalfield,mappedfield
 investigator,authorName
 organization,affiliation
-taxon,Description
+taxon,dsDescription
 category,keyword
