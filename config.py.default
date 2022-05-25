@@ -7,5 +7,5 @@ cmdifile = "path_to_your_cmdifile"
 ROOT = 'http://path-to-dataverse.domain'
 DATAVERSE_ID='root'
 API_TOKEN='some-token-from-Dataverse'
-default_crosswalks_location=https://raw.githubusercontent.com/Dans-labs/semaf-client/cmdi/default-crosswalks.csv
-crosswalks_location=https://raw.githubusercontent.com/Dans-labs/semaf-client/cmdi/basic-crosswalks.csv
+default_crosswalks_location="https://raw.githubusercontent.com/Dans-labs/semaf-client/cmdi/default-crosswalks.csv"
+crosswalks_location="https://raw.githubusercontent.com/Dans-labs/semaf-client/cmdi/basic-crosswalks.csv"
