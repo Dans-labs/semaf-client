@@ -1,7 +1,7 @@
 originalfield,metadatablock,metadatafield,id,subfield,level,type
 "/Dataontwerpversies/Versie/Dataontwerp/Beschrijving",citation,dsDescription,1,dsDescriptionValue,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/EngelstaligePublicatietekst",citation,dsDescription,1,dsDescriptionValue,0,primitive
-"/Dataontwerpversies/Versie/Dataontwerp/Contextvariabelen/Contextvariabele/VerkorteSchrijfwijzeNaamVariabele",citation,topicClassValue,1,dsDescriptionValue,0,primitive
+"/Dataontwerpversies/Versie/Dataontwerp/Contextvariabelen/Contextvariabele/VerkorteSchrijfwijzeNaamVariabele",citation,topicClassValue,1,topicClassValue,0,primitive
 "/Dataontwerpversies/OorspronkelijkeNaam",citation,"",0,title,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/VerkorteSchrijfwijzeNaamDataontwerp",citation,"",0,alternativeTitle,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/Id",citation,"otherId",1,otherIdValue,0,primitive
