@@ -1,0 +1,8 @@
+value,metadatablock,metadatafield,id,subfield,level,type
+"Centraal Bureau voor Statistiek",citation,producer,1,producerName,0,primitive
+"CBS",citation,producer,1,producerAbbreviation,0,primitive
+"CBS Dataontwerp ID",citation,"otherId",1,otherIdAgency,0,primitive
+"Centraal Bureau voor Statistiek",citation,author,1,authorName,0,primitive
+"Microdata@cbs.nl",citation,datasetContact,1,datasetContactEmail,0,primitive
+"Social Sciences",citation,"",0,subject,1,controlledVocabulary
+"Centraal Bureau voor Statistiek",citation,distributor,1,distributorName,0,primitive
