@@ -13,7 +13,7 @@ from urllib.request import urlopen
 register('json-ld', Serializer, 'rdflib_jsonld.serializer', 'JsonLDSerializer')
 
 class Schema():
-    def __init__(self, debug=False):
+    def __init__(self, graph=None, debug=False):
         self.forbidden = ["subject", "language", "authorIdentifierScheme", "contributorType", "publicationIDType", "DatasetField"]
         self.forbidden = ["language","authorIdentifierScheme", "contributorType", "publicationIDType", "DatasetField"]
         self.datadict = {}
@@ -31,6 +31,8 @@ class Schema():
         self.serializeJSON = {}
         self.metadataframe = None
         #self.forbidden = {}
+        if graph:
+            self.g = graph
         
     def loadfile(self, filename):
         data = False
@@ -347,17 +349,29 @@ class Schema():
     def default_schema(self, defaultcw):
         self.default = self.loadfile(defaultcw)
         defaultvalue = {}
-        for i in self.default.index:
-            fieldname = str(self.default.loc[i]['defaultfield'])
-            defaultvalue[fieldname] = str(self.default.loc[i]['value'])
+        if 'defaultfield' in self.default.columns:
+            for i in self.default.index:
+                fieldname = str(self.default.loc[i]['defaultfield'])
+                defaultvalue[fieldname] = str(self.default.loc[i]['value'])
+        if 'metadatablock' in self.default.columns:
+            for i in self.default.index:
+                fieldname = str(self.default.loc[i]['subfield'])
+                defaultvalue[fieldname] = str(self.default.loc[i]['value'])
+
         return defaultvalue
 
     def crosswalks(self, cwURL):
         self.crosswalks_df = self.loadfile(cwURL)
+        #return self.crosswalks_df
         cw = {}
-        for i in self.crosswalks_df.index:
-            fieldname = str(self.crosswalks_df.loc[i]['originalfield'])
-            cw[fieldname] = str(self.crosswalks_df.loc[i]['mappedfield'])
+        if 'mappedfield' in self.crosswalks_df.columns:
+            for i in self.crosswalks_df.index:
+                fieldname = str(self.crosswalks_df.loc[i]['originalfield'])
+                cw[fieldname] = str(self.crosswalks_df.loc[i]['mappedfield'])
+        if 'metadatablock' in self.crosswalks_df.columns: 
+            for i in self.crosswalks_df.index:
+                fieldname = str(self.crosswalks_df.loc[i]['originalfield'])
+                cw[fieldname] = str(self.crosswalks_df.loc[i]['subfield'])
         return cw
     
     def Hierarchy(self, fieldname):
