@@ -1,4 +1,4 @@
-originalfield,metadatablock,metadatafield,id,subfield,level,type
+value,metadatablock,metadatafield,id,subfield,level,type
 "Centraal Bureau voor Statistiek",citation,producer,1,producerName,0,primitive
 "CBS",citation,producer,1,producerAbbreviation,0,primitive
 "CBS Dataontwerp ID",citation,"otherId",1,otherIdAgency,0,primitive
