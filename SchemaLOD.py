@@ -82,7 +82,6 @@ class Schema():
         #print(dataschema)
         schemaIO = StringIO(''.join(dataschema))        
         data = pd.read_csv(schemaIO, sep="\t", error_bad_lines=False)
-        print(data.columns)
         nospacefields = []
         for field in data.columns:
             newfield = field.replace(' ', '')
@@ -375,7 +374,6 @@ class Schema():
 
     def crosswalks(self, cwURL):
         self.crosswalks_df = self.loadfile(cwURL)
-        #return self.crosswalks_df
         cw = {}
         if 'mappedfield' in self.crosswalks_df.columns:
             for i in self.crosswalks_df.index:
