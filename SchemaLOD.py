@@ -7,6 +7,7 @@ import pandas as pd
 import json
 import requests
 from io import StringIO
+from rdflib.namespace import RDF, RDFS
 import re
 from urllib.request import urlopen
 
@@ -31,6 +32,7 @@ class Schema():
         self.serializeJSON = {}
         self.metadataframe = None
         #self.forbidden = {}
+        self.cv_server = ''
         self.alias = {}
         if graph:
             self.g = graph
@@ -409,3 +411,376 @@ class Schema():
         if not internalfields:
             root = self.Relations(fieldname, NESTED=True, relation='#altLabel')
         return hierarchy
+
+class GraphBuilder():
+    def __init__(self, thisobject=None, RootRef=None, crosswolksfile=None, thisformat='json', graphformat=None, debug=False):
+        self.stats = {}
+        self.json = {}
+        self.context = json.loads(thisobject)
+        self.RootRef = RootRef
+        self.exportdata = {}
+        self.exportrecords = []
+        self.dictcontent = []
+        self.mappings = {}
+        self.locator = {}
+        self.namespaces = {}
+        self.EnrichFlag = False
+        self.crosswalks = {}
+        self.cv_server = ''
+        # Default Graph 
+        self.g = Graph()
+        self.level = 0
+        self.format = None
+        self.crosswalks = None
+        self.statements = []
+        if self.format:
+            self.format = graphformat
+
+    def mapping(self, fieldname):
+        if fieldname in self.crosswalks.keys():
+            return fieldname #self.crosswalks[fieldname]
+        return #fieldname
+
+    def iterator(self, x, xpath=''):      
+        xpath = self.clearpath(xpath)  
+        if isinstance(x, list):            
+            thisblock = []            
+            #if self.mapping(x):
+            #return [self.iterator(v, previous_key) for v in x]
+            for i in range(0, len(x)):
+                v = x[i]
+                if xpath:
+                    #thispath = "%s/%s" % (xpath, v)
+                    thispath = xpath
+                else:
+                    thispath = "/%s" % v
+                #m = self.mapping(thispath)
+                #if m:
+                #    self.exportdata[m] = v
+                thisblock.append({'xpath': thispath, 'block': "%s/%s" % (thispath, str(i)), 'value': self.iterator(v, thispath)})                
+            return thisblock
+        elif isinstance(x, dict):              
+            thisblock = {}
+            #return { self.mapping(k): self.iterator(v, xpath) for k,v in x.items() }
+            for k,v in x.items():
+                if xpath:
+                    thispath = "%s/%s" % (xpath, k)
+                else:
+                    thispath = "/%s" % k         
+                #m = self.mapping(thispath)
+                #if m:
+                #    self.exportdata[m] = v
+                thisblock[k] = { 'xpath': thispath, 'value': self.iterator(v, thispath) }
+            return thisblock
+        else:
+            m = self.mapping(xpath)
+            if m:
+                self.exportdata[m] = x            
+                self.exportrecords.append({'xpath': xpath, 'mapping': self.crosswalks[xpath],'value': x})
+            return self.clearpath(x)
+
+    def set_cvserver(self, cv_server):
+        self.cv_server = cv_server
+        return
+
+    def externalCV(self, concept):
+        url = "%s/%s" % (self.cv_server, "/rest/v1/search?vocab=cbs&query=%s" % concept)
+        response = requests.get(url)
+        staID = BNode()
+        EXISTS = False
+        self.g.add((staID, self.skosxl['literalForm'], Literal(concept)))
+        if response.status_code == 200:
+            CVdata = json.loads(response.content.decode('utf-8'))['results']
+            for cvobject in CVdata:
+                self.g.add((staID, self.skos['note'], Literal('Skosmos concept')))
+                for k, v in cvobject.items():
+                    EXISTS = True
+                    if k == 'prefLabel':
+                        self.g.add((staID, self.skos['prefLabel'], Literal(v)))
+                    if k == 'altLabel':
+                        self.g.add((staID, self.skos['altLabel'], Literal(v)))
+            if EXISTS:
+                return staID
+            else:
+                return
+        return
+
+    def clearpath(self, xpath=''):
+        if xpath:
+            xpath = xpath.replace('#document', '')
+            xpath = xpath.replace('//', '/')
+            return xpath
+        return
+
+    def set_crosswalks(self, cw):
+        self.crosswalks = cw
+           
+    def SetRef(self, value):
+        # Set references with loaded semantic mappings
+        #if value:
+        #    value = self.clearpath(value)
+        #    if value:
+        #        if str(value)[0] == '/':
+        #            value = value.lstrip()
+
+        if value in self.mappings:
+            RefURL = self.mappings[value]
+        else:
+            RefURL = "%s%s" % (self.RootRef, value)
+        self.crosswalks[RefURL] = value
+        #self.mappings[value] = RefURL
+        return RefURL
+    
+    def setNamespaces(self):
+        # Define namespaces
+        ns1 = Namespace("%s" % self.RootRef)
+        self.g.bind('cmdi', ns1)
+        ns2 = Namespace("%s/#" % self.RootRef)
+        self.g.bind('cmdidoc', ns2)
+        ns3 = Namespace("%s/Keyword#" % self.RootRef)
+        self.g.bind('keywords', ns3)
+        ns4 = Namespace("https://dataverse.org/schema/citation")
+        self.g.bind('citation', ns4)
+        ns5 = Namespace("https://dataverse.org/schema/")
+        self.g.bind('schema', ns5)
+        ns6 = Namespace("http://purl.org/dc/terms/")
+        self.g.bind('dcterms', ns6)
+
+        for nsname in self.namespaces:
+            ns = Namespace(nsname)
+            self.g.bind(self.namespaces[nsname], "%s/" % ns)    
+
+    def load_crosswalks(self, crossfile):
+        with open(crossfile, encoding='utf-8') as fh:
+            content = fh.readlines()
+            for line in content:
+                mapline = line.split(',')
+                self.mappings[mapline[0]] = mapline[1]
+        return self.mappings
+    
+    def rotatelist(self, thislist, previous_element, xpathroot, DEBUG=None):
+        # previous_element = parent key
+        # k = key
+        # v = value
+        #self.level = self.level + 1
+        self.level = 0 
+        for keyID in range(0, len(thislist)):
+            key = thislist[keyID]
+            if type(key) is dict:
+                complexstatements = {}
+                staID = BNode()
+                staIDlocal = BNode()
+                for k, v in key.items():
+                    #root="%s/%s" % (self.RootRef, previous_element)
+                    root = self.SetRef(previous_element)
+                    # vty xpathroot = "%s/%s" % (xpathroot, k)
+                    #kRef = "%s/%s" % (self.RootRef, k)
+                    self.dictcontent.append({"list": root, "xpath": xpathroot, self.SetRef(k): v, 'type': type(v), 'sort': keyID })
+                    if type(v) is str:
+                        complexstatements[URIRef(self.SetRef(k))] = v
+                        staIDstr = BNode()
+                        #self.g.add((staIDstr, URIRef(self.SetRef(k)), Literal(item)))                        
+                        self.g.add((staIDstr, URIRef(self.SetRef(k)), Literal(v)))
+                        self.g.add((staIDstr, URIRef(self.SetRef(k)), Literal(v)))
+                        self.g.add((staIDstr, self.skosxl['hiddenLabel'], Literal(self.clearpath("%s/%s" % (xpathroot, k)))))
+                        self.g.add((staIDstr, RDF.value, Literal(v)))
+                        self.statements.append({'xpath': self.clearpath("%s/%s" % (xpathroot, k)), 'value': v })
+                        
+                        if self.format == 'rich':
+                            self.g.add((staIDstr, self.skosxl['note'], Literal('internal statement')))
+                            self.g.add((staIDstr, self.skosxl['literalForm'], Literal(k)))
+                        
+                        #conceptgraph = self.externalCV(self.cv_server, v)
+                        conceptgraph = None
+                        if conceptgraph:
+                            self.g.add((staIDstr, self.skos['exactMatch'], conceptgraph))
+                        self.g.add((staIDlocal, URIRef(self.SetRef(k)), staIDstr))                            
+
+                    elif type(v) is list:
+                        complexarray = []
+                        for item in v:
+                            self.level = self.level + 1
+                            complexarray.append({ self.SetRef(k): item, URIRef("%s#Vocabulary" % self.SetRef(k)) : "url" })
+                            
+                            # Create and add a new statement in the graph
+                            staIDar = BNode()
+                            self.g.add((staIDar, URIRef(self.SetRef(k)), Literal(item)))
+                            self.g.add((staIDar, self.skosxl['hiddenLabel'], Literal(self.clearpath("%s/%s" % (xpathroot, k)))))
+                            # vty self.g.add((staIDar, self.skos['broader'], Literal(previous_element)))
+                            self.g.add((staIDar, self.skos['broader'], URIRef(self.SetRef(previous_element))))
+                            self.g.add((staIDar, self.skos['prefLabel'], Literal(k)))
+                            self.g.add((staIDar, RDF.value, Literal(item)))
+                            if self.format == 'rich':
+                                self.g.add((staIDar, self.skos['note'], Literal(self.level)))
+                                self.g.add((staIDar, self.skosxl['literalForm'], Literal(k)))
+                                self.g.add((staIDar, self.skosxl['note'], Literal('cycle statement')))
+                            
+                            if self.EnrichFlag:
+                                self.g.add((staIDar, URIRef("%s#Vocabulary" % self.SetRef(k)), Literal('vocabulary name')))
+                                self.g.add((staIDar, URIRef("%s#VocabularyURL" % self.SetRef(k)), Literal("http link to concept URI for %s" % item)))
+                            # Add statements from array
+                            self.g.add((staIDlocal, URIRef(self.SetRef(k)), staIDar))
+                        complexstatements[URIRef(self.SetRef(k))] = complexarray
+                    if DEBUG:
+                        print(complexstatements)
+                self.g.add((URIRef(root), URIRef(self.SetRef(k)), staIDlocal))
+        return
+    
+    def rotate(self, thisdict, previous_element, DEBUG=None):
+        self.cmdiloc = {}
+
+        skos = Namespace('http://www.w3.org/2004/02/skos/core#')
+        self.g.bind('skos', skos)        
+        skosxl = Namespace('http://www.w3.org/2008/05/skos-xl#')
+        self.skos = Namespace('http://www.w3.org/2004/02/skos/core#')
+        self.skosxl = Namespace('http://www.w3.org/2008/05/skos-xl#')
+        self.g.bind('skosxl', skosxl)        
+        
+        if (isinstance(thisdict,list)):
+            #root="%s/%s" % (self.RootRef, previous_element)
+            root = self.SetRef(previous_element)
+            #kRef = "%s/%s" % (self.RootRef, k)
+            self.dictcontent.append({"list": root, self.SetRef(k): v })
+            #print("%s" % root)
+            self.g.add((URIRef(root), URIRef(self.SetRef(k)), Literal(v)))
+            self.g.add((URIRef(root), skos['prefLabel'], Literal(root)))
+            #self.g.add(((URIRef(root), skos['altLabel'], Literal(k)))            
+            return
+
+        for k,v in thisdict.items():
+            if (isinstance(v,dict)):
+                if previous_element:
+                    fullXpath = "%s/%s" % (previous_element, k)
+                else:
+                    fullXpath = k
+                self.namespaces[self.SetRef(previous_element)] = k.lower()
+                # vty if DEBUG:
+                #print("XPath %s [%s/%s]" % (fullXpath, previous_element, k))
+                self.rotate(v, fullXpath)
+                ###self.rotate(v, k)
+                #root="%s%s" % (self.RootRef, previous_element)
+                root = self.SetRef(previous_element)
+                #kRef = "%s/%s" % (self.RootRef, k)
+                staID = BNode()
+                staID = URIRef(self.RootRef)
+                self.g.add((staID, URIRef(root), URIRef(self.SetRef(k))))
+                #self.g.add((staID, skos['broader'], URIRef(nodename)))
+                self.g.add((staID, skos['hiddenLabel'], Literal(self.clearpath(fullXpath))))
+                self.g.add((staID, skos['altLabel'], Literal(k)))
+                self.g.add((staID, RDF.value, Literal(v)))
+                if self.format == 'rich':
+                    self.g.add((staID, skos['note'], Literal('simple statement')))
+                self.locator[root] = staID
+                continue
+            else:
+                if (isinstance(v,list)):
+                    if DEBUG:
+                        print(k)
+                    xpathroot = "%s/%s" % (previous_element, k)
+                    self.rotatelist(v, k, xpathroot)
+                    continue
+                #root="%s%s" % (self.RootRef, previous_element)
+                root = self.SetRef(previous_element)
+                xpathroot = "%s/%s" % (previous_element, k)
+                if DEBUG:
+                    print(self.cmdiloc)
+                #kRef = "%s/%s" % (self.RootRef, k)
+
+                if self.SetRef(k) in self.cmdiloc:
+                    try:
+                        cache = self.cmdiloc['root']
+                    except: 
+                        cache = []
+
+                    if type(cache) is list:
+                        cache.append( { self.SetRef(k): v })
+                    else:
+                        cache = { self.SetRef(k): v }
+                else:
+                    self.cmdiloc = { self.SetRef(k): v }
+                self.dictcontent.append({"parent": root, "xpath": xpathroot, self.SetRef(k): v, 'type': type(v) })
+
+                # Link root and parents
+                self.g.add((URIRef(root), skos['narrower'], URIRef(self.SetRef(k))))  
+
+                # Add statement
+                staID = BNode()
+                self.locator[URIRef(self.SetRef(k))] = staID
+                ### outdated self.g.add((URIRef(root), URIRef(self.SetRef(k)), Literal(v)))  
+                #self.g.add((staID, skos['note1'], Literal(k)))
+                self.g.add((URIRef(root), skosxl['hiddenLabel'], Literal(self.clearpath(xpathroot))))                
+                self.g.add((URIRef(root), skos['broader'], URIRef(root)))
+                if self.format == 'rich':
+                    self.g.add((URIRef(root), skosxl['literalForm'], Literal(k)))
+                    self.g.add((URIRef(root), skos['note'], Literal('parent statement')))
+                                
+                #self.g.add((URIRef(root), skosxl['Label'], Literal(k)))
+                self.g.add((staID, skos['literalForm'], Literal(k)))
+                self.g.add((staID, skosxl['hiddenLabel'], Literal(self.clearpath("%s" % (previous_element)))))
+                self.g.add((staID, URIRef(self.SetRef(k)), Literal(v)))
+                self.g.add((staID, RDF.value, Literal(v)))
+                if self.format == 'rich':
+                    self.g.add((staID, skos['note'], Literal('compound statement')))
+                self.g.add((staID, skos['broader'], URIRef(root)))
+                
+                #self.g.add((URIRef(root), skosxl['LabelRelation'], staID))
+                self.g.add((URIRef(self.SetRef(k)), skosxl['LabelRelation'], staID))
+                self.g.add((URIRef(self.SetRef(k)), skosxl['hiddenLabel'], Literal(self.clearpath(xpathroot))))  ### ???
+                self.g.add((URIRef(self.SetRef(k)), skos['broader'], URIRef(root)))            
+                if self.format == 'rich':
+                    self.g.add((URIRef(self.SetRef(k)), skosxl['literalForm'], Literal(k)))  
+                    self.g.add((URIRef(self.SetRef(k)), skos['note'], Literal('compound statements container')))                  
+
+        self.setNamespaces()
+        return self.dictcontent
+
+    def dataverse_export(self, data, schema, savedmetadata=None):        
+        metadata = {}
+        if savedmetadata:
+            metadata = savedmetadata
+        DEBUG = False 
+        for thisitem in data: #.items():
+            field = thisitem['xpath']
+            thisvalue = thisitem['value']
+            if field in self.crosswalks:       
+                thisfield = self.crosswalks[field] 
+                nested = schema.Hierarchy(thisfield)
+                if DEBUG:
+                    print("[DEBUG] Field %s" % thisfield)
+                    print("[DEBUG] Nested: %s" % str(nested))
+
+                # If element has children
+                if 'root' in nested:
+                    metadatablock = {}
+                    valuefield = "%sValue" % thisfield
+                    for field in nested['fields']:                
+                        #if field in newfields:
+                        if DEBUG:
+                            print("\t\t %s %s" % (field, schema.vocURI(field)))
+                        if schema.termURI(field) == schema.termURI(thisfield) or 'Value' in field: 
+                            #schema.termURI(field) == schema.termURI(valuefield):
+                            metadatablock[schema.vocURI(field)] = thisvalue
+                    if DEBUG:
+                        print("Block %s" % str(metadatablock))
+                    root = schema.rootURI(nested['root'])
+                    if root in metadata:
+                        if type(metadata[root]) == dict:
+                            current = metadata[root]
+                            block = []
+                            block.append(current)
+                            if current != metadatablock:
+                                block.append(metadatablock)
+                            metadata[root] = block
+                        else:
+                            metadata[root].append(metadatablock)
+                    else:
+                        metadata[schema.rootURI(nested['root'])] = metadatablock
+                else:
+                    termURI = schema.termURI(thisfield)
+                    if termURI:
+                        if DEBUG:
+                            print("\t Term %s" % termURI)
+                        metadata[termURI] = thisvalue
+        return metadata        
+
+
