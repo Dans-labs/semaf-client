@@ -1,7 +1,7 @@
 originalfield,metadatablock,metadatafield,id,subfield,level,type
 "/Dataontwerpversies/Versie/Dataontwerp/Beschrijving",citation,dsDescription,1,dsDescriptionValue,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/EngelstaligePublicatietekst",citation,dsDescription,1,dsDescriptionValue,0,primitive
-"/Dataontwerpversies/Versie/Dataontwerp/Contextvariabelen/Contextvariabele/VerkorteSchrijfwijzeNaamVariabele",citation,topicClassValue,1,topicClassValue,0,primitive
+"/Dataontwerpversies/Versie/Dataontwerp/Contextvariabelen/Contextvariabele/VerkorteSchrijfwijzeNaamVariabele",citation,topicClassification,1,topicClassValue,0,primitive
 "/Dataontwerpversies/OorspronkelijkeNaam",citation,"",0,title,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/VerkorteSchrijfwijzeNaamDataontwerp",citation,"",0,alternativeTitle,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/Id",citation,"otherId",1,otherIdValue,0,primitive
@@ -9,7 +9,6 @@ originalfield,metadatablock,metadatafield,id,subfield,level,type
 /Dataontwerpversies/Versie/Dataontwerp/Dataontwerpgroeppad",citation,keyword,1,keywordValue,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/Themas/Thema",citation,topicClassification,1,topicClassValue,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/GeldigVanaf",citation,"",0,distributionDate,0,primitive
-"/Dataontwerpversies/Versie/Dataontwerp/GeldigVanaf",citation,"",0,publicationDate,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/SoortData",citation,"",0,kindOfData,1,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/TypeVerslagperiode",socialscience,"",0,frequencyOfDataCollection,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/GebruikteMethodologie",socialscience,"",0,samplingProcedure,0,primitive
