@@ -31,6 +31,7 @@ class Schema():
         self.serializeJSON = {}
         self.metadataframe = None
         #self.forbidden = {}
+        self.alias = {}
         if graph:
             self.g = graph
         
@@ -99,6 +100,9 @@ class Schema():
             for i in data[['name','termURI']].index:
                 if data.loc[i]['termURI'] is not np.nan:                    
                     self.termURIs[data.loc[i]['name']] = data.loc[i]['termURI']   
+        # Building alias mapping
+        for i in data[['name','title']].index:
+            self.alias[data.loc[i]['name']] = data.loc[i]['title']
         self.metadataframe = data
                     
         return self.datadict
@@ -118,7 +122,7 @@ class Schema():
     def SetRef(self, value):
         # Set references with loaded semantic mappings
         value = value.replace('#','')
-        value = value.replace(' ','')
+        #value = value.replace(' ','')
         if value in self.mappings:
             RefURL = self.mappings[value]
         else:
@@ -321,6 +325,8 @@ class Schema():
         return triple['o']
     def get_predicate(self, triple):
         return triple['p']
+    def clearpath(self, xpath):
+        return xpath.replace('#document', '')
 
     def vocURI(self, fieldname):
         triples = self.Relations(fieldname, NESTED=True, relation='#broader')
@@ -344,6 +350,11 @@ class Schema():
                 return self.get_object(triples[0])
         if 'http' in fieldname:
             return fieldname
+        else:
+            if fieldname in self.alias:
+                return "%s" % self.SetRef(self.alias[fieldname])
+            else:
+                return "%s" % self.SetRef(fieldname)
         return
 
     def default_schema(self, defaultcw):
