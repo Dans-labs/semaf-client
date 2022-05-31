@@ -732,6 +732,30 @@ class GraphBuilder():
         self.setNamespaces()
         return self.dictcontent
 
+    def get_default_metadata(self, schema, defaultvalue):
+        self.defaultmetadata = {}
+        for i in schema.default.index:
+            fieldname = str(schema.default.loc[i]['subfield'])
+            #print(fieldname)
+            cfields = schema.Hierarchy(fieldname)
+            #print(cfields)
+            if not cfields['fields']:
+                # field without children
+                triples = schema.Relations(fieldname, NESTED=True, relation='#exactMatch')
+                if triples:
+                    self.defaultmetadata[schema.get_object(triples[0])] = schema.default.loc[i]['value']
+            else:
+                metadatablock = {}
+                for extrafield in cfields['fields']:
+                    triples = schema.Relations(extrafield, NESTED=True, relation='#altLabel')
+                    #print("\t %s => %s " % (extrafield, schema.get_object(triples[0])))
+                    if schema.get_object(triples[0]) in defaultvalue:
+                        vocnameS = schema.get_subject(triples[0])
+                        vocname = schema.vocURI(vocnameS)
+                        metadatablock[vocname] = defaultvalue[schema.get_object(triples[0])]
+                self.defaultmetadata[schema.rootURI(schema.termURI(cfields['root']))] = metadatablock
+        return self.defaultmetadata
+
     def dataverse_export(self, data, schema, savedmetadata=None):        
         metadata = {}
         if savedmetadata:
