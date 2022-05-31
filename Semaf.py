@@ -2,7 +2,7 @@ from rdflib import Graph, URIRef, Literal, BNode, plugin
 from rdflib.serializer import Serializer
 from collections import defaultdict, OrderedDict
 from xml.dom import minidom
-from CLARIAH_CMDI.xml2dict.processor import CMDI # load, xmldom2dict
+from xml2dict.processor import CMDI # load, xmldom2dict
 from os import listdir
 from os.path import isfile, join
 import re
