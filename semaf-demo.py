@@ -15,7 +15,11 @@ from datetime import datetime
 
 sm = Semaf()
 schema = Schema()
-cmdifile = '0b01e4108004e49d_INV_REG_REPARATIE_CONSUMENTENARTIKELEN_HANDEL_2008-01-01.dsc'
+if sys.argv:
+    cmdifile = sys.argv[1]
+else:
+    print("XML file required")
+    #cmdifile = '0b01e4108004e49d_INV_REG_REPARATIE_CONSUMENTENARTIKELEN_HANDEL_2008-01-01.dsc'
 
 if cmdifile:
     # Read file and load in the knowledge graph
