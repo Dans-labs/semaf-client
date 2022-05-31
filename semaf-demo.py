@@ -15,10 +15,11 @@ from datetime import datetime
 
 sm = Semaf()
 schema = Schema()
-if sys.argv:
+if len(sys.argv) > 1:
     cmdifile = sys.argv[1]
 else:
-    print("XML file required")
+    print("XML file required as input parameter")
+    exit()
     #cmdifile = '0b01e4108004e49d_INV_REG_REPARATIE_CONSUMENTENARTIKELEN_HANDEL_2008-01-01.dsc'
 
 if cmdifile:
