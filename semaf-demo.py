@@ -13,10 +13,19 @@ import sys
 import requests
 from datetime import datetime
 
+def dataset_upload(ROOT, DATAVERSE_ID, API_TOKEN, filename):
+    headers = { "X-Dataverse-key" : API_TOKEN, 'Content-Type' : 'application/json-ld'}
+    url = "%s/%s" % (ROOT, "api/dataverses/%s/datasets" % DATAVERSE_ID)
+    r = requests.post(url, data=open(filename, 'rb'), headers=headers)
+    return r.text
+
 sm = Semaf()
 schema = Schema()
+UPLOAD = False
 if len(sys.argv) > 1:
     cmdifile = sys.argv[1]
+    if len(sys.argv) > 2:
+        UPLOAD = True
 else:
     print("XML file required as input parameter")
     exit()
@@ -42,3 +51,10 @@ if cmdifile:
     if schema:
         metadata = cmdigraph.dataverse_export(cmdigraph.exportrecords, schema, defaultmetadata)
         print(json.dumps(metadata, indent=4))
+        semaf_filename = '/tmp/dataset.json'
+        with open(semaf_filename, 'w', encoding='utf-8') as f:
+            json.dump(metadata, f, ensure_ascii=False, indent=4)
+        if UPLOAD:
+            status = dataset_upload(ROOT, DATAVERSE_ID, API_TOKEN, semaf_filename)
+            print(status)
+
