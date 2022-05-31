@@ -12,3 +12,7 @@ Fill your configuration parameters for Dataverse in config.py and run demo conve
 ```
 python3 ./semaf-demo.py ./0b01e4108004e49d_INV_REG_REPARATIE_CONSUMENTENARTIKELEN_HANDEL_2008-01-01.dsc
 ```
+You can upload dataset to Dataverse after the conversion is finished:
+```
+python3 ./semaf-demo.py ./0b01e4108004e49d_INV_REG_REPARATIE_CONSUMENTENARTIKELEN_HANDEL_2008-01-01.dsc upload
+```
