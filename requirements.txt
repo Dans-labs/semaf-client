@@ -1,0 +1,11 @@
+connexion == 2.4.0
+rdflib
+python_dateutil == 2.6.0
+setuptools >= 21.0.0
+pymongo
+elasticsearch
+pyDataverse == 0.2.1
+#pandas
+aiofiles
+jinja2
+python-multipart
