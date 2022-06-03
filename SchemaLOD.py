@@ -566,7 +566,10 @@ class GraphBuilder():
         # v = value
         #self.level = self.level + 1
         self.level = 0 
+        # some default variables
         root = ''
+        k = ''
+
         for keyID in range(0, len(thislist)):
             key = thislist[keyID]
             if type(key) is dict:
