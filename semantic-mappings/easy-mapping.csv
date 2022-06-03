@@ -1,13 +1,13 @@
 originalfield,metadatablock,metadatafield,id,subfield,level,type
-"/record/metadata/ddi:codeBook/ddi:docDscr/ddi:citation/ddi:prodStmt/ddi:producer",citation,producer,1,name,0,primitive
+"/record/metadata/ddi:codeBook/ddi:docDscr/ddi:citation/ddi:prodStmt/ddi:producer",citation,producer,1,producer,0,primitive
 "/record/metadata/ddi:codeBook/ddi:docDscr/ddi:citation/ddi:prodStmt/ddi:producer",citation,language,1,"",0,primitive
 "/record/metadata/ddi:codeBook/ddi:stdyDscr/ddi:citation/ddi:titlStmt/ddi:titl",citation,title,1,title,0,primitive
 "/record/metadata/ddi:codeBook/ddi:stdyDscr/ddi:citation/ddi:titlStmt/ddi:parTitl",citation,title,1,"",0,primitive
-"/record/metadata/ddi:codeBook/ddi:stdyDscr/ddi:citation/ddi:titlStmt/ddi:parTitl",citation,alternativeTitle,1,"",0,primitive
+"/record/metadata/ddi:codeBook/ddi:stdyDscr/ddi:citation/ddi:titlStmt/ddi:parTitl",citation,alternativeTitle,1,alternativeTitle,0,primitive
 "/record/metadata/ddi:codeBook/ddi:stdyDscr/ddi:citation/ddi:titlStmt/ddi:IDNo",citation,publicationIdNumber,1,"",0,primitive
 "/record/metadata/ddi:codeBook/ddi:stdyDscr/ddi:citation/ddi:rspStmt/ddi:AuthEnty",citation,author,1,name,0,primitive
 "/record/metadata/ddi:codeBook/ddi:stdyDscr/ddi:citation/ddi:rspStmt/ddi:othId",citation,author,1,name,0,primitive
-"/record/metadata/ddi:codeBook/ddi:stdyDscr/ddi:stdyInfo/ddi:subject/ddi:keyword",citation,keyword,1,"",1,primitive
+"/record/metadata/ddi:codeBook/ddi:stdyDscr/ddi:stdyInfo/ddi:subject/ddi:keyword",citation,keyword,1,keywordValue,1,primitive
 "/record/metadata/ddi:codeBook/ddi:stdyDscr/ddi:stdyInfo/ddi:subject/ddi:topcClas",citation,topic,1,term,0,primitive
 "/record/metadata/ddi:codeBook/ddi:stdyDscr/ddi:stdyInfo/ddi:abstract",citation,notes,1,"",0,primitive
 "/record/metadata/ddi:codeBook/ddi:stdyDscr/ddi:stdyInfo/ddi:abstract/ddi:sumDscr/ddi:ddi:collDate",citation,productionDate,1,"",0,primitive
