@@ -34,6 +34,7 @@ class Schema():
         #self.forbidden = {}
         self.cv_server = ''
         self.alias = {}
+        self.parents = {}
         if graph:
             self.g = graph
         
@@ -102,8 +103,10 @@ class Schema():
                 if data.loc[i]['termURI'] is not np.nan:                    
                     self.termURIs[data.loc[i]['name']] = data.loc[i]['termURI']   
         # Building alias mapping
-        for i in data[['name','title']].index:
+        for i in data[['name','title','parent']].index:
             self.alias[data.loc[i]['name']] = data.loc[i]['title']
+            if data.loc[i]['parent']:
+                self.parents[data.loc[i]['name']] = data.loc[i]['parent']
         self.metadataframe = data
                     
         return self.datadict
@@ -388,6 +391,7 @@ class Schema():
     def Hierarchy(self, fieldname):
         #rootfield = schema.Info(fieldname, NESTED=True)  
         hierarchy = {}
+        hierarchy['original'] = fieldname
         internalfields = []
         root = self.Relations(fieldname, NESTED=True, relation='#broader')        
         if root:    
@@ -562,6 +566,7 @@ class GraphBuilder():
         # v = value
         #self.level = self.level + 1
         self.level = 0 
+        root = ''
         for keyID in range(0, len(thislist)):
             key = thislist[keyID]
             if type(key) is dict:
