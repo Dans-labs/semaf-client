@@ -52,6 +52,7 @@ if cmdifile:
         metadata = cmdigraph.dataverse_export(cmdigraph.exportrecords, schema, defaultmetadata)
         print(json.dumps(metadata, indent=4))
         semaf_filename = '/tmp/dataset.json'
+        cmdigraph.g.serialize(format='n3', destination="/tmp/dataset.nt")
         with open(semaf_filename, 'w', encoding='utf-8') as f:
             json.dump(metadata, f, ensure_ascii=False, indent=4)
         if UPLOAD:
