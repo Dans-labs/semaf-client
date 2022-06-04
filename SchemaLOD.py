@@ -796,11 +796,11 @@ class GraphBuilder():
                 else:
                     rootfield = fieldname
 
-                self.compound[rootfield] = compoundvalues
-                #if rootfield in self.compound:
-                #    self.compound[rootfield].append(compoundvalues[0])
-                #else:
-                #    self.compound[rootfield] = compoundvalues
+                #self.compound[rootfield] = compoundvalues
+                if rootfield in self.compound:
+                    self.compound[rootfield].append(compoundvalues[0])
+                else:
+                    self.compound[rootfield] = compoundvalues
 
                 self.defaultmetadata[schema.rootURI(schema.termURI(cfields['root']))] = metadatablock
         return self.defaultmetadata
@@ -900,12 +900,12 @@ class GraphBuilder():
                     thistype['value'] = compoundvalues #{ str(schema.parents[thisfield]): compoundvalues }
                     # Keep compound values in arrary
                     rootfield = thistype['typeName']
-                    self.compound[rootfield] = compoundvalues
+                    #self.compound[rootfield] = compoundvalues
 
-                    #if rootfield in self.compound:
-                    #    self.compound[rootfield].append(compoundvalues[0])
-                    #else:
-                    #    self.compound[rootfield] = compoundvalues
+                    if rootfield in self.compound:
+                        self.compound[rootfield].append(compoundvalues[0])
+                    else:
+                        self.compound[rootfield] = compoundvalues
 
                     if DEBUG:
                         print("Block %s" % str(metadatablock))
@@ -941,7 +941,7 @@ class GraphBuilder():
         # Finalizing dataset
         for keyword in self.compound:
             x = { "%s tmp" % keyword: self.compound[keyword]  }
-            compitem = { 'typeName': keyword, 'multiple': False, 'typeClass': 'compound', 'value': self.compound[keyword] }
+            compitem = { 'typeName': keyword, 'multiple': True, 'typeClass': 'compound', 'value': self.compound[keyword] }
             self.datasetfields.append(compitem) # { 'value': [ x ] } )
                 
 
