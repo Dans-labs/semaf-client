@@ -796,6 +796,7 @@ class GraphBuilder():
             else:
                 metadatablock = {}
                 compoundvalues = []
+                values = {}
                 for extrafield in cfields['fields']:
                     triples = schema.Relations(extrafield, NESTED=True, relation='#altLabel')
                     #print("\t %s => %s " % (extrafield, schema.get_object(triples[0])))
@@ -804,8 +805,9 @@ class GraphBuilder():
                         vocname = schema.vocURI(vocnameS)
                         metadatablock[vocname] = defaultvalue[schema.get_object(triples[0])]
                         valuedict = { 'typeName': schema.RemoveRef(vocnameS), 'multiple': schema.allowmulti[schema.RemoveRef(vocnameS)], 'typeClass': 'primitive', 'value': defaultvalue[schema.get_object(triples[0])] }
-                        valuekey = { schema.RemoveRef(vocnameS) : valuedict }
-                        compoundvalues.append(valuekey)
+                        #valuekey = { schema.RemoveRef(vocnameS) : valuedict }
+                        values[schema.RemoveRef(vocnameS)] = valuedict
+                        #compoundvalues.append(valuekey)
 
                     #thistype['value'] = compoundvalues #{ str(schema.parents[thisfield]): compoundvalues }
 
@@ -815,11 +817,11 @@ class GraphBuilder():
                 else:
                     rootfield = fieldname
 
-                #self.compound[rootfield] = compoundvalues
-                if rootfield in self.compound:
-                    self.compound[rootfield].append(compoundvalues[0])
-                else:
-                    self.compound[rootfield] = compoundvalues
+                self.compound[rootfield] = [ values ] #compoundvalues
+#                if rootfield in self.compound:
+#                    self.compound[rootfield].append(values) #compoundvalues[0])
+#                else:
+#                    self.compound[rootfield] = [ values ] # compoundvalues
 
                 self.defaultmetadata[schema.rootURI(schema.termURI(cfields['root']))] = metadatablock
         return self.defaultmetadata
@@ -901,7 +903,7 @@ class GraphBuilder():
                         thistype['typeName'] = thisfield
                     
                     thistype['typeClass'] = 'compound'
-                    thistype['multiple'] = 'true'                    
+                    thistype['multiple'] = schema.allowmulti[thistype['typeName']]                    
                     metadatablock = {}
                     valuefield = "%sValue" % thisfield
                     
@@ -945,7 +947,10 @@ class GraphBuilder():
 
                 else:
                     thistype['typeClass'] = 'primitive'
-                    thistype['multiple'] = False
+                    try:
+                        thistype['multiple'] = schema.allowmulti[schema.RemoveRef(thisfield)]
+                    except:
+                        thistype['multiple'] = False
                     thistype['value'] = thisvalue # { thisfield: thisvalue }
                     termURI = schema.termURI(thisfield)
                     if termURI:
@@ -973,7 +978,7 @@ class GraphBuilder():
         for field in schema.get_fields_order():
             if field in self.thisorder:
                 allfields = ['title', 'author', 'datasetContact', 'dsDescription', 'subject', 'keyword']
-                if field in allfields:
+                if field: # in allfields:
                     fields.append(self.thisorder[field])
 
         self.dataset = {}
