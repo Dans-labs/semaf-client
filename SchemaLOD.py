@@ -34,6 +34,8 @@ class Schema():
         self.cv_server = ''
         self.alias = {}
         self.parents = {}
+        self.order = {}
+        self.allowmulti = {}
 
         if graph:
             self.g = graph
@@ -59,6 +61,12 @@ class Schema():
         if field in self.alias:
             return self.alias[field]
         return field
+
+    def get_fields_order(self):
+        order = []
+        for x in dict(sorted(self.order.items(), key=lambda item: item[1])):
+            order.append(x)
+        return order
     
     def load_metadata_schema(self, schemaURL, schemablock=False):
         keynameID = 1        
@@ -109,8 +117,13 @@ class Schema():
                 if data.loc[i]['termURI'] is not np.nan:                    
                     self.termURIs[data.loc[i]['name']] = data.loc[i]['termURI']   
         # Building alias mapping
-        for i in data[['name','title','parent']].index:
+        for i in data[['name','title','parent','displayOrder','allowmultiples']].index:
             self.alias[data.loc[i]['name']] = data.loc[i]['title']
+            self.order[data.loc[i]['name']] = int(data.loc[i]['displayOrder'])
+            if data.loc[i]['allowmultiples']:
+                self.allowmulti[data.loc[i]['name']] = True
+            else:
+                self.allowmulti[data.loc[i]['name']] = False
             self.alias[self.SetTermURI(data.loc[i]['name'])] = data.loc[i]['title']
             self.alias[self.SetRef(data.loc[i]['name'])] = data.loc[i]['title']
             if data.loc[i]['parent']:
@@ -768,10 +781,16 @@ class GraphBuilder():
                     self.defaultmetadata[schema.get_object(triples[0])] = schema.default.loc[i]['value']
                     thistype = {}
                     thistype['typeName'] = fieldname # schema.get_object(triples[0])
-                    thistype['typeClass'] = 'primitive'
-                    thistype['multiple'] = False
-                    thistype['value'] = schema.default.loc[i]['value']
-                    thistype['default'] = 'default'
+                    if fieldname == 'subject':
+                        thistype['typeClass'] = 'controlledVocabulary'
+                        thistype['multiple'] = True
+                        thistype['value'] = [ schema.default.loc[i]['value'] ]
+                    else:
+                        thistype['typeClass'] = 'primitive'
+                        thistype['multiple'] = False
+                        thistype['value'] = schema.default.loc[i]['value']
+
+                    #thistype['default'] = 'default'
                     self.datasetfields.append(thistype)
 
             else:
@@ -784,7 +803,7 @@ class GraphBuilder():
                         vocnameS = schema.get_subject(triples[0])
                         vocname = schema.vocURI(vocnameS)
                         metadatablock[vocname] = defaultvalue[schema.get_object(triples[0])]
-                        valuedict = { 'typeName': schema.RemoveRef(vocnameS), 'multiple': False, 'typeClass': 'primitive', 'default': 'default', 'value': defaultvalue[schema.get_object(triples[0])] }
+                        valuedict = { 'typeName': schema.RemoveRef(vocnameS), 'multiple': schema.allowmulti[schema.RemoveRef(vocnameS)], 'typeClass': 'primitive', 'value': defaultvalue[schema.get_object(triples[0])] }
                         valuekey = { schema.RemoveRef(vocnameS) : valuedict }
                         compoundvalues.append(valuekey)
 
@@ -893,9 +912,9 @@ class GraphBuilder():
                         if schema.termURI(field) == schema.termURI(thisfield) or 'Value' in field:
                             #schema.termURI(field) == schema.termURI(valuefield):
                             metadatablock[schema.vocURI(field)] = thisvalue
-                            valuedict = { 'typeName': schema.RemoveRef(field), 'multiple': True, 'typeClass': 'primitive', 'value': thisvalue }
+                            valuedict = { 'typeName': schema.RemoveRef(field), 'multiple': schema.allowmulti[schema.RemoveRef(field)], 'typeClass': 'primitive', 'value': thisvalue }
                             valuekey = { schema.RemoveRef(field) : valuedict }
-                            compoundvalues.append(valuedict)
+                            compoundvalues.append(valuekey)
                     
                     thistype['value'] = compoundvalues #{ str(schema.parents[thisfield]): compoundvalues }
                     # Keep compound values in arrary
@@ -927,7 +946,7 @@ class GraphBuilder():
                 else:
                     thistype['typeClass'] = 'primitive'
                     thistype['multiple'] = False
-                    thistype['value'] = thisvalue
+                    thistype['value'] = thisvalue # { thisfield: thisvalue }
                     termURI = schema.termURI(thisfield)
                     if termURI:
                         if DEBUG:
@@ -941,12 +960,24 @@ class GraphBuilder():
         # Finalizing dataset
         for keyword in self.compound:
             x = { "%s tmp" % keyword: self.compound[keyword]  }
-            compitem = { 'typeName': keyword, 'multiple': True, 'typeClass': 'compound', 'value': self.compound[keyword] }
+            compitem = { 'typeName': keyword, 'multiple': schema.allowmulti[keyword], 'typeClass': 'compound', 'value': self.compound[keyword] }
             self.datasetfields.append(compitem) # { 'value': [ x ] } )
                 
+        self.thisorder = {}
+        for item in self.datasetfields:
+            name = item['typeName']
+            if name in schema.order:
+                self.thisorder[name] = item
+
+        fields = []
+        for field in schema.get_fields_order():
+            if field in self.thisorder:
+                allfields = ['title', 'author', 'datasetContact', 'dsDescription', 'subject', 'keyword']
+                if field in allfields:
+                    fields.append(self.thisorder[field])
 
         self.dataset = {}
-        self.fields = { 'fields': self.datasetfields }
+        self.fields = { 'fields': fields }
         self.citation = { 'citation': self.fields }
         self.metadatablocks = { 'metadataBlocks': self.citation }
         self.dataset = {'datasetVersion': self.metadatablocks } 
