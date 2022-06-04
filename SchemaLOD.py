@@ -35,6 +35,7 @@ class Schema():
         self.cv_server = ''
         self.alias = {}
         self.parents = {}
+
         if graph:
             self.g = graph
         
@@ -435,6 +436,10 @@ class GraphBuilder():
         self.format = None
         self.crosswalks = None
         self.statements = []
+        self.dataset = {}
+        self.datasetfields = []
+        self.compound = {}
+
         if self.format:
             self.format = graphformat
 
@@ -752,8 +757,16 @@ class GraphBuilder():
                 triples = schema.Relations(fieldname, NESTED=True, relation='#exactMatch')
                 if triples:
                     self.defaultmetadata[schema.get_object(triples[0])] = schema.default.loc[i]['value']
+                    thistype = {}
+                    thistype['typeName'] = schema.get_object(triples[0])
+                    thistype['typeClass'] = 'primitive'
+                    thistype['multiple'] = 'false'
+                    thistype['value'] = schema.default.loc[i]['value']
+                    self.datasetfields.append(thistype)
+
             else:
                 metadatablock = {}
+                compoundvalues = []
                 for extrafield in cfields['fields']:
                     triples = schema.Relations(extrafield, NESTED=True, relation='#altLabel')
                     #print("\t %s => %s " % (extrafield, schema.get_object(triples[0])))
@@ -761,10 +774,26 @@ class GraphBuilder():
                         vocnameS = schema.get_subject(triples[0])
                         vocname = schema.vocURI(vocnameS)
                         metadatablock[vocname] = defaultvalue[schema.get_object(triples[0])]
+                        valuedict = { 'typeName': vocname, 'multiple': 'false', 'typeClass': 'primitive', 'value': defaultvalue[schema.get_object(triples[0])] }
+                        compoundvalues.append(valuedict)
+
+                    #thistype['value'] = compoundvalues #{ str(schema.parents[thisfield]): compoundvalues }
+
+                # Keep compound values in arrary
+                if fieldname in schema.parents:
+                    rootfield = schema.parents[fieldname]
+                else:
+                    rootfield = fieldname
+
+                if rootfield in self.compound:
+                    self.compound[rootfield].append(compoundvalues[0])
+                else:
+                    self.compound[rootfield] = compoundvalues
+
                 self.defaultmetadata[schema.rootURI(schema.termURI(cfields['root']))] = metadatablock
         return self.defaultmetadata
 
-    def dataverse_export(self, data, schema, savedmetadata=None):        
+    def dataverse_export_lod(self, data, schema, savedmetadata=None):        
         metadata = {}
         if savedmetadata:
             metadata = savedmetadata
@@ -813,4 +842,90 @@ class GraphBuilder():
                         metadata[termURI] = thisvalue
         return metadata        
 
+    def dataverse_export(self, data, schema, savedmetadata=None):
+        metadata = {}
+        if savedmetadata:
+            metadata = savedmetadata
+        DEBUG = False
+        for thisitem in data: #.items():
+            field = thisitem['xpath']
+            thisvalue = thisitem['value']
+            if field in self.crosswalks:
+                thisfield = self.crosswalks[field]
+                nested = schema.Hierarchy(thisfield)
+                DEBUGX = True
+                thistype = {}
+                thistype['typeName'] = thisfield
+                    
+                #thistype['nested'] = nested
+                if DEBUGX:                    
+                    print("[DEBUG] Field %s" % thisfield)
+                    print("[DEBUG] Nested: %s" % str(nested))
+
+                # If element has children
+                if 'root' in nested:
+                    if thisfield in schema.parents:
+                        thistype['typeName'] = schema.parents[thisfield]
+                    else:
+                        thistype['typeName'] = thisfield
+                    
+                    thistype['typeClass'] = 'compound'
+                    thistype['multiple'] = 'true'                    
+                    metadatablock = {}
+                    valuefield = "%sValue" % thisfield
+                    
+                    compoundvalues = []
+                    for field in nested['fields']:                        
+                        if DEBUG:
+                            print("\t\t %s %s" % (field, schema.vocURI(field)))
+                        if schema.termURI(field) == schema.termURI(thisfield) or 'Value' in field:
+                            #schema.termURI(field) == schema.termURI(valuefield):
+                            metadatablock[schema.vocURI(field)] = thisvalue
+                            valuedict = { 'typeName': field, 'multiple': 'false', 'typeClass': 'primitive', 'value': thisvalue }
+                            compoundvalues.append(valuedict)
+                    
+                    thistype['value'] = compoundvalues #{ str(schema.parents[thisfield]): compoundvalues }
+                    # Keep compound values in arrary
+                    rootfield = thistype['typeName']
+                    if rootfield in self.compound:
+                        self.compound[rootfield].append(compoundvalues[0])
+                    else:
+                        self.compound[rootfield] = compoundvalues
+
+                    if DEBUG:
+                        print("Block %s" % str(metadatablock))
+                        
+                    root = schema.rootURI(nested['root'])
+                    if root in metadata:
+                        if type(metadata[root]) == dict:
+                            current = metadata[root]
+                            block = []
+                            block.append(current)
+                            if current != metadatablock:
+                                block.append(metadatablock)
+                            metadata[root] = block
+                        else:
+                            metadata[root].append(metadatablock)
+                    else:
+                        metadata[schema.rootURI(nested['root'])] = metadatablock
+
+                else:
+                    thistype['typeClass'] = 'primitive'
+                    thistype['multiple'] = 'false'
+                    thistype['value'] = thisvalue
+                    termURI = schema.termURI(thisfield)
+                    if termURI:
+                        if DEBUG:
+                            print("\t Term %s" % termURI)
+                        metadata[termURI] = thisvalue
+                
+                if not thistype['typeName'] in self.compound:
+                    self.datasetfields.append(thistype)
+                #self.dataset[] = thistype
+
+        # Finalizing dataset
+        for keyword in self.compound:
+            self.datasetfields.append( { keyword: self.compound[keyword] } )
+                
+        return metadata
 
