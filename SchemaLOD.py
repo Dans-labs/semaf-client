@@ -15,7 +15,6 @@ register('json-ld', Serializer, 'rdflib_jsonld.serializer', 'JsonLDSerializer')
 
 class Schema():
     def __init__(self, graph=None, debug=False):
-        self.forbidden = ["subject", "language", "authorIdentifierScheme", "contributorType", "publicationIDType", "DatasetField"]
         self.forbidden = ["language","authorIdentifierScheme", "contributorType", "publicationIDType", "DatasetField"]
         self.datadict = {}
         self.g = Graph()
@@ -55,11 +54,17 @@ class Schema():
     def emptyGraph(self):
         self.g = Graph()
         return self.g
+
+    def get_alias(self, field):
+        if field in self.alias:
+            return self.alias[field]
+        return field
     
     def load_metadata_schema(self, schemaURL, schemablock=False):
         keynameID = 1        
         if not schemablock:
             schemablock = 'default'
+        self.RootRef = "%s/%s/" % (self.thisRef, schemablock) 
         schema = requests.get(schemaURL).text.split('\n')
         #schema = pd.read_csv(StringIO(rawschema))
         if schemablock == 'citation':
@@ -106,9 +111,12 @@ class Schema():
         # Building alias mapping
         for i in data[['name','title','parent']].index:
             self.alias[data.loc[i]['name']] = data.loc[i]['title']
+            self.alias[self.SetTermURI(data.loc[i]['name'])] = data.loc[i]['title']
+            self.alias[self.SetRef(data.loc[i]['name'])] = data.loc[i]['title']
             if data.loc[i]['parent']:
                 self.parents[data.loc[i]['name']] = data.loc[i]['parent']
         self.metadataframe = data
+        self.alias['test'] = 'test'
                     
         return self.datadict
 
@@ -556,6 +564,7 @@ class GraphBuilder():
         for nsname in self.namespaces:
             ns = Namespace(nsname)
             self.g.bind(self.namespaces[nsname], "%s/" % ns)    
+        return
 
     def load_crosswalks(self, crossfile):
         with open(crossfile, encoding='utf-8') as fh:
@@ -758,7 +767,7 @@ class GraphBuilder():
                 if triples:
                     self.defaultmetadata[schema.get_object(triples[0])] = schema.default.loc[i]['value']
                     thistype = {}
-                    thistype['typeName'] = schema.get_object(triples[0])
+                    thistype['typeName'] = fieldname # schema.get_object(triples[0])
                     thistype['typeClass'] = 'primitive'
                     thistype['multiple'] = 'false'
                     thistype['value'] = schema.default.loc[i]['value']
@@ -774,7 +783,7 @@ class GraphBuilder():
                         vocnameS = schema.get_subject(triples[0])
                         vocname = schema.vocURI(vocnameS)
                         metadatablock[vocname] = defaultvalue[schema.get_object(triples[0])]
-                        valuedict = { 'typeName': vocname, 'multiple': 'false', 'typeClass': 'primitive', 'value': defaultvalue[schema.get_object(triples[0])] }
+                        valuedict = { 'typeName': schema.RemoveRef(vocnameS), 'multiple': 'false', 'typeClass': 'primitive', 'value': defaultvalue[schema.get_object(triples[0])] }
                         compoundvalues.append(valuedict)
 
                     #thistype['value'] = compoundvalues #{ str(schema.parents[thisfield]): compoundvalues }
@@ -881,7 +890,7 @@ class GraphBuilder():
                         if schema.termURI(field) == schema.termURI(thisfield) or 'Value' in field:
                             #schema.termURI(field) == schema.termURI(valuefield):
                             metadatablock[schema.vocURI(field)] = thisvalue
-                            valuedict = { 'typeName': field, 'multiple': 'false', 'typeClass': 'primitive', 'value': thisvalue }
+                            valuedict = { 'typeName': schema.get_alias(field), 'multiple': 'false', 'typeClass': 'primitive', 'value': thisvalue }
                             compoundvalues.append(valuedict)
                     
                     thistype['value'] = compoundvalues #{ str(schema.parents[thisfield]): compoundvalues }
