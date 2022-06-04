@@ -769,8 +769,9 @@ class GraphBuilder():
                     thistype = {}
                     thistype['typeName'] = fieldname # schema.get_object(triples[0])
                     thistype['typeClass'] = 'primitive'
-                    thistype['multiple'] = 'false'
+                    thistype['multiple'] = False
                     thistype['value'] = schema.default.loc[i]['value']
+                    thistype['default'] = 'default'
                     self.datasetfields.append(thistype)
 
             else:
@@ -783,8 +784,9 @@ class GraphBuilder():
                         vocnameS = schema.get_subject(triples[0])
                         vocname = schema.vocURI(vocnameS)
                         metadatablock[vocname] = defaultvalue[schema.get_object(triples[0])]
-                        valuedict = { 'typeName': schema.RemoveRef(vocnameS), 'multiple': 'false', 'typeClass': 'primitive', 'value': defaultvalue[schema.get_object(triples[0])] }
-                        compoundvalues.append(valuedict)
+                        valuedict = { 'typeName': schema.RemoveRef(vocnameS), 'multiple': False, 'typeClass': 'primitive', 'default': 'default', 'value': defaultvalue[schema.get_object(triples[0])] }
+                        valuekey = { schema.RemoveRef(vocnameS) : valuedict }
+                        compoundvalues.append(valuekey)
 
                     #thistype['value'] = compoundvalues #{ str(schema.parents[thisfield]): compoundvalues }
 
@@ -794,10 +796,11 @@ class GraphBuilder():
                 else:
                     rootfield = fieldname
 
-                if rootfield in self.compound:
-                    self.compound[rootfield].append(compoundvalues[0])
-                else:
-                    self.compound[rootfield] = compoundvalues
+                self.compound[rootfield] = compoundvalues
+                #if rootfield in self.compound:
+                #    self.compound[rootfield].append(compoundvalues[0])
+                #else:
+                #    self.compound[rootfield] = compoundvalues
 
                 self.defaultmetadata[schema.rootURI(schema.termURI(cfields['root']))] = metadatablock
         return self.defaultmetadata
@@ -890,16 +893,19 @@ class GraphBuilder():
                         if schema.termURI(field) == schema.termURI(thisfield) or 'Value' in field:
                             #schema.termURI(field) == schema.termURI(valuefield):
                             metadatablock[schema.vocURI(field)] = thisvalue
-                            valuedict = { 'typeName': schema.get_alias(field), 'multiple': 'false', 'typeClass': 'primitive', 'value': thisvalue }
+                            valuedict = { 'typeName': schema.RemoveRef(field), 'multiple': True, 'typeClass': 'primitive', 'value': thisvalue }
+                            valuekey = { schema.RemoveRef(field) : valuedict }
                             compoundvalues.append(valuedict)
                     
                     thistype['value'] = compoundvalues #{ str(schema.parents[thisfield]): compoundvalues }
                     # Keep compound values in arrary
                     rootfield = thistype['typeName']
-                    if rootfield in self.compound:
-                        self.compound[rootfield].append(compoundvalues[0])
-                    else:
-                        self.compound[rootfield] = compoundvalues
+                    self.compound[rootfield] = compoundvalues
+
+                    #if rootfield in self.compound:
+                    #    self.compound[rootfield].append(compoundvalues[0])
+                    #else:
+                    #    self.compound[rootfield] = compoundvalues
 
                     if DEBUG:
                         print("Block %s" % str(metadatablock))
@@ -920,7 +926,7 @@ class GraphBuilder():
 
                 else:
                     thistype['typeClass'] = 'primitive'
-                    thistype['multiple'] = 'false'
+                    thistype['multiple'] = False
                     thistype['value'] = thisvalue
                     termURI = schema.termURI(thisfield)
                     if termURI:
@@ -934,7 +940,15 @@ class GraphBuilder():
 
         # Finalizing dataset
         for keyword in self.compound:
-            self.datasetfields.append( { keyword: self.compound[keyword] } )
+            x = { "%s tmp" % keyword: self.compound[keyword]  }
+            compitem = { 'typeName': keyword, 'multiple': False, 'typeClass': 'compound', 'value': self.compound[keyword] }
+            self.datasetfields.append(compitem) # { 'value': [ x ] } )
                 
+
+        self.dataset = {}
+        self.fields = { 'fields': self.datasetfields }
+        self.citation = { 'citation': self.fields }
+        self.metadatablocks = { 'metadataBlocks': self.citation }
+        self.dataset = {'datasetVersion': self.metadatablocks } 
         return metadata
 
