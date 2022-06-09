@@ -30,7 +30,7 @@ INSTALL_REQUIREMENTS = [
 
 setup(
 name = "Semaf",
-version = "0.0.3",
+version = "0.0.4",
 author = "Slava Tykhonov",
 author_email = "vyacheslav.tykhonov@dans.knaw.nl",
 description = "Client application using semantic mappings framework (SEMAF)",
