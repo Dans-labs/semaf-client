@@ -12,6 +12,22 @@ CLASSIFIERS = [
      "Operating System :: OS Independent[options]"
      ]
 
+INSTALL_REQUIREMENTS = [
+"rdflib",
+"numpy",
+"pandas",
+"bs4",
+"bs2json",
+"python_dateutil == 2.6.0",
+"setuptools >= 21.0.0",
+"pymongo",
+"elasticsearch",
+"pyDataverse == 0.2.1",
+"aiofiles",
+"jinja2",
+"python-multipart"
+        ]
+
 setup(
 name = "Semaf-Client",
 version = "0.0.2",
