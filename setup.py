@@ -29,7 +29,7 @@ INSTALL_REQUIREMENTS = [
         ]
 
 setup(
-name = "Semaf-Client",
+name = "Semaf",
 version = "0.0.2",
 author = "Slava Tykhonov",
 author_email = "vyachelslav.tykhonov@dans.knaw.nl",
