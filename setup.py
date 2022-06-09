@@ -23,6 +23,6 @@ long_description_content_type = "text/markdown",
 url = "https://github.com/Dans-labs/semaf-client",
 packages=find_packages("src"),
 package_dir={"": "src"},
-python_requires=">=3.7",
+python_requires=">=3.6",
 include_package_data = True
 )
