@@ -54,12 +54,12 @@ class SemafUtils():
 
         if self.schema:
             metadata = self.cmdigraph.dataverse_export(self.cmdigraph.exportrecords, self.schema, defaultmetadata)
-            print(json.dumps(metadata, indent=4))
+            #print(json.dumps(metadata, indent=4))
             self.cmdigraph.g.serialize(format='n3', destination="/tmp/dataset.nt")
             with open(self.semaf_filename, 'w', encoding='utf-8') as f:
                 json.dump(metadata, f, ensure_ascii=False, indent=4)
             if UPLOAD:
                 status = self.dataset_upload(ROOT, DATAVERSE_ID, API_TOKEN, semaf_filename)
                 print(status)
-        return
+        return metadata
 
