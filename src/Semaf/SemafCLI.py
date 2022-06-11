@@ -1,14 +1,14 @@
 from xml.dom import minidom
 #from CLARIAH_CMDI.xml2dict.processor import CMDI # load, xmldom2dict
 import json
-from Semaf.SchemaLOD import Schema, GraphBuilder
+from SchemaLOD import Schema, GraphBuilder
 from config import default_crosswalks_location, crosswalks_location, cbs_default_crosswalks
 from rdflib import Graph, URIRef, Literal, BNode, plugin, Namespace
 from rdflib.serializer import Serializer
 from rdflib.namespace import RDF, RDFS
 from config import cmdifile, ROOT, DATAVERSE_ID, API_TOKEN, schemaURL, cv_server, cwfile
-from Semaf.Semaf import Semaf
-#from jGraph import jGraph
+from Semaf import Semaf
+from jGraph import jGraph
 import sys
 import requests
 from datetime import datetime
@@ -54,12 +54,12 @@ class SemafUtils():
 
         if self.schema:
             metadata = self.cmdigraph.dataverse_export(self.cmdigraph.exportrecords, self.schema, defaultmetadata)
-            #print(json.dumps(metadata, indent=4))
+            print(json.dumps(metadata, indent=4))
             self.cmdigraph.g.serialize(format='n3', destination="/tmp/dataset.nt")
             with open(self.semaf_filename, 'w', encoding='utf-8') as f:
                 json.dump(metadata, f, ensure_ascii=False, indent=4)
             if UPLOAD:
-                status = self.dataset_upload(ROOT, DATAVERSE_ID, API_TOKEN, semaf_filename)
+                status = self.dataset_upload(ROOT, DATAVERSE_ID, API_TOKEN, self.semaf_filename)
                 print(status)
-        return metadata
+        return
 
