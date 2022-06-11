@@ -18,6 +18,7 @@ class SemafUtils():
         self.default_crosswalks = default_crosswalks
         self.crosswalks_location = crosswalks_location
         self.semaf_filename = '/tmp/dataset.json'
+        self.cv_server = ''
 
     def set_dataverse(self, ROOT, DATAVERSE_ID, API_TOKEN):
         self.ROOT = ROOT
@@ -31,12 +32,12 @@ class SemafUtils():
         r = requests.post(url, data=open(filename, 'rb'), headers=headers)
         return r.text
 
-    def tranformation(self, cmdifile, UPLOAD=False): 
+    def transformation(self, cmdifile, UPLOAD=False): 
         self.sm = Semaf()
         self.schema = Schema()
        
         # Read file and load in the knowledge graph
-        s = sm.loadcmdi(cmdifile)
+        s = self.sm.loadcmdi(cmdifile)
         defaultvalue = self.schema.default_schema(self.default_crosswalks)
         schemapd = self.schema.load_metadata_schema(schemaURL, 'citation')
 
@@ -44,21 +45,21 @@ class SemafUtils():
         self.schema.to_graph('citation', filename='citation')
         crosswalks = self.schema.crosswalks(self.crosswalks_location)
 
-        self.cmdigraph = GraphBuilder(sm.json, "https://dataverse.org/schema/cbs/", graphformat='rich')
-        defaultmetadata = self.cmdigraph.get_default_metadata(schema, defaultvalue) 
-        mappedjson = self.cmdigraph.set_cvserver(cv_server)
+        self.cmdigraph = GraphBuilder(self.sm.json, "https://dataverse.org/schema/cbs/", graphformat='rich')
+        defaultmetadata = self.cmdigraph.get_default_metadata(self.schema, defaultvalue) 
+        mappedjson = self.cmdigraph.set_cvserver(self.cv_server)
         self.cmdigraph.set_crosswalks(crosswalks)
-        items = self.cmdigraph.rotate(cmdigraph.context, False)
-        mappedjson = self.cmdigraph.iterator(json.loads(sm.json))
+        items = self.cmdigraph.rotate(self.cmdigraph.context, False)
+        mappedjson = self.cmdigraph.iterator(json.loads(self.sm.json))
 
         if self.schema:
-            metadata = self.cmdigraph.dataverse_export(cmdigraph.exportrecords, schema, defaultmetadata)
+            metadata = self.cmdigraph.dataverse_export(self.cmdigraph.exportrecords, self.schema, defaultmetadata)
             print(json.dumps(metadata, indent=4))
             self.cmdigraph.g.serialize(format='n3', destination="/tmp/dataset.nt")
             with open(self.semaf_filename, 'w', encoding='utf-8') as f:
                 json.dump(metadata, f, ensure_ascii=False, indent=4)
             if UPLOAD:
-                status = self.dataset_upload(ROOT, DATAVERSE_ID, API_TOKEN, semaf_filename)
+                status = self.dataset_upload(ROOT, DATAVERSE_ID, API_TOKEN, self.semaf_filename)
                 print(status)
         return
 
