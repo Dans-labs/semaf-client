@@ -8,7 +8,6 @@ from rdflib.serializer import Serializer
 from rdflib.namespace import RDF, RDFS
 from config import cmdifile, ROOT, DATAVERSE_ID, API_TOKEN, schemaURL, cv_server, cwfile
 from Semaf.Semaf import Semaf
-from jGraph import jGraph
 import sys
 import requests
 from datetime import datetime
