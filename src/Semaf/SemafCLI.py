@@ -1,13 +1,13 @@
 from xml.dom import minidom
 #from CLARIAH_CMDI.xml2dict.processor import CMDI # load, xmldom2dict
 import json
-from SchemaLOD import Schema, GraphBuilder
+from Semaf.SchemaLOD import Schema, GraphBuilder
 from config import default_crosswalks_location, crosswalks_location, cbs_default_crosswalks
 from rdflib import Graph, URIRef, Literal, BNode, plugin, Namespace
 from rdflib.serializer import Serializer
 from rdflib.namespace import RDF, RDFS
 from config import cmdifile, ROOT, DATAVERSE_ID, API_TOKEN, schemaURL, cv_server, cwfile
-from Semaf import Semaf
+from Semaf.Semaf import Semaf
 from jGraph import jGraph
 import sys
 import requests
