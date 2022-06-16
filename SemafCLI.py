@@ -27,8 +27,10 @@ class SemafUtils():
         return
 
     def dataset_upload(self, filename):
-        headers = { "X-Dataverse-key" : API_TOKEN, 'Content-Type' : 'application/json-ld'}
-        url = "%s/%s" % (ROOT, "api/dataverses/%s/datasets" % DATAVERSE_ID)
+        headers = { "X-Dataverse-key" : self.API_TOKEN, 'Content-Type' : 'application/json-ld'}
+        url = "%s/%s" % (self.ROOT, "api/dataverses/%s/datasets" % self.DATAVERSE_ID)
+        print(url)
+        print(headers)
         r = requests.post(url, data=open(filename, 'rb'), headers=headers)
         return r.text
 
@@ -59,7 +61,8 @@ class SemafUtils():
             with open(self.semaf_filename, 'w', encoding='utf-8') as f:
                 json.dump(metadata, f, ensure_ascii=False, indent=4)
             if UPLOAD:
-                status = self.dataset_upload(ROOT, DATAVERSE_ID, API_TOKEN, self.semaf_filename)
+                self.dataset = '/tmp/dataset.json'
+                status = self.dataset_upload(self.dataset)
                 print(status)
         return
 
