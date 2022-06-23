@@ -6,7 +6,7 @@ originalfield,metadatablock,metadatafield,id,subfield,level,type
 "/Dataontwerpversies/Versie/Dataontwerp/VerkorteSchrijfwijzeNaamDataontwerp",citation,"",0,alternativeTitle,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/Id",citation,"otherId",1,otherIdValue,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/Trefwoorden/Trefwoord",citation,keyword,1,keywordValue,0,primitive
-/Dataontwerpversies/Versie/Dataontwerp/Dataontwerpgroeppad",citation,keyword,1,keywordValue,0,primitive
+"/Dataontwerpversies/Versie/Dataontwerp/Dataontwerpgroeppad",citation,keyword,1,keywordValue,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/Themas/Thema",citation,topicClassification,1,topicClassValue,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/GeldigVanaf",citation,"",0,distributionDate,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/SoortData",citation,"",0,kindOfData,1,primitive
