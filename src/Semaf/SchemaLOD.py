@@ -951,7 +951,12 @@ class GraphBuilder():
                         thistype['multiple'] = schema.allowmulti[schema.RemoveRef(thisfield)]
                     except:
                         thistype['multiple'] = False
-                    thistype['value'] = thisvalue # { thisfield: thisvalue }
+
+                    if 'kindOfData' in thisfield:
+                        thistype['value'] = [ thisvalue ]
+                    else:
+                        thistype['value'] = thisvalue # { thisfield: thisvalue }
+
                     termURI = schema.termURI(thisfield)
                     if termURI:
                         if DEBUG:
