@@ -25,5 +25,7 @@ else:
     #cmdifile = '0b01e4108004e49d_INV_REG_REPARATIE_CONSUMENTENARTIKELEN_HANDEL_2008-01-01.dsc'
 
 semafcli = SemafUtils(cbs_default_crosswalks, crosswalks_location)
+semafcli.set_deposit_type('original')
 semafcli.set_dataverse(ROOT, DATAVERSE_ID, API_TOKEN)
-semafcli.transformation(cmdifile)
+semafcli.transformation(cmdifile, UPLOAD)
+print(semafcli.dataset)

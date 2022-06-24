@@ -19,6 +19,12 @@ class SemafUtils():
         self.crosswalks_location = crosswalks_location
         self.semaf_filename = '/tmp/dataset.json'
         self.cv_server = ''
+        self.deposit = 'semantic'
+        self.metadata = None
+
+    def set_deposit_type(self, deposit):
+        self.deposit = deposit
+        return
 
     def set_dataverse(self, ROOT, DATAVERSE_ID, API_TOKEN):
         self.ROOT = ROOT
@@ -27,10 +33,14 @@ class SemafUtils():
         return
 
     def dataset_upload(self, filename):
-        headers = { "X-Dataverse-key" : self.API_TOKEN, 'Content-Type' : 'application/json-ld'}
+        if self.deposit == 'semantic':
+            headers = { "X-Dataverse-key" : self.API_TOKEN, 'Content-Type' : 'application/json-ld'}
+        else:
+            headers = { "X-Dataverse-key" : self.API_TOKEN, 'Content-Type' : 'application/json'}
+
         url = "%s/%s" % (self.ROOT, "api/dataverses/%s/datasets" % self.DATAVERSE_ID)
         print(url)
-        print(headers)
+        print(filename)
         r = requests.post(url, data=open(filename, 'rb'), headers=headers)
         return r.text
 
@@ -55,13 +65,20 @@ class SemafUtils():
         mappedjson = self.cmdigraph.iterator(json.loads(self.sm.json))
 
         if self.schema:
-            metadata = self.cmdigraph.dataverse_export(self.cmdigraph.exportrecords, self.schema, defaultmetadata)
-            print(json.dumps(metadata, indent=4))
+            self.metadata = self.cmdigraph.dataverse_export(self.cmdigraph.exportrecords, self.schema, defaultmetadata)
+            #print(json.dumps(metadata, indent=4))
+            print(json.dumps(self.cmdigraph.dataset))
             self.cmdigraph.g.serialize(format='n3', destination="/tmp/dataset.nt")
+            self.semaf_filename_json = '/tmp/dataset_orig.json'
+            with open(self.semaf_filename_json, 'w', encoding='utf-8') as f:
+                json.dump(self.cmdigraph.dataset, f, ensure_ascii=False, indent=4)
             with open(self.semaf_filename, 'w', encoding='utf-8') as f:
-                json.dump(metadata, f, ensure_ascii=False, indent=4)
+                json.dump(self.metadata, f, ensure_ascii=False, indent=4)
             if UPLOAD:
-                self.dataset = '/tmp/dataset.json'
+                if self.deposit == 'semantic':
+                    self.dataset = '/tmp/dataset.json'
+                else:
+                    self.dataset = '/tmp/dataset_orig.json'
                 status = self.dataset_upload(self.dataset)
                 print(status)
         return
