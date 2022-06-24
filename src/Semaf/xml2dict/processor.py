@@ -234,8 +234,11 @@ class CMDI():
         return files
 
     def load(self, fname):
-        self.json = self.xmldom2dict(minidom.parse(fname))
-        return self.xmldom2dict(minidom.parse(fname))
+        try:
+            self.json = self.xmldom2dict(minidom.parse(fname))
+            return self.xmldom2dict(minidom.parse(fname))
+        except:
+            return self.loadhtml(fname)
 
     def loadhtml(self, fname):
         with open(fname, 'r') as file:
