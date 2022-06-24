@@ -1,6 +1,6 @@
 originalfield,metadatablock,metadatafield,id,subfield,level,type
 "/html/head/title/text",citation,author,1,"name",0,primitive
 "html/head/title/text",citation,author,1,"name",0,primitive
-"html/body/div/div/div/p/text",citation,title,1,"title",0,primitive
-"/html/body/div/div/div/p/text",citation,title,1,"title",0,primitive
+"html/body/div/div/div/p",citation,title,1,"title",0,primitive
+"/html/body/div/div/div/p",citation,title,1,"title",0,primitive
 
