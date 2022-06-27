@@ -949,13 +949,20 @@ class GraphBuilder():
                         metadata[schema.rootURI(nested['root'])] = metadatablock
 
                 else:
+                    print(thisfield)
                     thistype['typeClass'] = 'primitive'
                     try:
                         thistype['multiple'] = schema.allowmulti[schema.RemoveRef(thisfield)]
                     except:
                         thistype['multiple'] = False
 
+                    repeated = False
                     if 'kindOfData' in thisfield:
+                        repeated = True
+                    if 'variable' in thisfield:
+                        repeated = True
+
+                    if repeated:
                         thistype['value'] = [ thisvalue ]
                     else:
                         thistype['value'] = thisvalue # { thisfield: thisvalue }
@@ -971,10 +978,12 @@ class GraphBuilder():
                 #self.dataset[] = thistype
 
         # Finalizing dataset
+        self.vocab = {}
         for keyword in self.compound:
             x = { "%s tmp" % keyword: self.compound[keyword]  }
             compitem = { 'typeName': keyword, 'multiple': schema.allowmulti[keyword], 'typeClass': 'compound', 'value': self.compound[keyword] }
             self.datasetfields.append(compitem) # { 'value': [ x ] } )
+            self.vocab = { str(compitem) : keyword }
                 
         self.thisorder = {}
         for item in self.datasetfields:
@@ -984,10 +993,11 @@ class GraphBuilder():
 
         fields = []
         for field in schema.get_fields_order():
-            if field in self.thisorder:
+            #if field in self.thisorder:
+            for item in self.datasetfields:
                 allfields = ['title', 'author', 'datasetContact', 'dsDescription', 'subject', 'keyword']
-                if field: # in allfields:
-                    fields.append(self.thisorder[field])
+                if field == item['typeName']: # in allfields:
+                    fields.append(item) #self.thisorder[field])
 
         self.dataset = {}
         self.fields = { 'fields': fields }

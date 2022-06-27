@@ -25,6 +25,7 @@ class SemafUtils():
         self.default_schema = 'citation_xxx'
         self.selected_schema = None
         self.schemaURL = None
+        self.mappedjson = {}
 
     def set_deposit_type(self, deposit):
         self.deposit = deposit
@@ -79,12 +80,12 @@ class SemafUtils():
         mappedjson = self.cmdigraph.set_cvserver(self.cv_server)
         self.cmdigraph.set_crosswalks(crosswalks)
         items = self.cmdigraph.rotate(self.cmdigraph.context, False)
-        mappedjson = self.cmdigraph.iterator(json.loads(self.sm.json))
+        self.mappedjson = self.cmdigraph.iterator(json.loads(self.sm.json))
 
         if self.schema:
             self.metadata = self.cmdigraph.dataverse_export(self.cmdigraph.exportrecords, self.schema, self.selected_schema, defaultmetadata)
             #print(json.dumps(metadata, indent=4))
-            print(json.dumps(self.cmdigraph.dataset))
+            #print(json.dumps(self.cmdigraph.dataset))
             self.cmdigraph.g.serialize(format='n3', destination="/tmp/dataset.nt")
             self.semaf_filename_json = '/tmp/dataset_orig.json'
             with open(self.semaf_filename_json, 'w', encoding='utf-8') as f:
