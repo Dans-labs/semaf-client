@@ -21,6 +21,10 @@ class SemafUtils():
         self.cv_server = ''
         self.deposit = 'semantic'
         self.metadata = None
+        self.schema_pd = None
+        self.default_schema = 'citation_xxx'
+        self.selected_schema = None
+        self.schemaURL = None
 
     def set_deposit_type(self, deposit):
         self.deposit = deposit
@@ -44,17 +48,30 @@ class SemafUtils():
         r = requests.post(url, data=open(filename, 'rb'), headers=headers)
         return r.text
 
-    def transformation(self, cmdifile, UPLOAD=False): 
-        self.sm = Semaf()
+    def set_schema(self, schema_name=None, schema_URL=None):
+        if schema_name:
+            self.selected_schema = schema_name
+            self.schemaURL = schema_URL
+        return
+
+    def set_graph(self, graph):
+        self.sm = graph
+        return
+
+    def transformation(self, cmdifile=None, UPLOAD=False): 
+        if cmdifile:
+            self.sm = Semaf()
+            s = self.sm.loadcmdi(cmdifile)
+
         self.schema = Schema()
-       
+
         # Read file and load in the knowledge graph
-        s = self.sm.loadcmdi(cmdifile)
         defaultvalue = self.schema.default_schema(self.default_crosswalks)
-        schemapd = self.schema.load_metadata_schema(schemaURL, 'citation')
+        schemapd = self.schema.load_metadata_schema(self.schemaURL, self.selected_schema)
+        self.schema_pd = schemapd
 
         # Load schema
-        self.schema.to_graph('citation', filename='citation')
+        self.schema.to_graph(self.selected_schema, filename=self.selected_schema)
         crosswalks = self.schema.crosswalks(self.crosswalks_location)
 
         self.cmdigraph = GraphBuilder(self.sm.json, "https://dataverse.org/schema/cbs/", graphformat='rich')
@@ -65,7 +82,7 @@ class SemafUtils():
         mappedjson = self.cmdigraph.iterator(json.loads(self.sm.json))
 
         if self.schema:
-            self.metadata = self.cmdigraph.dataverse_export(self.cmdigraph.exportrecords, self.schema, defaultmetadata)
+            self.metadata = self.cmdigraph.dataverse_export(self.cmdigraph.exportrecords, self.schema, self.selected_schema, defaultmetadata)
             #print(json.dumps(metadata, indent=4))
             print(json.dumps(self.cmdigraph.dataset))
             self.cmdigraph.g.serialize(format='n3', destination="/tmp/dataset.nt")

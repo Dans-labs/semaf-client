@@ -112,7 +112,10 @@ class Schema():
         self.datadict[schemablock] = data
 
         # Mappings for termURIs
-        if 'termURI' in data.columns:
+        if not 'termURI' in data.columns:
+            data.insert(1, 'termURI', '', True)
+
+        if schemablock:
             for i in data[['name','termURI']].index:
                 if data.loc[i]['termURI'] is not np.nan:                    
                     self.termURIs[data.loc[i]['name']] = data.loc[i]['termURI']   
@@ -875,7 +878,7 @@ class GraphBuilder():
                         metadata[termURI] = thisvalue
         return metadata        
 
-    def dataverse_export(self, data, schema, savedmetadata=None):
+    def dataverse_export(self, data, schema, schema_name, savedmetadata=None):
         metadata = {}
         if savedmetadata:
             metadata = savedmetadata
@@ -886,7 +889,7 @@ class GraphBuilder():
             if field in self.crosswalks:
                 thisfield = self.crosswalks[field]
                 nested = schema.Hierarchy(thisfield)
-                DEBUGX = True
+                DEBUGX = False
                 thistype = {}
                 thistype['typeName'] = thisfield
                     
@@ -951,7 +954,12 @@ class GraphBuilder():
                         thistype['multiple'] = schema.allowmulti[schema.RemoveRef(thisfield)]
                     except:
                         thistype['multiple'] = False
-                    thistype['value'] = thisvalue # { thisfield: thisvalue }
+
+                    if 'kindOfData' in thisfield:
+                        thistype['value'] = [ thisvalue ]
+                    else:
+                        thistype['value'] = thisvalue # { thisfield: thisvalue }
+
                     termURI = schema.termURI(thisfield)
                     if termURI:
                         if DEBUG:
@@ -983,8 +991,11 @@ class GraphBuilder():
 
         self.dataset = {}
         self.fields = { 'fields': fields }
-        self.citation = { 'citation': self.fields }
-        self.metadatablocks = { 'metadataBlocks': self.citation }
-        self.dataset = {'datasetVersion': self.metadatablocks } 
+        self.citation = { schema_name: self.fields }
+        if schema_name == 'citation':
+            self.metadatablocks = { 'metadataBlocks': self.citation }
+            self.dataset = {'datasetVersion': self.metadatablocks } 
+        else:
+            self.dataset = self.citation
         return metadata
 
