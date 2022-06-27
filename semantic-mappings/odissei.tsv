@@ -1,4 +1,4 @@
 #metadataBlock	name	dataverseAlias	displayName												
 	odissei		ODISSEI Variable names												
 #datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id
-	variable	Variables in ODISSE metadata	Variable		text	0		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE		odissei
+	variable	Variable	Variable		text	0		FALSE	TRUE	FALSE	FALSE	FALSE	FALSE		odissei
