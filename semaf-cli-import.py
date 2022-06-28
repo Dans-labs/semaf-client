@@ -42,3 +42,8 @@ for schema_name in schemes:
 
 semafcli.set_deposit_type('original')
 semafcli.set_dataverse(ROOT, DATAVERSE_ID, API_TOKEN)
+metadatafile = "/tmp/final.json"
+with open(metadatafile, 'w', encoding='utf-8') as f:
+    json.dump(metadata, f, ensure_ascii=False, indent=4)
+status = semafcli.dataset_upload(metadatafile)
+print(status)
