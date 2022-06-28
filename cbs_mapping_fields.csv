@@ -13,4 +13,4 @@ originalfield,metadatablock,metadatafield,id,subfield,level,type
 "/Dataontwerpversies/Versie/Dataontwerp/SoortData",citation,"",0,kindOfData,1,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/TypeVerslagperiode",socialscience,"",0,frequencyOfDataCollection,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/GebruikteMethodologie",socialscience,"",0,samplingProcedure,0,primitive
-"/Dataontwerpversies/Versie/Dataontwerp/Procesverloop",socialscience,socialScienceNotes,0,socialScienceNotesSubject,0,primitive
+"/Dataontwerpversies/Versie/Dataontwerp/Procesverloop",socialscience,"",0,timeMethod,0,primitive
