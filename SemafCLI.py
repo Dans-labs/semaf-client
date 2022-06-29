@@ -26,9 +26,14 @@ class SemafUtils():
         self.selected_schema = None
         self.schemaURL = None
         self.mappedjson = {}
+        self.nt = '/tmp/dataset.nt'
 
     def set_deposit_type(self, deposit):
         self.deposit = deposit
+        return
+
+    def set_nt_filename(self, filename):
+        self.nt = filename
         return
 
     def set_dataverse(self, ROOT, DATAVERSE_ID, API_TOKEN):
@@ -86,7 +91,7 @@ class SemafUtils():
             self.metadata = self.cmdigraph.dataverse_export(self.cmdigraph.exportrecords, self.schema, self.selected_schema, defaultmetadata)
             #print(json.dumps(metadata, indent=4))
             #print(json.dumps(self.cmdigraph.dataset))
-            self.cmdigraph.g.serialize(format='n3', destination="/tmp/dataset.nt")
+            self.cmdigraph.g.serialize(format='n3', destination=self.nt)
             self.semaf_filename_json = '/tmp/dataset_orig.json'
             with open(self.semaf_filename_json, 'w', encoding='utf-8') as f:
                 json.dump(self.cmdigraph.dataset, f, ensure_ascii=False, indent=4)
