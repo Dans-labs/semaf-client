@@ -18,6 +18,7 @@ class SemafUtils():
         self.default_crosswalks = default_crosswalks
         self.crosswalks_location = crosswalks_location
         self.semaf_filename = '/tmp/dataset.json'
+        self.semaf_filename_orig = '/tmp/dataset_orig.json'
         self.cv_server = ''
         self.deposit = 'semantic'
         self.metadata = None
@@ -34,6 +35,14 @@ class SemafUtils():
 
     def set_nt_filename(self, filename):
         self.nt = filename
+        return
+
+    def set_semaf_filename(self, filename):
+        self.semaf_filename = filename
+        return
+
+    def set_semaf_filename_orig(self, filename):
+        self.semaf_filename_orig = filename
         return
 
     def set_dataverse(self, ROOT, DATAVERSE_ID, API_TOKEN):
@@ -92,8 +101,7 @@ class SemafUtils():
             #print(json.dumps(metadata, indent=4))
             #print(json.dumps(self.cmdigraph.dataset))
             self.cmdigraph.g.serialize(format='n3', destination=self.nt)
-            self.semaf_filename_json = '/tmp/dataset_orig.json'
-            with open(self.semaf_filename_json, 'w', encoding='utf-8') as f:
+            with open(self.semaf_filename_orig, 'w', encoding='utf-8') as f:
                 json.dump(self.cmdigraph.dataset, f, ensure_ascii=False, indent=4)
             with open(self.semaf_filename, 'w', encoding='utf-8') as f:
                 json.dump(self.metadata, f, ensure_ascii=False, indent=4)
