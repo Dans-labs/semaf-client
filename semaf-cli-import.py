@@ -1,4 +1,5 @@
 from xml.dom import minidom
+import os
 #from CLARIAH_CMDI.xml2dict.processor import CMDI # load, xmldom2dict
 import json
 from SchemaLOD import Schema, GraphBuilder
@@ -18,6 +19,8 @@ from datetime import datetime
 UPLOAD = False
 if len(sys.argv) > 1:
     cmdifile = sys.argv[1]
+    output_file_name = os.path.basename(cmdifile)
+    file_name = str(cmdifile)
     if len(sys.argv) > 2:
         UPLOAD = True
 else:
@@ -27,6 +30,7 @@ else:
 
 # Load ciation block
 semafcli = SemafUtils(cbs_default_crosswalks, crosswalks_location)
+semafcli.set_nt_filename("/tmp/output-nt/" + "%s.nt" % output_file_name)
 semafcli.set_schema(schema_name='citation', schema_URL=schemaURL)
 semafcli.transformation(cmdifile)
 metadata = semafcli.cmdigraph.dataset
@@ -42,7 +46,7 @@ for schema_name in schemes:
 
 semafcli.set_deposit_type('original')
 semafcli.set_dataverse(ROOT, DATAVERSE_ID, API_TOKEN)
-metadatafile = "/tmp/final.json"
+metadatafile = "/tmp/output-nt/" + output_file_name + "-output.json"
 with open(metadatafile, 'w', encoding='utf-8') as f:
     json.dump(metadata, f, ensure_ascii=False, indent=4)
 status = semafcli.dataset_upload(metadatafile)
