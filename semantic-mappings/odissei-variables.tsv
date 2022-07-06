@@ -1,8 +1,9 @@
 #metadataBlock	name	dataverseAlias	displayName													
 	odissei		ODISSEI Variable names													
 #datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
-	variable	Variable	Variable		none	0		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE		odissei	
-	variableValue	VariableValue	Variable Value		text	1		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
-	variableVocabulary	VariableVocabulary	Variable Vocabulary (ELLST, etc)		text	2		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
-	variableVocabularyURI	variableVocabularyURI	Concept URI in Vocabulary		text	3		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
-	embeddings	Embeddings	Embeddings		text	4		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE		odissei	
+	variable	Variable	Linked Data Concept for variable		none	0		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE		odissei	
+	variableName	VariableName	Concept name in the vocabulary		text	1		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
+	variableValue	VariableValue	Concept value in the vocabulary		text	2		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
+	variableVocabulary	VariableVocabulary	Vocabulary name (ELLST, CBS, etc)		text	3		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
+	variableVocabularyURI	variableVocabularyURI	Concept URI in the vocabulary		text	4		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
+	embeddings	Embeddings	Embeddings		text	5		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE		odissei	
