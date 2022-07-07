@@ -9,6 +9,6 @@
 	variableVocabularyURI	VariableVocabularyURI	Concept URI in vocabulary		url	5		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
 	variableValidfrom	VariableValidfrom	Date from which variable is valid		date	6		FALSE	FALSE	FALSE	TRUE	FALSE	FALSE	variable	odissei	
 	variableDefinition	VariableDefinition	Definition of variable in vocabulary		text	7		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
-	embeddings	Embeddings	Embeddings		text	8		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE		odissei	
+	embeddings	Embeddings	Embeddings		none	8		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE		odissei	
 	embeddingsTag	EmbeddingsTag	Embeddings tag		text	9		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	embeddings	odissei	
 	embeddingsValues	EmbeddingsValues	Embeddings values		text	10		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	embeddings	odissei	
