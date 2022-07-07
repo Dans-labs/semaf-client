@@ -5,5 +5,5 @@
 	variableName	VariableName	Concept name in the vocabulary		text	1		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
 	variableValue	VariableValue	Concept value in the vocabulary		text	2		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
 	variableVocabulary	VariableVocabulary	Vocabulary name (ELLST, CBS, etc)		text	3		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
-	variableVocabularyURI	variableVocabularyURI	Concept URI in the vocabulary		text	4		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
+	variableVocabularyURI	variableVocabularyURI	Concept URI in the vocabulary		url	4		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
 	embeddings	Embeddings	Embeddings		text	5		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE		odissei	
