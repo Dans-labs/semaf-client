@@ -1,9 +1,14 @@
 #metadataBlock	name	dataverseAlias	displayName													
 	odissei		ODISSEI Variable names													
 #datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
-	variable	Variable	Linked Data Concept for variable		none	0		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE		odissei	
-	variableName	VariableName	Concept name in the vocabulary		text	1		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
-	variableValue	VariableValue	Concept value in the vocabulary		text	2		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
-	variableVocabulary	VariableVocabulary	Vocabulary name (ELLST, CBS, etc)		text	3		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
-	variableVocabularyURI	variableVocabularyURI	Concept URI in the vocabulary		text	4		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
-	embeddings	Embeddings	Embeddings		text	5		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE		odissei	
+	variable	Variable	Linked Data Concept definition for variable		none	0		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE		odissei	
+	variableId	VariableId	Id of variable in vocabulary		text	1		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
+	variableUniqName	VariableUniqName	Concept name in vocabulary		text	2		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
+	variableValue	VariableValue	Concept value in vocabulary		text	3		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
+	variableVocabulary	VariableVocabulary	Vocabulary name (ELLST, CBS, etc)		text	4		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
+	variableVocabularyURI	VariableVocabularyURI	Concept URI in vocabulary		url	5		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
+	variableValidfrom	VariableValidfrom	Date from which variable is valid		date	6		FALSE	FALSE	FALSE	TRUE	FALSE	FALSE	variable	odissei	
+	variableDefinition	VariableDefinition	Definition of variable in vocabulary		text	7		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	variable	odissei	
+	embeddings	Embeddings	Embeddings		text	8		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE		odissei	
+	embeddingsTag	EmbeddingsTag	Embeddings tag		text	9		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	embeddings	odissei	
+	embeddingsValues	EmbeddingsValues	Embeddings values		text	10		TRUE	TRUE	TRUE	TRUE	FALSE	FALSE	embeddings	odissei	
