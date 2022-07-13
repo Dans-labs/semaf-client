@@ -1,0 +1,17 @@
+[badgr:fair:bronze]
+## - Badgr's BadgeClass name that belongs to the former issuer
+badgeclass = badgeclass_for_fair_bronze
+## Badge matchmaking
+criteria = rda_f1_01d rda_f1_01m rda_f1_02d rda_f1_02m rda_f2_01m rda_f3_01m rda_f4_01m rda_a1_02d rda_a1_02m rda_a1_03d rda_a1_03m rda_a1_04d rda_a1_04m rda_a1_1_01m rda_a2_01m rda_r1_01m da_r1_1_01m rda_r1_3_01d rda_r1_3_01m rda_r1_3_02m
+
+[badgr:fair:silver]
+## - Badgr's BadgeClass name that belongs to the former issuer
+badgeclass = badgeclass_for_fair_silver
+## Badge matchmaking
+criteria = ${badgr:fair:bronze:criteria} rda_a1_01m rda_a1_05d rda_a1_1_01d rda_i1_01d rda_i1_01m rda_i1_02d rda_i1_02m rda_i2_01m rda_i3_01m rda_i3_03m rda_r1_1_02m rda_r1_1_03m rda_r1_2_01m rda_r1_3_02d
+
+[badgr:fair:gold]
+## - Badgr's BadgeClass name that belongs to the former issuer
+badgeclass = badgeclass_for_fair_gold
+## Badge matchmaking
+criteria = ${badgr:fair:silver:criteria} rda_a1_2_01d rda_i2_01d rda_i3_01d rda_i3_02d rda_i3_02m rda_i3_04m rda_r1_2_02m
