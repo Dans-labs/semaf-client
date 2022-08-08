@@ -51,15 +51,15 @@ class SemafUtils():
         self.API_TOKEN = API_TOKEN
         return
 
-    def dataset_upload(self, filename):
+    def dataset_upload(self, filename, pid=None):
         if self.deposit == 'semantic':
-            headers = { "X-Dataverse-key" : self.API_TOKEN, 'Content-Type' : 'application/json-ld'}
+            headers = {"X-Dataverse-key": self.API_TOKEN, 'Content-Type': 'application/json-ld'}
         else:
-            headers = { "X-Dataverse-key" : self.API_TOKEN, 'Content-Type' : 'application/json'}
+            headers = {"X-Dataverse-key": self.API_TOKEN, 'Content-Type': 'application/json'}
 
         url = "%s/%s" % (self.ROOT, "api/dataverses/%s/datasets" % self.DATAVERSE_ID)
-        print(url)
-        print(filename)
+        if pid:
+            url += "/:import?pid=" + pid
         r = requests.post(url, data=open(filename, 'rb'), headers=headers)
         return r.text
 
