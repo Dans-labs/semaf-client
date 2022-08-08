@@ -85,7 +85,6 @@ metadatafile = outputdir + output_file_name + "-output.json"
 with open(metadatafile, 'w', encoding='utf-8') as f:
     json.dump(metadata, f, ensure_ascii=False, indent=4)
 if ROOT != 'LISS' or is_lower_level_liss_study(metadata)[0] is False:
-    print(semafcli.cmdigraph.exportrecords)
     pid_field = next(filter(lambda x: x['mapping'] == 'doi' and 'doi' in x['value'], semafcli.cmdigraph.exportrecords))
     doi_pid = 'doi:' + pid_field['value'].split("/", 3)[3]
     status = semafcli.dataset_upload(metadatafile, doi_pid)

@@ -949,7 +949,6 @@ class GraphBuilder():
                         metadata[schema.rootURI(nested['root'])] = metadatablock
 
                 else:
-                    print(thisfield)
                     thistype['typeClass'] = 'primitive'
                     try:
                         thistype['multiple'] = schema.allowmulti[schema.RemoveRef(thisfield)]
