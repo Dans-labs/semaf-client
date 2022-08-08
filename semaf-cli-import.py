@@ -14,9 +14,34 @@ from config import *
 from Semaf import Semaf
 from jGraph import jGraph
 import sys
+import re
 import requests
 from datetime import datetime
 from pathlib import Path
+
+
+def is_lower_level_liss_study(metadata):
+    title = metadata['datasetVersion']['metadataBlocks']['citation']['fields'][0]['value']
+    print("Title is", title)
+    square_bracket_amount = title.count('>')
+    if square_bracket_amount == 0:
+        print('no square brackets')
+        return False, title
+    if square_bracket_amount == 1:
+        liss_match = re.search(r'L[iI]SS [Pp]anel', title)
+        immigrant_match = re.search(r'Immigrant [Pp]anel', title)
+        if liss_match or immigrant_match:
+            if liss_match:
+                print("Matched on liss panel")
+                return False, title
+            if immigrant_match:
+                print("Matched on immigrant panel")
+                return False, title
+        else:
+            return True, title
+    if square_bracket_amount >= 2:
+        return True, title
+
 
 outputdir = tempfile.mkdtemp(suffix=None, prefix="semafoutput")
 
@@ -53,15 +78,16 @@ for schema_name in schemes:
     custom_semafcli.transformation(cmdifile, UPLOAD=UPLOAD)
     if custom_semafcli.cmdigraph.dataset:
         metadata['datasetVersion']['metadataBlocks'][schema_name] = custom_semafcli.cmdigraph.dataset[schema_name]
-    print(custom_semafcli.cmdigraph.dataset)
 
 semafcli.set_deposit_type('original')
 semafcli.set_dataverse(ROOT, DATAVERSE_ID, API_TOKEN)
 metadatafile = outputdir + output_file_name + "-output.json"
 with open(metadatafile, 'w', encoding='utf-8') as f:
     json.dump(metadata, f, ensure_ascii=False, indent=4)
-if UPLOAD:
-    status = semafcli.dataset_upload(metadatafile)
+if ROOT != 'LISS' or is_lower_level_liss_study(metadata)[0] is False:
+    print(semafcli.cmdigraph.exportrecords)
+    pid_field = next(filter(lambda x: x['mapping'] == 'doi' and 'doi' in x['value'], semafcli.cmdigraph.exportrecords))
+    doi_pid = 'doi:' + pid_field['value'].split("/", 3)[3]
+    status = semafcli.dataset_upload(metadatafile, doi_pid)
     print(status)
-
 print(outputdir)
