@@ -15,3 +15,5 @@ originalfield,metadatablock,metadatafield,id,subfield,level,type
 "/Dataontwerpversies/Versie/Dataontwerp/TypeVerslagperiode",socialscience,"",0,frequencyOfDataCollection,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/GebruikteMethodologie",socialscience,"",0,samplingProcedure,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/Procesverloop",socialscience,"",0,timeMethod,0,primitive
+"/Dataontwerpversies/Versie/Dataontwerp/Contextvariabelen/Contextvariabele/VerkorteSchrijfwijzeNaamVariabele",variableInformation,variable,1,variableName,0,primitive
+"/Dataontwerpversies/Versie/Dataontwerp/Contextvariabelen/Contextvariabele/LabelVanDeVariabele",variableInformation,variable,1,variableLabel,0,primitive
