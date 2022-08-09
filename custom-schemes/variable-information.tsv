@@ -1,0 +1,8 @@
+#metadataBlock	name	dataverseAlias	displayName
+	variableInformation		Variable Information
+#datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	variable	Variable	This element describes all of the features of a single variable in a social science data file.		none	0		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		variableInformation
+	variableId	Variable ID	Id to uniquely identify the variable.		text	1		TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	variable	variableInformation
+	variableName	Variable Name	Name of the variable.		text	2		TRUE	TRUE	FALSE	TRUE	FALSE	FALSE	variable	variableInformation
+	variableLabel	Variable Label	Short description of the variable.		text	3		TRUE	TRUE	FALSE	TRUE	FALSE	FALSE	variable	variableInformation
+	variableVocabularyURI	Variable Vocabulary URI	Vocabulary URI for the variable.		url	4		TRUE	TRUE	FALSE	TRUE	FALSE	FALSE	variable	variableInformation
