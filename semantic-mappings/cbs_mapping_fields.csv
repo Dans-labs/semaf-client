@@ -1,11 +1,11 @@
 originalfield,metadatablock,metadatafield,id,subfield,level,type
 "/Dataontwerpversies/Versie/Dataontwerp/Beschrijving",citation,dsDescription,1,dsDescriptionValue,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/EngelstaligePublicatietekst",citation,dsDescription,1,dsDescriptionValue,0,primitive
-"/OLDDataontwerpversies/Versie/Dataontwerp/Contextvariabelen/Contextvariabele/VerkorteSchrijfwijzeNaamVariabele",citation,topicClassification,1,topicClassValue,0,primitive
+/Dataontwerpversies/Versie/Dataontwerp/Contextvariabelen/Contextvariabele/VerkorteSchrijfwijzeNaamVariabele,citation,topicClassification,1,topicClassValue,0,primitive
 "/Dataontwerpversies/OorspronkelijkeNaam",citation,"",0,title,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/VerkorteSchrijfwijzeNaamDataontwerp",citation,"",0,alternativeTitle,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/Id",citation,"otherId",1,otherIdValue,0,primitive
-"/OLDDataontwerpversies/Versie/Dataontwerp/Trefwoorden/Trefwoord",citation,keyword,1,keywordValue,0,primitive
+/Dataontwerpversies/Versie/Dataontwerp/Trefwoorden/Trefwoord,citation,keyword,1,keywordValue,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/Contextvariabelen/Contextvariabele/VerkorteSchrijfwijzeNaamVariabele",odissei,variable,0,variableId,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/Contextvariabelen/Contextvariabele/ToelichtingBijDeDefinitie",odissei,variable,0,variableDefinition,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/Dataontwerpgroeppad",citation,keyword,1,keywordValue,0,primitive
