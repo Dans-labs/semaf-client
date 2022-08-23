@@ -2,3 +2,4 @@ value,metadatablock,metadatafield,id,subfield,level,type
 "Social Sciences",citation,"",0,subject,1,controlledVocabulary
 "LISS Panel",citation,author,1,authorName,0,primitive
 "info@liss.nl",citation,datasetContact,1,datasetContactEmail,0,primitive
+Centerdata,citation,producer,1,producerName,0,primitive
