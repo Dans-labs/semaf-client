@@ -29,3 +29,4 @@ originalfield,metadatablock,metadatafield,id,subfield,level,type
 "/record/metadata/ddi:codeBook/ddi:stdyDscr/ddi:method/ddi:dataColl/ddi:collSitu",socialscience,"",0,dataCollectionSituation,0,primitive
 "/record/metadata/ddi:codeBook/ddi:stdyDscr/ddi:method/ddi:dataColl/ddi:actMin",socialscience,"",0,actionsToMinimizeLoss,0,primitive
 "/record/metadata/ddi:codeBook/ddi:stdyDscr/ddi:method/ddi:dataColl/ddi:weight",socialscience,"",0,weighting,0,primitive
+/record/metadata/ddi:codeBook/ddi:stdyDscr/ddi:dataAccs/ddi:useStmt/ddi:conditions,citation,license,1,license,0,primitive
