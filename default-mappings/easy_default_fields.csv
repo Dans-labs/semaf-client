@@ -1,4 +1,3 @@
 value,metadatablock,metadatafield,id,subfield,level,type
 "Social Sciences",citation,"",0,subject,1,controlledVocabulary
-"EASY",citation,author,1,authorName,0,primitive
 "info@dans.knaw.nl",citation,datasetContact,1,datasetContactEmail,0,primitive
