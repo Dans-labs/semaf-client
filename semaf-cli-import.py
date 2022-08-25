@@ -3,6 +3,9 @@ import os
 import tempfile
 #from CLARIAH_CMDI.xml2dict.processor import CMDI # load, xmldom2dict
 import json
+
+from requests.structures import CaseInsensitiveDict
+
 from SchemaLOD import Schema, GraphBuilder
 from SemafCLI import SemafUtils
 from config import default_crosswalks_location, crosswalks_location, cbs_default_crosswalks
@@ -18,6 +21,24 @@ import re
 import requests
 from datetime import datetime
 from pathlib import Path
+
+
+def retrieve_license(license_string):
+    dataset_lic = ''
+    if re.search(r'creativecommons', license_string):
+        if re.search(r'/by/4\.0', license_string):
+            dataset_lic = "CC BY 4.0"
+        elif re.search(r'/by-nc/4\.0', license_string):
+            dataset_lic = "CC BY-NC 4.0"
+        elif re.search(r'/by-sa/4\.0', license_string):
+            dataset_lic = "CC BY-SA 4.0"
+        elif re.search(r'/by-nc-sa/4\.0', license_string):
+            dataset_lic = "CC BY-NC-SA 4.0"
+        elif re.search(r'zero/1\.0', license_string):
+            dataset_lic = "CC0 1.0"
+    elif re.search(r'DANSLicence', license_string):
+        dataset_lic = "DANS Licence"
+    return dataset_lic
 
 
 def is_lower_level_liss_study(metadata):
@@ -48,6 +69,7 @@ outputdir = tempfile.mkdtemp(suffix=None, prefix="semafoutput")
 UPLOAD = False
 if len(sys.argv) > 1:
     cmdifile = sys.argv[1]
+    print(cmdifile)
     output_file_name = os.path.basename(cmdifile)
     if len(sys.argv) > 2:
         UPLOAD = True
@@ -81,12 +103,34 @@ for schema_name in schemes:
 
 semafcli.set_deposit_type('original')
 semafcli.set_dataverse(ROOT, DATAVERSE_ID, API_TOKEN)
+
+# EASY licensing
+if DATAVERSE_ID == 'dans-easy':
+    license_string = next(filter(lambda x: x['mapping'] == 'license', semafcli.cmdigraph.exportrecords), 0)
+    if license_string:
+        dataset_license = retrieve_license(license_string['value'])
+        metadata['datasetVersion']['license'] = dataset_license
+        print(dataset_license)
 metadatafile = outputdir + output_file_name + "-output.json"
 with open(metadatafile, 'w', encoding='utf-8') as f:
     json.dump(metadata, f, ensure_ascii=False, indent=4)
-if ROOT != 'LISS' or is_lower_level_liss_study(metadata)[0] is False:
-    pid_field = next(filter(lambda x: x['mapping'] == 'doi' and 'doi' in x['value'], semafcli.cmdigraph.exportrecords))
-    doi_pid = 'doi:' + pid_field['value'].split("/", 3)[3]
+if DATAVERSE_ID != 'liss_dc' or is_lower_level_liss_study(metadata)[0] is False:
+    if DATAVERSE_ID == 'cbs':
+        json_string = json.dumps(metadata)
+        url = "http://0.0.0.0:8566/submit-to-datacite"
+
+        headers = CaseInsensitiveDict()
+        headers = {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer @km1-10122004-lamA',
+            'Content-Type': 'application/x-www-form-urlencoded',
+        }
+        resp = requests.post(url, headers=headers, data=json_string)
+        doi_pid = resp.text.replace('"', '').replace('{', '').replace('}', '')
+
+    if DATAVERSE_ID == 'liss_dc' or DATAVERSE_ID == 'dans-easy':
+        pid_field = next(filter(lambda x: x['mapping'] == 'doi' and 'doi' in x['value'], semafcli.cmdigraph.exportrecords))
+        doi_pid = 'doi:' + pid_field['value'].split("/", 3)[3]
+
     status = semafcli.dataset_upload(metadatafile, doi_pid)
     print(status)
-print(outputdir)
