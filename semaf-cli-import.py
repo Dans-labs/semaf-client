@@ -111,6 +111,13 @@ if DATAVERSE_ID == 'dans-easy':
         dataset_license = retrieve_license(license_string['value'])
         metadata['datasetVersion']['license'] = dataset_license
         print(dataset_license)
+
+if DATAVERSE_ID == 'cbs':
+    metadata['datasetVersion']['license'] = 'DANS MA KA Licence'
+
+if DATAVERSE_ID == 'liss_dc':
+    metadata['datasetVersion']['license'] = 'DANS MA KI Licence'
+
 metadatafile = outputdir + output_file_name + "-output.json"
 with open(metadatafile, 'w', encoding='utf-8') as f:
     json.dump(metadata, f, ensure_ascii=False, indent=4)
