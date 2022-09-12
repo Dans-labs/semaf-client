@@ -21,6 +21,8 @@ class Schema():
         self.thisRef = 'https://dataverse.org/schema'
         self.RootRef = ''
         self.mappings = {}
+        self.alias_ds = {}
+        self.alias_cw = {}
         self.locator = {}
         self.language = 'en'
         self.CompoundNodes = []
@@ -150,7 +152,13 @@ class Schema():
         
     def SetRef(self, value):
         # Set references with loaded semantic mappings
-        value = value.replace('#','')
+        print(self.alias_cw)
+        if value in self.alias_cw:
+            print("Map: %s %s" % (value, self.alias_cw[value]))
+        try:
+            value = value.replace('#','')
+        except: 
+            skip = value
         #value = value.replace(' ','')
         if value in self.mappings:
             RefURL = self.mappings[value]
@@ -392,10 +400,20 @@ class Schema():
         if 'defaultfield' in self.default.columns:
             for i in self.default.index:
                 fieldname = str(self.default.loc[i]['defaultfield'])
+                if fieldname in defaultvalue:
+                    complexmapping = [ defaultvalue[fieldname] ]
+                    complexmapping.append(str(self.default.loc[i]['value']))
+                    self.alias_ds[fieldname] = complexmapping
+                #else:
                 defaultvalue[fieldname] = str(self.default.loc[i]['value'])
         if 'metadatablock' in self.default.columns:
             for i in self.default.index:
                 fieldname = str(self.default.loc[i]['subfield'])
+                if fieldname in defaultvalue:
+                    complexmapping = [ defaultvalue[fieldname] ]
+                    complexmapping.append(str(self.default.loc[i]['value']))
+                    self.alias_ds[fieldname] = complexmapping
+                #else:
                 defaultvalue[fieldname] = str(self.default.loc[i]['value'])
 
         return defaultvalue
@@ -406,10 +424,24 @@ class Schema():
         if 'mappedfield' in self.crosswalks_df.columns:
             for i in self.crosswalks_df.index:
                 fieldname = str(self.crosswalks_df.loc[i]['originalfield'])
+                if fieldname in cw:
+                    complexmapping = [ cw[fieldname] ]
+                    complexmapping.append(str(self.crosswalks_df.loc[i]['mappedfield']))
+                    multiplevalues = {}
+                    for field in complexmapping:
+                        multiplevalues[field] = fieldname
+                    self.alias_cw[fieldname] = multiplevalues
+                #else:
                 cw[fieldname] = str(self.crosswalks_df.loc[i]['mappedfield'])
         if 'metadatablock' in self.crosswalks_df.columns: 
             for i in self.crosswalks_df.index:
                 fieldname = str(self.crosswalks_df.loc[i]['originalfield'])
+                if fieldname in cw:
+                    complexmapping = [ cw[fieldname] ]
+                    complexmapping.append(str(self.crosswalks_df.loc[i]['subfield']))
+                    for field in complexmapping:
+                        self.alias_cw[field] = fieldname
+                #else:
                 cw[fieldname] = str(self.crosswalks_df.loc[i]['subfield'])
         return cw
     
@@ -469,11 +501,13 @@ class GraphBuilder():
 
     def mapping(self, fieldname):
         if fieldname in self.crosswalks.keys():
+            #print(self.crosswalks[fieldname])
             return fieldname #self.crosswalks[fieldname]
         return #fieldname
 
     def iterator(self, x, xpath=''):      
         xpath = self.clearpath(xpath)  
+        #print("%s %s\n" % (x, xpath))
         if isinstance(x, list):            
             thisblock = []            
             #if self.mapping(x):
@@ -505,9 +539,15 @@ class GraphBuilder():
             return thisblock
         else:
             m = self.mapping(xpath)
-            if m:
-                self.exportdata[m] = x            
-                self.exportrecords.append({'xpath': xpath, 'mapping': self.crosswalks[xpath],'value': x})
+            if isinstance(m, list):
+                print(self.crosswalks[xpath])
+                for mapvalue in m:
+                    self.exportdata[mapvalue] = x            
+                    self.exportrecords.append({'xpath': xpath, 'mapping': self.crosswalks[xpath],'value': x})
+            else:
+                if m:
+                    self.exportdata[m] = x            
+                    self.exportrecords.append({'xpath': xpath, 'mapping': self.crosswalks[xpath],'value': x})
             return self.clearpath(x)
 
     def set_cvserver(self, cv_server):
